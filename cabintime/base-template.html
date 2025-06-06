@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社MarsLinkは移動空間をデジタル化し、航空・船舶・鉄道をはじめとする交通事業者に新たなビジネスモデルを提供する革新的なスタートアップ企業です。移動を価値ある体験へと変革します。">
+    <title>株式会社MarsLink - マーズリンク</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="moon-container">
+            <div class="moon-orbit"></div>
+            <div class="moon-orbit-inner"></div>
+            <div class="moon">
+                <div class="moon-shadow"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Stars Background -->
+    <div class="stars-container">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+    </div>
+
+    <!-- Section Navigation Indicators -->
+    <div class="section-indicators">
+        <div class="section-indicator active" data-tooltip="ホーム" data-section="hero"></div>
+        <div class="section-indicator" data-tooltip="Cabin Time" data-section="product1"></div>
+        <div class="section-indicator" data-tooltip="Explore" data-section="product2"></div>
+        <div class="section-indicator" data-tooltip="ビジョン" data-section="vision"></div>
+        <div class="section-indicator" data-tooltip="新着情報" data-section="news"></div>
+        <div class="section-indicator" data-tooltip="IR" data-section="vision"></div>
+        <div class="section-indicator" data-tooltip="お問い合わせ" data-section="contact"></div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator"></div>
+    
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <a href="../index.html" class="logo">MarsLink</a>
+                <ul class="nav-links">
+                    <li><a href="#hero">ホーム</a></li>
+                    <li><a href="#product1">Cabin Time</a></li>
+                    <li><a href="#product2">Explore</a></li>
+                    <li><a href="#news">新着情報</a></li>
+                    <li><a href="#vision">IR</a></li>
+                    <li><a href="../about.html">会社概要</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+                <button class="mobile-menu-btn">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area (空白部分) -->
+    <main>
+        <!-- ここにページのコンテンツを追加 -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-bg"></div>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>MarsLink</h3>
+                <p>移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー</p>
+                <p>〒530-0011<br>大阪市北区大深町6番38号<br>グラングリーン大阪北館 JAM BASE 6階 JAM-DESK</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon">X</a>
+                    <a href="#" class="footer-social-icon">f</a>
+                    <a href="#" class="footer-social-icon">In</a>
+                    <a href="#" class="footer-social-icon">Y</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>リンク</h3>
+                <ul class="footer-links">
+                    <li><a href="#hero"><span class="footer-link-icon">»</span>ホーム</a></li>
+                    <li><a href="#product1"><span class="footer-link-icon">»</span>Cabin Time</a></li>
+                    <li><a href="#product2"><span class="footer-link-icon">»</span>Explore</a></li>
+                    <li><a href="#news"><span class="footer-link-icon">»</span>新着情報</a></li>
+                    <li><a href="#vision"><span class="footer-link-icon">»</span>IR</a></li>
+                    <li><a href="../about.html"><span class="footer-link-icon">»</span>会社概要</a></li>
+                    <li><a href="#contact"><span class="footer-link-icon">»</span>お問い合わせ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>お問い合わせ</h3>
+                <p>メール: info@marslink.co.jp</p>
+                <p>受付時間: 平日 9:00 - 18:00</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">2025</span> MarsLink Co., Ltd. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="../js/stars.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    
+    <script>
+        // 年号を自動的に更新
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

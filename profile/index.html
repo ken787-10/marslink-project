@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社MarsLinkの会社概要 - 移動空間を価値ある時間に変革するテクノロジーカンパニー">
+    <title>会社概要 | 株式会社MarsLink-マーズリンク-</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="会社概要 | 株式会社MarsLink-マーズリンク-" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marslink.co.jp/profile/" />
+    <meta property="og:image" content="https://marslink.co.jp/assets/images/hero-bg-1.jpg" />
+    <meta property="og:site_name" content="株式会社MarsLink" />
+    <meta property="og:description" content="株式会社MarsLinkの会社概要 - 移動空間を価値ある時間に変革するテクノロジーカンパニー" />
+    
+    <!-- Twitter Card設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@marslink_japan" />
+    <meta name="twitter:title" content="会社概要 | 株式会社MarsLink-マーズリンク-" />
+    <meta name="twitter:description" content="株式会社MarsLinkの会社概要 - 移動空間を価値ある時間に変革するテクノロジーカンパニー" />
+    <meta name="twitter:image" content="https://marslink.co.jp/assets/images/hero-bg-1.jpg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- TailwindCSS with custom configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'monospace'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    animation: {
+                        'reverse-spin': 'reverse-spin 15s linear infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        'reverse-spin': {
+                            '0%': { transform: 'rotate(360deg)' },
+                            '100%': { transform: 'rotate(0deg)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'glow': {
+                            '0%': { boxShadow: '0 0 5px rgba(78, 195, 255, 0.2)' },
+                            '100%': { boxShadow: '0 0 20px rgba(78, 195, 255, 0.8)' },
+                        },
+                    },
+                    transitionDuration: {
+                        '2000': '2000ms',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- Mobile Menu Custom CSS -->
+    <style>
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999 !important;
+        }
+        
+        .mobile-menu > div:last-child {
+            z-index: 10000 !important;
+        }
+        
+        .mobile-menu-btn:hover svg {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+        
+        .mobile-menu-link {
+            transition: all 0.2s ease;
+        }
+        
+        .mobile-menu-link:hover {
+            transform: translateX(8px);
+        }
+        
+        #hero {
+            margin-top: 0 !important;
+        }
+        
+        @media (max-width: 768px) {
+            #hero {
+                padding-top: 140px !important;
+            }
+        }
+        
+        @media (min-width: 769px) {
+            #hero {
+                padding-top: 120px !important;
+            }
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #22d3ee;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+
+        /* Custom font family for H2 and H3 */
+        h2, h3 {
+            font-family: DIN_Regular, Arial, Verdana, sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Structured Data for Company Profile -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "株式会社MarsLink",
+        "alternateName": "MarsLink Inc.",
+        "url": "https://marslink.co.jp",
+        "logo": "https://marslink.co.jp/assets/images/logo.png",
+        "description": "移動空間を価値ある時間に変革するテクノロジーカンパニー。飛行機・フェリー・観光バスなどの移動空間を、地域と世界をつなぐ時空型メディアへと変革するスタートアップです。",
+        "foundingDate": "2025",
+        "founder": {
+            "@type": "Person",
+            "name": "市位謙太",
+            "jobTitle": "CEO / Founder"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "大阪市北区大深町6番38号 グラングリーン大阪北館 JAM BASE 6階 JAM-DESK",
+            "addressLocality": "大阪市",
+            "addressRegion": "大阪府",
+            "postalCode": "530-0011",
+            "addressCountry": "JP"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "url": "https://marslink.co.jp/contact/",
+            "contactType": "customer service"
+        },
+        "sameAs": [
+            "https://marslink.co.jp"
+        ],
+        "knowsAbout": [
+            "航空DX",
+            "移動空間メディア化",
+            "観光DX",
+            "オフラインSaaS",
+            "交通インフラ",
+            "AI・ITコンサルティング"
+        ],
+        "areaServed": "Japan",
+        "industry": "Technology",
+        "numberOfEmployees": "1-10"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "会社概要 | 株式会社MarsLink-マーズリンク-",
+        "description": "株式会社MarsLinkの会社概要ページ。事業ドメイン、ミッション、会社情報、パートナーシップ募集について詳しくご紹介しています。",
+        "url": "https://marslink.co.jp/profile/",
+        "isPartOf": {
+            "@type": "WebSite",
+            "name": "株式会社MarsLink",
+            "url": "https://marslink.co.jp"
+        },
+        "about": {
+            "@type": "Organization",
+            "name": "株式会社MarsLink"
+        },
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "株式会社MarsLink"
+        },
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "ホーム",
+                    "item": "https://marslink.co.jp"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "会社概要",
+                    "item": "https://marslink.co.jp/profile/"
+                }
+            ]
+        }
+    }
+    </script>
+
+    <div class="bg-gray-900">
+        <header class="absolute inset-x-0 top-0 z-50">
+            <nav class="flex items-center px-8 lg:px-16 w-full h-[100px] bg-gray-900/80 backdrop-blur-sm" aria-label="Global">
+                <div class="flex items-center">
+                    <a href="https://marslink.co.jp" class="-m-1.5 p-1.5 mr-16 flex items-center gap-3">
+                        <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                        <span class="sr-only">MarsLink</span>
+                        <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+                    </a>
+                </div>
+                <div class="flex lg:hidden ml-auto">
+                    <button type="button" class="mobile-menu-btn -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-white transition-colors">
+                        <span class="sr-only">メニューを開く</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="../#service" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">CabinTime</a>
+                    <a href="../news/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">新着情報</a>
+                    <div class="dropdown">
+                        <a href="../profile/" class="text-sm/6 font-semibold text-cyan-400 transition-colors flex items-center gap-1">
+                            会社概要
+                            <svg class="dropdown-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="../profile/">会社概要</a>
+                            <a href="../ceo/">代表紹介</a>
+                        </div>
+                    </div>
+                    <a href="../contact/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">お問い合わせ</a>
+                </div>
+                <div class="hidden lg:flex lg:ml-auto">
+                    <a href="https://marslink.co.jp/cabintime/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">Cabin Time Demo</a>
+                </div>
+            </nav>
+            <!-- Mobile menu -->
+            <div class="lg:hidden mobile-menu hidden" role="dialog" aria-modal="true">
+                <div class="fixed inset-0 z-50 bg-black/50" aria-hidden="true"></div>
+                <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10" style="z-index: 9999;">
+                    <div class="flex items-center justify-between">
+                        <a href="https://marslink.co.jp" class="-m-1.5 p-1.5 flex items-center gap-3">
+                            <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-6 w-auto">
+                            <span class="sr-only">MarsLink</span>
+                            <span class="font-orbitron text-lg font-black text-white tracking-wider">MarsLink</span>
+                        </a>
+                        <button type="button" class="mobile-menu-close -m-2.5 rounded-md p-2.5 text-gray-400 hover:text-white">
+                            <span class="sr-only">メニューを閉じる</span>
+                            <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/25">
+                            <div class="space-y-2 py-6">
+                                <a href="../#service" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">CabinTime</a>
+                                <a href="../news/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">新着情報</a>
+                                
+                                <div class="mobile-dropdown">
+                                    <button class="mobile-dropdown-btn -mx-3 w-full text-left flex items-center justify-between rounded-lg px-3 py-2 text-base/7 font-semibold text-cyan-400 hover:bg-gray-800">
+                                        <span>会社概要</span>
+                                        <svg class="mobile-dropdown-arrow w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                        </svg>
+                                    </button>
+                                    <div class="mobile-dropdown-content mt-2 pl-4 space-y-1 hidden">
+                                        <a href="../profile/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-sm text-cyan-400 hover:bg-gray-800 hover:text-white">会社概要</a>
+                                        <a href="../ceo/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white">代表紹介</a>
+                                    </div>
+                                </div>
+                                
+                                <a href="../contact/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">お問い合わせ</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="https://marslink.co.jp/cabintime/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Cabin Time Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    <!-- Company Info Section -->
+    <section class="text-gray-400 bg-black body-font pt-32">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h2 class="text-xs text-cyan-400 tracking-widest font-medium title-font mb-1 font-orbitron">COMPANY INFO</h2>
+                <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-white font-orbitron">会社情報</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">株式会社MarsLinkの基本情報をご確認いただけます。移動空間の革新を通じて、新しい価値創造に取り組んでいます。</p>
+            </div>
+            <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+                <table class="table-auto w-full text-left whitespace-no-wrap">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded-tl rounded-bl font-orbitron">項目</th>
+                            <th class="px-4 py-3 title-font tracking-wider font-medium text-white text-sm bg-gray-800 rounded-tr rounded-br">内容</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 py-3 text-cyan-400 font-semibold font-orbitron">会社名</td>
+                            <td class="px-4 py-3 text-white">株式会社MarsLink（MarsLink Inc.）</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">設立</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">2025年</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">所在地</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">
+                                〒530-0011<br>
+                                大阪市北区大深町6番38号<br>
+                                グラングリーン大阪北館 JAM BASE 6階 JAM-DESK
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">代表者</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">市位 謙太（CEO / Founder）</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">主力事業</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">航空・船舶・交通領域におけるSaas・DXサービスの開発・提供</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">研究提携</td>
+                            <td class="border-t-2 border-gray-800 px-4 py-3 text-white">京都大学、他</td>
+                        </tr>
+                        <tr>
+                            <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">Webサイト</td>
+                            <td class="border-t-2 border-b-2 border-gray-800 px-4 py-3">
+                                <a href="https://marslink.co.jp" class="text-cyan-400 hover:text-cyan-300 transition-colors inline-flex items-center">
+                                    https://marslink.co.jp
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"></path>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="text-gray-400 bg-black body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-12">
+                <h2 class="text-xs text-cyan-400 tracking-widest font-medium title-font mb-1 font-orbitron">LOCATION</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font text-white mb-4 font-orbitron">アクセス</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">JR大阪駅直結のグラングリーン大阪北館内にオフィスを構えています。</p>
+            </div>
+            <div class="w-full bg-gray-300 rounded-lg overflow-hidden p-10 flex items-end justify-start relative h-96">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    class="absolute inset-0" 
+                    frameborder="0" 
+                    title="map" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    scrolling="no" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.920643!2d135.4959841!3d34.702471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e68ecc7a58c9%3A0x4b5d4f8c5a2b1d9e!2z44CSNTI5LTAwMTEg5aSn6Ziq5bqc5aSn6Ziq5biC5YyX5Yy65aSn5rex55S6Nuy4uk0z44Oo5Y-377yYIOOCsOODqeODs-OCsOODquODvOODs-Wkp-mYquWMl-mkqA!5e0!3m2!1sja!2sjp!4v1647834567890!5m2!1sja!2sjp">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Domain Section -->
+    <section class="text-gray-400 bg-black body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-xs text-cyan-400 tracking-widest font-medium title-font mb-1 font-orbitron">BUSINESS DOMAIN</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4 font-orbitron">事業ドメイン</h1>
+                <p class="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">MarsLinkは以下の領域をコアに、移動×メディアのイノベーションを推進しています。</p>
+            </div>
+            <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">機内・船内・車内・ホテルの空間をメディア化する観光DX</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">広告マネジメント・運用最適化</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">自治体・観光業界向けAI・ITコンサルティング</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">自治体との連携による地域プロモーション</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">AI・映像を活用した行動設計とユーザー体験（UX）設計</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">AI・ITを活用したプロダクトの開発</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">航空機使用事業</span>
+                    </div>
+                </div>
+                <div class="p-2 sm:w-1/2 w-full">
+                    <div class="bg-gray-800 rounded flex p-4 h-full items-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-cyan-400 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+                            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+                            <path d="M22 4L12 14.01l-3-3"></path>
+                        </svg>
+                        <span class="title-font font-medium text-white">航空事業従事者の養成訓練および一般向け文化教養に関する事業</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="text-gray-400 bg-black body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-xs text-cyan-400 tracking-widest font-medium title-font mb-1 font-orbitron">OUR MISSION</h2>
+                <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4 font-orbitron">ミッション</h1>
+            </div>
+            <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="inline-block w-8 h-8 text-gray-500 mb-8" viewBox="0 0 975.036 975.036">
+                    <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+                </svg>
+                <p class="leading-relaxed text-lg">株式会社MarsLinkは、飛行機・フェリー・観光バスなどの"移動空間"を、地域と世界をつなぐ時空型メディアへと変革するスタートアップです。私たちは、機内や船内で過ごす「空白の時間」を、観光・購買・エンタメ体験へと転換し、旅のすべての瞬間を記憶に残る価値ある時間へとアップグレードします。通信環境に依存しない、オフライン型SaaSプラットフォームで、交通インフラに新たな付加価値を提供します。</p>
+                <span class="inline-block h-1 w-10 rounded bg-cyan-500 mt-8 mb-6"></span>
+                <h2 class="text-white font-medium title-font tracking-wider text-sm font-orbitron">移動空間を、価値ある時間に。</h2>
+                <p class="text-gray-500">株式会社MarsLink CEO 市位謙太</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Section -->
+    <section class="text-gray-400 bg-black body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font text-center text-white mb-4">パートナーシップ募集
+                <br class="hidden sm:block">共に移動空間の未来を創造しませんか
+            </h1>
+            <p class="text-center text-gray-400 mb-20 max-w-3xl mx-auto">MarsLinkは、移動×メディアのイノベーションを共に推進するパートナーを募集しています。以下の分野での連携をお待ちしております。</p>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path>
+                            <polyline points="9,22 9,12 15,12 15,22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">交通事業者</h2>
+                        <p class="leading-relaxed text-base">航空会社、船舶運航会社、バス・鉄道事業者との連携で、移動空間の革新的な活用を実現します。IFE代替やエンタメ・観光コンテンツ配信で新しい価値を創造しませんか。</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">地方自治体・観光協会</h2>
+                        <p class="leading-relaxed text-base">地域の魅力を移動中に発信し、観光消費の拡大と地域活性化を実現します。移動空間を活用した新しい地域プロモーション手法をご提案いたします。</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">技術パートナー</h2>
+                        <p class="leading-relaxed text-base">AI・IoT・コンテンツ制作・システム開発など、移動DXに関わる技術領域でのパートナーシップを募集しています。共に革新的なソリューションを開発しましょう。</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">コンテンツ・メディア企業</h2>
+                        <p class="leading-relaxed text-base">移動中の時間を価値ある体験に変える、エンタメ・教育・観光コンテンツの制作・配信パートナーを募集。新しいメディア体験を共創しましょう。</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">投資・事業開発パートナー</h2>
+                        <p class="leading-relaxed text-base">移動DXの市場拡大を共に推進する投資家・事業開発パートナーを募集。スケーラブルなビジネスモデルで新しい市場を開拓しませんか。</p>
+                    </div>
+                </div>
+                <div class="p-4 md:w-1/3 flex">
+                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-cyan-400 mb-4 flex-shrink-0">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"></path>
+                            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow pl-6">
+                        <h2 class="text-white text-lg title-font font-medium mb-2">研究機関・大学</h2>
+                        <p class="leading-relaxed text-base">移動体験・UXデザイン・行動分析などの学術研究パートナーシップを募集。産学連携で移動空間の価値創造を科学的に追求しましょう。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-black">
+        <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
+            <h2 class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-white xl:text-3xl font-orbitron">
+                移動空間の<span class="text-cyan-400">価値創造</span>を始めませんか？
+            </h2>
+
+            <p class="max-w-4xl mt-6 text-center text-gray-300">
+                MarsLinkと共に移動時間を革新的な体験に変換しませんか？事業提携のご相談から技術的な詳細まで、お気軽にお問い合わせください。
+            </p>
+
+            <div class="inline-flex w-full mt-8 sm:w-auto">
+                <a href="../contact/" class="inline-flex items-center justify-center w-full px-8 py-3 text-white duration-300 bg-cyan-500 rounded-lg hover:bg-cyan-600 focus:ring focus:ring-cyan-300 focus:ring-opacity-80 font-orbitron font-semibold">
+                    お問い合わせ
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: rgba(6, 9, 32, 1);">
+        <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <div class="flex items-center gap-3">
+                        <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                        <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+                    </div>
+                    <p class="text-sm/6 text-balance text-gray-300">移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー。移動を価値ある体験へと変革します。</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0 xl:grid-cols-3">
+                    <div class="text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">サービス</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../#service" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">CabinTime</a>
+                            </li>
+                            <li>
+                                <a href="https://marslink.co.jp/cabintime/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">Cabin Time Demo</a>
+                            </li>
+                            <li>
+                                <a href="../news/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">新着情報</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 xl:mt-0 text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">会社情報</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../profile/" class="text-sm/6 text-cyan-400 hover:text-cyan-300 transition-colors">会社概要</a>
+                            </li>
+                            <li>
+                                <a href="../ceo/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">代表紹介</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 xl:mt-0 text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">サポート</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../contact/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">お問い合わせ</a>
+                            </li>
+                            <li>
+                                <a href="../privacy/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="../terms/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">サイト利用規約</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-sm/6 text-gray-400 text-center">&copy; <span id="current-year">2025</span> MarsLink Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 年号を自動的に更新
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+            const mobileMenuBackdrop = mobileMenu ? mobileMenu.querySelector('.fixed.inset-0') : null;
+            
+            function openMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+            
+            function closeMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            }
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openMobileMenu();
+                });
+            }
+            
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
+            
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
+            
+            mobileMenuLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    setTimeout(function() {
+                        closeMobileMenu();
+                    }, 100);
+                });
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Mobile dropdown functionality
+            const mobileDropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+            mobileDropdownBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const dropdown = btn.parentElement;
+                    const content = dropdown.querySelector('.mobile-dropdown-content');
+                    const arrow = btn.querySelector('.mobile-dropdown-arrow');
+                    
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

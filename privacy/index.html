@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社MarsLinkのプライバシーポリシー。個人情報の収集・利用・管理について詳しく説明しています。">
+    <title>プライバシーポリシー | 株式会社MarsLink-マーズリンク-</title>
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="プライバシーポリシー | 株式会社MarsLink-マーズリンク-" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://marslink.co.jp/privacy/" />
+    <meta property="og:image" content="https://marslink.co.jp/assets/images/hero-bg-1.jpg" />
+    <meta property="og:site_name" content="株式会社MarsLink" />
+    <meta property="og:description" content="株式会社MarsLinkのプライバシーポリシー。個人情報の収集・利用・管理について詳しく説明しています。" />
+    
+    <!-- Twitter Card設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@marslink_japan" />
+    <meta name="twitter:title" content="プライバシーポリシー | 株式会社MarsLink-マーズリンク-" />
+    <meta name="twitter:description" content="株式会社MarsLinkのプライバシーポリシー。個人情報の収集・利用・管理について詳しく説明しています。" />
+    <meta name="twitter:image" content="https://marslink.co.jp/assets/images/hero-bg-1.jpg" />
+    
+    <!-- 言語設定 -->
+    <meta property="og:locale" content="ja_JP" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    
+    <!-- TailwindCSS with custom configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'monospace'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                        'noto-sans-jp': ['Noto Sans JP', 'sans-serif'],
+                    },
+                    animation: {
+                        'reverse-spin': 'reverse-spin 15s linear infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        'reverse-spin': {
+                            '0%': { transform: 'rotate(360deg)' },
+                            '100%': { transform: 'rotate(0deg)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'glow': {
+                            '0%': { boxShadow: '0 0 5px rgba(78, 195, 255, 0.2)' },
+                            '100%': { boxShadow: '0 0 20px rgba(78, 195, 255, 0.8)' },
+                        },
+                    },
+                    transitionDuration: {
+                        '2000': '2000ms',
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+        /* モバイルメニューの確実な表示のためのカスタムCSS */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999 !important;
+        }
+        
+        .mobile-menu > div:last-child {
+            z-index: 10000 !important;
+        }
+        
+        /* メニューボタンのホバー効果 */
+        .mobile-menu-btn:hover svg {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+        
+        /* メニューアイテムのアニメーション */
+        .mobile-menu-link {
+            transition: all 0.2s ease;
+        }
+        
+        .mobile-menu-link:hover {
+            transform: translateX(8px);
+        }
+        
+        /* ドロップダウンメニューのスタイル */
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #22d3ee;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        /* プライバシーポリシー本文のスタイル */
+        .policy-content h2 {
+            color: #22d3ee;
+            font-family: DIN_Regular, Arial, Verdana, sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-content h3 {
+            color: #ffffff;
+            font-family: 'Orbitron', monospace;
+            font-weight: 500;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .policy-content p {
+            color: #d1d5db;
+            line-height: 1.75;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-content ul {
+            color: #d1d5db;
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .policy-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.75;
+        }
+        
+        .policy-content strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+        
+        .highlight-box {
+            background-color: rgba(34, 211, 238, 0.1);
+            border: 1px solid rgba(34, 211, 238, 0.3);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-900">
+    <header class="absolute inset-x-0 top-0 z-50">
+        <nav class="flex items-center px-8 lg:px-16 w-full h-[100px] bg-gray-900/80 backdrop-blur-sm" aria-label="Global">
+            <div class="flex items-center">
+                <a href="https://marslink.co.jp" class="-m-1.5 p-1.5 mr-16 flex items-center gap-3">
+                    <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                    <span class="sr-only">MarsLink</span>
+                    <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+                </a>
+            </div>
+            <div class="flex lg:hidden ml-auto">
+                <button type="button" class="mobile-menu-btn -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-white transition-colors">
+                    <span class="sr-only">メニューを開く</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="../#service" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">CabinTime</a>
+                <a href="../news/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">新着情報</a>
+                <div class="dropdown">
+                    <a href="../profile/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors flex items-center gap-1">
+                        会社概要
+                        <svg class="dropdown-arrow w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </a>
+                    <div class="dropdown-content">
+                        <a href="../profile/">会社概要</a>
+                        <a href="../ceo/">代表紹介</a>
+                    </div>
+                </div>
+                <a href="../contact/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">お問い合わせ</a>
+            </div>
+            <div class="hidden lg:flex lg:ml-auto">
+                <a href="https://marslink.co.jp/cabintime/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">Cabin Time Demo</a>
+            </div>
+        </nav>
+        <!-- Mobile menu, show/hide based on menu open state. -->
+        <div class="lg:hidden mobile-menu hidden" role="dialog" aria-modal="true">
+            <!-- Background backdrop, show/hide based on slide-over state. -->
+            <div class="fixed inset-0 z-50 bg-black/50" aria-hidden="true"></div>
+            <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10" style="z-index: 9999;">
+                <div class="flex items-center justify-between">
+                    <a href="https://marslink.co.jp" class="-m-1.5 p-1.5 flex items-center gap-3">
+                        <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-6 w-auto">
+                        <span class="sr-only">MarsLink</span>
+                        <span class="font-orbitron text-lg font-black text-white tracking-wider">MarsLink</span>
+                    </a>
+                    <button type="button" class="mobile-menu-close -m-2.5 rounded-md p-2.5 text-gray-400 hover:text-white">
+                        <span class="sr-only">メニューを閉じる</span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="mt-6 flow-root">
+                    <div class="-my-6 divide-y divide-gray-500/25">
+                        <div class="space-y-2 py-6">
+                            <a href="../#service" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">CabinTime</a>
+                            <a href="../news/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">新着情報</a>
+                            
+                            <!-- 会社概要のドロップダウン -->
+                            <div class="mobile-dropdown">
+                                <button class="mobile-dropdown-btn -mx-3 w-full text-left flex items-center justify-between rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">
+                                    <span>会社概要</span>
+                                    <svg class="mobile-dropdown-arrow w-5 h-5 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                    </svg>
+                                </button>
+                                <div class="mobile-dropdown-content mt-2 pl-4 space-y-1 hidden">
+                                    <a href="../profile/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-sm text-cyan-400 hover:bg-gray-800 hover:text-white">会社概要</a>
+                                    <a href="../ceo/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-sm text-gray-300 hover:bg-gray-800 hover:text-white">代表紹介</a>
+                                </div>
+                            </div>
+                            
+                            <a href="../contact/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">お問い合わせ</a>
+                        </div>
+                        <div class="py-6">
+                            <a href="https://marslink.co.jp/cabintime/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Cabin Time Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="bg-black min-h-screen">
+        <!-- Hero Section -->
+        <div class="relative isolate overflow-hidden pt-[120px] pb-16">
+            <!-- Background gradient -->
+            <div class="absolute inset-0 -z-10 bg-gradient-to-b from-gray-900 via-black to-black"></div>
+            
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl text-center">
+                    <h1 class="font-orbitron text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+                        プライバシーポリシー
+                    </h1>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">
+                        株式会社MarsLinkは、お客様の個人情報保護を重要な責務と考え、<br>
+                        適切な管理・保護に努めています。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Privacy Policy Content Section -->
+        <div class="bg-black py-16 sm:py-24">
+            <div class="mx-auto max-w-4xl px-6 lg:px-8">
+                <!-- Privacy Policy Content -->
+                <div class="bg-white/5 border border-white/10 rounded-2xl p-8 lg:p-12">
+                    <div class="policy-content">
+                        <div class="highlight-box">
+                            <p class="text-cyan-400 font-semibold mb-2">最終更新日：2025年6月5日</p>
+                            <p>株式会社MarsLink（以下「当社」）は、個人情報の保護に関する法律（個人情報保護法）を遵守し、お客様の個人情報を適切に取り扱うことをお約束いたします。</p>
+                        </div>
+
+                        <h2>1. 個人情報の定義</h2>
+                        <p>本プライバシーポリシーにおいて「個人情報」とは、生存する個人に関する情報であって、当該情報に含まれる氏名、生年月日その他の記述等により特定の個人を識別することができるもの（他の情報と容易に照合することができ、それにより特定の個人を識別することができることとなるものを含む）をいいます。</p>
+
+                        <h2>2. 個人情報の収集目的</h2>
+                        <p>当社は、以下の目的で個人情報を収集・利用いたします：</p>
+                        <ul>
+                            <li>CabinTimeサービスの提供および運営</li>
+                            <li>お客様からのお問い合わせへの対応</li>
+                            <li>サービスの改善・開発</li>
+                            <li>重要なお知らせやサービス情報の通知</li>
+                            <li>マーケティング活動および営業活動</li>
+                            <li>契約の履行および管理</li>
+                            <li>法令に基づく義務の履行</li>
+                        </ul>
+
+                        <h2>3. 収集する個人情報の種類</h2>
+                        <p>当社が収集する個人情報は以下のとおりです：</p>
+                        <ul>
+                            <li><strong>基本情報：</strong>氏名、会社名、部署名、役職</li>
+                            <li><strong>連絡先情報：</strong>メールアドレス、電話番号、住所</li>
+                            <li><strong>サービス利用情報：</strong>利用履歴、設定情報、ログデータ</li>
+                            <li><strong>技術情報：</strong>IPアドレス、ブラウザ情報、デバイス情報</li>
+                            <li><strong>その他：</strong>お問い合わせ内容、アンケート回答</li>
+                        </ul>
+
+                        <h2>4. 個人情報の利用</h2>
+                        <p>当社は、収集した個人情報を、収集目的の範囲内でのみ利用いたします。目的外利用を行う場合は、事前にお客様の同意を得るものとします。</p>
+
+                        <h3>4.1 利用の制限</h3>
+                        <p>当社は、以下の場合を除き、個人情報を第三者に提供いたしません：</p>
+                        <ul>
+                            <li>お客様の同意がある場合</li>
+                            <li>法令に基づく場合</li>
+                            <li>人の生命、身体または財産の保護のために必要がある場合</li>
+                            <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合</li>
+                        </ul>
+
+                        <h2>5. 個人情報の管理・保護</h2>
+                        <p>当社は、個人情報の正確性および安全性確保のため、以下の対策を講じています：</p>
+                        <ul>
+                            <li>適切なアクセス制御による不正アクセスの防止</li>
+                            <li>データの暗号化による情報漏洩の防止</li>
+                            <li>定期的なセキュリティ監査の実施</li>
+                            <li>従業員への個人情報保護教育の実施</li>
+                            <li>物理的セキュリティ対策の実施</li>
+                        </ul>
+
+                        <h2>6. 第三者への提供</h2>
+                        <p>当社は、以下の場合を除き、お客様の個人情報を第三者に提供することはありません：</p>
+                        <ul>
+                            <li>お客様の事前の同意がある場合</li>
+                            <li>法令に基づく場合</li>
+                            <li>業務委託先への提供（適切な管理のもと）</li>
+                            <li>企業の合併・買収等の場合</li>
+                        </ul>
+
+                        <h3>6.1 業務委託について</h3>
+                        <p>当社は、個人情報の取扱いを外部に委託する場合、委託先に対して適切な監督を行い、個人情報の保護を徹底いたします。</p>
+
+                        <h2>7. Cookieについて</h2>
+                        <p>当社のウェブサイトでは、サービス向上のためCookieを使用する場合があります。Cookieは、ウェブサイトがお客様のコンピュータに保存する小さなテキストファイルです。</p>
+                        
+                        <h3>7.1 Cookieの利用目的</h3>
+                        <ul>
+                            <li>ウェブサイトの利用状況の分析</li>
+                            <li>お客様の利便性向上</li>
+                            <li>広告の最適化</li>
+                        </ul>
+
+                        <h2>8. お客様の権利</h2>
+                        <p>お客様は、ご自身の個人情報について以下の権利を有します：</p>
+                        <ul>
+                            <li><strong>開示請求：</strong>個人情報の利用目的、取扱状況等の開示を請求する権利</li>
+                            <li><strong>訂正・削除：</strong>個人情報の訂正、追加、削除を請求する権利</li>
+                            <li><strong>利用停止：</strong>個人情報の利用停止、消去を請求する権利</li>
+                            <li><strong>提供停止：</strong>第三者への提供の停止を請求する権利</li>
+                        </ul>
+
+                        <h2>9. 個人情報の保存期間</h2>
+                        <p>当社は、個人情報を収集目的の達成に必要な期間のみ保存し、目的達成後は適切に削除または匿名化いたします。ただし、法令により保存が義務付けられている場合は、その期間中保存いたします。</p>
+
+                        <h2>10. 国際的なデータ移転</h2>
+                        <p>当社が海外のサービスプロバイダーを利用する場合、お客様の個人情報が海外に移転される可能性があります。その場合、適切なセキュリティ対策を講じた上で移転いたします。</p>
+
+                        <h2>11. プライバシーポリシーの変更</h2>
+                        <p>当社は、法令の変更やサービス内容の変更に伴い、本プライバシーポリシーを変更する場合があります。重要な変更については、ウェブサイト上で事前にお知らせいたします。</p>
+
+                        <h2>12. お問い合わせ</h2>
+                        <p>個人情報の取扱いに関するご質問、苦情、各種請求については、以下までご連絡ください：</p>
+                        
+                        <div class="highlight-box">
+                            <p><strong>株式会社MarsLink　個人情報保護担当</strong></p>
+                            <p>メール：info@marslink.co.jp</p>
+                        </div>
+
+                        <h2>13. 個人情報保護委員会</h2>
+                        <p>当社は、個人情報保護法に基づく認定個人情報保護団体の対象事業者ではありませんが、個人情報保護委員会のガイドラインに従って適切な個人情報保護に努めています。</p>
+
+                        <div class="highlight-box mt-8">
+                            <p class="text-center"><strong>株式会社MarsLink</strong></p>
+                            <p class="text-center">代表取締役　市位謙太</p>
+                            <p class="text-center text-sm text-gray-400 mt-2">制定日：2025年6月5日</p>
+                        </div>
+                    </div>
+
+                    <!-- Back to Contact Button -->
+                    <div class="mt-12 text-center">
+                        <a href="../contact/" class="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-600 text-white font-orbitron font-semibold py-3 px-8 rounded-lg transition duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            お問い合わせ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: rgba(6, 9, 32, 1);">
+        <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+            <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+                <div class="space-y-8">
+                    <div class="flex items-center gap-3">
+                        <img src="../assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                        <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+                    </div>
+                    <p class="text-sm/6 text-balance text-gray-300">移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー。移動を価値ある体験へと変革します。</p>
+                </div>
+                <div class="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0 xl:grid-cols-3">
+                    <div class="text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">サービス</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../#service" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">CabinTime</a>
+                            </li>
+                            <li>
+                                <a href="https://marslink.co.jp/cabintime/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">Cabin Time Demo</a>
+                            </li>
+                            <li>
+                                <a href="../news/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">新着情報</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 xl:mt-0 text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">会社情報</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../profile/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">会社概要</a>
+                            </li>
+                            <li>
+                                <a href="../ceo/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">代表紹介</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-10 xl:mt-0 text-center xl:text-left">
+                        <h3 class="text-sm/6 font-semibold text-white">サポート</h3>
+                        <ul role="list" class="mt-6 space-y-4">
+                            <li>
+                                <a href="../contact/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">お問い合わせ</a>
+                            </li>
+                            <li>
+                                <a href="../privacy/" class="text-sm/6 text-cyan-400 hover:text-cyan-300 transition-colors">プライバシーポリシー</a>
+                            </li>
+                            <li>
+                                <a href="../terms/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">サイト利用規約</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+                <p class="text-sm/6 text-gray-400 text-center">&copy; <span id="current-year">2025</span> MarsLink Co., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 年号を自動的に更新
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+            const mobileMenuBackdrop = mobileMenu ? mobileMenu.querySelector('.fixed.inset-0') : null;
+            
+            // メニューを開く関数
+            function openMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+            
+            // メニューを閉じる関数
+            function closeMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            }
+            
+            // メニューボタンクリック時
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    openMobileMenu();
+                });
+            }
+            
+            // 閉じるボタンクリック時
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
+            
+            // 背景クリック時にメニューを閉じる
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    closeMobileMenu();
+                });
+            }
+            
+            // メニューリンククリック時にメニューを閉じる
+            mobileMenuLinks.forEach(function(link) {
+                link.addEventListener('click', function() {
+                    setTimeout(function() {
+                        closeMobileMenu();
+                    }, 100);
+                });
+            });
+            
+            // ESCキーでメニューを閉じる
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // ウィンドウリサイズ時にデスクトップサイズになったらメニューを閉じる
+            window.addEventListener('resize', function() {
+                if (window.innerWidth >= 1024 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+            
+            // Mobile dropdown functionality
+            const mobileDropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+            mobileDropdownBtns.forEach(function(btn) {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const dropdown = btn.parentElement;
+                    const content = dropdown.querySelector('.mobile-dropdown-content');
+                    const arrow = btn.querySelector('.mobile-dropdown-arrow');
+                    
+                    if (content.classList.contains('hidden')) {
+                        content.classList.remove('hidden');
+                        arrow.style.transform = 'rotate(180deg)';
+                    } else {
+                        content.classList.add('hidden');
+                        arrow.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html> 
