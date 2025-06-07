@@ -41,18 +41,7 @@ function handleNavScroll() {
     }
 }
 
-// Mobile Menu Toggle
-function setupMobileMenu() {
-    const menuBtn = document.querySelector('.mobile-menu-btn');
-    const navLinks = document.querySelector('.nav-links');
-
-    if (menuBtn && navLinks) {
-        menuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-            menuBtn.textContent = navLinks.classList.contains('active') ? '×' : '☰';
-        });
-    }
-}
+// Mobile Menu Toggle - REMOVED: Now handled in default.html layout
 
 // Hero Background Image Rotation
 function setupHeroBackgrounds() {
@@ -84,11 +73,10 @@ function setupSmoothScrolling() {
                 });
                 
                 // Close mobile menu if open
-                const navLinks = document.querySelector('.nav-links');
-                const menuBtn = document.querySelector('.mobile-menu-btn');
-                if (navLinks && navLinks.classList.contains('active')) {
-                    navLinks.classList.remove('active');
-                    if (menuBtn) menuBtn.textContent = '☰';
+                const mobileMenu = document.querySelector('.mobile-menu');
+                if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
                 }
             }
         });
@@ -117,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
     try {
         // 既存の初期化処理
         createMoonStars();
-        setupMobileMenu();
         setupHeroBackgrounds();
         setupSmoothScrolling();
         
