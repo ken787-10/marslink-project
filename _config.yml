@@ -1,0 +1,81 @@
+# Site settings
+title: 株式会社MarsLink
+email: info@marslink.co.jp
+description: >- # this means to ignore newlines until "baseurl:"
+  移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー。
+  移動を価値ある体験へと変革します。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://marslink.co.jp" # the base hostname & protocol for your site
+
+# Social media handles
+twitter_username: marslink_japan
+github_username: marslink
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: 
+
+# Include and exclude files
+include:
+  - "_pages"
+  - "assets"
+
+exclude:
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - deploy.sh
+  - PHP_SETUP_GUIDE.md
+  - template-usage-example.md
+  - base-template.html
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Default values
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "MarsLink"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# SEO settings
+author: MarsLink
+logo: /assets/images/logo.png
+social:
+  name: 株式会社MarsLink
+  links:
+    - https://twitter.com/marslink_japan
+
+# Sass configuration
+sass:
+  sass_dir: _sass
+  style: compressed 

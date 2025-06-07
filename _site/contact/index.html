@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。">
+    <title>お問い合わせ | 株式会社MarsLink</title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    
+    <!-- OGP設定 -->
+    <meta property="og:title" content="お問い合わせ | 株式会社MarsLink" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://0.0.0.0:4000/contact/" />
+    <meta property="og:image" content="http://0.0.0.0:4000/assets/images/hero-bg-1.jpg" />
+    <meta property="og:site_name" content="株式会社MarsLink" />
+    <meta property="og:description" content="株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。" />
+    
+    <!-- Twitter Card設定 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@marslink_japan" />
+    <meta name="twitter:title" content="お問い合わせ | 株式会社MarsLink" />
+    <meta name="twitter:description" content="株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。" />
+    <meta name="twitter:image" content="http://0.0.0.0:4000/assets/images/hero-bg-1.jpg" />
+    
+    <!-- 言語設定 -->
+    <meta property="og:locale" content="ja_JP" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    
+    <!-- TailwindCSS with custom configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'orbitron': ['Orbitron', 'monospace'],
+                        'roboto': ['Roboto', 'sans-serif'],
+                    },
+                    animation: {
+                        'reverse-spin': 'reverse-spin 15s linear infinite',
+                        'pulse-slow': 'pulse 3s ease-in-out infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        'reverse-spin': {
+                            '0%': { transform: 'rotate(360deg)' },
+                            '100%': { transform: 'rotate(0deg)' },
+                        },
+                        'float': {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        'glow': {
+                            '0%': { boxShadow: '0 0 5px rgba(78, 195, 255, 0.2)' },
+                            '100%': { boxShadow: '0 0 20px rgba(78, 195, 255, 0.8)' },
+                        },
+                    },
+                    transitionDuration: {
+                        '2000': '2000ms',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- EmailJS -->
+    
+    
+    <!-- Mobile Menu Custom CSS -->
+    <style>
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 9999 !important;
+        }
+        
+        .mobile-menu > div:last-child {
+            z-index: 10000 !important;
+        }
+        
+        .mobile-menu-btn:hover svg {
+            transform: scale(1.1);
+            transition: transform 0.2s ease;
+        }
+        
+        .mobile-menu-link {
+            transition: all 0.2s ease;
+        }
+        
+        .mobile-menu-link:hover {
+            transform: translateX(8px);
+        }
+        
+        
+        body {
+            padding-top: 100px;
+        }
+        
+        
+        .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .dropdown {
+            position: relative;
+        }
+        
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            background-color: rgba(17, 24, 39, 0.95);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .dropdown-content a {
+            display: block;
+            padding: 12px 16px;
+            color: #d1d5db;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #22d3ee;
+        }
+        
+        .dropdown-content a:first-child {
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .dropdown-content a:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+        
+        .dropdown-arrow {
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown:hover .dropdown-arrow {
+            transform: rotate(180deg);
+        }
+        
+        
+    </style>
+    
+    <!-- Jekyll SEO Tag -->
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>お問い合わせ | 株式会社MarsLink</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="お問い合わせ" />
+<meta name="author" content="MarsLink" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。" />
+<meta property="og:description" content="株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。" />
+<link rel="canonical" href="http://0.0.0.0:4000/contact/" />
+<meta property="og:url" content="http://0.0.0.0:4000/contact/" />
+<meta property="og:site_name" content="株式会社MarsLink" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="お問い合わせ" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"MarsLink"},"description":"株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。","headline":"お問い合わせ","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://0.0.0.0:4000/assets/images/logo.png"},"name":"MarsLink"},"url":"http://0.0.0.0:4000/contact/"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+<body class="bg-gray-900">
+    <div class="bg-gray-900">
+        <header class="absolute inset-x-0 top-0 z-50">
+    <nav class="flex items-center px-8 lg:px-16 w-full h-[100px] bg-gray-900/80 backdrop-blur-sm" aria-label="Global">
+        <div class="flex items-center">
+            <a href="/" class="-m-1.5 p-1.5 mr-16 flex items-center gap-3">
+                <img src="/assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                <span class="sr-only">MarsLink</span>
+                <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+            </a>
+        </div>
+        <div class="flex lg:hidden ml-auto">
+            <button type="button" class="mobile-menu-btn -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400 hover:text-white transition-colors">
+                <span class="sr-only">メニューを開く</span>
+                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+            <a href="/#service" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">CabinTime</a>
+            <!-- <a href="/news/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">新着情報</a> -->
+            <a href="/profile/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">会社概要</a>
+            <a href="/ceo/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">代表紹介</a>
+            <a href="/contact/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">お問い合わせ</a>
+        </div>
+        <div class="hidden lg:flex lg:ml-auto">
+            <a href="/cabintime/" class="text-sm/6 font-semibold text-white hover:text-cyan-400 transition-colors">Cabin Time Demo <span aria-hidden="true">&rarr;</span></a>
+        </div>
+    </nav>
+    
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden mobile-menu hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50 bg-black/50" aria-hidden="true"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10" style="z-index: 9999;">
+            <div class="flex items-center justify-between">
+                <a href="/" class="-m-1.5 p-1.5 flex items-center gap-3">
+                    <img src="/assets/images/logo.png" alt="MarsLink Logo" class="h-6 w-auto">
+                    <span class="sr-only">MarsLink</span>
+                    <span class="font-orbitron text-lg font-black text-white tracking-wider">MarsLink</span>
+                </a>
+                <button type="button" class="mobile-menu-close -m-2.5 rounded-md p-2.5 text-gray-400 hover:text-white">
+                    <span class="sr-only">メニューを閉じる</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6 flow-root">
+                <div class="-my-6 divide-y divide-gray-500/25">
+                    <div class="space-y-2 py-6">
+                        <a href="/#service" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">CabinTime</a>
+                        <!-- <a href="/news/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">新着情報</a> -->
+                        <a href="/profile/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">会社概要</a>
+                        <a href="/ceo/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">代表紹介</a>
+                        <a href="/contact/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">お問い合わせ</a>
+                    </div>
+                    <div class="py-6">
+                        <a href="/cabintime/" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-800">Cabin Time Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> 
+
+        <!-- Main Content Area -->
+        <main class="relative">
+            <style>
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #e5e7eb;
+    font-family: 'Orbitron', monospace;
+}
+
+.form-required {
+    color: #ef4444;
+    margin-left: 0.25rem;
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: rgba(31, 41, 55, 0.8);
+    border: 2px solid rgba(75, 85, 99, 0.5);
+    border-radius: 0.5rem;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    outline: none;
+    border-color: #06b6d4;
+    box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.1);
+    background: rgba(31, 41, 55, 0.9);
+}
+
+.form-input:valid {
+    border-color: rgba(75, 85, 99, 0.5);
+}
+
+.form-input:invalid {
+    border-color: rgba(75, 85, 99, 0.5);
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-select {
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-right: 2.5rem;
+}
+
+.form-select option {
+    background: #1f2937;
+    color: #fff;
+}
+</style>
+
+<!-- Contact Hero Section -->
+<section class="relative bg-black text-white pt-32 pb-20">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-cyan-900 opacity-50"></div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+            <h1 class="font-orbitron text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+                お問い合わせ
+            </h1>
+            <p class="mt-6 text-lg leading-8 text-gray-300">
+                CabinTimeや弊社事業に関するご相談は下記のフォームからお送りください。
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<div class="bg-black py-16 sm:py-24">
+    <div class="mx-auto max-w-4xl px-6 lg:px-8">
+        <!-- Contact Form -->
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 lg:p-12">
+            <div class="text-center mb-8">
+                <h2 class="font-orbitron text-2xl font-bold text-white mb-4">お問い合わせフォーム</h2>
+                <p class="text-gray-300">下記フォームにご記入いただき、送信ボタンをクリックしてください。</p>
+            </div>
+
+            <form id="contactForm" class="space-y-6" method="POST">
+                <!-- 氏名 -->
+                <div>
+                    <label for="name" class="form-label block text-sm font-medium mb-2">
+                        氏名 <span class="form-required">*</span>
+                    </label>
+                    <input type="text" id="name" name="name" required="" class="form-input w-full rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-cyan-500/50" placeholder="山田太郎" />
+                </div>
+
+                <!-- 会社名 -->
+                <div>
+                    <label for="company" class="form-label block text-sm font-medium mb-2">
+                        会社名 <span class="form-required">*</span>
+                    </label>
+                    <input type="text" id="company" name="company" required="" class="form-input w-full rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-cyan-500/50" placeholder="株式会社○○○" />
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="form-label block text-sm font-medium mb-2">
+                        Email <span class="form-required">*</span>
+                    </label>
+                    <input type="email" id="email" name="email" required="" class="form-input w-full rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-cyan-500/50" placeholder="example@company.com" />
+                </div>
+
+                <!-- 電話番号 -->
+                <div>
+                    <label for="phone" class="form-label block text-sm font-medium mb-2">
+                        電話番号 <span class="form-required">*</span>
+                    </label>
+                    <input type="tel" id="phone" name="phone" required="" class="form-input w-full rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-cyan-500/50" placeholder="03-1234-5678" />
+                </div>
+
+                <!-- メッセージ -->
+                <div>
+                    <label for="message" class="form-label block text-sm font-medium mb-2">
+                        メッセージ <span class="form-required">*</span>
+                    </label>
+                    <textarea id="message" name="message" required="" rows="6" class="form-input w-full rounded-lg px-4 py-3 text-sm focus:ring-2 focus:ring-cyan-500/50 resize-vertical" placeholder="CabinTimeの導入について詳しく知りたいです。具体的な費用や導入期間について教えてください。"></textarea>
+                </div>
+
+                <!-- 送信ボタン -->
+                <div class="pt-6">
+                    <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-orbitron font-semibold py-4 px-8 rounded-lg transition duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-cyan-500/50">
+                        送信する
+                    </button>
+                </div>
+
+                <!-- 必須項目の注意書き -->
+                <div class="text-center pt-4">
+                    <p class="text-sm text-gray-400">
+                        <span class="form-required">*</span> は必須項目です
+                    </p>
+                </div>
+
+                <!-- プライバシーポリシー -->
+                <div class="text-center pt-2">
+                    <p class="text-xs text-gray-400">
+                        送信いただいた情報は、
+                        <a href="/privacy/" class="text-cyan-400 hover:text-cyan-300 underline transition duration-100">プライバシーポリシー</a>
+                        に従って適切に管理いたします。
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+ 
+        </main>
+    </div>
+
+    <!-- Footer -->
+<footer style="background-color: rgba(6, 9, 32, 1);">
+    <div class="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
+        <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+            <div class="space-y-8">
+                <div class="flex items-center gap-3">
+                    <img src="/assets/images/logo.png" alt="MarsLink Logo" class="h-8 w-auto">
+                    <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
+                </div>
+                <p class="text-sm/6 text-balance text-gray-300">移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー。移動を価値ある体験へと変革します。</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0 xl:grid-cols-3">
+                <div>
+                    <h3 class="text-sm/6 font-semibold text-white">サービス</h3>
+                    <ul role="list" class="mt-6 space-y-4">
+                        <li>
+                            <a href="/#service" class="text-sm/6 text-gray-400 hover:text-white">CabinTime</a>
+                        </li>
+                        <li>
+                            <a href="/news/" class="text-sm/6 text-gray-400 hover:text-white">新着情報</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10 xl:mt-0 text-center xl:text-left">
+                    <h3 class="text-sm/6 font-semibold text-white">会社情報</h3>
+                    <ul role="list" class="mt-6 space-y-4">
+                        <li>
+                            <a href="/profile/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">会社概要</a>
+                        </li>
+                        <li>
+                            <a href="/ceo/" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">代表紹介</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mt-10 xl:mt-0">
+                    <h3 class="text-sm/6 font-semibold text-white">お問い合わせ</h3>
+                    <ul role="list" class="mt-6 space-y-4">
+                        <li>
+                            <a href="/contact/" class="text-sm/6 text-gray-400 hover:text-white">お問い合わせ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+            <p class="text-sm/6 text-gray-400">&copy; <span id="current-year">2025</span> MarsLink Co., Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</footer> 
+
+    <!-- JavaScript Files -->
+    <script src="/js/main.js"></script>
+    
+    <script>
+        // 年号を自動的に更新
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuClose = document.querySelector('.mobile-menu-close');
+            const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
+            const mobileMenuBackdrop = mobileMenu ? mobileMenu.querySelector('.fixed.inset-0') : null;
+            
+            function openMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                }
+            }
+            
+            function closeMobileMenu() {
+                if (mobileMenu) {
+                    mobileMenu.classList.add('hidden');
+                    document.body.style.overflow = '';
+                }
+            }
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', openMobileMenu);
+            }
+            
+            if (mobileMenuClose) {
+                mobileMenuClose.addEventListener('click', closeMobileMenu);
+            }
+            
+            if (mobileMenuBackdrop) {
+                mobileMenuBackdrop.addEventListener('click', closeMobileMenu);
+            }
+            
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                    closeMobileMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
