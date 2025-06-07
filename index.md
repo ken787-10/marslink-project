@@ -30,13 +30,13 @@ additional_css: |
 ---
 
 <div class="relative isolate overflow-hidden pt-[120px] md:pt-[100px] min-h-screen" id="hero">
-    <!-- Background Images with cycling -->
-    <div class="hero-bg absolute inset-0 -z-10 bg-cover bg-center opacity-100 transition-opacity duration-2000 ease-in-out" style="background-image: url('{{ '/assets/images/hero-bg-1.jpg' | relative_url }}')"></div>
+<!-- Background Images with cycling -->
+<div class="hero-bg absolute inset-0 -z-10 bg-cover bg-center opacity-100 transition-opacity duration-2000 ease-in-out" style="background-image: url('{{ '/assets/images/hero-bg-1.jpg' | relative_url }}')"></div>
     
-    <!-- Gradient overlay - darker at top and bottom, lighter in middle -->
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-900/90 via-slate-900/30 to-black"></div>
+<!-- Gradient overlay - darker at top and bottom, lighter in middle -->
+<div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-900/90 via-slate-900/30 to-black"></div>
     
-    <div class="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center min-h-screen">
+<div class="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center min-h-screen">
         <div class="mx-auto max-w-4xl text-center relative z-10">
             <h1 class="font-orbitron text-6xl font-black tracking-tight text-balance text-white sm:text-7xl lg:text-8xl xl:text-9xl relative z-10" style="text-shadow: 4px 4px 8px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8); color: white !important; display: block !important;">
                 <span class="inline-block relative z-10" style="color: white !important;">
@@ -56,12 +56,11 @@ additional_css: |
                 </a>
             </div>
         </div>
-    </div>
+</div>
 </div>
 
-<!-- main content -->
-    <!-- Problem vs Solution Comparison Section -->
-    <section class="bg-black py-16 sm:py-20" id="comparison">
+<!-- Problem vs Solution Comparison Section -->
+<section class="bg-black py-16 sm:py-20" id="comparison">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <!-- Main heading -->
             <div class="text-center mb-16">
@@ -282,10 +281,10 @@ additional_css: |
                 
             </div>
         </div>
-    </section>
+</section>
 
-    <!-- Value Creation Section -->
-    <section class="text-gray-400 bg-black body-font">
+<!-- Value Creation Section -->
+<section class="text-gray-400 bg-black body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col">
                 <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
@@ -351,10 +350,10 @@ additional_css: |
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
-    <!-- Offline CDN Section -->
-    <div id="technology" class="overflow-hidden bg-black py-24 sm:py-32 h-screen">
+<!-- Offline CDN Section -->
+<div id="technology" class="overflow-hidden bg-black py-24 sm:py-32 h-screen">
         <div class="mx-auto max-w-7xl px-6 lg:px-8 h-full">
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 h-full items-center">
                 <div class="lg:pt-4 lg:pr-8">
@@ -408,10 +407,10 @@ additional_css: |
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
-    <!-- Service Features Section -->
-    <section class="text-gray-300 bg-black body-font service-features-section" id="service">
+<!-- Service Features Section -->
+<section class="text-gray-300 bg-black body-font service-features-section" id="service">
         <div class="container px-6 pt-6 pb-3 mx-auto lg:px-8">
             <div class="text-center mb-6">
                 <h2 class="text-base/7 font-semibold text-cyan-400 uppercase tracking-wide">Main Features</h2>
@@ -459,10 +458,10 @@ additional_css: |
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
-    <!-- Workflow Section -->
-    <div class="workflow-section bg-black py-24 sm:py-32">
+<!-- Workflow Section -->
+<div class="workflow-section bg-black py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center mb-16">
                 <h2 class="text-base/7 font-semibold text-cyan-400 uppercase tracking-wide">How It Works</h2>
@@ -587,10 +586,10 @@ additional_css: |
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
-    <!-- Features Section -->
-    <div id="features" class="bg-black py-24 sm:py-32">
+<!-- Features Section -->
+<div id="features" class="bg-black py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl lg:text-center">
                 <h2 class="text-base/7 font-semibold text-cyan-400">Launch instantly</h2>
@@ -635,10 +634,10 @@ additional_css: |
                 </dl>
             </div>
         </div>
-    </div>
+</div>
 
-    <!-- FAQ Section -->
-    <div class="bg-gradient-to-b from-black via-gray-900 via-blue-900 via-blue-800 to-sky-600 py-24 sm:py-32">
+<!-- FAQ Section -->
+<div class="bg-gradient-to-b from-black via-gray-900 via-blue-900 via-blue-800 to-sky-600 py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
             <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                 <div class="lg:col-span-5">
@@ -704,10 +703,10 @@ additional_css: |
                 </div>
             </div>
         </div>
-    </div>
+</div>
 
-    <!-- CTA Section -->
-    <section class="bg-black">
+<!-- CTA Section -->
+<section class="bg-black">
         <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
             <h2 class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-white xl:text-3xl font-orbitron">
                 飛行中も<span class="text-cyan-400">観光のナビゲーション</span>をオン
@@ -723,7 +722,7 @@ additional_css: |
                 </a>
             </div>
         </div>
-    </section>
+</section>
 
 <script>
 // 年号を自動的に更新
