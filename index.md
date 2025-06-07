@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "株式会社MarsLink-マーズリンク-持続可能な日本を創る"
-description: "移動を価値ある体験へと変革します。"
+title: "株式会社MarsLink-マーズリンク-観光から宇宙まで。移動するすべての旅へ。"
+description: "株式会社MarsLink（マーズリンク）は、主力サービス「CabinTime」を通じて、飛行機・船舶から宇宙船まで、すべての移動空間を知と感動の体験空間に変えるメディア・テックスタートアップです。"
 og_image: "/assets/images/hero-bg-1.jpg"
 ---
 

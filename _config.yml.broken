@@ -53,13 +53,15 @@ plugins:
 
 # Default values
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
       author: "MarsLink"
-  - scope:
+  -
+    scope:
       path: ""
       type: "pages"
     values:
