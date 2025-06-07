@@ -1,16 +1,1 @@
-User-agent: *
-Allow: /
-
-# サイトマップの場所を指定
-Sitemap: https://marslink.co.jp/sitemap.xml
-
-# 不要なページをクロール対象外に
-Disallow: /admin/
-Disallow: /backup/
-Disallow: /_backup/
-Disallow: /private/
-Disallow: /.git/
-Disallow: /node_modules/
-
-# 検索エンジンが頻繁にアクセスしないよう制御
-Crawl-delay: 1 
+Sitemap: http://0.0.0.0:4000/sitemap.xml
