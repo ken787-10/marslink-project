@@ -25,6 +25,10 @@
 <lastmod>2025-06-07T09:30:10+09:00</lastmod>
 </url>
 <url>
+<loc>http://0.0.0.0:4000/cabintime/cockpit/</loc>
+<lastmod>2025-06-07T20:43:14+09:00</lastmod>
+</url>
+<url>
 <loc>http://0.0.0.0:4000/cabintime/flightmap/index-v2.html</loc>
 <lastmod>2025-06-07T09:30:10+09:00</lastmod>
 </url>
@@ -35,6 +39,10 @@
 <url>
 <loc>http://0.0.0.0:4000/cabintime/flightmap/index-v4.html</loc>
 <lastmod>2025-06-07T09:30:10+09:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/cabintime/flightmap/</loc>
+<lastmod>2025-06-07T20:06:49+09:00</lastmod>
 </url>
 <url>
 <loc>http://0.0.0.0:4000/cabintime/index-v10.html</loc>
@@ -87,5 +95,9 @@
 <url>
 <loc>http://0.0.0.0:4000/cabintime/index-v9.html</loc>
 <lastmod>2025-06-07T09:30:10+09:00</lastmod>
+</url>
+<url>
+<loc>http://0.0.0.0:4000/cabintime/</loc>
+<lastmod>2025-06-07T20:06:20+09:00</lastmod>
 </url>
 </urlset>
