@@ -1,8 +1,11 @@
 ---
 layout: page
 title: "お問い合わせ"
-description: "株式会社MarsLinkへのお問い合わせはこちらから。移動空間の革新についてお気軽にご相談ください。"
+description: "株式会社MarsLinkへのお問い合わせはこちらから。CabinTimeサービス、移動空間DX、宇宙ビジネスパートナーシップについてお気軽にご相談ください。"
+keywords: "お問い合わせ, コンタクト, CabinTime, 移動空間DX, 宇宙ビジネス, パートナーシップ, 導入相談"
 permalink: /contact/
+priority: 0.8
+changefreq: monthly
 ---
 
 <style>

@@ -73,6 +73,11 @@ social:
   links:
     - https://twitter.com/marslink_japan
 
+# Analytics (設定時にコメントアウト解除)
+# google_analytics: G-XXXXXXXXXX
+google_site_verification: "your-verification-code-here"
+# bing_site_verification: "your-bing-verification-code"
+
 # Sass configuration
 sass:
   sass_dir: _sass
