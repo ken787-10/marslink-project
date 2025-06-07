@@ -7,6 +7,26 @@ og_image: "/assets/images/hero-bg-1.jpg"
 canonical_url: "https://marslink.co.jp/"
 priority: 1.0
 changefreq: weekly
+additional_css: |
+  /* Override for conflicting navigation styles on home page */
+  nav:not(header nav) {
+    display: none !important;
+  }
+  
+  .nav-container, 
+  .nav-links:not(.mobile-menu-link),
+  .logo:not(header .logo) {
+    display: none !important;
+  }
+  
+  /* Ensure mobile menu works properly */
+  .mobile-menu {
+    z-index: 9999 !important;
+  }
+  
+  .mobile-menu > div:last-child {
+    z-index: 10000 !important;
+  }
 ---
 
 <div class="relative isolate overflow-hidden pt-[120px] md:pt-[100px] min-h-screen" id="hero">
@@ -39,8 +59,7 @@ changefreq: weekly
     </div>
 </div>
 
-<!-- main -->
-<main>
+<!-- main content -->
     <!-- Problem vs Solution Comparison Section -->
     <section class="bg-black py-16 sm:py-20" id="comparison">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -705,7 +724,6 @@ changefreq: weekly
             </div>
         </div>
     </section>
-</main>
 
 <script>
 // 年号を自動的に更新

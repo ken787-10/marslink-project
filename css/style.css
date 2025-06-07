@@ -154,7 +154,8 @@ body {
     100% { top: 35px; opacity: 0; }
 }
 
-/* ナビゲーションの修正 */
+/* ナビゲーションの修正 - DISABLED: Now using header.html include */
+/*
 nav {
     position: fixed;
     top: 0;
@@ -275,6 +276,7 @@ nav.scrolled {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+*/
 
 /* コンテナスタイルの修正 */
 .container {
@@ -1364,6 +1366,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+    /* Old navigation styles disabled - now using header.html include
     .nav-links {
         display: none;
     }
@@ -1379,6 +1382,7 @@ footer {
     .nav-links li {
         margin: 0 0 15px 0;
     }
+    */
     
     .hero-content h1 {
         font-size: 3rem;
