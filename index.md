@@ -1,7 +1,7 @@
 ---
 layout: home
-description: "株式会社MarsLink（マーズリンク）は、主力サービス「CabinTime」を通じて、飛行機・船舶から宇宙船まで、すべての移動空間を知と感動の体験空間に変えるメディア・テックスタートアップです。"
-keywords: "MarsLink, CabinTime, 移動空間メディア, デジタル変革, イノベーション, テクノロジー, 観光DX, 宇宙ビジネス, スタートアップ"
+description: "MarsLink（マーズリンク）は、主力サービス「CabinTime」で移動空間をメディアに変革するスタートアップです。飛行機から宇宙船まで、すべての移動時間を価値ある体験空間に変えます。"
+keywords: "MarsLink, CabinTime, 移動空間, 観光DX, 機内エンタメ, オフライン観光情報, 観光テック, 観光SaaS, 航空会社DX, テックスタートアップ"
 og_image: "/assets/images/hero-bg-1.jpg"
 canonical_url: "https://marslink.co.jp/"
 priority: 1.0
