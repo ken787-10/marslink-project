@@ -65,6 +65,9 @@ defaults:
     values:
       layout: "page"
 
+# Draft settings - pages with draft: true will not be published
+show_drafts: false
+
 # SEO settings
 author: MarsLink
 logo: /assets/images/logo.png

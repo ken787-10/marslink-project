@@ -1,0 +1,16 @@
+{% comment %}
+  Draft Filter - この include ファイルを使用して下書きページを制御します
+  使用方法: {% include draft-filter.html %}
+{% endcomment %}
+
+{% if page.draft %}
+  {% unless jekyll.environment == "development" %}
+    <!-- 本番環境では下書きページを404にリダイレクト -->
+    <script>
+      window.location.href = '/404/';
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0; url=/404/">
+    </noscript>
+  {% endunless %}
+{% endif %} 
