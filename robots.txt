@@ -19,6 +19,7 @@ Disallow: /template-usage-example.md
 Disallow: /DRAFT_GUIDE.md
 Disallow: /backend-setup-guide.md
 Disallow: /README.md
+Disallow: /ceo-introduction.md
 
 # 検索エンジンが頻繁にアクセスしないよう制御
 Crawl-delay: 1 
