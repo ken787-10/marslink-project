@@ -38,7 +38,6 @@ exclude:
   - PHP_SETUP_GUIDE.md
   - template-usage-example.md
   - base-template.html
-  - ceo-introduction.md
 
 # Collections
 collections:
