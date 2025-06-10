@@ -85,3 +85,21 @@ google_site_verification: "A7Ao6K_9KyyD2MJWgymaOyTS-hsEZyYXIKGvJO1L0nw"
 sass:
   sass_dir: _sass
   style: compressed 
+
+# Performance optimizations
+incremental: true
+profile: false
+strict_front_matter: true
+
+# Livereload configuration (メモリ最適化)
+livereload_port: 35730
+livereload_min_delay: 500
+livereload_max_delay: 5000
+
+# Limit build size and memory usage
+limit_posts: 10
+future: false
+unpublished: false
+
+# Cache settings
+cache_dir: .jekyll-cache 

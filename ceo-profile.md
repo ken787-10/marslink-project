@@ -99,7 +99,7 @@ published: true
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              Strategic Leadership & Business Development
+                             政治とスタートアップ
             </dt>
             <dd class="mt-2 text-base/7 text-gray-300">政治家としての8年間の経験と起業家への転身により培われた戦略的リーダーシップと未開拓市場における事業開発力。政治家から起業家への組織変革経験とマルチドメインでの事業展開・統合を実現。</dd>
           </div>
@@ -110,9 +110,9 @@ published: true
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              Global Network & Technology Integration
+                             インターナショナル
             </dt>
-            <dd class="mt-2 text-base/7 text-gray-300">16ヵ国・地域での豊富な国際経験と米国国務省プログラム修了による国際ネットワーク。シリコンバレー120社リサーチ実績とプログラミング・AI技術活用による先進技術の統合力。</dd>
+            <dd class="mt-2 text-base/7 text-gray-300">シードからMBOまで事業戦略・資本政策などの経営実績と契約法・会社法・知財など複雑な法務リスクに対応しながら、スタートアップ経営に必要なリーガルマネジメント体制を構築。</dd>
           </div>
           <div class="relative pl-16">
             <dt class="text-base/7 font-semibold text-white">
@@ -121,7 +121,7 @@ published: true
                   <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
               </div>
-              Academic Research & Practical Implementation
+                             アカデミックと実務の融合
             </dt>
             <dd class="mt-2 text-base/7 text-gray-300">京都大学での学術研究活動と豊富な実務経験による理論と実践の統合。国際会議AHFE・サービス学会発表、アメリカ大使館・京都大学基調講演などの実績。</dd>
           </div>
@@ -132,7 +132,7 @@ published: true
                   <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
                 </svg>
               </div>
-              AI & Technology Innovation
+                             デジタル技術
             </dt>
             <dd class="mt-2 text-base/7 text-gray-300">プログラミング言語とAI技術活用により、DXソリューションの企画・開発を主導。航空・船舶・交通領域における革新的なSaaSサービスの構築と、先端技術による社会課題解決アプローチを実行中。</dd>
           </div>
@@ -164,8 +164,8 @@ published: true
             <span class="text-3xl font-bold text-blue-400">9</span>
           </div>
 
-          <h1 class="text-xl font-semibold text-white">North American Cities</h1>
-          <p class="text-sm text-gray-400 mb-4">シリコンバレー・ワシントンD.C.含む</p>
+          <h1 class="text-xl font-semibold text-white">北米都市</h1>
+          <p class="text-base text-gray-200 mb-4 font-medium">政治・スタートアップの中心地</p>
 
           <p class="text-gray-300 text-sm leading-relaxed">
             ワシントンD.C.、シアトル、サンフランシスコ、ロサンゼルス、ホノルル、カンザスシティ、ソルトレイクシティ、ダラス、ニューヨークでの活動実績。政治・経済・技術の中心地での豊富な経験。
@@ -182,8 +182,8 @@ published: true
             <span class="text-3xl font-bold text-blue-400">15</span>
           </div>
 
-          <h1 class="text-xl font-semibold text-white">European Cities</h1>
-          <p class="text-sm text-gray-400 mb-4">主要金融・政治・文化都市</p>
+          <h1 class="text-xl font-semibold text-white">ヨーロッパ都市</h1>
+          <p class="text-base text-gray-200 mb-4 font-medium">主要な金融・文化の中心地</p>
 
           <p class="text-gray-300 text-sm leading-relaxed">
             ミラノ、ローマ、ナポリ、ザルツブルク、ウィーン、リンツ、プラハ、カルロヴィ・ヴァリ、ミュンヘン、フランクフルト、ビルバオ、サンセバスチャン、パリ、ロンドン、アムステルダムでの豊富な欧州経験。国際的なネットワーク構築。
@@ -200,8 +200,8 @@ published: true
             <span class="text-3xl font-bold text-blue-400">9</span>
           </div>
 
-          <h1 class="text-xl font-semibold text-white">Asia-Pacific Regions</h1>
-          <p class="text-sm text-gray-400 mb-4">アジア主要経済圏を網羅</p>
+          <h1 class="text-xl font-semibold text-white">アジア太平洋地域</h1>
+          <p class="text-base text-gray-200 mb-4 font-medium">アジアの主要経済圏をカバー</p>
 
           <p class="text-gray-300 text-sm leading-relaxed">
             台湾、香港、マカオ、グアム、上海、北京、クアラルンプール、ペナン、ソウルでのアジア太平洋経済圏における戦略的ネットワーク。
@@ -357,10 +357,10 @@ published: true
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-              <path d="M2 3h20v18H2z"></path>
-              <path d="M8 21l4-4 4 4"></path>
-              <path d="M12 17V9"></path>
-              <circle cx="12" cy="8" r="2"></circle>
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
