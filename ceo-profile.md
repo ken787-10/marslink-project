@@ -22,7 +22,7 @@ published: true
       <div class="mb-12">
         <div class="lg:mx-auto flex flex-col w-full max-w-2xl mb-12 text-center">
           <img alt="CEO Profile" class="inline-block object-cover object-top w-40 h-40 mx-auto mb-8 rounded-full border-4 border-gray-700/50 shadow-xl"
-              src="/assets/images/kentaichii002.png/" />
+              src="/assets/images/kentaichii002.png" />
           
           <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-6xl mb-6">
             市位謙太
@@ -284,13 +284,35 @@ published: true
             <p class="leading-relaxed text-gray-300">航空・船舶・交通領域におけるSaaS・DXサービスの開発・提供を開始。CabinTime、Nigiwaiなどの主力サービスを展開し、業界のデジタルトランスフォーメーションを推進。</p>
           </div>
         </div>
-      </div>
-      
-             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+             </div>
+       
+       <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                      <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M12 1a3 3 0 0 1 3 3v8a3 3 0 0 1-6 0V4a3 3 0 0 1 3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="23"></line>
+              <line x1="8" y1="23" x2="16" y2="23"></line>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-white mb-1 text-xl">京都大学　基調講演</h2>
+            <p class="text-sm text-gray-400 mb-2">Kyoto University | Keynote Speaker</p>
+            <p class="leading-relaxed text-gray-300">地方創生と観光マーケティングについて基調講演をしました。</p>
+          </div>
+        </div>
+       </div>
+       
+       <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
+        </div>
+         <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
@@ -303,9 +325,9 @@ published: true
             <p class="leading-relaxed text-gray-300">地方創生系メディアマーケティング事業を開始。近畿日本鉄道、関西テレビ、京阪電鉄などの企業公式チャンネルをプロデュース。30を超える自治体と連携協定を締結し、地方創生に貢献。</p>
           </div>
         </div>
-      </div>
-      
-             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+              </div>
+       
+       <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
           <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
@@ -313,8 +335,32 @@ published: true
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
           <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7z"></path>
-              <path d="M12 5L8 21l4-7 4 7-4-16z"></path>
+              <path d="M12 1a3 3 0 0 1 3 3v8a3 3 0 0 1-6 0V4a3 3 0 0 1 3-3z"></path>
+              <path d="M19 10v2a7 7 0 0 1-14 0v-2"></path>
+              <line x1="12" y1="19" x2="12" y2="23"></line>
+              <line x1="8" y1="23" x2="16" y2="23"></line>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-white mb-1 text-xl">アメリカ大使館　基調講演</h2>
+            <p class="text-sm text-gray-400 mb-2">U.S. Embassy | Keynote Speaker</p>
+            <p class="leading-relaxed text-gray-300">シリコンバレーのエコシステムやマインドセットについて基調講演をしました。</p>
+          </div>
+        </div>
+       </div>
+       
+       <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M2 3h20v18H2z"></path>
+              <path d="M8 21l4-4 4 4"></path>
+              <path d="M12 17V9"></path>
+              <circle cx="12" cy="8" r="2"></circle>
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -323,7 +369,7 @@ published: true
             <p class="leading-relaxed text-gray-300">大阪維新の会立ち上げメンバーとして参加。ベンチャーエコシステム構築、府市港湾一元化、LGBT支援、行政DX化などの政策を推進し、大阪の行政改革に貢献。</p>
           </div>
         </div>
-      </div>
+       </div>
       
              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
