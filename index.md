@@ -93,26 +93,20 @@ additional_css: |
                             <div class="">
                                 <p class="text-gray-400 font-semibold mb-3">👤 乗客</p>
                                 <div class="space-y-3">
+                                    
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">ほとんどの航空便で2時間完全にオフライン状態</p>
+                                        <p class="text-gray-300 text-sm">長時間のオフライン状態で外界から完全遮断</p>
                                     </div>
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">長時間の通信不可状態で外界から完全遮断</p>
+                                        <p class="text-gray-300 text-sm">機内WiFi提供便でも実用性に課題）</p>
                                     </div>
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">機内WiFi提供便でも実用性に課題（2,000円〜4,000円）</p>
+                                        <p class="text-gray-300 text-sm">観光先周辺の飲食店・宿泊施設を事前確認不可</p>
                                     </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">商談先周辺の飲食店・宿泊施設を事前確認不可</p>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">現地情報の事前収集ができず初動が遅れる</p>
-                                    </div>
+                                   
                                 </div>
                             </div>
 
@@ -191,26 +185,20 @@ additional_css: |
                             <div class="">
                                 <p class="text-gray-300 font-semibold mb-3">👤 乗客</p>
                                 <div class="space-y-3">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">完全無料で全機能利用、追加コストゼロ</p>
-                                    </div>
+                                   
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
                                         <p class="text-gray-300 text-sm">オフライン技術で通信環境に関係なく安定利用</p>
                                     </div>
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">商談エリアの飲食店・会議室情報を移動中に確認</p>
+                                        <p class="text-gray-300 text-sm">観光エリアの飲食店・観光情報を移動中に確認</p>
                                     </div>
                                     <div class="flex items-start space-x-3">
                                         <div class="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
                                         <p class="text-gray-300 text-sm">到着後の初動スピードが格段に向上</p>
                                     </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-2 h-2 bg-white rounded-full mt-2"></div>
-                                        <p class="text-gray-300 text-sm">移動時間が価値創造時間に変化</p>
-                                    </div>
+                                    
                                 </div>
                             </div>
 
