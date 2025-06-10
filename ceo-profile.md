@@ -4,6 +4,7 @@ title: "代表紹介"
 description: "市位謙太のプロフィール・経歴・ビジョンをご紹介"
 permalink: /ceo/
 draft: true
+published: false
 ---
 
 <!-- CEO Profile Header -->

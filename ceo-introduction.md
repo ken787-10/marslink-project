@@ -4,6 +4,7 @@ layout: wikipedia
 # description: 市位謙太の経歴・プロフィール
 # permalink: /ceo/
 draft: true
+published: false
 ---
 
 {% include draft-filter.html %}
