@@ -1,8 +1,9 @@
 ---
 layout: page
-title: "CEO Profile - 市位謙太"
-description: "株式会社MarsLink CEO 市位謙太のプロフィール - 航空・観光業界DXを推進する起業家・元政治家"
+title: "代表紹介"
+description: "市位謙太のプロフィール・経歴・ビジョンをご紹介"
 permalink: /ceo/
+draft: true
 ---
 
 <!-- CEO Profile Header -->
