@@ -63,11 +63,6 @@ published: true
             <dt class="text-sm/6 font-semibold text-gray-300 mt-2">企業・VC・政府機関調査</dt>
           </div>
           <div class="flex flex-col bg-white/5 p-8">
-            <dt class="text-sm/6 font-semibold text-gray-300">Subscribers</dt>
-            <dd class="order-first text-3xl font-semibold tracking-tight text-white">8M</dd>
-            <dt class="text-sm/6 font-semibold text-gray-300 mt-2">YouTubeマネジメント総登録者</dt>
-          </div>
-          <div class="flex flex-col bg-white/5 p-8">
             <dt class="text-sm/6 font-semibold text-gray-300">Companies</dt>
             <dd class="order-first text-3xl font-semibold tracking-tight text-white">1000+</dd>
             <dt class="text-sm/6 font-semibold text-gray-300 mt-2">支援ブランド社数実績</dt>
