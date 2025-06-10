@@ -3,7 +3,7 @@ layout: page
 title: "代表紹介"
 description: "市位謙太のプロフィール・経歴・ビジョンをご紹介"
 permalink: /ceo/
-draft: false
+draft: true
 ---
 
 {% include draft-filter.html %}
@@ -391,6 +391,7 @@ draft: false
                         <li>2022年 セレッソ大阪公式チャンネルプロデュース開始</li>
                         <li>2023年 松井一郎前大阪府知事・前大阪市長公式チャンネルプロデュース開始</li>
                         <li>2023年 京阪電鉄公式チャンネルプロデュース開始</li>
+                        <li>2024年 経営陣による全株式の買取を実施(MBO)</li>
                     </ul>
                     
                     <h3>連携協定</h3>
