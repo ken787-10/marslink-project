@@ -3,8 +3,8 @@ layout: page
 title: "代表紹介"
 description: "市位謙太のプロフィール・経歴・ビジョンをご紹介"
 permalink: /ceo/
-draft: false
-published: true
+draft: true
+published: false
 ---
 
 <div class="bg-black min-h-screen w-full">
@@ -266,15 +266,16 @@ published: true
       
              <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10"></div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          <div class="flex-shrink-0 w-16 h-16 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-              <path d="M2 2h20v20H2z"></path>
-              <path d="M7 12h5l-2-2"></path>
-              <path d="M7 12l2 2"></path>
+              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 00-2.91-.09z"></path>
+              <path d="M12 15l-3-3a22 22 0 012-3.95A12.88 12.88 0 0122 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 01-4 2z"></path>
+              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"></path>
+              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -287,15 +288,13 @@ published: true
       
              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+                      <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10"></div>
+                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          <div class="flex-shrink-0 w-16 h-16 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
+            <svg fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -308,14 +307,14 @@ published: true
       
              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10"></div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          <div class="flex-shrink-0 w-16 h-16 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-              <polyline points="9,22 9,12 15,12 15,22"></polyline>
+              <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7 7-7z"></path>
+              <path d="M12 5L8 21l4-7 4 7-4-16z"></path>
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -328,11 +327,11 @@ published: true
       
              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10"></div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          <div class="flex-shrink-0 w-16 h-16 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="2" y1="12" x2="22" y2="12"></line>
@@ -349,11 +348,11 @@ published: true
       
              <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
         <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
         </div>
-        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-indigo-500 text-white relative z-10"></div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
         <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-          <div class="flex-shrink-0 w-16 h-16 bg-indigo-100 text-indigo-500 rounded-full inline-flex items-center justify-center">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
               <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
               <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
