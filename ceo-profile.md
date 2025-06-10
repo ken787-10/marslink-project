@@ -292,8 +292,9 @@ permalink: /ceo/
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    letter-spacing: -0.01em;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #333;
     background: linear-gradient(to bottom, #111827, #000000, #111827);
 }
 
@@ -303,8 +304,8 @@ h1 {
 }
 
 h2, h3 {
-    font-family: 'D-DIN-Bold', Arial, Verdana, sans-serif;
-    font-weight: 400;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-weight: 700;
     letter-spacing: -0.02em;
     color: #ffffff;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
