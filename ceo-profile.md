@@ -136,6 +136,64 @@ published: true
     </div>
   </div>
 
+  <!-- Gallery Section -->
+  <div class="bg-black py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:text-center">
+        <h2 class="text-base/7 font-semibold text-indigo-400">Photo Gallery</h2>
+        <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">フォトギャラリー</p>
+        <p class="mt-6 text-lg/8 text-gray-300">様々な活動の瞬間を切り取った写真集</p>
+      </div>
+      
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11">
+          </div>
+          <div>
+            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- International Experience -->
   <section class="bg-black dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
