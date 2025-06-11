@@ -1,0 +1,21 @@
+{
+  "name": "tailwind-project",
+  "version": "1.0.0",
+  "description": "Tailwind CSS development project",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "tailwindcss -i ./css/input.css -o ./css/output.css",
+    "watch-css": "tailwindcss -i ./css/input.css -o ./css/output.css --watch",
+    "dev": "live-server --port=3000",
+    "start": "npm run build-css && npm run dev"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.8"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "datamaps": "^0.5.9",
+    "topojson": "^3.0.2"
+  }
+}
