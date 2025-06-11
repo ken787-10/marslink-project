@@ -157,10 +157,10 @@ published: true
           <img src="{{ '/assets/images/ceo-pic5.jpg' | relative_url }}" alt="CEO活動写真5">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic6.jpg' | relative_url }}" alt="CEO活動写真6">
+          <img src="{{ '/assets/images/ceo-pic6.jpeg' | relative_url }}" alt="CEO活動写真6">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic7.jpg' | relative_url }}" alt="CEO活動写真7">
+          <img src="{{ '/assets/images/ceo-pic7.JPG' | relative_url }}" alt="CEO活動写真7">
         </div>
         <div class="gallery-container">
           <img src="{{ '/assets/images/ceo-pic8.jpg' | relative_url }}" alt="CEO活動写真8">
