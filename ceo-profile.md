@@ -10,14 +10,14 @@ published: true
 <div class="bg-black min-h-screen w-full">
   <!-- Content -->
     <div class="relative isolate overflow-hidden bg-black px-6 py-24 sm:py-32 lg:px-8">
-    <img src="/assets/images/earth1.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+    <img src="{{ '/assets/images/earth1.jpg' | relative_url }}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
     <div class="absolute inset-0 -z-10 bg-black/80"></div>
 
       <div class="mx-auto max-w-4xl text-center">
       <div class="mb-12">
         <div class="lg:mx-auto flex flex-col w-full max-w-2xl mb-12 text-center">
           <img alt="CEO Profile" class="inline-block object-cover object-top w-40 h-40 mx-auto mb-8 rounded-full border-4 border-gray-700/50 shadow-xl"
-              src="/assets/images/kentaichii002.png" />
+              src="{{ '/assets/images/kentaichii002.png' | relative_url }}" />
           
           <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-6xl mb-6">
             市位謙太
@@ -142,40 +142,40 @@ published: true
       
       <div class="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1">
+          <img src="{{ '/assets/images/ceo-pic1.jpg' | relative_url }}" alt="CEO活動写真1">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2">
+          <img src="{{ '/assets/images/ceo-pic2.jpg' | relative_url }}" alt="CEO活動写真2">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3">
+          <img src="{{ '/assets/images/ceo-pic3.jpg' | relative_url }}" alt="CEO活動写真3">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4">
+          <img src="{{ '/assets/images/ceo-pic4.jpg' | relative_url }}" alt="CEO活動写真4">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5">
+          <img src="{{ '/assets/images/ceo-pic5.jpg' | relative_url }}" alt="CEO活動写真5">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6">
+          <img src="{{ '/assets/images/ceo-pic6.jpg' | relative_url }}" alt="CEO活動写真6">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7">
+          <img src="{{ '/assets/images/ceo-pic7.jpg' | relative_url }}" alt="CEO活動写真7">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8">
+          <img src="{{ '/assets/images/ceo-pic8.jpg' | relative_url }}" alt="CEO活動写真8">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9">
+          <img src="{{ '/assets/images/ceo-pic9.jpg' | relative_url }}" alt="CEO活動写真9">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10">
+          <img src="{{ '/assets/images/ceo-pic10.jpg' | relative_url }}" alt="CEO活動写真10">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11">
+          <img src="{{ '/assets/images/ceo-pic11.jpg' | relative_url }}" alt="CEO活動写真11">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12">
+          <img src="{{ '/assets/images/ceo-pic12.jpg' | relative_url }}" alt="CEO活動写真12">
         </div>
       </div>
     </div>
@@ -494,14 +494,22 @@ img {
     background: rgba(31, 41, 55, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
-    min-height: 200px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container:hover img {
+    transform: scale(1.05);
 }
 </style>

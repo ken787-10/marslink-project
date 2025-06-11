@@ -128,7 +128,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "MarsLink-マーズリンク- 移動時間を価値創造の場へ",
+      "name": "MarsLink-マーズリンク-",
       "url": "http://localhost:4000",
       "logo": "http://localhost:4000/assets/images/logo.png",
       "description": "MarsLink（マーズリンク）は、主力サービス「CabinTime」で移動空間をメディアに変革するスタートアップです。飛行機から宇宙船まで、すべての移動時間を価値ある体験空間に変えます。",
@@ -287,7 +287,7 @@
     <meta property="og:title" content="代表紹介">
     <meta property="og:description" content="市位謙太のプロフィール・経歴・ビジョンをご紹介">
     <meta property="og:image" content="http://localhost:4000/assets/images/hero-bg-1.jpg">
-    <meta property="og:site_name" content="MarsLink-マーズリンク- 移動時間を価値創造の場へ">
+    <meta property="og:site_name" content="MarsLink-マーズリンク-">
     <meta property="og:locale" content="ja_JP">
 
     <!-- Twitter -->
@@ -876,15 +876,23 @@ img {
     background: rgba(31, 41, 55, 0.2);
     border-radius: 0.5rem;
     overflow: hidden;
-    min-height: 200px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-container img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: cover;
     display: block;
     border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container:hover img {
+    transform: scale(1.05);
 }
 </style>
 
