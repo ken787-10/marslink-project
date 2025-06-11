@@ -142,40 +142,40 @@ published: true
       
       <div class="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1" loading="lazy">
+          <img src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2" loading="lazy">
+          <img src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3" loading="lazy">
+          <img src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4" loading="lazy">
+          <img src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5" loading="lazy">
+          <img src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6" loading="lazy">
+          <img src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7" loading="lazy">
+          <img src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8" loading="lazy">
+          <img src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9" loading="lazy">
+          <img src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10" loading="lazy">
+          <img src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11" loading="lazy">
+          <img src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11">
         </div>
         <div class="gallery-container">
-          <img src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12" loading="lazy">
+          <img src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12">
         </div>
       </div>
     </div>
