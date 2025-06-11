@@ -13,6 +13,8 @@ Disallow: /.git/
 Disallow: /node_modules/
 Disallow: /_site/
 Disallow: /.jekyll-cache/
+Disallow: /public_html/
+Disallow: /PHPMailer/
 Disallow: /base-template.html
 Disallow: /*-v*.html
 Disallow: /template-usage-example.md
@@ -20,6 +22,10 @@ Disallow: /DRAFT_GUIDE.md
 Disallow: /backend-setup-guide.md
 Disallow: /README.md
 Disallow: /ceo-introduction.md
+Disallow: /*draft*
+Disallow: /*DRAFT*
+Disallow: /*test*
+Disallow: /*temp*
 
 # 検索エンジンが頻繁にアクセスしないよう制御
 Crawl-delay: 1 
