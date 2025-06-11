@@ -30,6 +30,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules/
+  - public_html/
+  - PHPMailer/
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
@@ -38,6 +40,17 @@ exclude:
   - PHP_SETUP_GUIDE.md
   - template-usage-example.md
   - base-template.html
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - input.css
+  - composer.json
+  - htaccess.txt
+  - .htaccess
+  - .htaccess_old
+  - .user.ini
+  - send_mail.php
+  - README.md
 
 # Collections
 collections:
