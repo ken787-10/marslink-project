@@ -7,6 +7,8 @@ og_image: "/assets/images/hero-bg-1.jpg"
 canonical_url: "https://marslink.co.jp/"
 priority: 1.0
 changefreq: weekly
+seo:
+  type: WebSite
 additional_css: |
   /* Override for conflicting navigation styles on home page */
   nav:not(header nav) {
