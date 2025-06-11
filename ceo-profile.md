@@ -380,9 +380,29 @@ published: true
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-white mb-1 text-xl">米国国務省プログラム参加</h2>
+            <h2 class="font-medium title-font text-white mb-1 text-xl">米国国務省IVLPプログラム</h2>
             <p class="text-sm text-gray-400 mb-2">2013年 | IVLP Program Participant</p>
             <p class="leading-relaxed text-gray-300">International Visitor Leadership Program修了。シリコンバレーを中心に120社のスタートアップ・VC・政府機関へのリサーチを実施し、起業家精神とイノベーション手法を習得。</p>
+          </div>
+        </div>
+      </div>
+      
+             <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+          <div class="h-full w-1 bg-blue-400 pointer-events-none"></div>
+        </div>
+        <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10"></div>
+        <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
+          <div class="flex-shrink-0 w-16 h-16 bg-blue-500 text-white rounded-full inline-flex items-center justify-center">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+            <h2 class="font-medium title-font text-white mb-1 text-xl">京都大学経営管理大学院</h2>
+            <p class="text-sm text-gray-400 mb-2">Kyoto University | Graduate School of Management</p>
+            <p class="leading-relaxed text-gray-300">経営戦略、アントレプレナーシップ、資本政策、組織マネジメントなどを体系的に学び、スタートアップ経営と社会的インパクト創出を両立する実践知を習得。</p>
           </div>
         </div>
       </div>
