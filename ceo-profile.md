@@ -163,7 +163,7 @@ published: true
           <img src="{{ '/assets/images/ceo-pic7.JPG' | relative_url }}" alt="CEO活動写真7">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic8.jpg' | relative_url }}" alt="CEO活動写真8">
+          <img src="{{ '/assets/images/ana.jpg' | relative_url }}" alt="CEO活動写真8">
         </div>
         <div class="gallery-container">
           <img src="{{ '/assets/images/ceo9.JPG' | relative_url }}" alt="CEO活動写真9">
