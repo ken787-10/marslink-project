@@ -16,7 +16,7 @@ published: true
       <div class="mx-auto max-w-4xl text-center">
       <div class="mb-12">
         <div class="lg:mx-auto flex flex-col w-full max-w-2xl mb-12 text-center">
-          <img alt="CEO Profile" class="inline-block object-cover object-top w-32 h-32 sm:w-40 sm:h-40 mx-auto mb-8 rounded-full border-4 border-gray-700/50 shadow-xl"
+          <img alt="CEO Profile" class="inline-block object-cover object-top w-32 h-32 sm:w-40 sm:h-40 mx-auto mt-8 mb-8 rounded-full border-4 border-gray-700/50 shadow-xl"
               src="{{ '/assets/images/kentaichii002.png' | relative_url }}" />
           
           <h1 class="text-4xl font-semibold tracking-tight text-white sm:text-6xl mb-6">
