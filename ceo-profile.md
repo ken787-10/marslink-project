@@ -142,7 +142,7 @@ published: true
       
       <div class="mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic1.jpg' | relative_url }}" alt="CEO活動写真1">
+          <img src="{{ '/assets/images/ceo1.jpg' | relative_url }}" alt="CEO活動写真1">
         </div>
         <div class="gallery-container">
           <img src="{{ '/assets/images/ceo-pic2.jpg' | relative_url }}" alt="CEO活動写真2">
@@ -175,7 +175,7 @@ published: true
           <img src="{{ '/assets/images/ceo-pic11.jpg' | relative_url }}" alt="CEO活動写真11">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic12.jpg' | relative_url }}" alt="CEO活動写真12">
+          <img src="{{ '/assets/images/ceo10.JPG' | relative_url }}" alt="CEO活動写真12">
         </div>
       </div>
     </div>
