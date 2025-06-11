@@ -142,47 +142,47 @@ published: true
       
       <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
         <div class="grid gap-4">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic1.jpg" alt="CEO活動写真1" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic2.jpg" alt="CEO活動写真2" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3">
-          </div>
-        </div>
-        <div class="grid gap-4">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5">
-          </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic3.jpg" alt="CEO活動写真3" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
         <div class="grid gap-4">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic4.jpg" alt="CEO活動写真4" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic5.jpg" alt="CEO活動写真5" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic6.jpg" alt="CEO活動写真6" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
         <div class="grid gap-4">
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic7.jpg" alt="CEO活動写真7" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic8.jpg" alt="CEO活動写真8" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
-          <div>
-            <img class="h-auto max-w-full rounded-lg" src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic9.jpg" alt="CEO活動写真9" loading="lazy" onerror="this.parentElement.style.display='none'">
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic10.jpg" alt="CEO活動写真10" loading="lazy" onerror="this.parentElement.style.display='none'">
+          </div>
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic11.jpg" alt="CEO活動写真11" loading="lazy" onerror="this.parentElement.style.display='none'">
+          </div>
+          <div class="bg-gray-800/20 rounded-lg overflow-hidden">
+            <img class="h-auto max-w-full rounded-lg transition-opacity duration-300" src="/assets/images/ceo-pic12.jpg" alt="CEO活動写真12" loading="lazy" onerror="this.parentElement.style.display='none'">
           </div>
         </div>
       </div>
@@ -487,5 +487,48 @@ h2, h3 {
 /* Smooth animations */
 * {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Image loading optimization */
+img {
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+/* Image placeholder during loading */
+.bg-gray-800\/20 {
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-gray-800\/20 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Loading state */
+.bg-gray-800\/20::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    border-top: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    z-index: 1;
+}
+
+.bg-gray-800\/20 img:not([src=""]) + .bg-gray-800\/20::before {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 </style>
