@@ -74,6 +74,10 @@ permalink: /profile/
                         <td class="border-t-2 border-gray-800 px-4 py-3 text-white">航空・船舶・交通領域におけるSaas・DXサービスの開発・提供</td>
                     </tr>
                     <tr>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">主要取引銀行</td>
+                        <td class="border-t-2 border-gray-800 px-4 py-3 text-white">三菱UFJ銀行、三井住友銀行</td>
+                    </tr>
+                    <tr>
                         <td class="border-t-2 border-gray-800 px-4 py-3 text-cyan-400 font-semibold font-orbitron">研究提携</td>
                         <td class="border-t-2 border-gray-800 px-4 py-3 text-white">京都大学、他</td>
                     </tr>
