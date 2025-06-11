@@ -256,7 +256,7 @@ published: true
   <section class="bg-black text-white body-font">
     <div class="container px-5 py-24 mx-auto flex flex-wrap">
       <div class="text-center w-full mb-20">
-        <h2 class="text-4xl font-extralight text-white tracking-wide">Professional Experience</h2>
+        <h2 class="text-4xl font-extralight text-white tracking-wide">略歴</h2>
       </div>
       
              <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
