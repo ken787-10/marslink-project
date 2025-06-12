@@ -111,6 +111,35 @@
             padding: 0 20px;
         }
         
+        /* H1 and H2 Styles - Override external styles */
+        h1, .section-header h1 {
+            font-size: 32px !important;
+            color: #fff !important;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            letter-spacing: 1px !important;
+            margin-bottom: 20px !important;
+            text-transform: none !important;
+        }
+        
+        h2, .section-header h2, .section-title {
+            font-size: 24px !important;
+            color: #fff !important;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+            letter-spacing: 0.5px !important;
+            margin-bottom: 15px !important;
+            text-transform: none !important;
+            position: relative !important;
+            display: inline-block !important;
+        }
+        
+        /* Remove pseudo-elements */
+        .section-header h2::before,
+        .section-header h2::after {
+            display: none !important;
+        }
+
         .hero-title {
             font-size: 32px;
             margin-bottom: 20px;
