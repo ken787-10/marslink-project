@@ -116,6 +116,19 @@ body {
     width: 100%;
 }
 
+/* Google Maps controls positioning to avoid footer overlap */
+.gm-style .gm-style-cc {
+    bottom: 80px !important; /* Above footer */
+}
+
+.gm-style .gmnoprint {
+    bottom: 80px !important; /* Move zoom controls above footer */
+}
+
+.gm-style-mtc {
+    bottom: 80px !important; /* Move map type controls above footer */
+}
+
 .flight-panel {
     position: absolute;
     top: 15px;
@@ -217,39 +230,50 @@ body {
 
 .bottom-controls {
     position: absolute;
-    bottom: 70px;
+    bottom: 90px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 10px;
     z-index: 500;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: calc(100% - 20px);
 }
 
 .control-btn {
-    background: rgba(10, 17, 40, 0.9);
+    background: rgba(10, 17, 40, 0.95);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 168, 255, 0.3);
-    border-radius: 30px;
-    padding: 10px 16px;
+    border: 1px solid rgba(0, 168, 255, 0.4);
+    border-radius: 25px;
+    padding: 12px 18px;
     cursor: pointer;
-    font-size: 12px;
-    font-weight: 500;
-    color: #00a8ff;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    font-size: 13px;
+    font-weight: 600;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 168, 255, 0.2);
     transition: all 0.3s ease;
     white-space: nowrap;
+    min-width: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .control-btn:hover {
-    background: rgba(0, 168, 255, 0.2);
-    border-color: #00a8ff;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.3);
+    background: rgba(0, 168, 255, 0.3);
+    border-color: #00c2ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 168, 255, 0.4);
+    color: #ffffff;
 }
 
 .control-btn.active {
-    background: #00a8ff;
+    background: linear-gradient(135deg, #00a8ff, #00c2ff);
+    border-color: #00c2ff;
     color: white;
+    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.5);
 }
 
 /* Footer */
@@ -354,9 +378,10 @@ footer {
     }
 
     .bottom-controls {
-        bottom: 130px;
+        bottom: 120px;
         flex-wrap: wrap;
         max-width: calc(100% - 20px);
+        gap: 8px;
     }
 
     .navbar {
@@ -368,7 +393,23 @@ footer {
     }
 
     .control-btn {
-        padding: 8px 12px;
-        font-size: 11px;
+        padding: 10px 14px;
+        font-size: 12px;
+        min-width: 90px;
+        flex: 1;
+        max-width: 120px;
+    }
+
+    /* Ensure Google Maps controls are properly positioned on mobile */
+    .gm-style .gm-style-cc {
+        bottom: 100px !important;
+    }
+
+    .gm-style .gmnoprint {
+        bottom: 100px !important;
+    }
+
+    .gm-style-mtc {
+        bottom: 100px !important;
     }
 }
