@@ -109,11 +109,13 @@ body {
     position: relative;
     height: calc(100vh - 120px);
     width: 100%;
+    min-height: 400px; /* Ensure minimum height on mobile */
 }
 
 #map {
     height: 100%;
     width: 100%;
+    min-height: 400px; /* Ensure map has minimum height */
 }
 
 /* Google Maps controls positioning to avoid footer overlap */
@@ -423,6 +425,17 @@ footer {
     .gm-style-mtc {
         bottom: 180px !important;
     }
+
+    /* Fix map height on mobile */
+    .map-container {
+        height: calc(100vh - 60px) !important;
+        min-height: 500px;
+    }
+
+    #map {
+        height: 100% !important;
+        min-height: 500px;
+    }
 }
 
 /* Additional mobile adjustments for very small screens */
@@ -451,5 +464,16 @@ footer {
 
     .flight-panel {
         background: rgba(255, 255, 255, 0.7) !important; /* Even more transparent on small screens */
+    }
+
+    /* Additional map height fix for small screens */
+    .map-container {
+        height: calc(100vh - 50px) !important;
+        min-height: 450px;
+    }
+
+    #map {
+        height: 100% !important;
+        min-height: 450px;
     }
 }
