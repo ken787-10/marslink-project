@@ -118,15 +118,22 @@ body {
 
 /* Google Maps controls positioning to avoid footer overlap */
 .gm-style .gm-style-cc {
-    bottom: 80px !important; /* Above footer */
+    bottom: 20px !important; /* Copyright closer to bottom */
 }
 
 .gm-style .gmnoprint {
-    bottom: 80px !important; /* Move zoom controls above footer */
+    bottom: 120px !important; /* Position higher on desktop */
+    right: 50px !important; /* Move even further left to be fully visible */
 }
 
 .gm-style-mtc {
-    bottom: 80px !important; /* Move map type controls above footer */
+    bottom: 150px !important; /* Move map type controls well above footer */
+}
+
+/* Hide Google's attribution text to reduce clutter */
+.gm-style .gm-style-cc a {
+    font-size: 10px !important;
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .flight-panel {
@@ -238,7 +245,7 @@ body {
     z-index: 500;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: calc(100% - 20px);
+    max-width: calc(100% - 100px);
 }
 
 .control-btn {
@@ -366,6 +373,7 @@ footer {
         max-width: none;
         min-width: auto;
         padding: 12px;
+        background: rgba(255, 255, 255, 0.75) !important; /* More transparent on mobile */
     }
 
     .airport-code {
@@ -378,9 +386,12 @@ footer {
     }
 
     .bottom-controls {
-        bottom: 120px;
-        flex-wrap: wrap;
-        max-width: calc(100% - 20px);
+        bottom: 65px;
+        left: 50%;
+        transform: translateX(-50%);
+        flex-direction: column;
+        align-items: center;
+        max-width: 140px;
         gap: 8px;
     }
 
@@ -395,21 +406,50 @@ footer {
     .control-btn {
         padding: 10px 14px;
         font-size: 12px;
-        min-width: 90px;
-        flex: 1;
-        max-width: 120px;
+        min-width: 120px;
+        width: 120px;
     }
 
     /* Ensure Google Maps controls are properly positioned on mobile */
     .gm-style .gm-style-cc {
-        bottom: 100px !important;
+        bottom: 15px !important;
     }
 
     .gm-style .gmnoprint {
-        bottom: 100px !important;
+        bottom: 90px !important;
+        right: 45px !important;
     }
 
     .gm-style-mtc {
-        bottom: 100px !important;
+        bottom: 180px !important;
+    }
+}
+
+/* Additional mobile adjustments for very small screens */
+@media (max-width: 480px) {
+    .bottom-controls {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 50px;
+    }
+
+    .control-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+        min-width: 100px;
+        width: 100px;
+    }
+
+    .gm-style .gmnoprint {
+        bottom: 90px !important;
+        right: 40px !important;
+    }
+
+    .gm-style-mtc {
+        bottom: 190px !important;
+    }
+
+    .flight-panel {
+        background: rgba(255, 255, 255, 0.7) !important; /* Even more transparent on small screens */
     }
 }
