@@ -62,12 +62,42 @@
         </div>
     </div>
 
-    <!-- フッター -->
-    <div class="footer-nav">
-        <button class="nav-control-btn" onclick="history.back()">← 戻る</button>
-        <button class="nav-control-btn" onclick="location.reload()">🔄 更新</button>
-        <button class="nav-control-btn" onclick="history.forward()">進む →</button>
-    </div>
+    <!-- Footer -->
+    <footer>
+        <!-- Bottom Navigation -->
+        <div class="navbar">
+            <button class="nav-item" onclick="history.back()">
+                <div class="nav-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.42-1.41L7.83 13H20v-2z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="nav-text">戻る</div>
+            </button>
+            <button class="nav-item active" onclick="location.reload()">
+                <div class="nav-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="nav-text">更新</div>
+            </button>
+            <button class="nav-item" onclick="history.forward()">
+                <div class="nav-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 11h12.17l-5.59-5.59L12 4l8 8-8 8-1.41-1.41L16.17 13H4v-2z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <div class="nav-text">進む</div>
+            </button>
+        </div>
+        
+        <!-- Copyright Information -->
+        <div class="copyright">
+            <p>© 2025 CABINTIME. All Rights Reserved.</p>
+            <p>安全で快適なフライトをお楽しみください</p>
+        </div>
+    </footer>
 
     <!-- Google Maps & JavaScript -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAiKdev3qxj_3JihNdpHKQeS5h5tS9cRiA&callback=initMap"></script>
