@@ -154,22 +154,22 @@ published: true
           <img src="{{ '/assets/images/ceo-pic5.jpg' | relative_url }}" alt="CEO活動写真4">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic7.jpg' | relative_url }}" alt="CEO活動写真5">
+          <img src="{{ '/assets/images/ceo-pic7.JPG' | relative_url }}" alt="CEO活動写真5">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic8.jpeg' | relative_url }}" alt="CEO活動写真6">
+          <img src="{{ '/assets/images/ceo-pic8.jpg' | relative_url }}" alt="CEO活動写真6">
         </div>
         <div class="gallery-container">
           <img src="{{ '/assets/images/ceo10.JPG' | relative_url }}" alt="CEO活動写真7">
         </div>
-        <!-- <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic8.jpg' | relative_url }}" alt="CEO活動写真8">
+       <div class="gallery-container">
+          <img src="{{ '/assets/images/ana.jpg' | relative_url }}" alt="CEO活動写真8">
         </div>
-        <div class="gallery-container">
+        <!--  <div class="gallery-container">
           <img src="{{ '/assets/images/ceo9.JPG' | relative_url }}" alt="CEO活動写真9">
         </div>
         <div class="gallery-container">
-          <img src="{{ '/assets/images/ceo-pic10.jpg' | relative_url }}" alt="CEO活動写真10">
+          <img src="{{ 'assets/images/ceo10.JPG' | relative_url }}" alt="CEO活動写真10">
         </div>
         <div class="gallery-container">
           <img src="{{ '/assets/images/ceo-pic11.jpg' | relative_url }}" alt="CEO活動写真11">

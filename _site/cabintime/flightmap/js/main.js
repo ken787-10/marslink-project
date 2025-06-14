@@ -15,7 +15,26 @@ const flightData = {
 };
 
 function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
+    // Ensure map container exists
+    const mapElement = document.getElementById('map');
+    if (!mapElement) {
+        console.error('Map container not found');
+        // Retry after a short delay
+        setTimeout(() => {
+            if (document.getElementById('map')) {
+                initMap();
+            }
+        }, 500);
+        return;
+    }
+
+    // Force container size on mobile
+    if (window.innerWidth <= 768) {
+        mapElement.style.height = 'calc(100vh - 60px)';
+        mapElement.style.minHeight = '500px';
+    }
+
+    map = new google.maps.Map(mapElement, {
         zoom: 6,
         center: { lat: 30.0, lng: 130.0 },
         mapTypeId: 'terrain',
@@ -26,7 +45,8 @@ function initMap() {
             { featureType: 'poi', stylers: [{ visibility: 'simplified' }] }
         ],
         disableDefaultUI: true,
-        zoomControl: true
+        zoomControl: true,
+        gestureHandling: 'greedy' // Better mobile interaction
     });
 
     createFlightPath();
@@ -34,7 +54,43 @@ function initMap() {
     updateAircraftPosition();
     startDataUpdate();
     startFlightProgress();
+
+    // Force map resize on mobile
+    setTimeout(() => {
+        if (map) {
+            google.maps.event.trigger(map, 'resize');
+        }
+    }, 100);
 }
+
+// Ensure initMap is called after DOM and Google Maps API are ready
+let mapInitialized = false;
+
+function tryInitMap() {
+    if (mapInitialized) return;
+    
+    if (typeof google !== 'undefined' && google.maps && document.getElementById('map')) {
+        mapInitialized = true;
+        initMap();
+    } else {
+        // Wait a bit longer for Google Maps API
+        setTimeout(tryInitMap, 200);
+    }
+}
+
+// Initialize when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    tryInitMap();
+});
+
+// Fallback: Initialize after page load
+window.addEventListener('load', () => {
+    if (!mapInitialized) {
+        setTimeout(() => {
+            tryInitMap();
+        }, 500);
+    }
+});
 
 function createFlightPath() {
     const flightPlanCoordinates = [flightData.departure, flightData.arrival];
