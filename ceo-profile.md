@@ -419,7 +419,7 @@ published: true
             </svg>
           </div>
           <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-            <h2 class="font-medium title-font text-white mb-1 text-xl">ワシントン州立大学IEP留学</h2>
+            <h2 class="font-medium title-font text-white mb-1 text-xl">ワシントン州立大学IEP</h2>
             <p class="text-sm text-gray-400 mb-2">University of Washington | International Program</p>
             <p class="leading-relaxed text-gray-300">University of Washingtonでインターンプログラム修了。Amazonエンジニアとの出会いから起業への意識が芽生える。プログラミング言語（PHP、Python）を習得し、技術的基盤を構築。</p>
           </div>
