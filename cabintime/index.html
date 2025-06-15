@@ -477,6 +477,13 @@
     <script>
         // モバイルデバイスかどうかを判定する関数
         function isMobileDevice() {
+            // 開発環境（localhost, 127.0.0.1）では常に表示OK
+            if (
+                location.hostname === 'localhost' ||
+                location.hostname === '127.0.0.1'
+            ) {
+                return true;
+            }
             // 画面サイズの判定（iPadの一般的なサイズ）
             const isTabletOrMobile = window.innerWidth <= 1024 && window.innerHeight <= 1366;
             // iPadの検出（新しいiPadを含む）
