@@ -677,7 +677,7 @@ additional_css: |
 
                         <div>
                             <dt class="text-base/7 font-semibold text-white">Q8. 収益分配の仕組みを教えてください</dt>
-                            <dd class="mt-2 text-base/7 text-gray-300">広告収入・物販売上・予約手数料の一定割合を事業者様にお支払いします。詳細な条件については個別にご相談させていただきます。</dd>
+                            <dd class="mt-2 text-base/7 text-gray-300">広告収入・物販売上・予約手数料の一定割合を航空・交通事業者様にお支払いします。詳細な条件については個別にご相談させていただきます。</dd>
                         </div>
 
                         <div>
