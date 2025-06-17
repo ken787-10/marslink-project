@@ -310,7 +310,7 @@ additional_css: |
                         </div>
                         <div class="flex-shrink-0 w-80">
                             <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="機内エンターテイメントの革命" class="object-cover object-center h-full w-full" src="{{ '/assets/images/merit2.jpg' | relative_url }}">
+                                <img alt="機内エンターテイメントの革命" class="object-cover object-center h-full w-full" src="{{ '/assets/images/flightdemo1.png' | relative_url }}">
                             </div>
                             <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">機内エンターテイメントの革命</h2>
                             <p class="text-base leading-relaxed mt-2 text-gray-300">従来の画一的コンテンツから、到着地連動のパーソナライズ情報へ。高額なWiFi料金も不要で、通信環境に左右されない安定した高品質デジタル体験を全乗客に提供。移動目的に応じた最適化コンテンツ。</p>

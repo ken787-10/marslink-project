@@ -2,12 +2,26 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow">
   <title>MarsLink</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- ▼▼▼ スマートフォン・iPad以外で「閲覧制限画面」を表示するためのコード ▼▼▼ -->
+    <!-- Device Restriction Message -->
+    <div id="device-restriction" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.95); z-index: 9999; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;">
+        <div style="max-width: 500px; background-color: #0a1128; padding: 30px; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);">
+            <h2 style="color: #00a8ff; margin-bottom: 20px;">スマートフォンまたはiPadでの閲覧をお願いします</h2>
+            <p style="color: #fff; margin-bottom: 20px; line-height: 1.6;">このページはスマートフォンまたはiPadでの閲覧に最適化されています。<br>PCでの閲覧はできませんので、スマートフォンまたはiPadでアクセスしてください。</p>
+            <div style="font-size: 48px; margin: 20px 0;">📱</div>
+            <img src="../assets/images/product1.jpg" alt="スマートフォンでの閲覧" style="max-width: 300px; width: 100%; height: auto; border-radius: 10px; margin-top: 20px;">
+            <a href="https://marslink.co.jp" style="display: inline-block; margin-top: 30px; text-decoration: none;">
+                <button style="background-color: #00a8ff; color: #fff; border: none; padding: 12px 32px; border-radius: 8px; font-size: 16px; font-weight: bold; cursor: pointer; transition: background 0.2s;">トップに戻る</button>
+            </a>
+        </div>
+    </div>
+    <!-- ▲▲▲ スマートフォン・iPad以外で「閲覧制限画面」を表示するためのコード ▲▲▲ -->
     <!-- Header -->
     <header>
         <div class="header">
@@ -459,5 +473,49 @@
     </footer>
 
     <script src="js/flight-info.js"></script>
+    <!-- ▼▼▼ スマートフォン・iPad以外で「閲覧制限画面」を表示するためのJavaScript ▼▼▼ -->
+    <script>
+        // モバイルデバイスかどうかを判定する関数
+        function isMobileDevice() {
+            // 開発環境（localhost, 127.0.0.1）では常に表示OK
+            if (
+                location.hostname === 'localhost' ||
+                location.hostname === '127.0.0.1'
+            ) {
+                return true;
+            }
+            // 画面サイズの判定（iPadの一般的なサイズ）
+            const isTabletOrMobile = window.innerWidth <= 1024 && window.innerHeight <= 1366;
+            // iPadの検出（新しいiPadを含む）
+            const isIPad = /iPad/.test(navigator.userAgent) || 
+                          (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+            // その他のモバイルデバイスを判定
+            const isOtherMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            // Chromeの検証モードでのiPadエミュレーションを検出
+            const isChromeDevTools = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+            const isEmulatedIPad = isChromeDevTools && isTabletOrMobile;
+            return isTabletOrMobile || isIPad || isOtherMobile || isEmulatedIPad;
+        }
+        // デバイス制限の表示を制御
+        function checkDevice() {
+            const deviceRestriction = document.getElementById('device-restriction');
+            if (!isMobileDevice()) {
+                deviceRestriction.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            } else {
+                deviceRestriction.style.display = 'none';
+                document.body.style.overflow = 'auto';
+                // body直下の要素のdisplayをリセット
+                Array.from(document.body.children).forEach(child => {
+                    if (child.id !== 'device-restriction') {
+                        child.style.display = '';
+                    }
+                });
+            }
+        }
+        window.addEventListener('load', checkDevice);
+        window.addEventListener('resize', checkDevice);
+    </script>
+    <!-- ▲▲▲ スマートフォン・iPad以外で「閲覧制限画面」を表示するためのJavaScript ▲▲▲ -->
 </body>
 </html>
