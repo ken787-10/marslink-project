@@ -1,6 +1,6 @@
 ---
 title: CabinTime、OSAP19期DEMO DAYのピッチ動画を公開 —「移動空間」を観光体験の入口へ
-published: true
+published: false
 date: 2025-11-11 10:00 +0900
 image: /assets/images/osap-demo05.jpg
 tags: [リリース, CabinTime, OSAP, DEMODAY, ピッチ]
