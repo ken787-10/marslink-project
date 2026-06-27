@@ -1,1 +1,31 @@
 my-tailwind-final/
+
+# macOS
+.DS_Store
+
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby / Bundler
+.bundle/
+vendor/bundle/
+vendor/cache/
+vendor/gems/
+vendor/ruby/
+
+# Node / generated assets
+node_modules/
+public/
+
+# Environment files
+.env
+.env.*
+
+# Local backups
+_backup/
+*.bak
+*.backup
+*.old

@@ -7,42 +7,57 @@
                     <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="MarsLink Logo" class="h-8 w-auto">
                     <span class="font-orbitron text-xl font-black text-white tracking-wider">MarsLink</span>
                 </a>
-                <p class="text-sm/6 text-balance text-gray-300">移動空間とデジタルの融合で未来を創る革新的テクノロジーカンパニー。移動を価値ある体験へと変革します。</p>
+                <p class="text-sm/6 text-balance text-gray-300">{{ site.data.marslink_terms.brand_definition_en }} {{ site.data.marslink_terms.brand_definition_ja }}</p>
             </div>
             <div class="mt-16 grid grid-cols-1 gap-8 xl:col-span-2 xl:mt-0 xl:grid-cols-3">
                 <div class="text-center xl:text-left">
-                    <h3 class="text-sm/6 font-semibold text-white">プロダクト</h3>
+                    <h3 class="text-sm/6 font-semibold text-white">Platform</h3>
                     <ul role="list" class="mt-6 space-y-4">
                         <li>
-                            <a href="{{ '/cabintime/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">キャビンタイム</a>
+                            <a href="{{ '/platform/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">Journey Intelligence Platform</a>
                         </li>
                         <li>
-                            <a href="{{ '/map-video/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">MEE</a>
+                            <a href="{{ '/cabintime/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">CabinTime</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/technology/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">Technology</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mt-10 xl:mt-0 text-center xl:text-left">
-                    <h3 class="text-sm/6 font-semibold text-white">会社情報</h3>
+                    <h3 class="text-sm/6 font-semibold text-white">Company</h3>
                     <ul role="list" class="mt-6 space-y-4">
                         <li>
-                            <a href="{{ '/profile/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">会社概要</a>
+                            <a href="{{ '/mission/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">Mission</a>
                         </li>
                         <li>
-                            <a href="{{ '/ceo/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">代表紹介</a>
+                            <a href="{{ '/profile/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">会社概要</a>
                         </li>
                         <li>
-                            <a href="{{ '/updates/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">更新情報</a>
+                            <a href="{{ '/ceo/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">代表紹介</a>
                         </li>
                         <li>
-                            <a href="{{ '/privacy/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">プライバシーポリシー</a>
+                            <a href="{{ '/careers/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">採用</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/investors/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">投資家向け</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/updates/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">更新情報</a>
                         </li>
                     </ul>
                 </div>
                 <div class="mt-10 xl:mt-0 text-center xl:text-left">
-                    <h3 class="text-sm/6 font-semibold text-white">お問い合わせ</h3>
+                    <h3 class="text-sm/6 font-semibold text-white">Connect</h3>
                     <ul role="list" class="mt-6 space-y-4">
                         <li>
-                            <a href="{{ '/contact/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-400 transition-colors">お問い合わせ</a>
+                            <a href="{{ '/contact/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/research/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">Research</a>
+                        </li>
+                        <li>
+                            <a href="{{ '/privacy/' | relative_url }}" class="text-sm/6 text-gray-400 hover:text-cyan-300 transition-colors">Privacy</a>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +66,7 @@
         <div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24 text-center">
             <p class="text-sm/6 text-gray-400">
                 &copy; {{ site.time | date: '%Y' }}
-                <a href="https://marslink.co.jp" class="hover:text-cyan-400">株式会社MarsLink</a>
+                <a href="https://marslink.co.jp" class="hover:text-cyan-300">MarsLink Inc.</a>
             </p>
         </div>
     </div>

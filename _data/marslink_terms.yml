@@ -1,0 +1,125 @@
+brand_definition_en: "MarsLink is a Journey AI Company."
+brand_definition_ja: "移動という、人が最も頻繁に意思決定をする場所から、AI時代の意思決定インフラをつくる。"
+category_definition_ja: "MarsLinkは、移動空間の情報、状況認識、意思決定をAIでつなぐAIインフラ企業です。CabinTimeはその初期導入パッケージです。"
+
+core_platform:
+  name: "Journey Intelligence Platform"
+  role: "MarsLinkの中核。AI、データ、状況認識、推薦、リスク分析、説明可能性を束ねる移動空間向けインテリジェンス基盤。"
+  copy: "CabinTimeは、この基盤を通信制約や専用空間のある移動・滞在環境へ導入する初期パッケージです。Journey AIは、天気、交通、混雑、口コミ、目的、好み、避けたい体験を統合し、利用者が次の行動を判断できる状態をつくるAI体験です。"
+
+terms:
+  cabin_time:
+    name: "CabinTime"
+    role: "初期導入パッケージ。Journey AIを機内・船内・移動空間で検証する入口。"
+  journey_ai_company:
+    name: "Journey AI Company"
+    role: "会社の看板。覚えやすいブランド定義。"
+  journey_ai_platform:
+    name: "Journey Intelligence Platform"
+    role: "文脈理解、推薦、リスク分析、運用を支える中核基盤。"
+  mobility_intelligence:
+    name: "Mobility Intelligence"
+    role: "交通・地域・運航を横断して、移動空間の判断材料を扱う状態。"
+  decision_intelligence:
+    name: "Decision Intelligence"
+    role: "長期の北極星。移動から社会へ広がる意思決定インフラ。"
+
+roadmap:
+  - label: "CabinTime"
+    type: "Initial package"
+    copy: "通信制約や専用空間のあるAir、Sea、Rail、Coach、Stay、RegionへJourney AIを入れる開発・共同検証中の初期導入パッケージ。"
+  - label: "Journey AI"
+    type: "Personal intelligence"
+    copy: "移動と滞在の文脈を理解し、出発前、移動中、到着後、現地滞在まで、人が次の行動を選べる状態をつくるAI。"
+
+evolution:
+  - label: "CabinTime"
+    type: "Initial package"
+    copy: "乗客接点、移動空間の画面、接続・ローカル実行、信頼できる情報更新を束ねる初期導入パッケージ。"
+  - label: "Journey AI"
+    type: "Passenger intelligence"
+    copy: "現在地、時間、目的、天候、好みを理解し、利用者が次を選べる状態をつくる。"
+  - label: "Mobility Intelligence"
+    type: "Network intelligence"
+    copy: "航空、船舶、交通、地域を横断して、移動空間の判断材料を統合する。"
+  - label: "Decision Intelligence"
+    type: "Infrastructure"
+    copy: "移動から社会へ広がる、人と組織の意思決定インフラ。"
+
+decision_stack:
+  - label: "Context"
+    copy: "位置、時間、目的、制約、天候、混雑、地域情報を読み取る。"
+  - label: "Recommend"
+    copy: "選ぶ理由、避ける理由、代替案をその場の文脈で提示する。"
+  - label: "Act"
+    copy: "保存、共有、ルート確認、持ち物、候補比較など、次の行動へつなげる。"
+  - label: "Assure"
+    copy: "根拠、権限、ログ、更新履歴を残し、人が確認できるAIにする。"
+  - label: "Learn"
+    copy: "閲覧、保存、選択、来訪、フィードバックを次の判断品質へ戻す。"
+
+cabin_layers:
+  - label: "Edge Node"
+    type: "Body"
+    copy: "機内・船内・車内に置かれるローカル実行環境。接続できる時は機内Wi-Fi、船内ネットワーク、衛星通信などから最新情報を取り込み、通信が弱い時も必要な文脈とAI体験を保つ。"
+  - label: "Journey Intelligence"
+    type: "Brain"
+    copy: "天候、交通、混雑、地域、目的、好み、リスクを統合し、判断できる文脈へ変換する。"
+  - label: "CabinTime"
+    type: "Interface"
+    copy: "乗客がスマートフォン、ポータル、座席画面で触れるAI移動アシスタント。"
+
+platform_products:
+  - label: "CabinTime"
+    audience: "Initial Journey AI Package"
+    status: "開発・共同検証中"
+    copy: "通信制約や専用空間のある機内、船内、観光列車、長距離バス、ホテル、地域接点へJourney AIを入れる初期導入パッケージ。コンテンツ配信だけでなく、到着後の移動、滞在、回避すべき体験まで判断できる状態をつくる。"
+  - label: "Journey AI"
+    audience: "Personal Decision Intelligence"
+    status: "設計・計画中"
+    copy: "移動と滞在の文脈を理解する個人向けAI。天気、口コミ、混雑、交通、営業時間、Google評価、目的、同行者、好み、避けたい体験を束ね、広告順位ではなく理由つきの判断支援として提示する。"
+
+journey_domains:
+  - label: "Air"
+    priority: "Primary"
+    copy: "航空機、空港ラウンジ、機内Wi-Fi、IFE、到着前案内。通信制約と到着後の判断が重なる最初の重点領域。"
+  - label: "Sea"
+    priority: "Primary"
+    copy: "フェリー、船舶、クルーズ、船内ポータル、寄港地案内。海況、天候、通信制約、到着地情報を一つの文脈にする。"
+  - label: "Rail"
+    priority: "Expansion"
+    copy: "観光列車、新幹線、私鉄特別車両。沿線情報、混雑、乗換、到着後の滞在判断を、車内体験に組み込む。"
+  - label: "Coach"
+    priority: "Expansion"
+    copy: "長距離バス、空港連絡バス、観光バス。限られた画面と移動時間で、到着後の行動を決めやすくする。"
+  - label: "Stay"
+    priority: "Expansion"
+    copy: "ホテル、旅館、ラウンジ、館内ポータル。滞在中の食事、移動、天候、周辺体験を個人文脈で整理する。"
+  - label: "Region"
+    priority: "Expansion"
+    copy: "自治体、DMO、地域回遊、観光案内所。地域が持つ情報を、押し売りではなく旅行者の判断材料として届ける。"
+
+journey_ai_signals:
+  - label: "Weather"
+    copy: "雨雲、降水確率、風、海況、気温、屋外滞在への影響。"
+  - label: "Mobility"
+    copy: "運航・運行情報、遅延、乗換、混雑、徒歩距離、タクシー待ち。"
+  - label: "Reviews"
+    copy: "Google評価、口コミの傾向、騒音、席間、接客、目的との相性。"
+  - label: "Context"
+    copy: "接待、家族旅行、一人旅、短時間滞在、同行者、到着時刻。"
+  - label: "Preference"
+    copy: "静か、駅直結、雨に濡れにくい、料金帯、避けたい体験。"
+  - label: "Assurance"
+    copy: "なぜ推奨するか、なぜ避けるか、どの情報を根拠にしたか。"
+
+future_modules:
+  - label: "Risk Intelligence"
+    status: "構想"
+    copy: "天気、運休、事故、混雑、SNS、河川などを統合し、移動や体験のリスクを判断材料として提示する。"
+  - label: "Mobility API"
+    status: "構想"
+    copy: "交通事業者、自治体、旅行・地域サービスが、移動文脈と推薦機能に接続するためのAPI。"
+  - label: "Resilience Operations"
+    status: "構想"
+    copy: "災害、避難、緊急情報、安全情報など、判断を誤れない場面の運用支援へ拡張する。"
