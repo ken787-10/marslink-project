@@ -97,7 +97,7 @@ journey_domains:
     copy: "ホテル、旅館、ラウンジ、館内ポータル。滞在中の食事、移動、天候、周辺体験を個人文脈で整理する。"
   - label: "Region"
     priority: "Expansion"
-    copy: "自治体、DMO、地域回遊、観光案内所。地域が持つ情報を、押し売りではなく旅行者の判断材料として届ける。"
+    copy: "自治体、DMO、地域回遊、観光案内所。地域が持つ情報を、旅行者の状況に合う判断材料として届ける。"
 
 journey_ai_signals:
   - label: "Weather"

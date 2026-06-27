@@ -20,14 +20,14 @@ changefreq: weekly
     <div>
       <p class="text-xs font-semibold uppercase text-cyan-100/80">CabinTime / Initial Journey AI Package</p>
       <h1 class="mt-6 text-4xl font-semibold leading-[1.08] text-white">
-        Cabin intelligence for<br>the next decision.
+        移動空間に、<br>次の判断を支える知能を。
       </h1>
       <p class="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
         CabinTimeは、通信制約や専用空間のある移動・滞在環境へJourney AIを入れる初期導入パッケージです。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくります。ここで得た文脈理解と推薦の型を、Journey AIへ広げます。
       </p>
       <div class="mt-10 flex flex-col gap-3 sm:flex-row">
         <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
-        <a href="#journey-ai-loop" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Journey AI構想</a>
+        <a href="#journey-ai" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Journey AIとは</a>
       </div>
       <p class="mt-6 text-sm leading-6 text-gray-400">
         現在は正式ローンチ前の開発・共同検証フェーズです。
@@ -191,7 +191,7 @@ changefreq: weekly
   </div>
 </section>
 
-<section id="journey-ai-loop" class="bg-[#050607] py-24 text-white">
+<section class="bg-[#050607] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
@@ -200,7 +200,7 @@ changefreq: weekly
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
         <p>
-          CabinTimeは、単なる旅行アプリでも、機内の暇つぶしでもありません。Journey AIを、通信制約のある機内・船内・車内で実際に動かすための初期導入パッケージです。
+          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信制約のある機内・船内・車内で実際に動かすための初期導入パッケージです。
         </p>
         <p>
           パッケージに含まれるのは、乗客が触れるスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い時にも体験を保つローカル実行、そして事業者が情報を扱う運用の前提です。
@@ -439,7 +439,7 @@ changefreq: weekly
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.76fr_1.24fr]">
       <div>
         <p class="text-sm font-semibold uppercase text-cyan-200">Deployment domains</p>
-        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">閉ざされた空間と、意図的に情報を届けたい空間へ。</h2>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">通信が届きにくい空間と、滞在時間の長い空間へ。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           CabinTimeはAir専用でも、Sea専用でもありません。通信制約、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージです。
         </p>
@@ -549,39 +549,26 @@ changefreq: weekly
   </div>
 </section>
 
-<section class="bg-[#050607] py-24 text-white">
+<section id="journey-ai" class="bg-[#080c10] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.86fr_1.14fr] lg:items-center">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
-        <p class="text-sm font-semibold uppercase text-cyan-200">Journey AI loop</p>
-        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeで現場に入れ、Journey AIで広げる。</h2>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeの頭脳は、Journey AI。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeは、MarsLinkがつくるJourney Intelligence Platformの初期導入パッケージです。まず移動空間で判断支援を検証し、次にJourney AIとして出発前、移動中、到着後、滞在中まで広げます。
+          CabinTimeは、移動・滞在空間に導入するパッケージです。その中で実際に考えているのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を判断できる状態をつくる知能です。
+        </p>
+        <p class="mt-4 text-lg leading-8 text-gray-300">
+          Journey AIは、広告枠の順位ではありません。天気、交通、混雑、口コミ、目的、好み、避けたい体験を自律的に集め、薦める理由と避ける理由を添えて提示します。決めるのは、つねに人間です。
         </p>
       </div>
-      <div class="rounded-lg border border-white/10 bg-[#070b11] p-4">
-        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div class="rounded-lg border border-white/10 bg-white/[0.035] p-5">
-            <p class="text-sm text-gray-500">01</p>
-            <h3 class="mt-3 text-xl font-semibold text-white">Context</h3>
-            <p class="mt-3 text-sm leading-6 text-gray-300">場所、時間、目的地、天候、混雑、口コミ、好み、目的、避けたい体験を理解する。</p>
-          </div>
-          <div class="rounded-lg border border-white/10 bg-white/[0.035] p-5">
-            <p class="text-sm text-gray-500">02</p>
-            <h3 class="mt-3 text-xl font-semibold text-white">Recommend</h3>
-            <p class="mt-3 text-sm leading-6 text-gray-300">次に取り得る選択肢、避けるべき選択、その理由を提示する。</p>
-          </div>
-          <div class="rounded-lg border border-white/10 bg-white/[0.035] p-5">
-            <p class="text-sm text-gray-500">03</p>
-            <h3 class="mt-3 text-xl font-semibold text-white">Act</h3>
-            <p class="mt-3 text-sm leading-6 text-gray-300">保存、共有、予約、ルート確認などの行動へつなげる。</p>
-          </div>
-          <div class="rounded-lg border border-white/10 bg-white/[0.035] p-5">
-            <p class="text-sm text-gray-500">04</p>
-            <h3 class="mt-3 text-xl font-semibold text-white">Learn</h3>
-            <p class="mt-3 text-sm leading-6 text-gray-300">本人の反応と現場の更新情報をもとに、提案の質を改善する。</p>
-          </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {% for signal in site.data.marslink_terms.journey_ai_signals %}
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-lg font-semibold text-white">{{ signal.label }}</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">{{ signal.copy }}</p>
         </div>
+        {% endfor %}
       </div>
     </div>
   </div>

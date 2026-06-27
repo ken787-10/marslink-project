@@ -42,7 +42,7 @@ permalink: /platform/
         </div>
         <div class="rounded-lg border border-cyan-200/20 bg-cyan-200/[0.06] p-7">
           <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">これから</p>
-          <h3 class="mt-4 text-2xl font-semibold text-white">Journey AI</h3>
+          <h3 class="mt-4 text-2xl font-semibold text-white">Decision Support</h3>
           <p class="mt-4 leading-7 text-gray-300">目的地の状況、天候、交通、混雑、口コミ、予定、好み。次の行動を選ぶための判断材料。</p>
         </div>
       </div>
@@ -103,17 +103,17 @@ permalink: /platform/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Development sequence</p>
-      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">当面のプロダクトは、CabinTimeとJourney AI。</h2>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">当面のプロダクトはCabinTime。その頭脳がJourney AI。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">
-        最初から大きな管理画面を売るのではありません。まずCabinTimeで、移動空間にAIを入れた時に本当に判断が良くなるかを検証します。その上で、個人の移動と滞在に広がるJourney AIを作り込みます。
+        最初から大きな管理画面を売るのではありません。まずCabinTimeで、移動空間にAIを入れた時に本当に判断が良くなるかを検証します。Journey AIは別製品として売り出すものではなく、CabinTimeの中で文脈を読み、理由つきの判断支援を行う知能として育てます。
       </p>
       <p class="mt-4 text-sm leading-6 text-gray-500">
         現在、開発・共同検証中なのはCabinTimeです。Journey AIは設計・検証予定であり、導入済み・提供中ではありません。
       </p>
     </div>
-    <div class="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
+    <div class="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-[1.15fr_0.85fr]">
       {% for product in site.data.marslink_terms.platform_products %}
-      <div class="flex flex-col rounded-lg border border-white/10 bg-white/[0.04] p-8">
+      <div class="flex flex-col rounded-lg border p-8 {% if product.label == 'CabinTime' %}border-cyan-200/20 bg-cyan-200/[0.055] shadow-2xl shadow-cyan-950/20{% else %}border-white/10 bg-white/[0.03]{% endif %}">
         <div class="flex items-center justify-between gap-3">
           <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">{{ product.audience }}</p>
           {% if product.status == "開発・共同検証中" %}
@@ -130,7 +130,7 @@ permalink: /platform/
         </div>
         {% elsif product.label == "Journey AI" %}
         <div class="mt-6">
-          <a href="{{ '/cabintime/#journey-ai-loop' | relative_url }}" class="inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">CabinTime内で見る →</a>
+          <a href="{{ '/cabintime/#journey-ai' | relative_url }}" class="inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">Journey AIについて（CabinTime内）→</a>
         </div>
         {% endif %}
       </div>
@@ -146,7 +146,7 @@ permalink: /platform/
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Deployment domains</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">Air / Seaから始め、Rail / Coach / Stay / Regionへ広がる。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          ドメインは「どこに入るか」、プロダクトは「何を提供するか」です。CabinTimeとJourney AIは、閉ざされた移動空間にも、意図的に情報を届けたい滞在・地域空間にも展開できます。
+          ドメインは「どこに入るか」、プロダクトは「何を提供するか」です。CabinTimeとJourney AIは、通信が不安定な移動空間にも、滞在時間が長く判断が続く滞在・地域空間にも展開できます。
         </p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">

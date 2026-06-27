@@ -7,10 +7,9 @@ This note records the current Tailwind product screens so they can be reused whe
 ## Source Of Truth
 
 - Public CabinTime page: `cabintime/index.md`
-- Archived Journey AI reference page: `journey-ai/index.md` (`published: false`)
 - Flight map geometry/data: `_data/japan_flight_map.yml`
 
-The page HTML/Tailwind is the reference. Screenshots are only visual checks. As of this note, Journey AI is not a separate public page; it is folded back into the CabinTime story and retained as source reference for later product development.
+The page HTML/Tailwind is the reference. Screenshots are only visual checks. As of this note, Journey AI is not a separate public page; it is folded back into the CabinTime story as `cabintime/index.md#journey-ai`.
 
 ## Product Separation
 
@@ -20,8 +19,8 @@ Journey AI is the broader personal decision intelligence layer. It should show c
 
 Current public treatment:
 
-- Public site: CabinTime page contains the integrated product story.
-- Reference source: Journey AI page remains unpublished so the Tailwind dashboard can be reused later.
+- Public site: CabinTime page contains the integrated product story and the `Powered by Journey AI` section.
+- Reference source: the Journey AI section now lives in CabinTime instead of an independent `journey-ai` page.
 - CabinTime layer: portal, package, cache, operator/venue-provided context, offline-aware operation.
 - Journey AI layer: personalized decision support, route/weather/context integration, candidate ranking, avoid/recommend/explain.
 
@@ -68,50 +67,30 @@ Key labels:
 
 Design intent: CabinTime should not look like a generic portal. It should show that AI aggregates weather, reviews, congestion, operating data, fees, and personal context, then helps people avoid bad choices and select better ones.
 
-### Journey AI Hero Dashboard
+### Powered by Journey AI Section
 
-File: `journey-ai/index.md` (`published: false`)
+File: `cabintime/index.md`
 
-Purpose: archived reference for the standalone Journey AI treatment. This is not currently a public page.
-
-Key labels:
-
-- `Live journey intelligence`
-- `ITM 伊丹空港 -> HND 羽田空港`
-- `Route intelligence`
-- `Weather radar`
-- `Avoid / Recommend / Explain`
-- `Fit score`
-- `Risk checks`
-- `Human choice`
-
-Design intent: a high-level hero dashboard showing map, weather radar, arrival context, and immediate avoid/recommend/explain decisions.
-
-### Journey AI Product Screen
-
-File: `journey-ai/index.md` (`published: false`)
-
-Purpose: detailed Journey AI screen for later product development. This is not currently a public page.
+Purpose: explain Journey AI as the brain inside CabinTime, not as an independent public product page.
 
 Key labels:
 
-- `Journey AI product screen`
-- `Passenger App`
-- `HND arrival assistant`
-- `Journey context layer`
-- `Decision layer`
-- `Experience decision monitor`
-- `8 signals`
-- `Experience risk`
-- `Next best action`
+- `Powered by Journey AI`
+- `CabinTimeの頭脳は、Journey AI。`
+- `Journey AIは、広告枠の順位ではありません。`
+- `決めるのは、つねに人間です。`
+- `Weather`
+- `Mobility`
+- `Reviews`
+- `Assurance`
 
-Design intent: three-column dashboard with passenger app, context/map layer, and decision layer. It demonstrates cross-source context such as weather, reviews, congestion, operating hours, transportation, fees, and personal context.
+Design intent: show that CabinTime is the deployable package and Journey AI is its intelligence layer. It must communicate cross-source context, explainable recommendation, and human-final decision support without making Journey AI look like a second equal product.
 
 ## Product Rules
 
-- Keep CabinTime and Journey AI visually related but conceptually separate.
-- CabinTime should not look like the full Journey AI app.
-- Journey AI can use richer AI decision language and candidate comparison.
+- Keep CabinTime as the primary public product and Journey AI as the brain inside CabinTime.
+- Do not bring back a public standalone Journey AI page until Journey AI operates beyond CabinTime.
+- Journey AI can use richer AI decision language and candidate comparison inside the CabinTime story.
 - Keep `Human choice` / human-final decision language.
 - Keep `No sponsored rank` or equivalent language when showing recommendations.
 - Do not bring back `Operator Console` as a primary product for now.
