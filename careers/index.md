@@ -11,7 +11,7 @@ permalink: /careers/
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Careers</p>
     <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl">移動体験をAIで再設計する。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、CabinTimeを起点に、航空・船舶・交通・地域をつなぐJourney AI Platformを開発しています。構想だけではなく、実際に使われるサービス体験をつくる仲間を探しています。
+      MarsLinkは、CabinTimeを起点に、航空・船舶・交通・地域をつなぐJourney Intelligence Platformを開発しています。構想だけではなく、実際に使われるサービス体験をつくる仲間を探しています。
     </p>
   </div>
 </section>

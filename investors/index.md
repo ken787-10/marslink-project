@@ -90,6 +90,7 @@ permalink: /investors/
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Market map</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">市場は、旅行アプリではなく移動空間の判断支援として見る。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">ソフトウェアとして、スマートフォン、航空機のIFE、船内ポータル、事業者アプリなど多様なハードに載るため、対象は日本の旅行・交通にとどまりません。訪日インバウンド、そして海外の移動市場まで、多言語で展開できます。</p>
         <p class="mt-6 text-sm leading-6 text-gray-500">市場規模は今後の資金調達資料で推計として整理します。この公開ページでは、導入数、売上、契約実績を作らず、現在の検証前提を明示します。</p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-3">

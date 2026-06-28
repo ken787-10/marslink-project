@@ -12,6 +12,9 @@ permalink: /mission/
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくるJourney AI Companyです。
     </p>
+    <p class="mt-5 max-w-3xl text-lg leading-8 text-gray-300">
+      私たちは、行政・地域・移動の現場で、情報はあるのに人の判断が支えられていない状況を見てきました。情報が変われば、人の判断は変わる。だからMarsLinkは、移動という最も判断が連続する場所から、意思決定を支えるAIをつくります。
+    </p>
   </div>
 </section>
 
@@ -24,7 +27,7 @@ permalink: /mission/
         人は移動中に検索、地図、SNS、レビュー、ニュース、天気、交通情報を見ています。情報は十分にあります。足りないのは、その人の現在地、時間、目的、制約を理解し、判断できる形へ統合する層です。
       </p>
       <p>
-        AIは、人間の代わりに決めるものではありません。AIは、複雑な状況を整理し、人が納得して選べる状態をつくるものです。私たちはこの考え方を、まず航空機・船舶・交通・地域という移動空間から実装します。
+        AIは、人間の代わりに決めるものではありません。AIは、複雑な状況を整理し、人が納得して選べる状態をつくるものです。私たちはこの考え方を、まず航空機・船舶・交通・地域という移動空間から実装します。ソフトウェアとして設計しているため、スマートフォン、航空機のIFE、船内ポータル、事業者アプリに載せられ、日本人の旅行者だけでなく、インバウンドや海外の移動にも、多言語で展開できます。
       </p>
     </div>
   </div>
@@ -60,7 +63,7 @@ permalink: /mission/
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Vision</p>
         <h2 class="mt-5 text-3xl font-semibold tracking-tight">AI時代のDecision Intelligenceへ。</h2>
-        <p class="mt-5 text-gray-300">CabinTimeから始め、Journey AI Platformを育て、移動から社会へ広がる意思決定インフラへ拡張します。</p>
+        <p class="mt-5 text-gray-300">CabinTimeから始め、Journey Intelligence Platformを育て、移動から社会へ広がる意思決定インフラへ拡張します。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Belief</p>
@@ -79,7 +82,7 @@ permalink: /mission/
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">MarsLinkが守る、6つの原則。</h2>
       </div>
       <div class="grid grid-cols-1 gap-4">
-        {% assign principles = "Context before content:コンテンツを並べる前に、場所、時間、目的、制約を理解する。|Build to mission, not to menu:機能一覧ではなく、移動中の人が判断できる状態から逆算してつくる。|Human judgment first:AIは決定者ではない。人が安心して選べるように、根拠と選択肢を提示する。|Service first, infrastructure later:最初はCabinTimeという使える体験から始め、背後にJourney AI Platformの基盤を育てる。|Civilian wedge, operational depth:旅行と交通の体験から入り、運航、防災、安全が問われる現場の判断支援へ拡張できる深さを持つ。|Earn trust with evidence:誇張ではなく、実証、ログ、改善、運用の積み重ねで信頼を得る。" | split: "|" %}
+        {% assign principles = "Context before content:コンテンツを並べる前に、場所、時間、目的、制約を理解する。|Build to mission, not to menu:機能一覧ではなく、移動中の人が判断できる状態から逆算してつくる。|Human judgment first:AIは決定者ではない。人が安心して選べるように、根拠と選択肢を提示する。|Service first, infrastructure later:最初はCabinTimeという使える体験から始め、背後にJourney Intelligence Platformの基盤を育てる。|Civilian wedge, operational depth:旅行と交通の体験から入り、運航、防災、安全が問われる現場の判断支援へ拡張できる深さを持つ。|Earn trust with evidence:誇張ではなく、実証、ログ、改善、運用の積み重ねで信頼を得る。" | split: "|" %}
         {% for item in principles %}
         {% assign parts = item | split: ":" %}
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
@@ -138,7 +141,7 @@ permalink: /mission/
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="text-cyan-100">Next</p>
-        <p class="text-gray-300">CabinTime、Journey AI Platform、Decision Intelligenceの3幕で、移動から社会の判断支援へ拡張する。</p>
+        <p class="text-gray-300">CabinTime、Journey Intelligence Platform、Decision Intelligenceの3幕で、移動から社会の判断支援へ拡張する。</p>
       </div>
     </div>
   </div>

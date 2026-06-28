@@ -34,6 +34,114 @@ permalink: /technology/
   </div>
 </section>
 
+<section class="relative overflow-hidden bg-[#05070a] py-24 text-white">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-25"></div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Decision model (SEM)</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">指標 → 潜在リスク・適合 → 判断 → 学習。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">移動の意思決定支援を、観測指標から潜在変数を推定して判断へつなぐ構造方程式モデル（SEM）として設計しています。単なる入出力ではなく、測定モデル（指標→構成概念）と構造モデル（構成概念→判断）の二段で扱い、結果を学習として戻します。</p>
+    </div>
+
+    <div class="mt-12 overflow-x-auto rounded-2xl border border-white/10 bg-black/30 p-4 sm:p-6">
+      <svg viewBox="0 0 1280 560" xmlns="http://www.w3.org/2000/svg" class="min-w-[1060px] w-full" role="img" aria-labelledby="sxt sxd">
+        <title id="sxt">移動の意思決定支援のSEM：観測指標 → Journey AI → 潜在リスク・適合 → 判断 → 学習</title>
+        <desc id="sxd">散らばった観測指標とあなたの文脈から、Journey AIが目的適合・体験リスク・安全リスク・到達リスクという潜在変数を推定し、推奨・回避・安全の判断支援に変え、結果を学習として戻す構造方程式モデル</desc>
+        <defs>
+          <radialGradient id="sxq" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(103,232,249,0.55)"/><stop offset="68%" stop-color="rgba(52,211,153,0.12)"/><stop offset="100%" stop-color="rgba(52,211,153,0)"/></radialGradient>
+          <filter id="sxb" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
+          <marker id="sxk" markerWidth="9" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#67e8f9"/></marker>
+          <pattern id="sxg" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.04)"/></pattern>
+          <style>
+            .sxfl{stroke-dasharray:4 7;animation:sxa 1.4s linear infinite}@keyframes sxa{to{stroke-dashoffset:-22}}
+            .sxpl{animation:sxba 3s ease-in-out infinite}@keyframes sxba{0%,100%{opacity:.4}50%{opacity:.95}}
+            .sxcap{fill:rgba(255,255,255,.42);font:700 12px sans-serif;letter-spacing:.14em}
+            .sxh{fill:#fff;font:700 16px sans-serif}.sxs{fill:rgba(255,255,255,.56);font:400 11px sans-serif}
+            .sxv{fill:#fff;font:600 12px sans-serif}.sxsrc{fill:rgba(255,255,255,.45);font:400 10px sans-serif}
+            .sxch{fill:#fff;font:700 13px sans-serif}.sxcs{fill:rgba(255,255,255,.6);font:400 11px sans-serif}
+          </style>
+        </defs>
+        <rect width="1280" height="560" fill="#04060a"/><rect width="1280" height="560" fill="url(#sxg)"/>
+
+        <text x="36" y="36" class="sxcap">OBSERVED — X</text><text x="36" y="56" class="sxs">散らばった情報 × サービス（観測指標）</text>
+        <g class="sxfl" stroke="rgba(103,232,249,0.32)" stroke-width="1.4" fill="none">
+          <path d="M264,101 C350,130 380,250 401,272"/><path d="M264,153 C360,175 385,255 401,277"/>
+          <path d="M264,205 C370,215 388,262 401,281"/><path d="M264,257 C380,260 392,278 401,283"/>
+          <path d="M264,309 C380,302 392,294 401,287"/><path d="M264,361 C370,348 388,304 401,291"/>
+          <path d="M264,413 C360,388 386,312 401,295"/><path d="M264,465 C350,420 385,322 401,299"/>
+        </g>
+        <g>
+          <rect x="36" y="78" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="98" class="sxv">Route · ETA</text><text x="52" y="114" class="sxsrc">経路・所要時間〔地図〕</text>
+          <rect x="36" y="130" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="150" class="sxv">Ride-hailing</text><text x="52" y="166" class="sxsrc">配車・タクシー〔配車〕</text>
+          <rect x="36" y="182" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="202" class="sxv">Transit ops</text><text x="52" y="218" class="sxsrc">運行・遅延・規制〔交通各社〕</text>
+          <rect x="36" y="234" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="254" class="sxv">Weather</text><text x="52" y="270" class="sxsrc">天気・雨雲〔天気〕</text>
+          <rect x="36" y="286" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="306" class="sxv">Reviews</text><text x="52" y="322" class="sxsrc">口コミ・評価・接遇〔レビュー〕</text>
+          <rect x="36" y="338" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="358" class="sxv">Social · News</text><text x="52" y="374" class="sxsrc">SNS・報道〔SNS〕</text>
+          <rect x="36" y="390" width="228" height="46" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="52" y="410" class="sxv">Hours · Booking</text><text x="52" y="426" class="sxsrc">営業時間・予約〔予約〕</text>
+          <rect x="36" y="442" width="228" height="46" rx="9" fill="rgba(103,232,249,0.07)" stroke="rgba(103,232,249,0.3)"/><text x="52" y="462" class="sxv" style="fill:#a5f3fc">Your context · c</text><text x="52" y="478" class="sxsrc" style="fill:rgba(165,243,252,.7)">目的・好み・締切（moderator）</text>
+        </g>
+
+        <text x="455" y="56" text-anchor="middle" class="sxcap">JOURNEY AI</text>
+        <ellipse class="sxpl" cx="455" cy="283" rx="112" ry="112" fill="url(#sxq)" filter="url(#sxb)"/>
+        <circle cx="455" cy="283" r="56" fill="rgba(8,16,22,0.92)" stroke="rgba(103,232,249,0.65)" stroke-width="1.5"/>
+        <text x="455" y="273" text-anchor="middle" class="sxh">Journey AI</text>
+        <text x="455" y="293" text-anchor="middle" class="sxs">横断・較正</text>
+        <text x="455" y="309" text-anchor="middle" class="sxs">個人最適化</text>
+
+        <g class="sxfl" stroke="rgba(103,232,249,0.4)" stroke-width="1.6" fill="none">
+          <path d="M511,270 C580,200 600,150 636,120" marker-end="url(#sxk)"/>
+          <path d="M515,278 C580,250 600,235 636,228" marker-end="url(#sxk)"/>
+          <path d="M515,290 C580,310 600,325 636,336" marker-end="url(#sxk)"/>
+          <path d="M511,298 C580,370 600,415 636,444" marker-end="url(#sxk)"/>
+        </g>
+
+        <text x="636" y="44" class="sxcap" style="fill:rgba(110,231,183,0.75)">LATENT ξ</text><text x="636" y="60" class="sxs">潜在リスク・適合（Journey AIが推定）</text>
+        <rect x="636" y="74" width="256" height="92" rx="12" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.32)"/><text x="652" y="106" class="sxch" style="fill:#6ee7b7">Fit ・ ξ₁</text><text x="652" y="130" class="sxcs">目的適合 — 目的・同行者・好み</text>
+        <rect x="636" y="182" width="256" height="92" rx="12" fill="rgba(251,191,36,0.07)" stroke="rgba(251,191,36,0.3)"/><text x="652" y="214" class="sxch" style="fill:#fcd34d">Experience risk ・ ξ₂</text><text x="652" y="238" class="sxcs">体験リスク — 雰囲気・接遇・品質</text>
+        <rect x="636" y="290" width="256" height="92" rx="12" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.28)"/><text x="652" y="322" class="sxch" style="fill:#67e8f9">Safety risk ・ ξ₃</text><text x="652" y="346" class="sxcs">安全リスク — 天候・運行・身体</text>
+        <rect x="636" y="398" width="256" height="92" rx="12" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.28)"/><text x="652" y="430" class="sxch" style="fill:#67e8f9">Arrival risk ・ ξ₄</text><text x="652" y="454" class="sxcs">到達リスク — 締切・遅延・乗継</text>
+
+        <g class="sxfl" stroke="rgba(103,232,249,0.4)" stroke-width="1.6" fill="none">
+          <path d="M892,120 C925,180 935,255 952,278" marker-end="url(#sxk)"/>
+          <path d="M892,228 C925,250 935,268 952,286" marker-end="url(#sxk)"/>
+          <path d="M892,336 C925,318 935,300 952,292" marker-end="url(#sxk)"/>
+          <path d="M892,444 C925,380 935,310 952,298" marker-end="url(#sxk)"/>
+        </g>
+
+        <text x="952" y="44" class="sxcap" style="fill:rgba(103,232,249,0.8)">DECISION — D</text>
+        <rect x="952" y="120" width="296" height="348" rx="16" fill="rgba(8,16,22,0.85)" stroke="rgba(52,211,153,0.32)"/>
+        <text x="972" y="158" class="sxh">次の判断</text><text x="972" y="180" class="sxs">目的を達成し、失敗を避ける</text>
+        <rect x="970" y="196" width="260" height="66" rx="10" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.3)"/><text x="986" y="222" class="sxch" style="fill:#6ee7b7">◎ Recommend ・ 推奨</text><text x="986" y="244" class="sxcs">適合が高く、リスクが低い選択</text>
+        <rect x="970" y="270" width="260" height="66" rx="10" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.14)"/><text x="986" y="296" class="sxch">✕ Avoid ・ 回避</text><text x="986" y="318" class="sxcs">体験・安全リスクが高い選択を外す</text>
+        <rect x="970" y="344" width="260" height="66" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.22)"/><text x="986" y="370" class="sxch" style="fill:#67e8f9">⏱ Safe · On-time ・ 安全</text><text x="986" y="392" class="sxcs">到達リスクを管理する</text>
+        <text x="1100" y="440" text-anchor="middle" class="sxs">最後に決めるのは、あなた。</text>
+
+        <path class="sxfl" d="M1100,470 L1100,526 Q1100,536 1090,536 L465,536 Q455,536 455,526 L455,341" stroke="rgba(103,232,249,0.5)" stroke-width="1.8" fill="none" marker-end="url(#sxk)"/>
+        <text x="770" y="530" text-anchor="middle" class="sxs">Learn ・ 学習（実測の結果で、重み w とローディング λ を更新）</text>
+      </svg>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-lg font-semibold text-white">定式（density &amp; structure）</h3>
+        <ul class="mt-4 space-y-3 text-sm leading-7 text-gray-300">
+          <li><span class="font-semibold text-cyan-100">観測指標 X</span> — 経路・配車・運行・天気・口コミ/接遇・SNS報道・営業時間（各々が別サービスに分散）。</li>
+          <li><span class="font-semibold text-cyan-100">調整変数 c（moderator）</span> — 目的・同行者・好み・締切。</li>
+          <li><span class="font-semibold text-cyan-100">較正重み wᵢ</span> — 情報源の信頼性（SNSの増幅補正など）。</li>
+          <li><span class="font-semibold text-cyan-100">測定モデル</span> — ξⱼ = Σ λⱼᵢ · (wᵢ xᵢ) · m(c)。潜在変数 ξ₁ 目的適合 / ξ₂ 体験リスク / ξ₃ 安全リスク / ξ₄ 到達リスク。</li>
+          <li><span class="font-semibold text-cyan-100">構造モデル</span> — D = β₁ξ₁ − β₂ξ₂ − β₃ξ₃ − β₄ξ₄ → 推奨 / 回避 / 安全（最終決定は人間）。</li>
+          <li><span class="font-semibold text-cyan-100">学習（閉ループ）</span> — 実測の結果 y が w と λ を更新する。</li>
+        </ul>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-lg font-semibold text-white">体験リスクという中心変数</h3>
+        <p class="mt-4 text-sm leading-7 text-gray-300">私たちが最も重視するのは ξ₂ <span class="text-white">体験リスク</span> です。命に関わる事故（ξ₃ 安全リスク）は稀ですが重大。一方で、雰囲気・接遇・サービス品質が目的に合わず、せっかくの時間とお金を無駄にする「体験の失敗」は、頻度が高く見過ごされてきました。Journey AIは、良い候補を出すのと同じだけ、この体験リスクを下げることを目的にします。</p>
+        <p class="mt-4 text-sm leading-6 text-gray-500">注記：本図は構造の妥当性を示す概念モデル（conceptual SEM）であり、推定済みのパラメータを表すものではありません。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">

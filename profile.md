@@ -96,6 +96,7 @@ permalink: /profile/
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">What we build</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初はサービスとして使えるAI。将来は社会の判断基盤。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">ソフトウェアとして設計しているため、スマートフォン、航空機のIFE、事業者アプリなど多様なハードに載り、多言語で日本・インバウンド・海外の移動に展開できます。</p>
       </div>
       <div class="grid grid-cols-1 gap-4">
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
@@ -103,7 +104,7 @@ permalink: /profile/
           <p class="mt-3 leading-7 text-gray-300">航空機・船舶などの移動空間向けに開発中のAIコンパニオン。移動中の時間を、到着後の行動につながる体験へ変えます。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold">Journey AI Platform</h3>
+          <h3 class="text-xl font-semibold">Journey Intelligence Platform</h3>
           <p class="mt-3 leading-7 text-gray-300">場所、時間、目的、好み、地域情報を統合し、移動中の文脈に合わせた提案を届ける基盤。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
@@ -134,7 +135,7 @@ permalink: /profile/
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="font-semibold text-cyan-100">Next</p>
-        <p class="text-gray-300">CabinTime、Journey AI Platform、Decision Intelligenceの3幕で、移動から社会の判断支援へ拡張。</p>
+        <p class="text-gray-300">CabinTime、Journey Intelligence Platform、Decision Intelligenceの3幕で、移動から社会の判断支援へ拡張。</p>
       </div>
     </div>
   </div>
