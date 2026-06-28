@@ -68,13 +68,13 @@ permalink: /profile/
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Mission</p>
-        <h2 class="mt-5 text-3xl font-semibold tracking-tight">移動中の判断を、安心できる体験に変える。</h2>
-        <p class="mt-5 text-gray-300">AIによって状況を整理し、人が次の行動を選びやすい状態をつくります。</p>
+        <h2 class="mt-5 text-3xl font-semibold tracking-tight">AIによって、あらゆる移動空間を価値創造の場へ変える。</h2>
+        <p class="mt-5 text-gray-300">移動の時間を、情報・体験・意思決定が整う、価値創造の時間に変えます。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Vision</p>
-        <h2 class="mt-5 text-3xl font-semibold tracking-tight">AI時代のDecision Intelligenceをつくる。</h2>
-        <p class="mt-5 text-gray-300">CabinTimeから始め、移動、地域、社会の意思決定を支える基盤へ進化します。</p>
+        <h2 class="mt-5 text-3xl font-semibold tracking-tight">世界の移動インフラを、AIで再設計する。</h2>
+        <p class="mt-5 text-gray-300">CabinTimeを最初のプロダクトに、移動空間のAIインフラへ広げます。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Values</p>

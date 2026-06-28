@@ -231,7 +231,7 @@ permalink: /investors/
     <div class="mt-10 overflow-x-auto rounded-2xl border border-white/10 bg-[#04060a]/60 p-4 sm:p-6">
       <svg viewBox="0 0 1000 340" class="min-w-[680px] w-full" role="img" aria-labelledby="hyt hyd">
         <title id="hyt">MarsLinkの成長トラジェクトリ</title>
-        <desc id="hyd">CabinTime（現在地・シード段階）から、Journey Intelligence Platform、Decision Intelligenceへと、扱う意思決定の広がりが上昇していく成長曲線。</desc>
+        <desc id="hyd">CabinTime（現在地・シード段階）から、Mobility Intelligence Platform、Human Mobility OSへと、扱う領域が移動空間のAIインフラへ広がっていく成長曲線。</desc>
         <defs>
           <linearGradient id="hyfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(103,232,249,0.28)"/><stop offset="100%" stop-color="rgba(103,232,249,0)"/></linearGradient>
           <filter id="hyglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>

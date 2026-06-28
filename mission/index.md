@@ -10,7 +10,7 @@ permalink: /mission/
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Mission document</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">情報は増えた。判断は、まだ分断されている。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくる、意思決定を支援するAIの会社です。
+      MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくる、移動空間のAIインフラ企業です。
     </p>
     <p class="mt-5 max-w-3xl text-lg leading-8 text-gray-300">
       私たちは、行政・地域・移動の現場で、情報はあるのに人の判断が支えられていない状況を見てきました。情報が変われば、人の判断は変わる。だからMarsLinkは、移動という最も判断が連続する場所から、意思決定を支えるAIをつくります。
@@ -38,7 +38,7 @@ permalink: /mission/
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Civilian entry, operational future</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初の市場は旅行と交通。目指す先は、移動空間の判断基盤。</h2>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初の現場は移動と交通。目指す先は、移動空間のAIインフラ。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
         <p>
@@ -57,13 +57,13 @@ permalink: /mission/
     <div class="grid grid-cols-1 gap-6 lg:grid-cols-3">
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Mission</p>
-        <h2 class="mt-5 text-3xl font-semibold tracking-tight">移動中の判断を、安心できる体験に変える。</h2>
-        <p class="mt-5 text-gray-300">情報を増やすのではなく、文脈を理解し、選択肢を整理し、人が次の行動を決めやすい状態をつくります。</p>
+        <h2 class="mt-5 text-3xl font-semibold tracking-tight">AIによって、あらゆる移動空間を価値創造の場へ変える。</h2>
+        <p class="mt-5 text-gray-300">移動の時間を、情報・体験・意思決定が整う、価値創造の時間に変えます。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Vision</p>
-        <h2 class="mt-5 text-3xl font-semibold tracking-tight">AI時代のDecision Intelligenceへ。</h2>
-        <p class="mt-5 text-gray-300">CabinTimeから始め、Journey Intelligence Platformを育て、移動から社会へ広がる意思決定インフラへ拡張します。</p>
+        <h2 class="mt-5 text-3xl font-semibold tracking-tight">世界の移動インフラを、AIで再設計する。</h2>
+        <p class="mt-5 text-gray-300">CabinTimeを最初のプロダクトに、Journey Intelligence Platformを育て、移動空間のAIインフラを世界へ広げます。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
         <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Belief</p>
