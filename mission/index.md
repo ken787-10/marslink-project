@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Mission"
-description: "MarsLinkのMission、Vision、Values、History。移動中の意思決定をAIで支えるJourney AI Companyとしての思想。"
+description: "MarsLinkのMission、Vision、Values。移動中の意思決定をAIで支える、意思決定支援のAI企業としての思想。"
 permalink: /mission/
 ---
 
@@ -10,7 +10,7 @@ permalink: /mission/
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Mission document</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">情報は増えた。判断は、まだ分断されている。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくるJourney AI Companyです。
+      MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくる、意思決定を支援するAIの会社です。
     </p>
     <p class="mt-5 max-w-3xl text-lg leading-8 text-gray-300">
       私たちは、行政・地域・移動の現場で、情報はあるのに人の判断が支えられていない状況を見てきました。情報が変われば、人の判断は変わる。だからMarsLinkは、移動という最も判断が連続する場所から、意思決定を支えるAIをつくります。

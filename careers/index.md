@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Careers | MarsLink"
-description: "MarsLinkの採用ページ。移動体験をAIで再設計するJourney AI Companyで、プロダクト、デザイン、事業開発に取り組む仲間を募集しています。"
+description: "MarsLinkの採用ページ。意思決定を支援するAIを移動から立ち上げるMarsLinkで、プロダクト、デザイン、事業開発に取り組む仲間を募集しています。"
 keywords: "MarsLink, Careers, 採用, Journey AI, CabinTime, プロダクト, デザイン, 事業開発"
 permalink: /careers/
 ---

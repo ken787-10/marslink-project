@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "代表紹介"
-description: "MarsLink代表 市位謙太のプロフィール。移動体験をAIで再設計するJourney AI Companyとしての思想と背景を紹介します。"
+description: "MarsLink代表 市位謙太のプロフィール。意思決定を支援するAIを、移動から立ち上げる思想と背景を紹介します。"
 permalink: /ceo/
 draft: false
 published: true

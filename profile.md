@@ -13,7 +13,7 @@ permalink: /profile/
   "alternateName": "株式会社MarsLink",
   "url": "https://marslink.co.jp",
   "logo": "https://marslink.co.jp/assets/images/logo.png",
-  "description": "MarsLink is a Journey AI Company building AI products that help people make better decisions in motion.",
+  "description": "MarsLink is an AI company building products that help people and organizations make better decisions, starting with movement.",
   "foundingDate": "2025",
   "founder": {
     "@type": "Person",
@@ -35,7 +35,7 @@ permalink: /profile/
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
     <div>
       <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Company</p>
-      <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-7xl">MarsLink is a Journey AI Company.</h1>
+      <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-7xl">意思決定を支援するAIの会社。</h1>
     </div>
     <p class="max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、航空機・船舶・交通・地域などの移動空間で、情報を統合し、状況を理解し、人が安心して次の行動を選べる状態をつくるAIプロダクト企業です。

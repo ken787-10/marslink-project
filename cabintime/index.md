@@ -256,8 +256,18 @@ changefreq: weekly
                 <p class="mt-1 font-semibold text-white">静か・駅直結</p>
               </div>
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">Time</p>
-                <p class="mt-1 font-semibold text-white">18:40以降</p>
+                <p class="text-gray-500">ETA</p>
+                <p class="mt-1 font-semibold text-white">17:40 着</p>
+              </div>
+            </div>
+            <div class="mt-4 rounded-md border border-white/10 bg-white/[0.03] p-3">
+              <p class="text-xs uppercase text-gray-500">Arrival timeline ・ 到着後の時間</p>
+              <div class="mt-3 space-y-2.5 text-xs">
+                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">17:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300"></span><span class="text-gray-300">羽田に着陸</span></div>
+                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">17:55</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">バゲージクレーム（約15分）</span></div>
+                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">モノレール乗車（浜松町行）</span></div>
+                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">18:18</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町に到着</span></div>
+                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-emerald-200">18:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span><span class="text-gray-200">会食（一次会）</span></div>
               </div>
             </div>
             <div class="mt-5 space-y-3">
@@ -530,8 +540,40 @@ changefreq: weekly
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-      <div class="overflow-hidden rounded-lg border border-white/10 bg-black/35">
-        <img src="{{ '/assets/images/cabin-united.jpg' | relative_url }}" alt="Aircraft cabin as a moving decision space" class="h-full w-full object-cover opacity-90">
+      <div class="rounded-lg border border-white/10 bg-[#070b11] p-4 shadow-2xl">
+        <div class="flex items-center justify-between border-b border-white/10 pb-3">
+          <div>
+            <p class="text-xs uppercase text-gray-500">Operator Console</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">事業者・地域が情報を整える</h3>
+          </div>
+          <span class="rounded-md bg-white/5 px-2 py-1 text-xs text-gray-300">ITM → HND</span>
+        </div>
+        <div class="mt-4 space-y-2.5">
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">地域情報・観光</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">飲食・店舗</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">イベント・季節</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">提携先・在庫</span>
+            <span class="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] text-gray-400">準備中</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">運行・緊急案内</span>
+            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">優先</span>
+          </div>
+        </div>
+        <div class="mt-4 rounded-md border border-cyan-200/20 bg-cyan-200/[0.06] p-3">
+          <p class="text-xs uppercase tracking-[0.16em] text-cyan-100/80">配信ポリシー</p>
+          <p class="mt-1 text-sm leading-6 text-gray-300">広告枠ではなく、目的・天候・動線に合わせた判断材料として配信する。</p>
+        </div>
       </div>
       <div>
         <p class="text-sm font-semibold uppercase text-amber-200">For partners</p>
