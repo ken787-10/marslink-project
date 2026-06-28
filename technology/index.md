@@ -121,32 +121,100 @@ permalink: /technology/
       </svg>
     </div>
 
-    <div class="mx-auto mt-12 max-w-4xl rounded-lg border border-white/10 bg-white/[0.035] p-7 lg:p-8">
-      <h3 class="text-lg font-semibold text-white">定式（density &amp; structure）</h3>
-      <ul class="mt-4 space-y-3 text-sm leading-7 text-gray-300">
-        <li><span class="font-semibold text-cyan-100">観測指標 X</span> — 経路・配車・運行・天気・口コミ/接遇・SNS報道・営業時間（各々が別サービスに分散）。</li>
-        <li><span class="font-semibold text-cyan-100">調整変数 c（moderator）</span> — 目的・同行者・好み・締切。</li>
-        <li><span class="font-semibold text-cyan-100">較正重み wᵢ</span> — 情報源の信頼性（SNSの増幅補正など）。</li>
-        <li><span class="font-semibold text-cyan-100">測定モデル</span> — ξⱼ = Σ λⱼᵢ · (wᵢ xᵢ) · m(c)。潜在変数 ξ₁ 目的適合 / ξ₂ 体験リスク / ξ₃ 安全リスク / ξ₄ 到達リスク。</li>
-        <li><span class="font-semibold text-cyan-100">構造モデル</span> — D = β₁ξ₁ − β₂ξ₂ − β₃ξ₃ − β₄ξ₄ → 推奨 / 回避 / 安全（最終決定は人間）。</li>
-        <li><span class="font-semibold text-cyan-100">学習（閉ループ）</span> — 実測の結果 y が w と λ を更新する。</li>
-      </ul>
-      <h3 class="mt-8 text-lg font-semibold text-white">体験リスクという中心変数</h3>
-      <p class="mt-4 text-sm leading-7 text-gray-300">私たちが最も重視するのは ξ₂ <span class="text-white">体験リスク</span> です。命に関わる事故（ξ₃ 安全リスク）は稀ですが重大。一方で、雰囲気・接遇・サービス品質が目的に合わず、せっかくの時間とお金を無駄にする「体験の失敗」は、頻度が高く見過ごされてきました。Journey AIは、良い候補を出すのと同じだけ、この体験リスクを下げることを目的にします。</p>
-      <p class="mt-6 text-sm leading-6 text-gray-500">注記：本図は構造の妥当性を示す概念モデル（conceptual SEM）であり、推定済みのパラメータを表すものではありません。</p>
+    <div class="mx-auto mt-16 max-w-5xl">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The model · 定式</p>
+      <h3 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Journey AIの意思決定モデルを、式で表す。</h3>
+      <p class="mt-6 text-lg leading-8 text-gray-300">上の図の各段——観測指標 → 潜在変数 → 判断 → 学習——を、構造方程式（SEM）として記述すると、次のようになります。</p>
+      <dl class="mt-10 divide-y divide-white/10 border-t border-white/10">
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">観測指標 X</dt>
+          <dd class="text-base leading-8 text-gray-300">経路・配車・運行・天気・口コミ/接遇・SNS報道・営業時間（各々が別サービスに分散）。</dd>
+        </div>
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">調整変数 c（moderator）</dt>
+          <dd class="text-base leading-8 text-gray-300">目的・同行者・好み・締切。</dd>
+        </div>
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">較正重み wᵢ</dt>
+          <dd class="text-base leading-8 text-gray-300">情報源の信頼性（SNSの増幅補正など）。</dd>
+        </div>
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">測定モデル</dt>
+          <dd class="text-base leading-8 text-gray-300">ξⱼ = Σ λⱼᵢ · (wᵢ xᵢ) · m(c)。潜在変数 ξ₁ 目的適合 / ξ₂ 体験リスク / ξ₃ 安全リスク / ξ₄ 到達リスク。</dd>
+        </div>
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">構造モデル</dt>
+          <dd class="text-base leading-8 text-gray-300">D = β₁ξ₁ − β₂ξ₂ − β₃ξ₃ − β₄ξ₄ → 推奨 / 回避 / 安全（最終決定は人間）。</dd>
+        </div>
+        <div class="grid grid-cols-1 gap-1 py-5 sm:grid-cols-[0.34fr_0.66fr] sm:gap-6">
+          <dt class="font-semibold text-cyan-100">学習（閉ループ）</dt>
+          <dd class="text-base leading-8 text-gray-300">実測の結果 y が、重み w とローディング λ を更新する。</dd>
+        </div>
+      </dl>
+      <div class="mt-12 border-l-2 border-amber-300/50 pl-6">
+        <h4 class="text-2xl font-semibold text-white">体験リスク（ξ₂）という中心変数</h4>
+        <p class="mt-4 text-lg leading-8 text-gray-300">私たちが最も重視するのは ξ₂ <span class="text-white">体験リスク</span> です。命に関わる事故（ξ₃ 安全リスク）は稀ですが重大。一方で、雰囲気・接遇・サービス品質が目的に合わず、せっかくの時間とお金を無駄にする「体験の失敗」は、頻度が高く見過ごされてきました。Journey AIは、良い候補を出すのと同じだけ、この体験リスクを下げることを目的にします。</p>
+      </div>
+      <p class="mt-10 text-sm leading-6 text-gray-500">注記：本図・式は構造の妥当性を示す概念モデル（conceptual SEM）であり、推定済みのパラメータを表すものではありません。</p>
     </div>
 
-    <div class="mx-auto mt-6 max-w-4xl rounded-lg border border-white/10 bg-white/[0.035] p-7 lg:p-8">
-      <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Theoretical foundations</p>
-      <h3 class="mt-3 text-lg font-semibold text-white">理論的背景</h3>
-      <p class="mt-4 text-sm leading-7 text-gray-300">本モデルは、確立した4つの研究伝統を、移動の意思決定支援に統合した概念フレームです。</p>
-      <ul class="mt-4 space-y-3 text-sm leading-7 text-gray-300">
-        <li><span class="font-semibold text-cyan-100">知覚リスクの多次元構造</span> — performance／psychological／physical／time risk が、体験・安全・到達リスク（ξ₂–ξ₄）の理論的根拠。<span class="text-gray-400">Roehl, W. S., &amp; Fesenmaier, D. R. (1992). <em>Journal of Travel Research</em>, 30(4), 17–26.</span></li>
-        <li><span class="font-semibold text-cyan-100">状況認識（Situation Awareness）</span> — 知覚→理解→予測、そして予測が次の知覚を形づくる循環が、Context→較正→判断＋学習の根拠。<span class="text-gray-400">Endsley, M. R. (1995). <em>Human Factors</em>, 37(1), 32–64.</span></li>
-        <li><span class="font-semibold text-cyan-100">文脈考慮型推薦（CARS）</span> — 時間・天候・位置などの文脈で情報過多を緩和し、個人最適化する設計の根拠。<span class="text-gray-400">Renjith, S., Sreekumar, A., &amp; Jathavedan, M. (2020). <em>Information Processing &amp; Management</em>, 57(1), 102078.</span></li>
-        <li><span class="font-semibold text-cyan-100">構造方程式モデリング</span> — 測定モデル（指標→潜在）＋構造モデル（潜在→判断）の方法論的枠組み。<span class="text-gray-400">Nunkoo, R., Ramkissoon, H., &amp; Gursoy, D. (2013). <em>Journal of Travel Research</em>, 52(6), 759–771.</span></li>
-      </ul>
-      <p class="mt-4 text-sm leading-6 text-gray-500">出典は理論的背景の提示です。本モデルの実証（CFAによる測定モデルの確認、パス推定、適合度の評価）は今後の検証課題とします。</p>
+    <div class="mx-auto mt-12 max-w-6xl">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Theoretical foundations</p>
+        <h3 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">モデル要素と、先行研究の対応。</h3>
+        <p class="mt-6 text-lg leading-8 text-gray-300">本モデルの各要素は、確立した研究と一対一で対応します。知覚リスク理論・状況認識理論・文脈考慮型推薦・SEM方法論——4本の系譜を、移動の意思決定支援に統合しています。</p>
+      </div>
+
+      <div class="mt-10 overflow-x-auto rounded-2xl border border-white/10 bg-[#070b11]/70">
+        <table class="w-full min-w-[820px] border-collapse text-left">
+          <thead>
+            <tr class="border-b border-white/10 text-[11px] uppercase tracking-[0.18em] text-white/45">
+              <th class="px-6 py-4 font-semibold">MarsLinkのモデル要素</th>
+              <th class="px-6 py-4 font-semibold">裏付けとなる理論</th>
+              <th class="whitespace-nowrap px-6 py-4 font-semibold">主要文献</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/[0.07] text-sm leading-7 text-gray-300">
+            <tr class="transition hover:bg-white/[0.02]">
+              <td class="px-6 py-6 align-top">
+                <p class="font-semibold text-white">体験・安全・到達リスク</p>
+                <span class="mt-2 inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 font-mono text-xs text-cyan-100/90">ξ₂ · ξ₃ · ξ₄</span>
+              </td>
+              <td class="px-6 py-6 align-top">知覚リスクの多次元構造（performance＝体験／psychological＝体験／physical＝安全／time＝到達）。「time risk＝期待を満たさず時間が無駄になる」は、到達・体験リスクそのもの。</td>
+              <td class="px-6 py-6 align-top text-sm"><a href="https://doi.org/10.1177/004728759203000403" target="_blank" rel="noopener" class="text-gray-400 transition hover:text-cyan-200">Roehl, W. S., &amp; Fesenmaier, D. R. (1992).<br><em>Journal of Travel Research</em>, 30(4), 17–26. ↗</a></td>
+            </tr>
+            <tr class="transition hover:bg-white/[0.02]">
+              <td class="px-6 py-6 align-top">
+                <p class="font-semibold text-white">状況認識ループ</p>
+                <span class="mt-2 inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 font-mono text-xs text-cyan-100/90">Context → 較正 → 判断 → Learn</span>
+              </td>
+              <td class="px-6 py-6 align-top">状況認識：知覚→理解→予測。SAは意思決定とは別の内部モデルであり、予測が次の知覚を形づくる——これが学習の閉ループに対応する。</td>
+              <td class="px-6 py-6 align-top text-sm"><a href="https://doi.org/10.1518/001872095779049543" target="_blank" rel="noopener" class="text-gray-400 transition hover:text-cyan-200">Endsley, M. R. (1995).<br><em>Human Factors</em>, 37(1), 32–64. ↗</a></td>
+            </tr>
+            <tr class="transition hover:bg-white/[0.02]">
+              <td class="px-6 py-6 align-top">
+                <p class="font-semibold text-white">横断統合・個人最適化</p>
+                <span class="mt-2 inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 font-mono text-xs text-cyan-100/90">Integrate · Personalize</span>
+              </td>
+              <td class="px-6 py-6 align-top">文脈考慮型推薦（CARS）＋情報過多。時間・天候・位置などの文脈で過多を緩和し、個人に最適化する——情報の分断を解く設計の根拠。</td>
+              <td class="px-6 py-6 align-top text-sm"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457319300111" target="_blank" rel="noopener" class="text-gray-400 transition hover:text-cyan-200">Renjith, S., Sreekumar, A., &amp; Jathavedan, M. (2020).<br><em>Information Processing &amp; Management</em>, 57(1), 102078. ↗</a></td>
+            </tr>
+            <tr class="transition hover:bg-white/[0.02]">
+              <td class="px-6 py-6 align-top">
+                <p class="font-semibold text-white">測定＋構造モデル</p>
+                <span class="mt-2 inline-block rounded-md border border-white/15 bg-white/5 px-2.5 py-1 font-mono text-xs text-cyan-100/90">CFA → ξ → D</span>
+              </td>
+              <td class="px-6 py-6 align-top">指標→潜在（測定モデル）と、潜在→判断（構造モデル）の二段構成。SEMはツーリズム研究の標準的な方法論。</td>
+              <td class="px-6 py-6 align-top text-sm"><a href="https://doi.org/10.1177/0047287513478503" target="_blank" rel="noopener" class="text-gray-400 transition hover:text-cyan-200">Nunkoo, R., Ramkissoon, H., &amp; Gursoy, D. (2013).<br><em>Journal of Travel Research</em>, 52(6), 759–771. ↗</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="mx-auto mt-10 max-w-3xl text-center">
+        <p class="text-lg leading-8 text-gray-200"><span class="font-semibold text-white">結論。</span> 知覚リスク理論・状況認識理論・文脈考慮型推薦・SEM方法論——4本の系譜を統合し、移動の意思決定支援に適用した正統な概念フレームです。</p>
+        <p class="mt-4 text-sm leading-6 text-gray-500">※ 本表は理論的対応の提示です。実証（指標の操作化、CFAによる測定モデルの確認、パス推定、適合度の評価）は今後の検証課題とします。</p>
+      </div>
     </div>
   </div>
 </section>
