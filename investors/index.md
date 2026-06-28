@@ -206,33 +206,82 @@ permalink: /investors/
 
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Early signals</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">PMF前でも、初期の足がかりは出ている。</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">売上や大規模導入はこれからですが、地域・公共セクターとの連携や知的財産の確保など、事業の実在性を示す初期シグナルがあります。</p>
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Trajectory</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">成長の軌道と、現在地。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">今はまだシード段階です。CabinTimeを起点に、扱う意思決定の広がりをここから伸ばします。これまでの達成、現在地、次の打ち手を示します。</p>
+    </div>
+
+    <div class="mt-10 overflow-x-auto rounded-2xl border border-white/10 bg-[#04060a]/60 p-4 sm:p-6">
+      <svg viewBox="0 0 1000 340" class="min-w-[680px] w-full" role="img" aria-labelledby="hyt hyd">
+        <title id="hyt">MarsLinkの成長トラジェクトリ</title>
+        <desc id="hyd">CabinTime（現在地・シード段階）から、Journey Intelligence Platform、Decision Intelligenceへと、扱う意思決定の広がりが上昇していく成長曲線。</desc>
+        <defs>
+          <linearGradient id="hyfill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="rgba(103,232,249,0.28)"/><stop offset="100%" stop-color="rgba(103,232,249,0)"/></linearGradient>
+          <filter id="hyglow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+          <marker id="hyar" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#67e8f9"/></marker>
+          <style>
+            .hcap{fill:rgba(255,255,255,.4);font:600 11px sans-serif;letter-spacing:.1em}
+            .hlab{fill:#fff;font:700 13px sans-serif}
+            .hsub{fill:rgba(255,255,255,.5);font:400 11px sans-serif}
+            .hnow{fill:#04060a;font:700 12px sans-serif}
+          </style>
+        </defs>
+        <line x1="64" y1="40" x2="64" y2="288" stroke="rgba(255,255,255,0.12)"/>
+        <line x1="64" y1="288" x2="956" y2="288" stroke="rgba(255,255,255,0.12)"/>
+        <text x="70" y="32" class="hcap">意思決定の広がり</text>
+        <text x="950" y="308" text-anchor="end" class="hcap">時間 →</text>
+        <path d="M92,276 C150,272 196,267 236,260 C400,236 500,196 600,150 C720,116 820,90 905,60 L905,288 L92,288 Z" fill="url(#hyfill)"/>
+        <path d="M92,276 C150,272 196,267 236,260" fill="none" stroke="#67e8f9" stroke-width="2.5"/>
+        <path d="M236,260 C400,236 500,196 600,150 C720,116 820,90 905,60" fill="none" stroke="#67e8f9" stroke-width="2.5" stroke-dasharray="6 7" opacity="0.7" marker-end="url(#hyar)"/>
+        <line x1="236" y1="260" x2="236" y2="288" stroke="rgba(255,255,255,0.14)" stroke-dasharray="3 4"/>
+        <line x1="600" y1="150" x2="600" y2="288" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 4"/>
+        <line x1="905" y1="60" x2="905" y2="288" stroke="rgba(255,255,255,0.1)" stroke-dasharray="3 4"/>
+        <circle cx="92" cy="276" r="3.5" fill="rgba(255,255,255,0.5)"/>
+        <circle cx="600" cy="150" r="6" fill="#0b1114" stroke="rgba(103,232,249,0.6)" stroke-width="2"/>
+        <circle cx="905" cy="60" r="6" fill="#0b1114" stroke="rgba(103,232,249,0.6)" stroke-width="2"/>
+        <circle cx="236" cy="258" r="20" fill="url(#hyfill)" filter="url(#hyglow)"/>
+        <g transform="translate(217,240) scale(1.6)" fill="#67e8f9"><path d="M2.5 19h19v2h-19v-2zm19.07-9.64c-.21-.8-1.04-1.28-1.84-1.06L14.92 9.6 8.46 3.57 6.53 4.08l3.87 6.7-4.97 1.33-1.97-1.54-1.45.39 1.82 3.16.77 1.33.96-.26 5.85-1.57 4.31-1.16 4.83-1.29c.81-.23 1.28-1.05 1.07-1.85z"/></g>
+        <g transform="translate(236,222)">
+          <rect x="-56" y="-17" width="112" height="25" rx="12" fill="#67e8f9"/>
+          <text x="0" y="0" text-anchor="middle" class="hnow">現在地 · Seed</text>
+        </g>
+        <text x="110" y="308" text-anchor="middle" class="hsub">Founding</text>
+        <text x="236" y="308" text-anchor="middle" class="hlab">CabinTime</text>
+        <text x="600" y="308" text-anchor="middle" class="hlab">Journey Intelligence Platform</text>
+        <text x="905" y="308" text-anchor="end" class="hlab">Decision Intelligence</text>
+      </svg>
+    </div>
+
+    <div class="mt-12 grid grid-cols-1 gap-4 lg:grid-cols-3">
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-gray-400">これまで ・ Done</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-gray-300">
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>MarsLink Inc. を設立</span></li>
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>本店を大阪駅直結のグラングリーン大阪に開設</span></li>
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>CabinTime の開発を開始</span></li>
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>OSAP 第19期に採択（大阪市）</span></li>
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>大阪府泉南郡熊取町と連携協定</span></li>
+          <li class="flex gap-2"><span class="text-emerald-300">✓</span><span>商標「マーズリンク／Mars Link」を取得</span></li>
+        </ul>
       </div>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-          <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">アクセラレーション</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">OSAP 第19期に採択</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">大阪市のスタートアップ支援プログラム「OIH Startup Acceleration Program」にCabinTimeが採択（2025年）。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-          <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">自治体連携協定</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">大阪府泉南郡熊取町</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">2025年、連携協定を締結。地域・公共セクターでの実証基盤。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-          <p class="text-sm uppercase tracking-[0.2em] text-amber-200">知的財産</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">商標を取得</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">「マーズリンク」および「Mars Link」を取得（2026年）。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-          <p class="text-sm uppercase tracking-[0.2em] text-emerald-200">共同検証</p>
-          <h3 class="mt-4 text-xl font-semibold text-white">実証パートナーと協議</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">航空・船舶・交通・自治体・DMOと、初期実証に向けた協議を進める。</p>
-        </div>
+      <div class="rounded-lg border border-cyan-200/30 bg-cyan-200/[0.06] p-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">現在地 ・ Now（Seed）</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-gray-200">
+          <li class="flex gap-2"><span class="text-cyan-300">●</span><span>シード段階。CabinTimeで共同検証フェーズ</span></li>
+          <li class="flex gap-2"><span class="text-cyan-300">●</span><span>交通・地域・体験事業者と初期実証を協議</span></li>
+          <li class="flex gap-2"><span class="text-cyan-300">●</span><span>最初の実証と事業仮説の検証に集中</span></li>
+        </ul>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">これから ・ Next</p>
+        <ul class="mt-4 space-y-2.5 text-sm text-gray-300">
+          <li class="flex gap-2"><span class="text-gray-500">○</span><span>最初の実証（PoC）で価値を証明する</span></li>
+          <li class="flex gap-2"><span class="text-gray-500">○</span><span>シード資金調達</span></li>
+          <li class="flex gap-2"><span class="text-gray-500">○</span><span>共同検証パートナーを拡大する</span></li>
+          <li class="flex gap-2"><span class="text-gray-500">○</span><span>プロダクトとチームを構築する</span></li>
+          <li class="flex gap-2"><span class="text-gray-500">○</span><span>Journey Intelligence Platform へ拡張する</span></li>
+        </ul>
       </div>
     </div>
   </div>

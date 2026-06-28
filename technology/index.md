@@ -6,6 +6,8 @@ keywords: "MarsLink, Technology, Journey AI, LLM, 推薦, 文脈理解, 移動�
 permalink: /technology/
 ---
 
+{% assign flight_map = site.data.japan_flight_map %}
+
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Technology</p>
@@ -283,8 +285,50 @@ permalink: /technology/
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-      <div class="overflow-hidden rounded-lg border border-white/10">
-        <img src="{{ '/assets/images/cabin.jpg' | relative_url }}" alt="機内 — 通信が不安定な移動空間" class="aspect-[3/2] w-full object-cover">
+      <div class="relative overflow-hidden rounded-lg border border-white/10 bg-[#070b11]">
+        <svg viewBox="0 0 640 280" class="block w-full" role="img" aria-label="CabinTimeの機内マップ：伊丹から羽田への現在地・天候・運行状況。通信が弱くても表示を保つ。">
+          <defs>
+            <radialGradient id="tof-soft" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(103,232,249,0.55)"/><stop offset="55%" stop-color="rgba(34,197,94,0.32)"/><stop offset="100%" stop-color="rgba(14,165,233,0)"/></radialGradient>
+            <radialGradient id="tof-core" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(250,204,21,0.7)"/><stop offset="52%" stop-color="rgba(34,197,94,0.45)"/><stop offset="100%" stop-color="rgba(34,197,94,0)"/></radialGradient>
+            <filter id="tof-blur"><feGaussianBlur stdDeviation="5"/></filter>
+            <pattern id="tof-grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="rgba(255,255,255,0.05)"/></pattern>
+          </defs>
+          <rect width="640" height="280" fill="#0d1822"/>
+          <rect width="640" height="280" fill="url(#tof-grid)"/>
+          <path d="{{ flight_map.hero.path }}" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.18)" stroke-width="1.25"/>
+          <g opacity="0.74" filter="url(#tof-blur)">
+            <ellipse cx="433" cy="133" rx="104" ry="32" fill="url(#tof-soft)" transform="rotate(-14 433 133)"/>
+            <ellipse cx="471" cy="119" rx="58" ry="20" fill="url(#tof-core)" transform="rotate(-11 471 119)"/>
+            <ellipse cx="389" cy="154" rx="66" ry="19" fill="rgba(56,189,248,0.34)" transform="rotate(-18 389 154)"/>
+          </g>
+          <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C318 148 371 142 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.22)" stroke-width="18" stroke-linecap="round"/>
+          <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C318 148 371 142 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 8"/>
+          <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C305 154 346 148 {{ flight_map.hero.now_x }} {{ flight_map.hero.now_y }}" fill="none" stroke="rgba(103,232,249,0.96)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M{{ flight_map.hero.now_x }} {{ flight_map.hero.now_y }} C410 145 431 135 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.48)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="{{ flight_map.hero.itm_x }}" cy="{{ flight_map.hero.itm_y }}" r="8" fill="white"/>
+          <circle cx="{{ flight_map.hero.hnd_x }}" cy="{{ flight_map.hero.hnd_y }}" r="8" fill="white"/>
+          <circle cx="{{ flight_map.hero.now_x }}" cy="{{ flight_map.hero.now_y }}" r="9" fill="rgba(103,232,249,0.95)"/>
+          <circle cx="{{ flight_map.hero.now_x }}" cy="{{ flight_map.hero.now_y }}" r="18" fill="none" stroke="rgba(103,232,249,0.28)" stroke-width="2"/>
+          <polygon points="375,142 405,150 378,162" fill="white"/>
+          <text x="247" y="185" fill="rgba(255,255,255,0.72)" font-size="12" font-weight="700">ITM</text>
+          <text x="442" y="112" fill="rgba(255,255,255,0.72)" font-size="12" font-weight="700">HND</text>
+          <text x="360" y="136" fill="rgba(103,232,249,0.9)" font-size="11" font-weight="700">CURRENT</text>
+        </svg>
+        <div class="absolute left-4 top-4 rounded-md border border-white/10 bg-black/45 px-3 py-2 backdrop-blur">
+          <p class="text-[10px] text-gray-400">Origin</p><p class="text-xs font-semibold text-white">ITM 伊丹</p>
+        </div>
+        <div class="absolute right-4 top-4 rounded-md border border-white/10 bg-black/45 px-3 py-2 text-right backdrop-blur">
+          <p class="text-[10px] text-gray-400">Destination</p><p class="text-xs font-semibold text-white">HND 羽田</p>
+        </div>
+        <div class="absolute left-4 bottom-16 rounded-md border border-sky-200/20 bg-black/45 px-3 py-2 backdrop-blur">
+          <p class="text-[10px] text-sky-100/80">Weather radar</p><p class="text-xs font-semibold text-white">東京湾側に雨雲</p>
+        </div>
+        <div class="absolute bottom-4 left-4 grid grid-cols-3 gap-2 text-[10px]">
+          <div class="rounded-md border border-white/10 bg-black/45 px-2.5 py-1.5"><p class="text-gray-400">ETA</p><p class="mt-0.5 text-xs font-semibold text-white">18:10</p></div>
+          <div class="rounded-md border border-white/10 bg-black/45 px-2.5 py-1.5"><p class="text-gray-400">Progress</p><p class="mt-0.5 text-xs font-semibold text-cyan-100">63%</p></div>
+          <div class="rounded-md border border-white/10 bg-black/45 px-2.5 py-1.5"><p class="text-gray-400">ALT</p><p class="mt-0.5 text-xs font-semibold text-white">34,000ft</p></div>
+        </div>
+        <div class="absolute right-4 bottom-4 rounded-full border border-emerald-300/30 bg-emerald-300/10 px-3 py-1 text-[10px] font-semibold text-emerald-100">Offline-aware</div>
       </div>
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Offline-aware</p>

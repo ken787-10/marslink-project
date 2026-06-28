@@ -129,6 +129,7 @@ permalink: /profile/
         <p class="font-semibold text-cyan-100">2025</p>
         <ul class="space-y-2 text-gray-300">
           <li class="flex gap-3"><span class="text-cyan-300">—</span><span>MarsLink Inc. を設立</span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">—</span><span>本店を大阪駅直結のグラングリーン大阪に開設</span></li>
           <li class="flex gap-3"><span class="text-cyan-300">—</span><span>移動空間向けAIプロダクト CabinTime の開発を開始</span></li>
           <li class="flex gap-3"><span class="text-cyan-300">—</span><span>大阪市「OIH Startup Acceleration Program（OSAP）」第19期に採択</span></li>
           <li class="flex gap-3"><span class="text-cyan-300">—</span><span>大阪府泉南郡熊取町と連携協定を締結</span></li>
