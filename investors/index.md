@@ -173,35 +173,6 @@ permalink: /investors/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Go to market</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">実証から始め、サービスへ、社会実装へ。</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">CabinTimeを通じて、航空・船舶・交通事業者の中に正規ルートで入り込み、実証から段階的にサービス化し、移動空間のAIインフラとして社会へ広げます。顧客は、観光庁・自治体・空港・航空・フェリーなど、移動の現場とインフラを持つ主体です。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-4">
-        <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 1</p>
-          <h3 class="mt-2 text-xl font-semibold text-white">実証実験（PoC）</h3>
-          <p class="mt-3 text-gray-300">公共・事業者と、伊丹→羽田のような具体ルート・航路で、天候・混雑・到着後行動・送客の判断支援を共同検証する。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 2</p>
-          <h3 class="mt-2 text-xl font-semibold text-white">サービス提供</h3>
-          <p class="mt-3 text-gray-300">検証で価値が確認できた領域から、路線・航路・地域に正式なサービスとして実装し、事業者と利用者へ継続的に届ける。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 3</p>
-          <h3 class="mt-2 text-xl font-semibold text-white">社会実装</h3>
-          <p class="mt-3 text-gray-300">1路線・1航路・1地域から、複数事業者・地域横断・海外へ。移動空間のAIインフラとして社会に広げる。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-[#05070a] py-24 text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why MarsLink ・ なぜ私たちか</p>
