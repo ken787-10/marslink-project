@@ -111,7 +111,7 @@ changefreq: weekly
             <div class="absolute bottom-5 left-5 grid grid-cols-3 gap-2 text-xs">
               <div class="rounded-md border border-white/10 bg-black/45 px-3 py-2">
                 <p class="text-gray-400">ETA</p>
-                <p class="mt-1 font-semibold text-white">18:10</p>
+                <p class="mt-1 font-semibold text-white">17:40</p>
               </div>
               <div class="rounded-md border border-white/10 bg-black/45 px-3 py-2">
                 <p class="text-gray-400">Progress</p>
@@ -249,10 +249,10 @@ changefreq: weekly
               </div>
               <div class="mt-3 space-y-2.5 text-xs">
                 <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">17:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300"></span><span class="text-gray-300">羽田空港に着陸</span></div>
-                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">17:55</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">手荷物を受け取り（約15分）</span></div>
-                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">東京モノレールに乗車</span></div>
-                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:18</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町で乗り換え</span></div>
-                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:45</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">赤坂に到着</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:00</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">手荷物を受け取り</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">東京モノレール（空港快速）に乗車</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:22</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町で乗り換え（千代田線方面）</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:48</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">赤坂に到着</span></div>
                 <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-emerald-200">19:00</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span><span class="text-gray-200">会食（一次会）スタート</span></div>
               </div>
             </div>
@@ -343,7 +343,7 @@ changefreq: weekly
                     </div>
                     <div class="border-r border-white/10 px-3 py-2">
                       <p class="text-gray-500">ETA</p>
-                      <p class="mt-1 font-semibold text-white">18:10</p>
+                      <p class="mt-1 font-semibold text-white">17:40</p>
                     </div>
                     <div class="px-3 py-2">
                       <p class="text-sky-100/80">WX</p>
@@ -393,8 +393,8 @@ changefreq: weekly
                 <p class="mt-1 font-semibold text-white">静か・駅直結</p>
               </div>
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">ETA</p>
-                <p class="mt-1 font-semibold text-white">17:40 着</p>
+                <p class="text-gray-500">Dinner</p>
+                <p class="mt-1 font-semibold text-white">赤坂 19:00</p>
               </div>
             </div>
           </div>
