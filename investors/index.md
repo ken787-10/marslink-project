@@ -204,6 +204,40 @@ permalink: /investors/
   </div>
 </section>
 
+<section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Early signals</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">PMF前でも、初期の足がかりは出ている。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">売上や大規模導入はこれからですが、地域・公共セクターとの連携や知的財産の確保など、事業の実在性を示す初期シグナルがあります。</p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">アクセラレーション</p>
+          <h3 class="mt-4 text-xl font-semibold text-white">OSAP 第19期に採択</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">大阪市のスタートアップ支援プログラム「OIH Startup Acceleration Program」にCabinTimeが採択（2025年）。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">自治体連携協定</p>
+          <h3 class="mt-4 text-xl font-semibold text-white">大阪府泉南郡熊取町</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">2025年、連携協定を締結。地域・公共セクターでの実証基盤。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-amber-200">知的財産</p>
+          <h3 class="mt-4 text-xl font-semibold text-white">商標を取得</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">「マーズリンク」および「Mars Link」を取得（2026年）。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
+          <p class="text-sm uppercase tracking-[0.2em] text-emerald-200">共同検証</p>
+          <h3 class="mt-4 text-xl font-semibold text-white">実証パートナーと協議</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">航空・船舶・交通・自治体・DMOと、初期実証に向けた協議を進める。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
     <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Current phase</p>

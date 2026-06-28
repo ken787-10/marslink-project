@@ -53,8 +53,8 @@ permalink: /technology/
           <marker id="sxk" markerWidth="9" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#67e8f9"/></marker>
           <pattern id="sxg" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.04)"/></pattern>
           <style>
-            .sxfl{stroke-dasharray:4 7;animation:sxa 1.4s linear infinite}@keyframes sxa{to{stroke-dashoffset:-22}}
-            .sxpl{animation:sxba 3s ease-in-out infinite}@keyframes sxba{0%,100%{opacity:.4}50%{opacity:.95}}
+            .sxfl{stroke-dasharray:4 7}
+            .sxpl{opacity:.7}
             .sxcap{fill:rgba(255,255,255,.42);font:700 12px sans-serif;letter-spacing:.14em}
             .sxh{fill:#fff;font:700 16px sans-serif}.sxs{fill:rgba(255,255,255,.56);font:400 11px sans-serif}
             .sxv{fill:#fff;font:600 12px sans-serif}.sxsrc{fill:rgba(255,255,255,.45);font:400 10px sans-serif}
@@ -284,7 +284,7 @@ permalink: /technology/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
       <div class="overflow-hidden rounded-lg border border-white/10">
-        <img src="{{ '/assets/images/flightdemo1.png' | relative_url }}" alt="CabinTime technology preview" class="w-full object-cover">
+        <img src="{{ '/assets/images/cabin-united.jpg' | relative_url }}" alt="機内 — 通信が不安定な移動空間" class="w-full object-cover">
       </div>
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Offline-aware</p>

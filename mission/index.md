@@ -74,27 +74,6 @@ permalink: /mission/
   </div>
 </section>
 
-<section class="bg-[#05070a] py-24 text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Operating principles</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">私たちが大切にする、6つの原則。</h2>
-      </div>
-      <div class="grid grid-cols-1 gap-4">
-        {% assign principles = "Context before content:コンテンツを並べる前に、場所、時間、目的、制約を理解する。|Build to mission, not to menu:機能一覧ではなく、移動中の人が判断できる状態から逆算してつくる。|Human judgment first:AIは決定者ではない。人が安心して選べるように、根拠と選択肢を提示する。|Service first, infrastructure later:最初はCabinTimeという使える体験から始め、背後にJourney Intelligence Platformの基盤を育てる。|Civilian wedge, operational depth:旅行と交通の体験から入り、運航、防災、安全が問われる現場の判断支援へ拡張できる深さを持つ。|Earn trust with evidence:誇張ではなく、実証、ログ、改善、運用の積み重ねで信頼を得る。" | split: "|" %}
-        {% for item in principles %}
-        {% assign parts = item | split: ":" %}
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">{{ parts[0] }}</h3>
-          <p class="mt-3 leading-7 text-gray-300">{{ parts[1] }}</p>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
@@ -133,7 +112,11 @@ permalink: /mission/
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="text-cyan-100">2025</p>
-        <p class="text-gray-300">MarsLink Inc.を設立。航空機・船舶などの移動空間向けAIプロダクト、CabinTimeの開発を開始。</p>
+        <p class="text-gray-300">MarsLink Inc.を設立。航空機・船舶などの移動空間向けAIプロダクト、CabinTimeの開発を開始。大阪市のスタートアップ支援プログラム「OIH Startup Acceleration Program（OSAP）」第19期にCabinTimeが採択。大阪府泉南郡熊取町と連携協定を締結。</p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
+        <p class="text-cyan-100">2026</p>
+        <p class="text-gray-300">商標「マーズリンク」および「Mars Link」を取得。</p>
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="text-cyan-100">Now</p>
