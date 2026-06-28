@@ -284,7 +284,7 @@ permalink: /technology/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
       <div class="overflow-hidden rounded-lg border border-white/10">
-        <img src="{{ '/assets/images/cabin-united.jpg' | relative_url }}" alt="機内 — 通信が不安定な移動空間" class="w-full object-cover">
+        <img src="{{ '/assets/images/cabin.jpg' | relative_url }}" alt="機内 — 通信が不安定な移動空間" class="aspect-[3/2] w-full object-cover">
       </div>
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Offline-aware</p>
