@@ -1,5 +1,5 @@
-brand_definition_en: "MarsLink builds AI for better decisions."
-brand_definition_ja: "移動という、人が最も頻繁に意思決定をする場所から、AI時代の意思決定インフラをつくる。"
+brand_definition_en: "We are building the AI infrastructure for mobility."
+brand_definition_ja: "MarsLinkは、AIによって移動空間を再設計するインフラ企業です。CabinTimeはその最初のプロダクトです。"
 category_definition_ja: "MarsLinkは、移動空間の情報・状況認識・意思決定をAIでつなぎ、人と組織の意思決定を支援するAIの会社です。CabinTimeはその初期導入パッケージです。"
 
 core_platform:
@@ -11,9 +11,6 @@ terms:
   cabin_time:
     name: "CabinTime"
     role: "初期導入パッケージ。Journey AIを機内・船内・移動空間で検証する入口。"
-  journey_ai_company:
-    name: "Journey AI Company"
-    role: "会社の看板。覚えやすいブランド定義。"
   journey_ai_platform:
     name: "Journey Intelligence Platform"
     role: "文脈理解、推薦、リスク分析、運用を支える中核基盤。"
@@ -42,9 +39,9 @@ evolution:
   - label: "Mobility Intelligence"
     type: "Network intelligence"
     copy: "航空、船舶、交通、地域を横断して、移動空間の判断材料を統合する。"
-  - label: "Decision Intelligence"
+  - label: "Human Mobility OS"
     type: "Infrastructure"
-    copy: "移動から社会へ広がる、人と組織の意思決定インフラ。"
+    copy: "移動空間のAIインフラとして、人の移動そのものを支える最終形。"
 
 decision_stack:
   - label: "Context"

@@ -1,8 +1,8 @@
 # Site settings
-title: MarsLink | Decision Intelligence
+title: MarsLink | AI infrastructure for mobility
 email: info@marslink.co.jp
 description: >-
-  MarsLinkは、移動中の状況・目的地・時間・好みをAIが理解し、航空機・船舶・交通・観光地で次の判断を支援する、意思決定支援のAI企業です。
+  MarsLinkは、AIによって移動空間を再設計するインフラ企業です。航空・船舶・鉄道・バスなど、あらゆる移動空間に状況認識と意思決定を支えるAIを届けます。CabinTimeはその最初のプロダクトです。
 keywords: "MarsLink, CabinTime, Journey AI, 移動体験, 移動空間AI, 航空, 船舶, 交通, 観光, AIコンパニオン, AIガイド, モビリティ"
 baseurl: "" # 独自ドメイン公開時は空
 url: "https://marslink.co.jp" # 独自ドメイン

@@ -143,7 +143,7 @@ permalink: /profile/
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="font-semibold text-cyan-100">Next</p>
-        <p class="text-gray-300">CabinTime、Journey Intelligence Platform、Decision Intelligenceの3幕で、移動から社会の判断支援へ拡張。</p>
+        <p class="text-gray-300">CabinTimeを最初のプロダクトに、Journey Intelligence Platform、そして移動空間のAIインフラへと、3幕で拡張。</p>
       </div>
     </div>
   </div>
