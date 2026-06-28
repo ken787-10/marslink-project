@@ -142,7 +142,7 @@ permalink: /investors/
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Market</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">観光は外貨獲得産業。移動データは、まだ誰も握っていない。</h2>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">観光は外貨獲得産業。移動データは、まだ統合されていない。</h2>
         <p class="mt-6 text-sm leading-6 text-gray-500">市場規模は資金調達資料で推計として整理します。本ページでは導入数・売上・契約実績を作らず、検証前提を明示します。外貨獲得・国際競争力は、本プラットフォームが日本にもたらす"インパクト"として位置づけます。</p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -169,52 +169,27 @@ permalink: /investors/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Moat</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">なぜ、MarsLinkが取れるのか。</h2>
-      </div>
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="font-semibold text-white">合法的なくさび</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">CabinTimeを通じて、航空・船舶・交通事業者の中に正規ルートで入り込める。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="font-semibold text-white">Edge AI の独自性</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">通信が途切れる移動空間でも動く分散エッジ。クラウド前提の競合が踏み込みにくい領域。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="font-semibold text-white">移動データのフライホイール</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">移動の文脈・反応データが積み上がるほど、提案と運用の精度が上がり、追随が難しくなる。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="font-semibold text-white">横断する創業者</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">交通・自治体・観光・AI・映像・広告を横断して事業を組み立てられる、希少なfounder-market fit。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-[#10100d] py-24 text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">GTM and validation</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">公共と事業者を顧客に、小さく入って広げる。</h2>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Go to market</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">実証から始め、サービスへ、社会実装へ。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">CabinTimeを通じて、航空・船舶・交通事業者の中に正規ルートで入り込み、実証から段階的にサービス化し、移動空間のAIインフラとして社会へ広げます。顧客は、観光庁・自治体・空港・航空・フェリーなど、移動の現場とインフラを持つ主体です。</p>
       </div>
       <div class="grid grid-cols-1 gap-4">
         <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <h3 class="font-semibold text-white">1. 顧客は公共・事業者</h3>
-          <p class="mt-3 text-gray-300">観光庁・自治体・空港・航空会社・フェリー会社。移動の現場とインフラを持つ主体を顧客にする。</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 1</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">実証実験（PoC）</h3>
+          <p class="mt-3 text-gray-300">公共・事業者と、伊丹→羽田のような具体ルート・航路で、天候・混雑・到着後行動・送客の判断支援を共同検証する。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <h3 class="font-semibold text-white">2. Route pilot</h3>
-          <p class="mt-3 text-gray-300">伊丹→羽田のような具体ルート・航路で、天候・混雑・到着後行動・送客の判断支援を共同検証する。</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 2</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">サービス提供</h3>
+          <p class="mt-3 text-gray-300">検証で価値が確認できた領域から、路線・航路・地域に正式なサービスとして実装し、事業者と利用者へ継続的に届ける。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-black/25 p-6">
-          <h3 class="font-semibold text-white">3. Land and expand</h3>
-          <p class="mt-3 text-gray-300">1路線・1航路・1地域から、複数事業者・地域横断・海外へ。プラットフォームとして広げる。</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">Phase 3</p>
+          <h3 class="mt-2 text-xl font-semibold text-white">社会実装</h3>
+          <p class="mt-3 text-gray-300">1路線・1航路・1地域から、複数事業者・地域横断・海外へ。移動空間のAIインフラとして社会に広げる。</p>
         </div>
       </div>
     </div>
