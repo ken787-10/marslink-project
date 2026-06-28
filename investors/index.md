@@ -11,7 +11,7 @@ permalink: /investors/
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Investors</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">Decision Intelligence begins in motion.</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、旅行会社でも観光領域の受託支援会社でもありません。移動空間の情報、状況認識、意思決定をAIでつなぐAIインフラ企業です。CabinTimeは、その最初のプロダクトです。
+      MarsLinkは、移動から始まる、意思決定を支援するAIの会社です。移動空間の情報・状況認識・意思決定をAIでつなぎ、人と組織がより良い判断を行える状態をつくります。CabinTimeは、その最初のプロダクトです。
     </p>
     <p class="mt-6 max-w-3xl text-base leading-7 text-cyan-100">
       {{ site.data.marslink_terms.brand_definition_en }} {{ site.data.marslink_terms.brand_definition_ja }}
