@@ -127,7 +127,12 @@ permalink: /profile/
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="font-semibold text-cyan-100">2025</p>
-        <p class="text-gray-300">MarsLink Inc.を設立。航空機・船舶などの移動空間向けAIプロダクト、CabinTimeの開発を開始。大阪市のスタートアップ支援プログラム「OIH Startup Acceleration Program（OSAP）」第19期にCabinTimeが採択。大阪府泉南郡熊取町と連携協定を締結。</p>
+        <ul class="space-y-2 text-gray-300">
+          <li class="flex gap-3"><span class="text-cyan-300">—</span><span>MarsLink Inc. を設立</span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">—</span><span>移動空間向けAIプロダクト CabinTime の開発を開始</span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">—</span><span>大阪市「OIH Startup Acceleration Program（OSAP）」第19期に採択</span></li>
+          <li class="flex gap-3"><span class="text-cyan-300">—</span><span>大阪府泉南郡熊取町と連携協定を締結</span></li>
+        </ul>
       </div>
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
         <p class="font-semibold text-cyan-100">2026</p>

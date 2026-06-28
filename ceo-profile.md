@@ -42,57 +42,13 @@ published: true
 </section>
 
 <section class="bg-[#0b1114] py-24 text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Background</p>
-      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">行政、地域、クリエイティブ、AIの交差点から。</h2>
-    </div>
-    <div class="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-        <p class="text-3xl font-semibold text-white">8年</p>
-        <p class="mt-3 text-sm text-gray-300">大阪市会議員としての行政・地域課題への実務経験</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-        <p class="text-3xl font-semibold text-white">IVLP</p>
-        <p class="mt-3 text-sm text-gray-300">米国国務省 International Visitor Leadership Program 修了</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-        <p class="text-3xl font-semibold text-white">FunMake</p>
-        <p class="mt-3 text-sm text-gray-300">動画、SNS、クリエイター、地域発信の実装経験</p>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-6">
-        <p class="text-3xl font-semibold text-white">MarsLink</p>
-        <p class="mt-3 text-sm text-gray-300">移動体験をAIで再設計するプロダクト開発</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="bg-[#05070a] py-24 text-white">
-  <div class="mx-auto max-w-5xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Career &amp; credentials</p>
-    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">経歴</h2>
-    <div class="mt-12 space-y-4">
-      <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.24fr_0.76fr]">
-        <p class="font-semibold text-cyan-100">学歴</p>
-        <p class="leading-7 text-gray-300">京都大学経営管理大学院 修了（MBA）。ワシントン大学 IEP 修了。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.24fr_0.76fr]">
-        <p class="font-semibold text-cyan-100">公職</p>
-        <p class="leading-7 text-gray-300">大阪市会議員を2期8年務める（2011–2019）。建設港湾委員会、港湾消防委員会などで、行政・地域・公共インフラの意思決定に携わる。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.24fr_0.76fr]">
-        <p class="font-semibold text-cyan-100">国際</p>
-        <p class="leading-7 text-gray-300">米国国務省 International Visitor Leadership Program（IVLP）修了。2013年には国務省プログラムを通じて米国のスタートアップ政策をリサーチ。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.24fr_0.76fr]">
-        <p class="font-semibold text-cyan-100">事業</p>
-        <p class="leading-7 text-gray-300">株式会社FunMake 代表取締役。地域創生のためのSNSマーケティングを軸に、クリエイターマネジメント、動画制作、デジタル広告、AIクリエイティブ、自治体の情報発信支援を手がける。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.24fr_0.76fr]">
-        <p class="font-semibold text-cyan-100">著作・研究</p>
-        <p class="leading-7 text-gray-300">シリコンバレーの起業・知的財産法に関する著書を執筆。インフルエンサーマーケティングや観光に関する学術論文を共著。</p>
-      </div>
+  <div class="mx-auto max-w-4xl px-6 lg:px-8">
+    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Background</p>
+    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">行政、地域、クリエイティブ、AIの交差点から。</h2>
+    <div class="mt-8 space-y-6 text-lg leading-8 text-gray-300">
+      <p>市位謙太は、大阪市会議員として8年にわたり、行政・地域・公共交通の意思決定の現場に携わってきました。その後、地域創生のためのSNSマーケティングを手がける株式会社FunMakeを率い、映像・クリエイター・地域発信を通じて、情報が人の行動に変わる現場を実装してきました。</p>
+      <p>米国国務省の International Visitor Leadership Program（IVLP）に参加し、国際的な政策とスタートアップの潮流に触れたほか、インフルエンサーマーケティングや観光に関する研究、起業・知的財産に関する著作も手がけています。京都大学経営管理大学院（MBA）修了。</p>
+      <p>行政・地域・テクノロジー・発信が交差するこの背景が、移動空間の意思決定を現場の制約から設計するMarsLinkの起点になっています。</p>
     </div>
   </div>
 </section>
