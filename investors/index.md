@@ -206,20 +206,24 @@ permalink: /investors/
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why MarsLink ・ なぜ私たちか</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">この領域は、テックだけでも、交通・観光だけでも獲れない。</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">行政・公共交通の意思決定、地域経済の現実、AIとソフトウェアの実装——この交差点に立てる主体は多くありません。MarsLinkの強みは、入口・技術・データ・人が噛み合うことにあります。</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">この領域は、純粋なテック企業にも、交通・観光の事業者にも、単独では攻めにくい場所です。MarsLinkは、地方創生マーケティングの<span class="text-white">FunMakeから生まれたスピンオフ</span>として、現場のネットワークと技術の両輪を初日から持っています。</p>
       </div>
-      <div class="grid grid-cols-1 gap-4">
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">入口 × Edge × データの複利</h3>
-          <p class="mt-3 leading-7 text-gray-300">CabinTimeで移動の現場に正規ルートで入り、通信が切れても動くEdge AIで価値を出し、移動データが積み上がるほど提案と運用の精度が上がる。三つが噛み合うほど、追随は難しくなります。</p>
+          <h3 class="text-xl font-semibold text-white">現場のネットワーク</h3>
+          <p class="mt-3 leading-7 text-gray-300">地方創生マーケティングのFunMakeで築いた、自治体・公共交通機関との関係を引き継ぐスピンオフ。移動の現場に、ゼロから営業せずに入れる。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">大学・AI研究者との連携</h3>
+          <p class="mt-3 leading-7 text-gray-300">京都大学・京都外国語大学との連携・共同研究を通じて、AI研究者と実装を進める。学術の知見を、現場の課題に接続する。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">横断して組み立てられる創業者</h3>
-          <p class="mt-3 leading-7 text-gray-300">交通・自治体・観光・AI・映像・広告を横断して事業を設計できる、希少なfounder-market fit。単独業種では攻めにくい領域に、現場の制約から入れます。</p>
+          <p class="mt-3 leading-7 text-gray-300">行政（大阪市会議員8年）・地域・交通・観光・AI・映像を横断して事業を設計できる、希少なfounder-market fit。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">構想を前に進めてきた初期の手応え</h3>
-          <p class="mt-3 leading-7 text-gray-300">OSAP採択、自治体との連携協定、商標取得など、シード段階から着実に布石を打っています。</p>
+          <h3 class="text-xl font-semibold text-white">入口 × Edge × データの複利</h3>
+          <p class="mt-3 leading-7 text-gray-300">CabinTimeで現場に入り、通信が切れても動くEdge AIで価値を出し、移動データが積み上がるほど精度が上がる。噛み合うほど追随は難しくなる。</p>
         </div>
       </div>
     </div>
@@ -235,14 +239,18 @@ permalink: /investors/
         MarsLinkが狙う領域は、純粋なテック企業にも、観光・地域の事業者にも、単独では攻めにくい場所です。行政と公共交通の意思決定構造、地域経済の現実、AIとクリエイティブによる実装——この3つを同時に理解している必要があります。
       </p>
       <p>
-        創業者の市位謙太は、大阪市会議員として8年、行政・地域・交通の意思決定を内側から経験。米国国務省IVLPで国際的なネットワークに触れ、FunMakeで映像・SNS・地域発信を通じて「情報が人の行動に変わる」現場を実装してきました。交通・自治体・観光・AI・映像・広告を横断して事業を組み立てられる、希少な背景です。
+        創業者の市位謙太は、大阪市会議員として8年、行政・地域・公共交通の意思決定を内側から経験。地方創生マーケティングのFunMakeを率い、自治体・公共交通機関と連携しながら、映像・SNS・地域発信で「情報が人の行動に変わる」現場を実装してきました。MarsLinkは、そのFunMakeから生まれたスピンオフです。
+      </p>
+      <p>
+        さらに、京都大学・京都外国語大学との連携・共同研究を通じてAI研究者と協働し、学術の知見を現場の課題に接続しています。行政・地域・交通・観光・AI・映像を横断して事業を組み立てられる、希少な背景です。
       </p>
     </div>
     <div class="mt-8 flex flex-wrap gap-3">
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">京都大学 経営管理大学院 MBA</span>
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">大阪市会議員 8年</span>
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">米国国務省 IVLP 修了</span>
-      <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">FunMake / 地域発信・映像</span>
+      <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">FunMake（地方創生マーケ）からスピンオフ</span>
+      <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">京都大学・京都外国語大学 共同研究</span>
     </div>
     <div class="mt-8">
       <a href="{{ '/ceo/' | relative_url }}" class="inline-flex rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">代表紹介を読む</a>
