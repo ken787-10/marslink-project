@@ -55,7 +55,7 @@ permalink: /investors/
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The thesis</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">巨大な社会課題を、ソフトウェアの速度で解く。</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。プロダクトからではなく社会課題から逆算し、古い産業をソフトウェアで再定義し、ハードウェアまで握り、やがてインフラになる。MarsLinkは、この構造を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。プロダクトからではなく社会課題から逆算し、古い産業をソフトウェアで再定義し、現場接点まで設計し、やがてインフラになる。MarsLinkは、この構造を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
     </div>
     <div class="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-5">
       <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
@@ -72,7 +72,7 @@ permalink: /investors/
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
         <p class="text-xs font-semibold text-white/40">04</p>
-        <p class="mt-2 font-semibold text-white">ハードウェアも握る</p>
+        <p class="mt-2 font-semibold text-white">現場接点まで設計</p>
       </div>
       <div class="rounded-lg border border-cyan-200/30 bg-cyan-200/[0.06] p-5">
         <p class="text-xs font-semibold text-cyan-200/70">05</p>
@@ -182,11 +182,11 @@ permalink: /investors/
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">現場のネットワーク</h3>
-          <p class="mt-3 leading-7 text-gray-300">地方創生マーケティングのFunMakeで築いた、自治体・公共交通機関との関係を引き継ぐスピンオフ。移動の現場に、ゼロから営業せずに入れる。</p>
+          <p class="mt-3 leading-7 text-gray-300">地方創生マーケティングのFunMakeで築いた、自治体・公共交通機関との接点を活かせるスピンオフ。移動の現場で、初期検証を始めやすい立ち位置にいる。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">大学・AI研究者との連携</h3>
-          <p class="mt-3 leading-7 text-gray-300">京都大学・京都外国語大学との連携・共同研究を通じて、AI研究者と実装を進める。学術の知見を、現場の課題に接続する。</p>
+          <h3 class="text-xl font-semibold text-white">AI実装と現場検証</h3>
+          <p class="mt-3 leading-7 text-gray-300">LLM、エッジ、データ設計を、現場の制約から検証する。研究テーマで終わらせず、初期パッケージとして動く形へ落とし込む。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">横断して組み立てられる創業者</h3>
@@ -213,7 +213,7 @@ permalink: /investors/
         創業者の市位謙太は、大阪市会議員として8年、行政・地域・公共交通の意思決定を内側から経験。地方創生マーケティングのFunMakeを率い、自治体・公共交通機関と連携しながら、映像・SNS・地域発信で「情報が人の行動に変わる」現場を実装してきました。MarsLinkは、そのFunMakeから生まれたスピンオフです。
       </p>
       <p>
-        さらに、京都大学・京都外国語大学との連携・共同研究を通じてAI研究者と協働し、学術の知見を現場の課題に接続しています。行政・地域・交通・観光・AI・映像を横断して事業を組み立てられる、希少な背景です。
+        行政・地域・交通・観光・AI・映像を横断して事業を組み立てられることが、MarsLinkの初期優位性です。技術単体ではなく、現場に入る順番、事業者との接点、利用者体験まで含めて設計します。
       </p>
     </div>
     <div class="mt-8 flex flex-wrap gap-3">
@@ -221,7 +221,6 @@ permalink: /investors/
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">大阪市会議員 8年</span>
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">米国国務省 IVLP 修了</span>
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">FunMake（地方創生マーケ）からスピンオフ</span>
-      <span class="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2 text-sm text-gray-200">京都大学・京都外国語大学 共同研究</span>
     </div>
     <div class="mt-8">
       <a href="{{ '/ceo/' | relative_url }}" class="inline-flex rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">代表紹介を読む</a>

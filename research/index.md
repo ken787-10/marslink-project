@@ -2,7 +2,7 @@
 layout: page
 title: "Research | MarsLink"
 description: "MarsLinkのResearchページ。Journey AI、移動体験、地域回遊、AI推薦、利用者行動に関する研究・共同検証テーマを紹介します。"
-keywords: "MarsLink, Research, Journey AI, 京都大学, 移動体験, AI推薦, 地域回遊, 観光研究"
+keywords: "MarsLink, Research, Journey AI, 移動体験, AI推薦, 地域回遊, 観光研究"
 permalink: /research/
 ---
 
@@ -52,7 +52,7 @@ permalink: /research/
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
         <p>
-          MarsLinkは、京都大学との共同研究を含む学術的な知見を、移動体験AIの設計に活かしていきます。研究の目的は論文のためだけではなく、ユーザーが実際に使いやすく、事業者が運用でき、地域に価値が返るプロダクトをつくることです。
+          MarsLinkは、移動、地域、情報接触、意思決定に関する学術的な知見を、移動体験AIの設計に活かしていきます。研究の目的は論文のためだけではなく、ユーザーが実際に使いやすく、事業者が運用でき、地域に価値が返るプロダクトをつくることです。
         </p>
         <p>
           インフルエンサー、デジタルコンテンツ、パーソナライゼーション、地域情報接触などの研究テーマを、CabinTimeとJourney Intelligence Platformの検証に接続します。
@@ -80,8 +80,8 @@ permalink: /research/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
     <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Collaborate</p>
-    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">共同研究・実証研究のご相談</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-300">大学、研究機関、交通事業者、自治体、DMOとの共同検証を歓迎します。</p>
+    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">研究連携・実証研究のご相談</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-300">大学、研究機関、交通事業者、自治体、DMOとの実証検証を歓迎します。</p>
     <div class="mt-10">
       <a href="{{ '/contact/' | relative_url }}" class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">相談する</a>
     </div>
