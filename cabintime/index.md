@@ -242,32 +242,18 @@ changefreq: weekly
           <div class="mt-5 rounded-2xl border border-white/10 bg-black/35 p-4">
             <p class="text-sm text-gray-400">まもなく羽田に到着します</p>
             <h4 class="mt-2 text-2xl font-semibold text-white">避けて、選ぶ</h4>
-            <div class="mt-4 grid grid-cols-2 gap-2 text-xs">
-              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">Purpose</p>
-                <p class="mt-1 font-semibold text-white">接待</p>
-              </div>
-              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">Avoid</p>
-                <p class="mt-1 font-semibold text-white">騒音・長い徒歩</p>
-              </div>
-              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">Preference</p>
-                <p class="mt-1 font-semibold text-white">静か・駅直結</p>
-              </div>
-              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">ETA</p>
-                <p class="mt-1 font-semibold text-white">17:40 着</p>
-              </div>
-            </div>
             <div class="mt-4 rounded-md border border-white/10 bg-white/[0.03] p-3">
-              <p class="text-xs uppercase text-gray-500">Arrival timeline ・ 到着後の時間</p>
+              <div class="flex items-center justify-between">
+                <p class="text-xs uppercase text-gray-500">到着後の動き ・ Arrival plan</p>
+                <span class="whitespace-nowrap text-[11px] font-semibold text-emerald-100">赤坂・会食 19:00</span>
+              </div>
               <div class="mt-3 space-y-2.5 text-xs">
-                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">17:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300"></span><span class="text-gray-300">羽田に着陸</span></div>
-                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">17:55</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">バゲージクレーム（約15分）</span></div>
-                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">モノレール乗車（浜松町行）</span></div>
-                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-cyan-100">18:18</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町に到着</span></div>
-                <div class="flex items-center gap-3"><span class="w-10 shrink-0 font-semibold text-emerald-200">18:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span><span class="text-gray-200">会食（一次会）</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">17:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300"></span><span class="text-gray-300">羽田空港に着陸</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">17:55</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">手荷物を受け取り（約15分）</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">東京モノレールに乗車</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:18</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町で乗り換え</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:45</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">赤坂に到着</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-emerald-200">19:00</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span><span class="text-gray-200">会食（一次会）スタート</span></div>
               </div>
             </div>
             <div class="mt-5 space-y-3">
@@ -391,7 +377,28 @@ changefreq: weekly
             <p class="text-xs uppercase text-gray-500">Operator Console</p>
             <h3 class="mt-1 text-lg font-semibold text-white">Experience risk monitor</h3>
           </div>
-          <div class="mt-5 space-y-3">
+          <div class="mt-4 rounded-md border border-white/10 bg-black/25 p-3">
+            <p class="text-[11px] uppercase tracking-wide text-gray-500">対象の文脈 ・ Passenger context</p>
+            <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Purpose</p>
+                <p class="mt-1 font-semibold text-white">接待</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Avoid</p>
+                <p class="mt-1 font-semibold text-white">騒音・長い徒歩</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Preference</p>
+                <p class="mt-1 font-semibold text-white">静か・駅直結</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">ETA</p>
+                <p class="mt-1 font-semibold text-white">17:40 着</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 space-y-3">
             <div class="rounded-md border border-cyan-200/20 bg-cyan-200/10 p-3">
               <div class="flex items-center justify-between gap-3">
                 <div>
