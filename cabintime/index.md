@@ -586,10 +586,6 @@ changefreq: weekly
             <span class="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] text-gray-400">連携準備中</span>
           </div>
         </div>
-        <div class="mt-4 rounded-md border border-cyan-200/20 bg-cyan-200/[0.06] p-3">
-          <p class="text-xs uppercase tracking-[0.16em] text-cyan-100/80">配信ポリシー</p>
-          <p class="mt-1 text-sm leading-6 text-gray-300">広告枠ではなく、目的・天候・動線に合わせた判断材料として配信する。</p>
-        </div>
       </div>
       <div>
         <p class="text-sm font-semibold uppercase text-amber-200">For partners</p>
