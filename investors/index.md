@@ -200,6 +200,32 @@ permalink: /investors/
   </div>
 </section>
 
+<section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why MarsLink ・ なぜ私たちか</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">この領域は、テックだけでも、交通・観光だけでも獲れない。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">行政・公共交通の意思決定、地域経済の現実、AIとソフトウェアの実装——この交差点に立てる主体は多くありません。MarsLinkの強みは、入口・技術・データ・人が噛み合うことにあります。</p>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">入口 × Edge × データの複利</h3>
+          <p class="mt-3 leading-7 text-gray-300">CabinTimeで移動の現場に正規ルートで入り、通信が切れても動くEdge AIで価値を出し、移動データが積み上がるほど提案と運用の精度が上がる。三つが噛み合うほど、追随は難しくなります。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">横断して組み立てられる創業者</h3>
+          <p class="mt-3 leading-7 text-gray-300">交通・自治体・観光・AI・映像・広告を横断して事業を設計できる、希少なfounder-market fit。単独業種では攻めにくい領域に、現場の制約から入れます。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">構想を前に進めてきた初期の手応え</h3>
+          <p class="mt-3 leading-7 text-gray-300">OSAP採択、自治体との連携協定、商標取得など、シード段階から着実に布石を打っています。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Founder–market fit</p>
