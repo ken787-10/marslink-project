@@ -378,23 +378,23 @@ changefreq: weekly
             <h3 class="mt-1 text-lg font-semibold text-white">Experience risk monitor</h3>
           </div>
           <div class="mt-4 rounded-md border border-white/10 bg-black/25 p-3">
-            <p class="text-[11px] uppercase tracking-wide text-gray-500">対象の文脈 ・ Passenger context</p>
+            <p class="text-[11px] uppercase tracking-wide text-gray-500">二次会の条件 ・ After-party context</p>
             <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
                 <p class="text-gray-500">Purpose</p>
-                <p class="mt-1 font-semibold text-white">接待</p>
+                <p class="mt-1 font-semibold text-white">接待の二次会</p>
               </div>
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
                 <p class="text-gray-500">Avoid</p>
-                <p class="mt-1 font-semibold text-white">騒音・長い徒歩</p>
+                <p class="mt-1 font-semibold text-white">騒がしい店・長い移動</p>
               </div>
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
                 <p class="text-gray-500">Preference</p>
-                <p class="mt-1 font-semibold text-white">静か・駅直結</p>
+                <p class="mt-1 font-semibold text-white">静か・会話できる</p>
               </div>
               <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
-                <p class="text-gray-500">Dinner</p>
-                <p class="mt-1 font-semibold text-white">赤坂 19:00</p>
+                <p class="text-gray-500">From</p>
+                <p class="mt-1 font-semibold text-white">一次会 赤坂 21:00</p>
               </div>
             </div>
           </div>
