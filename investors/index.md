@@ -55,25 +55,29 @@ permalink: /investors/
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The thesis</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">巨大な社会課題を、ソフトウェアの速度で解く。</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300">Andurilが防衛で示したのは「国家課題 → 古い産業 → ソフトウェアで再定義 → ハードも握る → インフラになる」という構造です。MarsLinkは、同じ構造を"移動"で実装します。</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。社会課題から逆算し、古い産業をソフトウェアで再定義し、ハードウェアまで握り、やがてインフラになる——防衛分野のAndurilはその一例です。MarsLinkは、この思考法を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
     </div>
-    <div class="mt-12 overflow-x-auto rounded-2xl border border-white/10 bg-[#070b11]/70">
-      <table class="w-full min-w-[640px] text-left">
-        <thead>
-          <tr class="border-b border-white/10 text-[11px] uppercase tracking-[0.18em] text-white/45">
-            <th class="px-6 py-4 font-semibold">構造</th>
-            <th class="px-6 py-4 font-semibold">Anduril（防衛）</th>
-            <th class="px-6 py-4 font-semibold text-cyan-100/80">MarsLink（移動）</th>
-          </tr>
-        </thead>
-        <tbody class="divide-y divide-white/[0.07] text-sm">
-          <tr><td class="px-6 py-4 text-gray-400">社会課題</td><td class="px-6 py-4 text-gray-300">国家の安全保障</td><td class="px-6 py-4 font-semibold text-white">人口減少下の国際競争力・外貨獲得</td></tr>
-          <tr><td class="px-6 py-4 text-gray-400">古い産業</td><td class="px-6 py-4 text-gray-300">防衛</td><td class="px-6 py-4 font-semibold text-white">航空・船舶・交通・観光</td></tr>
-          <tr><td class="px-6 py-4 text-gray-400">共通基盤（OS）</td><td class="px-6 py-4 text-gray-300">Lattice</td><td class="px-6 py-4 font-semibold text-white">Journey Intelligence Platform</td></tr>
-          <tr><td class="px-6 py-4 text-gray-400">第一プロダクト</td><td class="px-6 py-4 text-gray-300">自律システム</td><td class="px-6 py-4 font-semibold text-white">CabinTime</td></tr>
-          <tr><td class="px-6 py-4 text-gray-400">目指す姿</td><td class="px-6 py-4 text-gray-300">国家インフラ</td><td class="px-6 py-4 font-semibold text-white">移動インフラ</td></tr>
-        </tbody>
-      </table>
+    <div class="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-5">
+      <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-xs font-semibold text-white/40">01</p>
+        <p class="mt-2 font-semibold text-white">巨大な社会課題</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-xs font-semibold text-white/40">02</p>
+        <p class="mt-2 font-semibold text-white">古い産業</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-xs font-semibold text-white/40">03</p>
+        <p class="mt-2 font-semibold text-white">ソフトウェアで再定義</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
+        <p class="text-xs font-semibold text-white/40">04</p>
+        <p class="mt-2 font-semibold text-white">ハードウェアも握る</p>
+      </div>
+      <div class="rounded-lg border border-cyan-200/30 bg-cyan-200/[0.06] p-5">
+        <p class="text-xs font-semibold text-cyan-200/70">05</p>
+        <p class="mt-2 font-semibold text-white">インフラになる</p>
+      </div>
     </div>
     <p class="mt-6 text-center text-base leading-7 text-gray-400">私たちは「機内エンタメ」ではなく「移動空間のAIインフラ」という<span class="text-white">新しいカテゴリ</span>をつくります。</p>
   </div>
