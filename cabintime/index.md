@@ -551,30 +551,39 @@ changefreq: weekly
         <div class="flex items-center justify-between border-b border-white/10 pb-3">
           <div>
             <p class="text-xs uppercase text-gray-500">Operator Console</p>
-            <h3 class="mt-1 text-lg font-semibold text-white">事業者・地域が情報を整える</h3>
+            <h3 class="mt-1 text-lg font-semibold text-white">移動空間に届ける判断材料</h3>
           </div>
           <span class="rounded-md bg-white/5 px-2 py-1 text-xs text-gray-300">ITM → HND</span>
         </div>
+        <p class="mt-3 text-xs leading-5 text-gray-500">事業者・地域がつなぐ情報と、その連携状態。AIが利用者の文脈に合わせて取捨選択します。</p>
         <div class="mt-4 space-y-2.5">
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
-            <span class="text-sm text-gray-200">地域情報・観光</span>
-            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+            <span class="text-sm text-gray-200">経路・所要時間</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
           </div>
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
-            <span class="text-sm text-gray-200">飲食・店舗</span>
-            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+            <span class="text-sm text-gray-200">配車・交通手段</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
           </div>
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
-            <span class="text-sm text-gray-200">イベント・季節</span>
-            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">配信中</span>
+            <span class="text-sm text-gray-200">運行・遅延・規制</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
           </div>
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
-            <span class="text-sm text-gray-200">提携先・在庫</span>
-            <span class="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] text-gray-400">準備中</span>
+            <span class="text-sm text-gray-200">天気・雨雲レーダー</span>
+            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">5分前更新</span>
           </div>
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
-            <span class="text-sm text-gray-200">運行・緊急案内</span>
-            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">優先</span>
+            <span class="text-sm text-gray-200">口コミ・評価</span>
+            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">同期済み</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">店舗・施設の空き状況</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">地域・飲食・イベント</span>
+            <span class="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] text-gray-400">連携準備中</span>
           </div>
         </div>
         <div class="mt-4 rounded-md border border-cyan-200/20 bg-cyan-200/[0.06] p-3">
