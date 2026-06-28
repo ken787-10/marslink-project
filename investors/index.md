@@ -43,7 +43,7 @@ permalink: /investors/
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">技術が臨界点に達した</h3>
-          <p class="mt-3 leading-7 text-gray-300">LLMによる文脈理解、エッジAI、Starlink等の衛星通信。移動空間をAIで再設計する条件が、いま初めて揃いました。</p>
+          <p class="mt-3 leading-7 text-gray-300">LLMによる文脈理解、エッジAI、衛星通信の普及。移動空間をAIで再設計する条件が、いま初めて揃いました。</p>
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@ permalink: /investors/
     <div class="mx-auto max-w-3xl text-center">
       <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The thesis</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">巨大な社会課題を、ソフトウェアの速度で解く。</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。社会課題から逆算し、古い産業をソフトウェアで再定義し、ハードウェアまで握り、やがてインフラになる——防衛分野のAndurilはその一例です。MarsLinkは、この思考法を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
+      <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。プロダクトからではなく社会課題から逆算し、古い産業をソフトウェアで再定義し、ハードウェアまで握り、やがてインフラになる。MarsLinkは、この構造を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
     </div>
     <div class="mt-12 grid grid-cols-1 gap-3 sm:grid-cols-5">
       <div class="rounded-lg border border-white/10 bg-white/[0.03] p-5">
@@ -121,7 +121,7 @@ permalink: /investors/
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The wedge ・ CabinTime</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeは会社ではない。最初のプロダクトだ。</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">Latticeに対する最初の自律機のように、CabinTimeはJourney Intelligence Platformの最初のアプリケーションです。航空会社・フェリー会社の中に合法的に入り込める、合理的なくさびになります。</p>
+        <p class="mt-6 text-lg leading-8 text-gray-300">CabinTimeは、Journey Intelligence Platformの最初のアプリケーションです。共通基盤を先につくり、その上で動く第一号として、航空会社・フェリー会社の中に合法的に入り込める、合理的なくさびになります。</p>
       </div>
       <div class="grid grid-cols-1 gap-4">
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
@@ -160,7 +160,7 @@ permalink: /investors/
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="font-semibold text-white">移動データの空白</h3>
-          <p class="mt-3 text-sm leading-6 text-gray-300">検索はGoogle、SNSはMeta、知識はAI。だが「移動」は誰も統合していない。航空・鉄道・フェリー・自治体に分断されたデータを束ねる余地。</p>
+          <p class="mt-3 text-sm leading-6 text-gray-300">情報は検索に、つながりはSNSに、知識は生成AIに集約された。だが「移動」を束ねる主体はいない。航空・鉄道・フェリー・自治体に分断されたデータを統合する余地。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="font-semibold text-white">最初からグローバル</h3>
