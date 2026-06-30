@@ -122,9 +122,14 @@ module.exports = async (req, res) => {
     const phone = (body.phone || '').trim();
     const topic = (body.topic || '').trim();
     const message = (body.message || '').trim();
+    const privacyConsent = (body.privacyConsent || '').trim();
 
     if (!name || !email || !company || !topic || !message) {
       sendJson(res, 400, { success: false, message: 'お名前、メールアドレス、会社名・団体名、お問い合わせ種別、内容を入力してください。' });
+      return;
+    }
+    if (privacyConsent !== 'agreed') {
+      sendJson(res, 400, { success: false, message: 'プライバシーポリシーへの同意が必要です。' });
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -150,6 +155,7 @@ module.exports = async (req, res) => {
       `Email：${email}`,
       `電話番号：${phone || '未入力'}`,
       `お問い合わせ種別：${topic}`,
+      'プライバシーポリシー同意：同意済み',
       '',
       'メッセージ：',
       message,
@@ -175,6 +181,7 @@ module.exports = async (req, res) => {
           <li><strong>Email：</strong>${safeEmail}</li>
           <li><strong>電話番号：</strong>${safePhone}</li>
           <li><strong>お問い合わせ種別：</strong>${safeTopic}</li>
+          <li><strong>プライバシーポリシー同意：</strong>同意済み</li>
         </ul>
         <p><strong>メッセージ：</strong><br/>${safeMessage}</p>
         <hr/>

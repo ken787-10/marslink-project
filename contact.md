@@ -56,6 +56,10 @@ changefreq: monthly
           <p>内容を確認のうえ、必要に応じて担当者よりご連絡します。初回送信時は、機密性の高い情報や個人情報の詳細な記載はお控えください。</p>
           <p class="mt-2">送信いただいた情報は、お問い合わせ対応の目的で利用します。個人情報の取り扱いは<a href="{{ '/privacy/' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">プライバシーポリシー</a>をご確認ください。</p>
         </div>
+        <label class="flex items-start gap-3 rounded-md border border-white/10 bg-black/30 px-4 py-4 text-sm leading-6 text-gray-200">
+          <input name="privacyConsent" value="agreed" required type="checkbox" class="mt-1 h-4 w-4 rounded border-white/20 bg-black/40 text-cyan-300 focus:ring-cyan-300">
+          <span><a href="{{ '/privacy/' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">プライバシーポリシー</a>を確認し、個人情報の取り扱いに同意します。</span>
+        </label>
         <p id="contactStatus" class="hidden rounded-md border px-4 py-3 text-sm" role="status" aria-live="polite"></p>
         <button type="submit" class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">送信する</button>
       </div>
