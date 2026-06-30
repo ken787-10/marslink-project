@@ -115,32 +115,6 @@ permalink: /investors/
   </div>
 </section>
 
-<section class="bg-[#07090d] py-24 text-white">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The wedge ・ CabinTime</p>
-        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeは会社ではない。最初のプロダクトだ。</h2>
-        <p class="mt-6 text-lg leading-8 text-gray-300">CabinTimeは、Journey Intelligence Platformの最初のアプリケーションです。共通基盤を先につくり、その上で動く第一号として、航空会社・フェリー会社の中に合法的に入り込める、合理的なくさびになります。</p>
-      </div>
-      <div class="grid grid-cols-1 gap-4">
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">事業者の中に入り込める</h3>
-          <p class="mt-3 leading-7 text-gray-300">機内・船内の表示面、事業者アプリ、ポータルに組み込む形で、移動の現場に正規ルートで入る。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">Edge AI ― AIが途切れる場所で動く</h3>
-          <p class="mt-3 leading-7 text-gray-300">機内、船内、離島、山間部、災害時。AIがつながらない空間でローカルに動く分散エッジ。ここまで定義を上げると、航空・フェリーは顧客であり、インフラ展開パートナーになる。</p>
-        </div>
-        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">移動データの入口を握る</h3>
-          <p class="mt-3 leading-7 text-gray-300">誰が、どこから、どこへ、何に関心を持ち、どこで消費したか。移動の文脈データが、運用と提案の精度を上げるフライホイールになる。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">

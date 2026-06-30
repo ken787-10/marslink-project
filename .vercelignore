@@ -1,0 +1,14 @@
+_site/
+public/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+node_modules/
+public_html/
+PHPMailer/
+_backup/
+*.bak
+*.backup
+*.old
+.DS_Store

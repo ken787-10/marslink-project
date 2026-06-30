@@ -6,7 +6,21 @@
 // - TO_EMAIL (default: info@marslink.co.jp)
 // - FROM_EMAIL (recommended when using SMTP or a verified domain for Resend)
 
-const sendWithResend = async ({ from, to, subject, html, text }) => {
+const sendJson = (res, statusCode, payload) => {
+  res.statusCode = statusCode;
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
+  res.end(JSON.stringify(payload));
+};
+
+const escapeHtml = (value) =>
+  String(value || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+
+const sendWithResend = async ({ from, to, replyTo, subject, html, text }) => {
   const { Resend } = require('resend');
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) throw new Error('RESEND_API_KEY not configured');
@@ -18,6 +32,7 @@ const sendWithResend = async ({ from, to, subject, html, text }) => {
     html,
     text
   };
+  if (replyTo) params.reply_to = replyTo;
   const result = await resend.emails.send(params);
   if (result.error) {
     throw new Error(result.error.message || 'Resend send error');
@@ -25,7 +40,7 @@ const sendWithResend = async ({ from, to, subject, html, text }) => {
   return result;
 };
 
-const sendWithSMTP = async ({ from, to, subject, html, text }) => {
+const sendWithSMTP = async ({ from, to, replyTo, subject, html, text }) => {
   const nodemailer = require('nodemailer');
   const host = process.env.SMTP_HOST;
   const port = process.env.SMTP_PORT ? parseInt(process.env.SMTP_PORT, 10) : 587;
@@ -42,6 +57,7 @@ const sendWithSMTP = async ({ from, to, subject, html, text }) => {
   const info = await transporter.sendMail({
     from: from || user,
     to,
+    replyTo,
     subject,
     html,
     text
@@ -51,8 +67,28 @@ const sendWithSMTP = async ({ from, to, subject, html, text }) => {
 
 const parseFormBody = (req) =>
   new Promise((resolve, reject) => {
+    if (req.body && typeof req.body === 'object') {
+      resolve(req.body);
+      return;
+    }
+    if (typeof req.body === 'string') {
+      try {
+        const contentType = req.headers['content-type'] || '';
+        resolve(contentType.includes('application/json') ? JSON.parse(req.body || '{}') : Object.fromEntries(new URLSearchParams(req.body).entries()));
+      } catch (e) {
+        reject(e);
+      }
+      return;
+    }
+
     let raw = '';
-    req.on('data', (chunk) => (raw += chunk));
+    req.on('data', (chunk) => {
+      raw += chunk;
+      if (raw.length > 64 * 1024) {
+        reject(new Error('Request body too large'));
+        req.destroy();
+      }
+    });
     req.on('end', () => {
       try {
         const contentType = req.headers['content-type'] || '';
@@ -74,9 +110,8 @@ const parseFormBody = (req) =>
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
-    res.statusCode = 405;
     res.setHeader('Allow', 'POST');
-    res.end('Method Not Allowed');
+    sendJson(res, 405, { success: false, message: 'Method Not Allowed' });
     return;
   }
   try {
@@ -85,23 +120,22 @@ module.exports = async (req, res) => {
     const company = (body.company || '').trim();
     const email = (body.email || '').trim();
     const phone = (body.phone || '').trim();
+    const topic = (body.topic || 'その他').trim();
     const message = (body.message || '').trim();
 
-    if (!name || !company || !email || !phone || !message) {
-      res.statusCode = 400;
-      res.json({ success: false, message: '必須項目が不足しています。' });
+    if (!name || !email || !message) {
+      sendJson(res, 400, { success: false, message: 'お名前、メールアドレス、内容を入力してください。' });
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
-      res.statusCode = 400;
-      res.json({ success: false, message: 'メールアドレスが不正です。' });
+      sendJson(res, 400, { success: false, message: 'メールアドレスが不正です。' });
       return;
     }
 
     const to = process.env.TO_EMAIL || 'info@marslink.co.jp';
-    const from = process.env.FROM_EMAIL || 'no-reply@marslink.co.jp';
-    const subject = `【MarsLink】お問い合わせ - ${name} 様`;
+    const from = process.env.FROM_EMAIL || 'MarsLink <no-reply@marslink.co.jp>';
+    const subject = `【MarsLink】${topic} - ${name} 様`;
     const text = [
       '株式会社MarsLink 御中',
       '',
@@ -112,9 +146,10 @@ module.exports = async (req, res) => {
       '――――――――――――――――――――――――――――――――――',
       '',
       `氏名：${name}`,
-      `会社名：${company}`,
+      `会社名：${company || '未入力'}`,
       `Email：${email}`,
-      `電話番号：${phone}`,
+      `電話番号：${phone || '未入力'}`,
+      `お問い合わせ種別：${topic}`,
       '',
       'メッセージ：',
       message,
@@ -122,6 +157,12 @@ module.exports = async (req, res) => {
       `送信日時：${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}`,
       `送信者IP：${req.headers['x-forwarded-for'] || req.socket.remoteAddress || ''}`
     ].join('\n');
+    const safeName = escapeHtml(name);
+    const safeCompany = escapeHtml(company || '未入力');
+    const safeEmail = escapeHtml(email);
+    const safePhone = escapeHtml(phone || '未入力');
+    const safeTopic = escapeHtml(topic);
+    const safeMessage = escapeHtml(message).replace(/\n/g, '<br/>');
     const html = `
       <div style="font-family: system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial">
         <p>株式会社MarsLink 御中</p>
@@ -129,12 +170,13 @@ module.exports = async (req, res) => {
         <hr/>
         <h3>お問い合わせ内容</h3>
         <ul>
-          <li><strong>氏名：</strong>${name}</li>
-          <li><strong>会社名：</strong>${company}</li>
-          <li><strong>Email：</strong>${email}</li>
-          <li><strong>電話番号：</strong>${phone}</li>
+          <li><strong>氏名：</strong>${safeName}</li>
+          <li><strong>会社名：</strong>${safeCompany}</li>
+          <li><strong>Email：</strong>${safeEmail}</li>
+          <li><strong>電話番号：</strong>${safePhone}</li>
+          <li><strong>お問い合わせ種別：</strong>${safeTopic}</li>
         </ul>
-        <p><strong>メッセージ：</strong><br/>${message.replace(/\n/g, '<br/>')}</p>
+        <p><strong>メッセージ：</strong><br/>${safeMessage}</p>
         <hr/>
         <p>送信日時：${new Date().toLocaleString('ja-JP', { timeZone: 'Asia/Tokyo' })}</p>
       </div>
@@ -143,19 +185,16 @@ module.exports = async (req, res) => {
     // Prefer Resend; fallback to SMTP
     const useResend = !!process.env.RESEND_API_KEY;
     if (useResend) {
-      await sendWithResend({ from, to, subject, html, text });
+      await sendWithResend({ from, to, replyTo: email, subject, html, text });
     } else if (process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS) {
-      await sendWithSMTP({ from, to, subject, html, text });
+      await sendWithSMTP({ from, to, replyTo: email, subject, html, text });
     } else {
       throw new Error('メール送信設定（RESEND_API_KEY もしくは SMTP_*）が未設定です。');
     }
 
-    res.statusCode = 200;
-    res.json({ success: true, message: '送信しました。' });
+    sendJson(res, 200, { success: true, message: '送信しました。内容を確認のうえご連絡します。' });
   } catch (err) {
     console.error(err);
-    res.statusCode = 500;
-    res.json({ success: false, message: '送信に失敗しました。しばらくしてからお試しください。' });
+    sendJson(res, 500, { success: false, message: '送信に失敗しました。しばらくしてからお試しください。' });
   }
 };
-

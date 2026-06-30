@@ -42,6 +42,10 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - public_html/
+  - public/
+  - api/
+  - vercel.json
+  - .vercelignore
   - PHPMailer/
   - vendor/bundle/
   - vendor/cache/
