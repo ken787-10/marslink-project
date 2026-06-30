@@ -25,13 +25,45 @@ layout: default
 <article class="bg-[#07090d] text-white min-h-screen">
     <style>
         /* Post typography fallback (Tailwind Typography未使用時の最小スタイル) */
-        .prose h1 { font-size: 2rem; line-height: 2.5rem; font-weight: 800; margin: 1rem 0; }
-		.prose h2 { font-size: 1.5rem; line-height: 2rem; font-weight: 700; margin: 2rem 0 1rem; padding: 0.75rem 0; }
-		.prose h3 { font-size: 1.25rem; line-height: 1.75rem; font-weight: 700; margin: 2rem 0 1rem; padding: 0.5rem 0; }
-        .prose p { margin: 0.75rem 0; }
-        .prose ul { list-style: disc; padding-left: 1.25rem; margin: 0.5rem 0 1rem; }
-		.prose img { width: 650px; max-width: 100%; height: auto; display: block; margin: 0.75rem auto; border-radius: 0.5rem; }
-        .prose a { color: #22d3ee; text-decoration: underline; }
+        .prose { color: rgb(209 213 219); font-size: 1.06rem; line-height: 1.95; }
+        .prose h1 { color: #fff; font-size: 2rem; line-height: 2.5rem; font-weight: 800; margin: 1rem 0; }
+		.prose h2 {
+            position: relative;
+            color: #fff;
+            font-size: 1.62rem;
+            line-height: 2.15rem;
+            font-weight: 800;
+            margin: 3rem 0 1.25rem;
+            padding: 0 0 0.85rem;
+            border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+            letter-spacing: 0;
+        }
+        .prose h2::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            width: 5.5rem;
+            height: 2px;
+            background: linear-gradient(90deg, #67e8f9, rgba(103, 232, 249, 0));
+        }
+		.prose h3 {
+            color: #f8fafc;
+            font-size: 1.22rem;
+            line-height: 1.75rem;
+            font-weight: 800;
+            margin: 2rem 0 0.85rem;
+            padding: 0.18rem 0 0.18rem 0.9rem;
+            border-left: 3px solid rgba(103, 232, 249, 0.85);
+            letter-spacing: 0;
+        }
+        .prose p { margin: 0.95rem 0; }
+        .prose ul { list-style: disc; padding-left: 1.35rem; margin: 0.65rem 0 1.2rem; }
+        .prose li { margin: 0.35rem 0; }
+        .prose strong { color: #fff; font-weight: 800; }
+		.prose img { width: 650px; max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border-radius: 0.5rem; }
+        .prose a { color: #67e8f9; text-decoration: underline; text-decoration-color: rgba(103, 232, 249, 0.45); text-underline-offset: 0.18em; }
+        .prose a:hover { color: #cffafe; text-decoration-color: rgba(207, 250, 254, 0.9); }
     </style>
     <div class="container mx-auto px-6 pt-36 pb-20">
         <div class="max-w-4xl mx-auto">
