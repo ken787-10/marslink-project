@@ -1,12 +1,12 @@
 ---
-title: エッジAIとは ── 通信が切れても動くAIが、なぜ移動空間を変えるのか
+title: エッジAIとは ── 通信が弱い環境でも使えるAIが、なぜ移動空間で重要なのか
 published: true
 date: 2026-06-16 10:00 +0900
 image: /assets/images/cabin.jpg
 tags: [エッジAI, オフラインAI, 移動空間AI, CabinTime, 生成AI]
 category: ストーリー
 keywords: "エッジAIとは, エッジAI, オフラインAI, ローカルAI, Edge AI, 生成AI, 災害 通信, CabinTime"
-excerpt: AIは家や会社では使えても、機内・離島・災害時には途切れます。通信が切れても動く「エッジAI」とは何か、なぜ今重要なのか、そして移動空間こそが主戦場である理由。
+excerpt: AIは家や会社では使えても、機内・離島・災害時には途切れます。通信が弱い環境でも使える「エッジAI」とは何か、なぜ今重要なのか、そして移動空間こそが主戦場である理由。
 ---
 
 ChatGPTをはじめとする生成AIは、いまや多くの人にとって日常の道具になりました。けれど、その便利さには静かな前提があります。**「通信がつながっている」**ことです。
@@ -50,9 +50,9 @@ ChatGPTをはじめとする生成AIは、いまや多くの人にとって日�
 
 ## CabinTimeのエッジAI ── 機内に置く「Edge Node」
 
-MarsLinkの[CabinTime](/cabintime/)は、この発想から生まれた、移動空間で動くAIアシスタントです。
+MarsLinkの[CabinTime](/cabintime/)は、この発想から開発を進めている、移動空間向けのAIアシスタントです。
 
-CabinTimeは、機内・船内・車内に置く小型のローカル実行環境（**Edge Node**）の上で動きます。機内Wi-Fiや衛星通信が使えるときは最新情報を取り込み、通信が切れても、天気・口コミ・混雑・運行情報と利用者の目的を束ね、ローカルで状況理解と提案を続けます。クラウドだけにも、オフラインだけにも寄せすぎない設計です。技術思想は[Technology](/technology/)、基盤の全体像は[Journey Intelligence Platform](/platform/)で紹介しています。
+CabinTimeは、機内・船内・車内に置く小型のローカル実行環境（**Edge Node**）の上で動くことを想定しています。機内Wi-Fiや衛星通信が使えるときは最新情報を取り込み、通信が切れても、天気・口コミ・混雑・運行情報と利用者の目的を束ね、ローカルで状況理解と提案を続けられる設計を検証しています。クラウドだけにも、オフラインだけにも寄せすぎない設計です。技術思想は[Technology](/technology/)、基盤の全体像は[Journey Intelligence Platform](/platform/)で紹介しています。
 
 ここまで定義を上げると、見え方が変わります。航空会社やフェリー会社は、CabinTimeにとって単なる「顧客」ではなく、**エッジAIを展開していくインフラ・パートナー**になります。機体一機、船一隻、列車一編成が、それぞれ一つのエッジになるのです。
 
@@ -75,6 +75,6 @@ AIが社会に広がるほど、「AIが届かない空白」が際立ってき�
 ---
 
 **関連リンク**
-- プロダクト:[CabinTime ── 移動空間で動くAIアシスタント](/cabintime/)
+- プロダクト:[CabinTime ── 開発中の移動空間AIアシスタント](/cabintime/)
 - 基盤:[Journey Intelligence Platform](/platform/) ／ 技術:[Technology](/technology/)
 - 事業構想:[投資家向け](/investors/) ／ お問い合わせ:[こちら](/contact/)

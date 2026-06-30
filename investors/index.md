@@ -11,7 +11,7 @@ permalink: /investors/
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Investors</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">We are building the AI infrastructure for mobility.</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、AIによって、あらゆる移動空間を価値創造の場へ変えるインフラ企業です。航空・船舶・鉄道・バス——移動のあらゆる場面に、AIを届けます。観光サービスを作る会社ではありません。移動空間そのものを再設計する会社です。
+      MarsLinkは、AIによって、あらゆる移動空間を価値創造の場へ変えるインフラ企業です。航空・船舶・鉄道・バス——移動のあらゆる場面に、AIを届けることを目指しています。観光サービスを作る会社ではありません。移動空間そのものを再設計する会社です。
     </p>
     <div class="mt-8 flex flex-wrap gap-2 text-sm text-gray-400">
       <span class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-1.5">航空</span>
@@ -168,7 +168,7 @@ permalink: /investors/
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">入口 × Edge × データの複利</h3>
-          <p class="mt-3 leading-7 text-gray-300">CabinTimeで現場に入り、通信が切れても動くEdge AIで価値を出し、移動データが積み上がるほど精度が上がる。噛み合うほど追随は難しくなる。</p>
+          <p class="mt-3 leading-7 text-gray-300">CabinTimeで現場に入り、通信が弱い環境でも使えるEdge AIを検証し、移動データが積み上がるほど精度が上がる構造をつくる。噛み合うほど追随は難しくなる。</p>
         </div>
       </div>
     </div>

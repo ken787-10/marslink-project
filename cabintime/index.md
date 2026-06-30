@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "CabinTime｜移動空間で動くAIアシスタント"
-description: "CabinTimeは、機内・船内など移動空間で動くAIアシスタント。通信が切れても動くエッジAIが、天気・口コミ・混雑・運行情報とあなたの目的を束ね、移動中の意思決定を支援します。MarsLinkの最初のプロダクト。"
+title: "CabinTime｜開発中の移動空間AIアシスタント"
+description: "CabinTimeは、機内・船内など移動空間での意思決定支援を目指す開発中のAIアシスタント。通信が弱い環境でも使えるエッジAI設計により、天気・口コミ・混雑・運行情報と目的を束ねることを検証しています。MarsLinkの最初のプロダクト。"
 keywords: "CabinTime, 機内AI, 飛行機AI, 航空AI, 移動AI, 移動空間AI, エッジAI, オフラインAI, 生成AI, AIアシスタント, AIコンシェルジュ, 旅行AI, 船AI, 航空, 船舶, MarsLink, Journey AI"
 og_image: "/assets/images/cabin.jpg"
 canonical_url: "https://marslink.co.jp/cabintime/"
@@ -23,7 +23,7 @@ changefreq: weekly
         移動空間に、<br>次の判断を支える知能を。
       </h1>
       <p class="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
-        CabinTimeは、通信が不安定な移動空間や、事業者が設計する専用ポータルにJourney AIを導入するための初期パッケージです。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくります。ここで検証した文脈理解と推薦の型を、より広いJourney AIの基盤へ展開します。
+        CabinTimeは、通信が不安定な移動空間や、事業者が設計する専用ポータルにJourney AIを導入するための初期パッケージとして開発中です。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくることを目指しています。ここで検証した文脈理解と推薦の型を、より広いJourney AIの基盤へ展開します。
       </p>
       <div class="mt-10 flex flex-col gap-3 sm:flex-row">
         <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
@@ -196,20 +196,20 @@ changefreq: weekly
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
         <p class="text-sm font-semibold uppercase text-amber-200">Product definition</p>
-        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeは、Journey AIを移動空間に導入する初期パッケージです。</h2>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeは、Journey AIを移動空間に導入するために開発中の初期パッケージです。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
         <p>
-          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信が不安定な機内・船内・車内で実際に使える形にする初期導入パッケージです。ソフトウェアとして設計しているため、iPhoneやAndroid、航空機のIFE、船内ポータル、事業者アプリなど、移動空間のあらゆる画面に組み込めます。多言語対応により、日本人にも、インバウンドや海外の旅行者にも届けられます。
+          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信が不安定な機内・船内・車内で実際に使える形にする初期導入パッケージとして設計・開発を進めています。ソフトウェアとして設計しているため、iPhoneやAndroid、航空機のIFE、船内ポータル、事業者アプリなど、移動空間のあらゆる画面に組み込める構成を想定しています。多言語対応により、日本人にも、インバウンドや海外の旅行者にも届けられる体験を検証しています。
         </p>
         <p>
-          CabinTimeは、乗客向けのスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い場面を支えるローカル実行、事業者が情報を更新する運用設計をひとつにまとめます。
+          CabinTimeは、乗客向けのスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い場面を支えるローカル実行、事業者が情報を更新する運用設計をひとつにまとめる構想です。
         </p>
         <p>
           移動中の人は、到着後の食事、移動手段、予定変更、天候、混雑、地域情報を同時に考えています。情報は十分にあります。足りないのは、それらを現在地、時間、目的、制約に合わせて読み替え、次の行動を選べる形に整える仕組みです。
         </p>
         <p>
-          CabinTimeは、移動中の時間を「検索する時間」ではなく「次の行動を決める時間」に変えます。AIが文脈を理解し、選択肢と理由を提示し、最終的な判断は人間に残します。
+          CabinTimeは、移動中の時間を「検索する時間」ではなく「次の行動を決める時間」に変えることを目指しています。AIが文脈を理解し、選択肢と理由を提示し、最終的な判断は人間に残します。
         </p>
         <p>
           重要なのは、良い候補を出すことだけではありません。接待では避けるべき店、雨の日に歩かされるルート、混雑で時間を失う移動、Google評価は高くても雰囲気や動線が合わない二次会候補など、選ばなければ避けられた不満を事前に減らすこともCabinTimeの役割です。
@@ -458,7 +458,7 @@ changefreq: weekly
         <p class="text-sm font-semibold uppercase text-cyan-200">Deployment domains</p>
         <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">通信が届きにくい空間と、滞在時間の長い空間へ。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeはAir専用でも、Sea専用でもありません。通信が不安定な環境、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージです。
+          CabinTimeはAir専用でも、Sea専用でもありません。通信が不安定な環境、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージとして開発中です。
         </p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -488,7 +488,7 @@ changefreq: weekly
         <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">AIが見るのは、情報ではなく判断の条件です。</h2>
       </div>
       <p class="text-lg leading-8 text-gray-300">
-        CabinTimeは、検索結果を並べるだけのUIではありません。横断的な情報をひとつの判断ダッシュボードに集約し、その人の目的に合わせて、選ぶ理由と避ける理由を整理します。
+        CabinTimeは、検索結果を並べるだけのUIではありません。横断的な情報をひとつの判断ダッシュボードに集約し、その人の目的に合わせて、選ぶ理由と避ける理由を整理する体験を検証しています。
       </p>
     </div>
 
@@ -519,7 +519,7 @@ changefreq: weekly
         <p class="text-sm font-semibold uppercase text-emerald-200">Passenger experience</p>
         <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">移動中に、次の選択肢が見えてくる。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeは、利用者に情報を大量に渡すのではなく、今の移動文脈に合う選択肢へ絞り込みます。おすすめと同じくらい、避けるべき選択を見つけることを重視します。
+          CabinTimeは、利用者に情報を大量に渡すのではなく、今の移動文脈に合う選択肢へ絞り込む設計です。おすすめと同じくらい、避けるべき選択を見つけることを重視します。
         </p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -592,7 +592,7 @@ changefreq: weekly
         <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">事業者や地域にとって、移動空間は判断材料を届ける接点になる。</h2>
         <div class="mt-8 space-y-6 text-lg leading-8 text-gray-300">
           <p>
-            航空機、船舶、交通機関、ホテル、地域には、利用者の判断に役立つ情報があります。CabinTimeは、それを広告枠として押し出すのではなく、目的、天候、混雑、動線、避けたい体験に合わせた判断材料として届けます。
+            航空機、船舶、交通機関、ホテル、地域には、利用者の判断に役立つ情報があります。CabinTimeは、それを広告枠として押し出すのではなく、目的、天候、混雑、動線、避けたい体験に合わせた判断材料として届けることを目指しています。
           </p>
           <p>
             事業者や地域は、路線、便、航路、車両、施設、目的地ごとの情報を整えます。AIはそれを利用者の文脈に合わせて整理し、人が選びやすい形で提示します。共同検証では、情報更新の負荷、提案理由、利用者の納得感を確認します。
@@ -610,7 +610,7 @@ changefreq: weekly
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeの頭脳は、Journey AI。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeは、移動・滞在空間に導入するパッケージです。その中で文脈理解と提案を担うのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を選べる状態をつくる知能です。
+          CabinTimeは、移動・滞在空間に導入するパッケージとして開発中です。その中で文脈理解と提案を担うのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を選べる状態をつくる知能です。
         </p>
         <p class="mt-4 text-lg leading-8 text-gray-300">
           Journey AIは、広告枠の順位ではありません。天気、交通、混雑、口コミ、目的、好み、避けたい体験を自律的に集め、薦める理由と避ける理由を添えて提示します。決めるのは、つねに人間です。

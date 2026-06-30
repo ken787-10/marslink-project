@@ -75,7 +75,7 @@ CabinTimeおよびJourney Intelligence Platformは、現在**開発・共同検�
 ---
 
 **関連リンク**
-- プロダクト:[CabinTime ── 移動空間で動くAIアシスタント](/cabintime/)
+- プロダクト:[CabinTime ── 開発中の移動空間AIアシスタント](/cabintime/)
 - 基盤:[Journey Intelligence Platform](/platform/)
 - 会社情報:[会社概要](/profile/) ／ 事業構想:[投資家向け](/investors/)
 - お問い合わせ:[連携・共同検証のご相談はこちら](/contact/)
