@@ -120,11 +120,11 @@ module.exports = async (req, res) => {
     const company = (body.company || '').trim();
     const email = (body.email || '').trim();
     const phone = (body.phone || '').trim();
-    const topic = (body.topic || 'その他').trim();
+    const topic = (body.topic || '').trim();
     const message = (body.message || '').trim();
 
-    if (!name || !email || !message) {
-      sendJson(res, 400, { success: false, message: 'お名前、メールアドレス、内容を入力してください。' });
+    if (!name || !email || !company || !topic || !message) {
+      sendJson(res, 400, { success: false, message: 'お名前、メールアドレス、会社名・団体名、お問い合わせ種別、内容を入力してください。' });
       return;
     }
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -146,7 +146,7 @@ module.exports = async (req, res) => {
       '――――――――――――――――――――――――――――――――――',
       '',
       `氏名：${name}`,
-      `会社名：${company || '未入力'}`,
+      `会社名：${company}`,
       `Email：${email}`,
       `電話番号：${phone || '未入力'}`,
       `お問い合わせ種別：${topic}`,
@@ -158,7 +158,7 @@ module.exports = async (req, res) => {
       `送信者IP：${req.headers['x-forwarded-for'] || req.socket.remoteAddress || ''}`
     ].join('\n');
     const safeName = escapeHtml(name);
-    const safeCompany = escapeHtml(company || '未入力');
+    const safeCompany = escapeHtml(company);
     const safeEmail = escapeHtml(email);
     const safePhone = escapeHtml(phone || '未入力');
     const safeTopic = escapeHtml(topic);

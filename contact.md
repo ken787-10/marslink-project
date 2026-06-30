@@ -32,7 +32,7 @@ changefreq: monthly
         </label>
         <label class="block">
           <span class="text-sm font-semibold text-gray-200">会社名・団体名</span>
-          <input name="company" class="mt-2 w-full rounded-md border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-cyan-300" type="text" autocomplete="organization">
+          <input name="company" required class="mt-2 w-full rounded-md border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-cyan-300" type="text" autocomplete="organization">
         </label>
         <label class="block">
           <span class="text-sm font-semibold text-gray-200">電話番号（任意）</span>
@@ -40,7 +40,8 @@ changefreq: monthly
         </label>
         <label class="block">
           <span class="text-sm font-semibold text-gray-200">お問い合わせ種別</span>
-          <select name="topic" class="mt-2 w-full rounded-md border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-cyan-300">
+          <select name="topic" required class="mt-2 w-full rounded-md border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-cyan-300">
+            <option value="" disabled selected>選択してください</option>
             <option value="CabinTime共同検証・事業連携">CabinTime共同検証・事業連携</option>
             <option value="投資・資金調達に関するご相談">投資・資金調達に関するご相談</option>
             <option value="採用">採用</option>
