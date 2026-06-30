@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Mission"
-description: "MarsLinkのMission、Vision、Values。移動中の意思決定をAIで支える、意思決定支援のAI企業としての思想。"
+description: "移動空間を再設計するAIインフラ企業MarsLinkのMission・Vision・Values。AIによってあらゆる移動空間を価値創造の場へ変える思想を紹介します。"
 permalink: /mission/
 ---
 

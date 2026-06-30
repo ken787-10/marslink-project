@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Content Intelligence Lab | MarsLink"
-description: "MarsLinkのContent Intelligence Lab。地域・交通・観光コンテンツをJourney AIの提案に接続するための実験領域です。"
-keywords: "MarsLink, Content Intelligence, Journey AI, SNS, 地域発信, コンテンツ運用"
+title: "Content Intelligence Lab"
+description: "MarsLinkのContent Intelligence Lab。地域・交通・観光コンテンツを、生成AIと移動空間AIの提案に接続するための実験領域です。"
+keywords: "MarsLink, Content Intelligence, 生成AI, 移動空間AI, AIコンテンツ, 地域発信, Journey AI"
 permalink: /social-media/
 ---
 

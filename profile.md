@@ -1,7 +1,7 @@
 ---
 layout: page
 title: "Company"
-description: "MarsLink Inc.の会社ページ。Mission、Vision、Values、History、会社概要。"
+description: "移動空間のAIインフラ企業 MarsLink Inc. の会社情報。Mission・Vision・History・会社概要。AIによって移動空間を再設計し、CabinTimeを最初のプロダクトに展開します。"
 permalink: /profile/
 ---
 

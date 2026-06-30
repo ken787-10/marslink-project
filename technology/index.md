@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Technology | MarsLink"
-description: "MarsLinkのTechnologyページ。移動空間の文脈理解、推薦、運用判断、オフライン体験、AIガバナンスを支えるJourney AIの技術思想を紹介します。"
-keywords: "MarsLink, Technology, Journey AI, LLM, 推薦, 文脈理解, 移動空間AI, CabinTime, Decision Intelligence"
+title: "Technology｜移動空間AIの技術"
+description: "MarsLinkの技術。LLMによる文脈理解、エッジAI、オフライン実行、推薦、AIガバナンスで、移動空間の意思決定を支えるJourney AIの設計思想を紹介します。"
+keywords: "MarsLink, Technology, 移動空間AI, LLM, 生成AI, エッジAI, オフラインAI, 文脈理解, 推薦, AIガバナンス, Journey AI, CabinTime"
 permalink: /technology/
 ---
 

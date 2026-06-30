@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Careers | MarsLink"
-description: "MarsLinkの採用ページ。意思決定を支援するAIを移動から立ち上げるMarsLinkで、プロダクト、デザイン、事業開発に取り組む仲間を募集しています。"
-keywords: "MarsLink, Careers, 採用, Journey AI, CabinTime, プロダクト, デザイン, 事業開発"
+title: "Careers"
+description: "移動空間のAIインフラをつくるMarsLinkの採用。AI・エッジコンピューティング・プロダクト・事業開発で、移動空間を再設計する仲間を募集します。"
+keywords: "MarsLink, Careers, 採用, AIインフラ, 移動空間AI, AIエンジニア, エッジAI, プロダクト, デザイン, 事業開発, CabinTime"
 permalink: /careers/
 ---
 

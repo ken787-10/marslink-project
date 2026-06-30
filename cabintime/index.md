@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "CabinTime | Initial Journey AI Package"
-description: "CabinTimeは、Journey AIを機内・船内・移動空間で動かす初期導入パッケージです。天気、口コミ、混雑、運行情報、利用者の目的・好み・避けたい体験を束ね、移動中の判断を支援します。"
-keywords: "CabinTime, MarsLink, Journey AI, 移動空間AI, AIコンパニオン, 航空, 船舶, 交通, 地域連携, 共同検証"
+title: "CabinTime｜移動空間で動くAIアシスタント"
+description: "CabinTimeは、機内・船内など移動空間で動くAIアシスタント。通信が切れても動くエッジAIが、天気・口コミ・混雑・運行情報とあなたの目的を束ね、移動中の意思決定を支援します。MarsLinkの最初のプロダクト。"
+keywords: "CabinTime, 機内AI, 移動空間AI, エッジAI, オフラインAI, 生成AI, AIアシスタント, AIコンシェルジュ, 旅行AI, 航空, 船舶, MarsLink, Journey AI"
 og_image: "/assets/images/cabin.jpg"
 canonical_url: "https://marslink.co.jp/cabintime/"
 permalink: /cabintime/

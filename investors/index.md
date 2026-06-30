@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Investors | MarsLink"
+title: "Investors"
 description: "MarsLinkは、AIによってあらゆる移動空間を価値創造の場へ変える、移動空間のAIインフラ企業です。日本の構造課題から逆算し、CabinTimeを最初のプロダクトに、移動インフラへ拡張します。"
 keywords: "MarsLink, Investors, 投資家, AI infrastructure for mobility, 移動空間, CabinTime, エッジAI, インバウンド, 外貨獲得, スタートアップ"
 permalink: /investors/

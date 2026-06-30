@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Operational Decision Support | MarsLink"
+title: "Operational Decision Support"
 description: "Operational Decision Supportは、CabinTimeとJourney AIで検証した移動空間の意思決定支援を、将来の重要な運用判断へ拡張するMarsLinkの構想です。"
 keywords: "MarsLink, Operational Decision Support, CabinTime, Journey AI, Decision Intelligence, 運航支援, 防災, レジリエンス"
 permalink: /operations/

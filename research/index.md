@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Research | MarsLink"
-description: "MarsLinkのResearchページ。Journey AI、移動体験、地域回遊、AI推薦、利用者行動に関する研究・共同検証テーマを紹介します。"
-keywords: "MarsLink, Research, Journey AI, 移動体験, AI推薦, 地域回遊, 観光研究"
+title: "Research｜移動空間AIの研究"
+description: "MarsLinkのResearch。移動空間AI・AI推薦・利用者行動・地域回遊・状況認識に関する研究と共同検証テーマを紹介します。"
+keywords: "MarsLink, Research, 移動空間AI, AI推薦, 生成AI, 利用者行動, 地域回遊, Journey AI"
 permalink: /research/
 ---
 
