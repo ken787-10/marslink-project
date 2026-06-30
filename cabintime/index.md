@@ -23,7 +23,7 @@ changefreq: weekly
         移動空間に、<br>次の判断を支える知能を。
       </h1>
       <p class="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
-        CabinTimeは、通信制約や専用空間のある移動・滞在環境へJourney AIを入れる初期導入パッケージです。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくります。ここで得た文脈理解と推薦の型を、Journey AIへ広げます。
+        CabinTimeは、通信が不安定な移動空間や、事業者が設計する専用ポータルにJourney AIを導入するための初期パッケージです。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくります。ここで検証した文脈理解と推薦の型を、より広いJourney AIの基盤へ展開します。
       </p>
       <div class="mt-10 flex flex-col gap-3 sm:flex-row">
         <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
@@ -196,23 +196,23 @@ changefreq: weekly
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
         <p class="text-sm font-semibold uppercase text-amber-200">Product definition</p>
-        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeは、Journey AIを移動空間に入れる初期パッケージです。</h2>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeは、Journey AIを移動空間に導入する初期パッケージです。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
         <p>
-          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信制約のある機内・船内・車内で実際に動かすための初期導入パッケージです。ソフトウェアとして設計しているため、iPhoneやAndroid、航空機のIFE、船内ポータル、事業者アプリなど、移動空間のあらゆる画面に載せられ、多言語対応で日本人にも、インバウンドや海外の旅行者にも届きます。
+          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信が不安定な機内・船内・車内で実際に使える形にする初期導入パッケージです。ソフトウェアとして設計しているため、iPhoneやAndroid、航空機のIFE、船内ポータル、事業者アプリなど、移動空間のあらゆる画面に組み込めます。多言語対応により、日本人にも、インバウンドや海外の旅行者にも届けられます。
         </p>
         <p>
-          パッケージに含まれるのは、乗客が触れるスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い時にも体験を保つローカル実行、そして事業者が情報を扱う運用の前提です。
+          CabinTimeは、乗客向けのスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い場面を支えるローカル実行、事業者が情報を更新する運用設計をひとつにまとめます。
         </p>
         <p>
-          移動中の人は、到着後の食事、移動手段、予定変更、天候、混雑、地域情報を同時に考えています。情報は十分にあります。足りないのは、その人の現在地、時間、目的、制約に合わせて、判断できる形に整理する層です。
+          移動中の人は、到着後の食事、移動手段、予定変更、天候、混雑、地域情報を同時に考えています。情報は十分にあります。足りないのは、それらを現在地、時間、目的、制約に合わせて読み替え、次の行動を選べる形に整える仕組みです。
         </p>
         <p>
           CabinTimeは、移動中の時間を「検索する時間」ではなく「次の行動を決める時間」に変えます。AIが文脈を理解し、選択肢と理由を提示し、最終的な判断は人間に残します。
         </p>
         <p>
-          重要なのは、良い候補を出すことだけではありません。接待では避けるべき店、雨の日に歩かされるルート、混雑で時間を失う移動、Google評価は高くても雰囲気や動線が合わない二次会候補など、行かなければ起きなかった不満を事前に減らすこともCabinTimeの役割です。
+          重要なのは、良い候補を出すことだけではありません。接待では避けるべき店、雨の日に歩かされるルート、混雑で時間を失う移動、Google評価は高くても雰囲気や動線が合わない二次会候補など、選ばなければ避けられた不満を事前に減らすこともCabinTimeの役割です。
         </p>
       </div>
     </div>
@@ -225,7 +225,7 @@ changefreq: weekly
       <p class="text-sm font-semibold uppercase text-cyan-200">Operational dashboard</p>
       <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">情報を集約し、避けるべき選択まで見つける。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">
-        CabinTimeがつなぐのは、画面ではなく判断に必要な文脈です。天気、口コミ、公共交通の混雑、営業時間、運航・運行情報、地域データ、利用者の目的と好みを束ね、「行くべき場所」だけでなく「避けた方がいい選択」も整理します。
+        CabinTimeが統合するのは、画面ではなく判断に必要な文脈です。天気、口コミ、公共交通の混雑、営業時間、運航・運行情報、地域データ、利用者の目的と好みを束ね、「行くべき場所」だけでなく「避けた方がいい選択」も整理します。
       </p>
     </div>
 
@@ -458,7 +458,7 @@ changefreq: weekly
         <p class="text-sm font-semibold uppercase text-cyan-200">Deployment domains</p>
         <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">通信が届きにくい空間と、滞在時間の長い空間へ。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeはAir専用でも、Sea専用でもありません。通信制約、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージです。
+          CabinTimeはAir専用でも、Sea専用でもありません。通信が不安定な環境、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージです。
         </p>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -495,8 +495,8 @@ changefreq: weekly
     <div class="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
       <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
         <p class="text-sm font-semibold uppercase text-cyan-200">01 / Cross-source dashboard</p>
-        <h3 class="mt-4 text-2xl font-semibold text-white">横断情報を一枚にする。</h3>
-        <p class="mt-4 leading-7 text-gray-300">天気、口コミ、混雑、営業時間、運行・運航情報、地域データを分断せず、到着前の判断に使える状態へまとめる。</p>
+        <h3 class="mt-4 text-2xl font-semibold text-white">横断情報を一画面にまとめる。</h3>
+        <p class="mt-4 leading-7 text-gray-300">天気、口コミ、混雑、営業時間、運行・運航情報、地域データを分断せず、到着前の判断に使える形にまとめる。</p>
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
         <p class="text-sm font-semibold uppercase text-amber-200">02 / Personalization</p>
@@ -505,7 +505,7 @@ changefreq: weekly
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
         <p class="text-sm font-semibold uppercase text-emerald-200">03 / Explainable choice</p>
-        <h3 class="mt-4 text-2xl font-semibold text-white">理由つきで判断できる。</h3>
+        <h3 class="mt-4 text-2xl font-semibold text-white">理由を見て判断できる。</h3>
         <p class="mt-4 leading-7 text-gray-300">AIが勝手に決めるのではなく、推奨、注意、除外の理由を示し、人が納得して次の行動を選べる状態をつくる。</p>
       </div>
     </div>
@@ -524,8 +524,8 @@ changefreq: weekly
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
-          <h3 class="text-xl font-semibold text-white">体験事故の回避</h3>
-          <p class="mt-3 leading-7 text-gray-300">接待、家族旅行、一人旅などの文脈に合わない候補を、口コミ、混雑、動線、天候から事前に下げる。</p>
+          <h3 class="text-xl font-semibold text-white">体験の失敗を避ける</h3>
+          <p class="mt-3 leading-7 text-gray-300">接待、家族旅行、一人旅などの文脈に合わない候補を、口コミ、混雑、動線、天候から見つけ、優先度を下げる。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">予定変更への対応</h3>
@@ -533,7 +533,7 @@ changefreq: weekly
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">パーソナライズされた提案</h3>
-          <p class="mt-3 leading-7 text-gray-300">到着予定時刻、目的地、滞在時間、交通状況に、本人の好み、同行者、目的、避けたい体験を重ねて提示する。</p>
+          <p class="mt-3 leading-7 text-gray-300">到着予定時刻、目的地、滞在時間、交通状況に、本人の好み、同行者、目的、避けたい体験を重ねて提案する。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">地域との接続</h3>
@@ -555,7 +555,7 @@ changefreq: weekly
           </div>
           <span class="rounded-md bg-white/5 px-2 py-1 text-xs text-gray-300">ITM → HND</span>
         </div>
-        <p class="mt-3 text-xs leading-5 text-gray-500">事業者・地域がつなぐ情報と、その連携状態。AIが利用者の文脈に合わせて取捨選択します。</p>
+        <p class="mt-3 text-xs leading-5 text-gray-500">事業者・地域が持つ情報と、その連携状態。AIが利用者の文脈に合わせて取捨選択します。</p>
         <div class="mt-4 space-y-2.5">
           <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
             <span class="text-sm text-gray-200">経路・所要時間</span>
@@ -595,7 +595,7 @@ changefreq: weekly
             航空機、船舶、交通機関、ホテル、地域には、利用者の判断に役立つ情報があります。CabinTimeは、それを広告枠として押し出すのではなく、目的、天候、混雑、動線、避けたい体験に合わせた判断材料として届けます。
           </p>
           <p>
-            事業者や地域は、路線、便、航路、車両、施設、目的地ごとの情報を整えます。AIはそれを利用者文脈に合わせて整理し、人が選びやすい形で提示します。共同検証では、情報更新の負荷、提案理由、利用者の納得感を確認します。
+            事業者や地域は、路線、便、航路、車両、施設、目的地ごとの情報を整えます。AIはそれを利用者の文脈に合わせて整理し、人が選びやすい形で提示します。共同検証では、情報更新の負荷、提案理由、利用者の納得感を確認します。
           </p>
         </div>
       </div>
@@ -610,7 +610,7 @@ changefreq: weekly
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeの頭脳は、Journey AI。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
-          CabinTimeは、移動・滞在空間に導入するパッケージです。その中で実際に考えているのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を判断できる状態をつくる知能です。
+          CabinTimeは、移動・滞在空間に導入するパッケージです。その中で文脈理解と提案を担うのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を選べる状態をつくる知能です。
         </p>
         <p class="mt-4 text-lg leading-8 text-gray-300">
           Journey AIは、広告枠の順位ではありません。天気、交通、混雑、口コミ、目的、好み、避けたい体験を自律的に集め、薦める理由と避ける理由を添えて提示します。決めるのは、つねに人間です。
@@ -645,7 +645,7 @@ changefreq: weekly
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">情報更新</h3>
-          <p class="mt-3 leading-7 text-gray-300">路線、便、航路、目的地、季節ごとの情報を、どの負荷で更新し、どの粒度でAIの判断材料にできるかを検証する。</p>
+          <p class="mt-3 leading-7 text-gray-300">路線、便、航路、目的地、季節ごとの情報を、どの運用負荷で更新できるか、どの粒度ならAIの判断材料として使えるかを検証する。</p>
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">地域連携</h3>
@@ -653,7 +653,7 @@ changefreq: weekly
         </div>
         <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
           <h3 class="text-xl font-semibold text-white">信頼できる情報設計</h3>
-          <p class="mt-3 leading-7 text-gray-300">事業者や地域が持つ情報を、広告枠ではなく判断材料として扱えるかを共同検証で整理する。</p>
+          <p class="mt-3 leading-7 text-gray-300">事業者や地域が持つ情報を、広告枠ではなく判断材料として扱う運用を共同検証で設計する。</p>
         </div>
       </div>
     </div>
@@ -680,7 +680,7 @@ changefreq: weekly
       </div>
       <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
         <h3 class="text-xl font-semibold">基盤へ育てる</h3>
-        <p class="mt-4 text-gray-300">初期パッケージとして現場に入れ、Journey AIを支えるデータ、文脈理解、説明可能性の基盤へ接続する。</p>
+        <p class="mt-4 text-gray-300">初期パッケージとして現場に導入し、Journey AIを支えるデータ、文脈理解、説明可能性の基盤へ接続する。</p>
       </div>
     </div>
   </div>
