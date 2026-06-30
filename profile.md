@@ -1,7 +1,8 @@
 ---
 layout: page
 title: "Company"
-description: "移動空間のAIインフラ企業 MarsLink Inc. の会社情報。Mission・Vision・History・会社概要。AIによって移動空間を再設計し、CabinTimeを最初のプロダクトに展開します。"
+description: "大阪・グラングリーン大阪を拠点とするAIスタートアップ、移動空間のAIインフラ企業 MarsLink Inc. の会社情報。Mission・Vision・History・会社概要。AIによって移動空間を再設計し、CabinTimeを最初のプロダクトに展開します。"
+keywords: "MarsLink, マーズリンク, 大阪AI, 大阪スタートアップ, 大阪 AIスタートアップ, AIインフラ, 移動空間AI, 意思決定AI, 市位謙太, グラングリーン大阪"
 permalink: /profile/
 ---
 
@@ -39,7 +40,7 @@ permalink: /profile/
       <p class="mt-6 max-w-2xl text-lg leading-8 text-cyan-100">移動という、人が最も多くの判断をする場所から、より良い意思決定を支えるAIをつくる。</p>
     </div>
     <p class="max-w-3xl text-lg leading-8 text-gray-300">
-      MarsLinkは、航空機・船舶・交通・地域などの移動空間で、情報を統合し、状況を理解し、人が安心して次の行動を選べる状態をつくるAIプロダクト企業です。
+      MarsLinkは、航空機・船舶・交通・地域などの移動空間で、情報を統合し、状況を理解し、人が安心して次の行動を選べる状態をつくるAIプロダクト企業です。大阪・グラングリーン大阪（うめきた）を拠点とするAIスタートアップとして、移動空間のAIインフラづくりに取り組んでいます。
     </p>
   </div>
 </section>
