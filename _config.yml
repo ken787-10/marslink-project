@@ -95,7 +95,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "MarsLink"
+      author: "MarsLink広報"
       permalink: "/post/:title.html"
   - scope:
       path: ""

@@ -5,6 +5,7 @@ date: 2026-06-28 10:00 +0900
 image: /assets/images/osaka-castle.jpg
 tags: [大阪AIスタートアップ, 創業, AIインフラ, MarsLink]
 category: ストーリー
+keywords: "大阪AIスタートアップ, AIスタートアップ 大阪, MarsLink 創業, スタートアップ うめきた, グラングリーン大阪, 市位謙太"
 excerpt: 2025年、大阪・グラングリーン大阪で設立された株式会社MarsLink。元大阪市会議員の代表が、なぜ「移動空間のAIインフラ」という挑戦を選んだのか。創業の経緯を振り返ります。
 ---
 

@@ -5,7 +5,7 @@ date: 2026-06-22 10:00 +0900
 image: /assets/images/hero-bg-6.jpg
 tags: [移動AI, 関西, 列車AI, 航空AI, フェリーAI, CabinTime]
 category: ストーリー
-keywords: "関西 交通 AI, 移動AI, 飛行機AI, 列車AI, 鉄道AI, フェリーAI, 空港 AI, 関西国際空港, CabinTime, 移動空間AI"
+keywords: "関西 交通 AI, 飛行機AI, 列車AI, 鉄道AI, フェリーAI, 空港 AI, 関西国際空港, 移動AI"
 excerpt: 関西国際空港、稠密な鉄道網、瀬戸内・日本海のフェリー航路。関西には移動の結節点が集まっています。飛行機AI・列車AI・船AIといった「移動AI」が、移動の時間とデータをどう価値に変えるのか。
 ---
 

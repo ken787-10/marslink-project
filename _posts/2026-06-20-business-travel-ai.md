@@ -5,7 +5,7 @@ date: 2026-06-20 10:00 +0900
 image: /assets/images/cabin.jpg
 tags: [出張AI, 移動AI, 機内AI, CabinTime, 生産性]
 category: ストーリー
-keywords: "出張 AI, ビジネス 移動 AI, 機内AI, 移動AI, 生産性, CabinTime, エッジAI, 移動空間AI, MarsLink"
+keywords: "出張 AI, 出張 効率化, ビジネス 移動, 機内AI, 生産性 AI, CabinTime"
 excerpt: 出張は判断の連続です。フライト中に、到着後の会食・移動・段取りまで整う。機内AI「CabinTime」が、移動時間という死んだ時間を、意思決定と生産性の時間へ変えます。
 ---
 

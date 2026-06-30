@@ -2,6 +2,26 @@
 layout: default
 ---
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "{{ page.url | absolute_url }}" },
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.excerpt | strip_html | strip_newlines | jsonify }},
+  "image": "{% if page.image %}{{ page.image | absolute_url }}{% else %}{{ '/assets/images/hero-bg-6.jpg' | absolute_url }}{% endif %}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  "inLanguage": "ja",
+  {% if page.keywords %}"keywords": {{ page.keywords | jsonify }},{% endif %}
+  "author": {
+    "@type": "Organization",
+    "name": "MarsLink広報",
+    "url": "https://marslink.co.jp/profile/"
+  },
+  "publisher": { "@id": "https://marslink.co.jp/#organization" }
+}
+</script>
 <article class="bg-[#07090d] text-white min-h-screen">
     <style>
         /* Post typography fallback (Tailwind Typography未使用時の最小スタイル) */
@@ -20,6 +40,7 @@ layout: default
                 <h1 class="text-3xl sm:text-4xl font-bold font-orbitron mb-3">{{ page.title }}</h1>
                 <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-gray-400 text-sm">
                     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
+                    <span class="inline-flex items-center gap-1 text-gray-300">著者: MarsLink広報</span>
                     {% if page.category %}
                     <span class="inline-flex items-center gap-2 bg-gray-800 text-gray-200 px-2.5 py-1 rounded">カテゴリ: {{ page.category }}</span>
                     {% endif %}

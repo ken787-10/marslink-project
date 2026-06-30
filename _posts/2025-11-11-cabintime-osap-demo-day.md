@@ -5,7 +5,7 @@ date: 2025-11-11 10:00 +0900
 image: /assets/images/osap-demo05.jpg
 tags: [お知らせ, CabinTime, OSAP, DEMODAY, 大阪AIスタートアップ, 移動空間AI]
 category: お知らせ
-keywords: "OSAP DEMO DAY, 大阪 ピッチ, 大阪AIスタートアップ, 関西 AI, CabinTime, 機内AI, 移動空間AI, エッジAI, MarsLink"
+keywords: "OSAP DEMO DAY, 大阪 スタートアップ ピッチ, デモデイ, OIH, CabinTime, 大阪AIスタートアップ"
 excerpt: 2025年11月11日、大阪市OSAP第19期のDEMO DAYにて、AIスタートアップMarsLinkが開発中のAIアシスタント「CabinTime」のピッチを実施。発表内容と、移動空間のAIインフラという構想。
 ---
 

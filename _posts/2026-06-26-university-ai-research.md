@@ -5,6 +5,7 @@ date: 2026-06-26 10:00 +0900
 image: /assets/images/hero-bg-6.jpg
 tags: [大学連携, AI研究, AIインフラ, MarsLink]
 category: ストーリー
+keywords: "大学 AI 共同研究, 京都大学 AI, 京都外国語大学, 産学連携 AI, AI研究, MarsLink"
 excerpt: 大阪のAIスタートアップMarsLinkは、京都大学・京都外国語大学との連携・共同研究を通じてAI研究者と協働し、移動空間のAIインフラの実装を進めています。
 ---
 

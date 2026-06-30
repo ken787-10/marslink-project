@@ -125,26 +125,58 @@
     <link rel="preload" href="{{ '/assets/images/hero-bg-1.jpg' | relative_url }}" as="image">
     {% endif %}
     
-    <!-- JSON-LD 構造化データ -->
+    <!-- JSON-LD 構造化データ（エンティティ：Organization + WebSite） -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "{{ site.title }}",
-      "url": "{{ site.url }}",
-      "logo": "{{ '/assets/images/logo.png' | absolute_url }}",
-      "description": "{{ site.description | strip_newlines | strip }}",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "JP"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "{{ site.email }}",
-        "contactType": "customer service"
-      },
-      "sameAs": [
-        "https://twitter.com/{{ site.twitter_username }}"
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://marslink.co.jp/#organization",
+          "name": "MarsLink",
+          "legalName": "株式会社MarsLink",
+          "alternateName": ["マーズリンク", "MarsLink Inc."],
+          "url": "https://marslink.co.jp",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://marslink.co.jp/assets/images/logo.png"
+          },
+          "description": "MarsLinkは、AIによって移動空間を再設計するインフラ企業です。エッジAIで動く機内AIアシスタントCabinTimeを最初のプロダクトに、航空・船舶・鉄道・バスへ展開します。",
+          "foundingDate": "2025",
+          "founder": {
+            "@type": "Person",
+            "name": "市位謙太",
+            "jobTitle": "Founder & CEO"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "大阪市北区大深町6番38号 グラングリーン大阪北館 JAM BASE 6階 JAM-DESK",
+            "addressLocality": "大阪市",
+            "addressRegion": "大阪府",
+            "postalCode": "530-0011",
+            "addressCountry": "JP"
+          },
+          "areaServed": ["大阪", "京都", "関西", "日本"],
+          "knowsAbout": ["AI", "エッジAI", "機内AI", "移動空間AI", "移動データ", "AIインフラ", "生成AI"],
+          "email": "{{ site.email }}",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "{{ site.email }}",
+            "contactType": "customer service"
+          },
+          "sameAs": [
+            "https://twitter.com/{{ site.twitter_username }}",
+            "https://x.com/{{ site.twitter_username }}"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://marslink.co.jp/#website",
+          "url": "https://marslink.co.jp",
+          "name": "MarsLink",
+          "inLanguage": "ja",
+          "publisher": { "@id": "https://marslink.co.jp/#organization" }
+        }
       ]
     }
     </script>

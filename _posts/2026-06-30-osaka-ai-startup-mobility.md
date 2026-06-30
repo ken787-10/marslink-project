@@ -5,6 +5,7 @@ date: 2026-06-30 10:00 +0900
 image: /assets/images/cabin.jpg
 tags: [大阪AIスタートアップ, 移動AI, CabinTime, AIインフラ]
 category: ストーリー
+keywords: "移動AI, 移動空間のAIインフラ, CabinTime, AIスタートアップ, マーズリンク"
 excerpt: 大阪・うめきた（グラングリーン大阪）を拠点とするAIスタートアップMarsLink。観光アプリでも機内エンタメでもなく、移動空間そのものをAIで再設計する挑戦を紹介します。
 ---
 

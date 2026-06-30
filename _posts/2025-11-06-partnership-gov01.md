@@ -5,7 +5,7 @@ date: 2025-10-31 14:00 +0900
 image: /assets/images/kumatori.JPG
 tags: [お知らせ, 自治体連携, 熊取町, 大阪AIスタートアップ, 地域DX]
 category: お知らせ
-keywords: "自治体 AI 連携, 包括連携協定, 熊取町, 大阪 AIスタートアップ, 関西 AI, 地域DX, 地方創生 AI, 移動空間AI, CabinTime, MarsLink"
+keywords: "自治体 AI 連携, 包括連携協定, 熊取町, 地域DX, 自治体 スタートアップ 連携, 地方創生 AI, MarsLink"
 excerpt: 大阪のAIスタートアップMarsLinkは、大阪府泉南郡熊取町とAI活用に関する包括連携協定を締結。自治体とAIスタートアップが連携する意義、地域DXと移動・観光への展望、移動空間AIとの接続。
 ---
 

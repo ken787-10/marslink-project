@@ -5,6 +5,7 @@ date: 2026-06-24 10:00 +0900
 image: /assets/images/logo.png
 tags: [お知らせ, 商標, ブランド, MarsLink]
 category: お知らせ
+keywords: "マーズリンク, MarsLink, 商標, ブランド, 大阪AIスタートアップ"
 excerpt: 株式会社MarsLinkは、ブランド名「マーズリンク／Mars Link」の商標を取得しました。移動空間のAIインフラ企業として、ブランドの基盤を整えます。
 ---
 

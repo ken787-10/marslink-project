@@ -5,7 +5,7 @@ date: 2026-06-18 10:00 +0900
 image: /assets/images/hero-bg-6.jpg
 tags: [移動データ, 移動空間AI, AIインフラ, CabinTime, MarsLink]
 category: ストーリー
-keywords: "移動データ, モビリティデータ, 移動空間AI, データ統合, AIインフラ, 人流データ, CabinTime, MarsLink, 観光データ"
+keywords: "モビリティデータ, 移動データ, 人流データ, データ統合 AI, 移動空間AI, 観光データ"
 excerpt: 情報は検索に、つながりはSNSに、知識は生成AIに集約された。だが「移動」を束ねる主体はいない。航空・鉄道・フェリー・自治体に分断された移動データを統合する、新しいインフラの可能性。
 ---
 

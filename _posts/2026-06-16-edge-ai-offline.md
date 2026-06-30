@@ -5,7 +5,7 @@ date: 2026-06-16 10:00 +0900
 image: /assets/images/cabin.jpg
 tags: [エッジAI, オフラインAI, 移動空間AI, CabinTime, 生成AI]
 category: ストーリー
-keywords: "エッジAI, オフラインAI, Edge AI, 生成AI, ローカルAI, 移動空間AI, 機内AI, CabinTime, 災害 通信, MarsLink"
+keywords: "エッジAIとは, エッジAI, オフラインAI, ローカルAI, Edge AI, 生成AI, 災害 通信, CabinTime"
 excerpt: AIは家や会社では使えても、機内・離島・災害時には途切れます。通信が切れても動く「エッジAI」とは何か、なぜ今重要なのか、そして移動空間こそが主戦場である理由。
 ---
 

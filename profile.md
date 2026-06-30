@@ -6,34 +6,6 @@ keywords: "MarsLink, マーズリンク, 大阪AI, 大阪スタートアップ, 
 permalink: /profile/
 ---
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "MarsLink Inc.",
-  "alternateName": "株式会社MarsLink",
-  "url": "https://marslink.co.jp",
-  "logo": "https://marslink.co.jp/assets/images/logo.png",
-  "description": "MarsLink is an AI company building products that help people and organizations make better decisions, starting with movement.",
-  "foundingDate": "2025",
-  "areaServed": ["大阪", "京都", "関西", "日本"],
-  "knowsAbout": ["AI", "移動空間AI", "エッジAI", "機内AI", "移動データ", "AIインフラ"],
-  "founder": {
-    "@type": "Person",
-    "name": "市位謙太",
-    "jobTitle": "Founder & CEO"
-  },
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "大阪市北区大深町6番38号 グラングリーン大阪北館 JAM BASE 6階 JAM-DESK",
-    "addressLocality": "大阪市",
-    "addressRegion": "大阪府",
-    "postalCode": "530-0011",
-    "addressCountry": "JP"
-  }
-}
-</script>
-
 <section class="bg-[#05070a] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
     <div>
