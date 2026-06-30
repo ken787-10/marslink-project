@@ -135,7 +135,7 @@ livereload_min_delay: 500
 livereload_max_delay: 5000
 
 # Limit build size and memory usage
-limit_posts: 10
+limit_posts: 100
 future: false
 unpublished: false
 

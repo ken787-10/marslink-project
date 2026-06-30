@@ -16,6 +16,8 @@ permalink: /profile/
   "logo": "https://marslink.co.jp/assets/images/logo.png",
   "description": "MarsLink is an AI company building products that help people and organizations make better decisions, starting with movement.",
   "foundingDate": "2025",
+  "areaServed": ["大阪", "京都", "関西", "日本"],
+  "knowsAbout": ["AI", "移動空間AI", "エッジAI", "機内AI", "移動データ", "AIインフラ"],
   "founder": {
     "@type": "Person",
     "name": "市位謙太",
