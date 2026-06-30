@@ -1,688 +1,703 @@
 ---
-layout: home
-title: "MarsLink-マーズリンク- 移動時間を価値創造の場へ"
-description: "MarsLink（マーズリンク）は、主力サービス「CabinTime」で移動空間をメディアに変革するスタートアップです。飛行機から宇宙船まで、すべての移動時間を価値ある体験空間に変えます。"
-keywords: "MarsLink, CabinTime, 移動空間, 観光DX, 機内エンタメ, オフライン観光情報, 観光テック, 観光SaaS, 航空会社DX, テックスタートアップ"
-og_image: "/assets/images/hero-bg-1.jpg"
+layout: page
+title: "CabinTime | Initial Journey AI Package"
+description: "CabinTimeは、Journey AIを機内・船内・移動空間で動かす初期導入パッケージです。天気、口コミ、混雑、運行情報、利用者の目的・好み・避けたい体験を束ね、移動中の判断を支援します。"
+keywords: "CabinTime, MarsLink, Journey AI, 移動空間AI, AIコンパニオン, 航空, 船舶, 交通, 地域連携, 共同検証"
+og_image: "/assets/images/cabin.jpg"
 canonical_url: "https://marslink.co.jp/cabintime/"
+permalink: /cabintime/
 priority: 1.0
 changefreq: weekly
-seo:
-  type: WebSite
-additional_css: |
-  /* Override for conflicting navigation styles on home page */
-  nav:not(header nav) {
-    display: none !important;
-  }
-  
-  .nav-container, 
-  .nav-links:not(.mobile-menu-link),
-  .logo:not(header .logo) {
-    display: none !important;
-  }
-  
-  /* Ensure mobile menu works properly */
-  .mobile-menu {
-    z-index: 9999 !important;
-  }
-  
-  .mobile-menu > div:last-child {
-    z-index: 10000 !important;
-  }
 ---
 
-<div class="relative isolate overflow-hidden pt-[120px] md:pt-[100px] min-h-[70vh] md:min-h-[80vh]" id="hero">
-<!-- Background Images with cycling -->
-<div class="hero-bg absolute inset-0 -z-10 bg-cover bg-center opacity-100 transition-opacity duration-2000 ease-in-out" style="background-image: url('{{ '/assets/images/hero-bg-5.jpg' | relative_url }}')"></div>
-    
-<!-- Gradient overlay - darker at top and bottom, lighter in middle -->
-<div class="absolute inset-0 -z-10 bg-gradient-to-b from-slate-900/90 via-slate-900/30 to-black"></div>
-    
-<div class="mx-auto max-w-7xl px-6 lg:px-8 flex items-center justify-center min-h-[70vh] md:min-h-[80vh] py-12">
-        <div class="mx-auto max-w-4xl text-center relative z-10">
-            <h1 class="font-orbitron text-6xl font-black tracking-tight text-balance text-white sm:text-7xl lg:text-8xl xl:text-9xl relative z-10" style="text-shadow: 4px 4px 8px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8); color: white !important; display: block !important;">
-                <span class="inline-block relative z-10" style="color: white !important;">
-                    Cabin Time
-                    <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-4/5 h-0.5 bg-gradient-to-r from-transparent via-white to-transparent"></div>
-                </span>
-            </h1>
-            <h2 class="mt-8 text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-white font-orbitron tracking-wide relative z-10" style="text-shadow: 4px 4px 8px rgba(0,0,0,0.9), 2px 2px 4px rgba(0,0,0,0.8); color: white !important; display: block !important;">
-                通信断絶の空間に観光のナビゲーションを
-            </h2>
-            <p class="mt-8 text-xl font-bold text-white sm:text-2xl/8 relative z-10" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.9), 1px 1px 3px rgba(0,0,0,0.8); color: white !important; display: block !important;">
-                移動時間の価値最大化プラットフォーム
-            </p>
-            <div class="mt-12 flex items-center justify-center gap-x-6 relative z-10">
-                <a href="{{ 'contact/' | relative_url }}" class="group relative inline-flex items-center px-10 py-5 md:px-12 md:py-6 bg-white text-gray-900 font-orbitron font-black text-lg md:text-xl tracking-widest uppercase rounded-full overflow-hidden border-2 border-white hover:bg-gray-900 hover:text-white transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl">
-                    <span class="relative z-10">お問い合わせ</span>
-                </a>
-            </div>
-        </div>
-</div>
-</div>
+{% assign flight_map = site.data.japan_flight_map %}
 
-<!-- Problem vs Solution Comparison Section -->
-<section class="bg-black py-16 sm:py-20" id="comparison">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <!-- Main heading -->
-            <div class="text-center mb-16">
-                <h2 class="font-orbitron text-4xl lg:text-5xl font-black text-white mb-6" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">
-                    統合的な課題：移動空間の価値創造機会の損失
-                </h2>
-                <div class="text-center mb-12">
-                    <p class="text-2xl text-white font-bold mb-2">年間5,000万人 × 平均移動時間2時間 = 1億時間</p>
-                    <p class="text-lg text-gray-300">この膨大な時間が「価値創造されていない空白時間」</p>
-                </div>
-            </div>
-            
-            <!-- Simplified Stakeholder Comparisons -->
-            <div class="space-y-16">
-                
-                <!-- 統合比較セクション -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-                    <!-- 現状の課題 -->
-                    <div class="bg-gray-900/40 border border-gray-600 rounded-xl p-8 lg:p-10">
-                        <div class="text-center mb-8">
-                            <div class="inline-flex items-center justify-center w-20 h-20 bg-gray-700/40 rounded-full mb-4">
-                                <svg class="w-10 h-10 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="font-orbitron text-2xl lg:text-3xl font-black text-gray-300 mb-4">現状の課題</h3>
-                        </div>
-                        
-                        <div class="space-y-8">
-                            <!-- 乗客の課題 -->
-                            <div class="bg-gray-800/30 rounded-lg p-6">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-gray-700/50 rounded-full flex items-center justify-center mr-4">
-                                        <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                        </svg>
-                                    </div>
-                                    <p class="text-gray-300 font-bold text-lg">乗客の課題</p>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                                        </div>
-                                        <p class="text-gray-300 text-lg font-medium">2時間の完全オフライン状態で情報から遮断</p>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                                        </div>
-                                        <p class="text-gray-300 text-lg font-medium">目的地の観光・グルメ情報を事前確認できない</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 航空会社・船社の課題 -->
-                            <div class="bg-gray-800/30 rounded-lg p-6">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-gray-700/50 rounded-full flex items-center justify-center mr-4">
-                                        <svg class="w-6 h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.72,8.35 L11.39,4.34 C11.77,4.05 12.31,4.05 12.70,4.34 L18.37,8.35 C18.71,8.61 18.91,9.01 18.91,9.43 L18.91,15.82 C18.91,16.66 18.24,17.33 17.40,17.33 L14.17,17.33 C13.87,17.33 13.62,17.09 13.62,16.78 L13.62,13.77 C13.62,13.07 13.04,12.49 12.34,12.49 L11.77,12.49 C11.07,12.49 10.49,13.07 10.49,13.77 L10.49,16.78 C10.49,17.09 10.24,17.33 9.94,17.33 L6.71,17.33 C5.87,17.33 5.20,16.66 5.20,15.82 L5.20,9.43 C5.20,9.01 5.40,8.61 5.72,8.35 Z M2,10 L5,7.5 M20,10 L22,7.5"></path>
-                                        </svg>
-                                    </div>
-                                    <p class="text-gray-300 font-bold text-lg">航空会社の課題</p>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                                        </div>
-                                        <p class="text-gray-300 text-lg font-medium">機内エンタメ導入に2〜3億円の巨額投資</p>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-red-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <div class="w-2 h-2 bg-red-500 rounded-full"></div>
-                                        </div>
-                                        <p class="text-gray-300 text-lg font-medium">LCC・地方路線では投資回収が困難</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- CabinTimeの解決策 -->
-                    <div class="bg-white/5 border border-white/20 rounded-xl p-8 lg:p-10">
-                        <div class="text-center mb-8">
-                            <div class="inline-flex items-center justify-center w-20 h-20 bg-cyan-500/20 rounded-full mb-4">
-                                <svg class="w-10 h-10 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h3 class="font-orbitron text-2xl lg:text-3xl font-black text-white mb-4">CabinTimeなら</h3>
-                        </div>
-                        
-                        <div class="space-y-8">
-                            <!-- 乗客への解決策 -->
-                            <div class="bg-white/5 rounded-lg p-6">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mr-4">
-                                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                                        </svg>
-                                    </div>
-                                    <p class="text-white font-bold text-lg">乗客への価値</p>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <svg class="w-3 h-3 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <p class="text-gray-200 text-lg font-medium">オフラインでも安定した観光情報アクセス</p>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <svg class="w-3 h-3 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <p class="text-gray-200 text-lg font-medium">移動時間を旅行計画の充実した時間に変換</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 航空会社・船社への解決策 -->
-                            <div class="bg-white/5 rounded-lg p-6">
-                                <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mr-4">
-                                        <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.72,8.35 L11.39,4.34 C11.77,4.05 12.31,4.05 12.70,4.34 L18.37,8.35 C18.71,8.61 18.91,9.01 18.91,9.43 L18.91,15.82 C18.91,16.66 18.24,17.33 17.40,17.33 L14.17,17.33 C13.87,17.33 13.62,17.09 13.62,16.78 L13.62,13.77 C13.62,13.07 13.04,12.49 12.34,12.49 L11.77,12.49 C11.07,12.49 10.49,13.07 10.49,13.77 L10.49,16.78 C10.49,17.09 10.24,17.33 9.94,17.33 L6.71,17.33 C5.87,17.33 5.20,16.66 5.20,15.82 L5.20,9.43 C5.20,9.01 5.40,8.61 5.72,8.35 Z M2,10 L5,7.5 M20,10 L22,7.5"></path>
-                                        </svg>
-                                    </div>
-                                    <p class="text-white font-bold text-lg">航空会社への価値</p>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <svg class="w-3 h-3 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <p class="text-gray-200 text-lg font-medium">従来の1/200のコストで即日導入可能</p>
-                                    </div>
-                                    <div class="flex items-start space-x-3">
-                                        <div class="flex-shrink-0 w-6 h-6 bg-cyan-500/20 rounded-full flex items-center justify-center mt-0.5">
-                                            <svg class="w-3 h-3 text-cyan-400" fill="currentColor" viewBox="0 0 20 20">
-                                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
-                                            </svg>
-                                        </div>
-                                        <p class="text-gray-200 text-lg font-medium">広告・物販による新たな収益源を確保</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-</section>
-
-<!-- Journey Begins Section -->
-<section class="bg-black py-16 sm:py-24">
-    <div class="container mx-auto px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto">
-            <h2 class="font-orbitron text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-6" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">
-                オフライン環境にも対応した、可搬性の高い観光UXプラットフォーム
-            </h2>
-            <h3 class="font-orbitron text-xl sm:text-2xl lg:text-3xl font-bold text-cyan-400 mb-8">
-                空白時間が、観光UXの最前線に
-            </h3>
-            <div class="space-y-6 text-xl text-gray-300 leading-relaxed">
-                <p>
-                    CabinTimeは、飛行機・フェリー・列車・観光バスなどの移動空間において、<br class="hidden lg:inline">
-                    オフライン環境でも、オンライン環境でも観光情報を快適に届けられるハイブリッド観光プラットフォームです。
-                </p>
-                <p>
-                    "空白時間"を、地域の魅力と出会える時間へ。<br class="hidden sm:inline">
-                    場所を選ばず、旅の価値を最大化する体験導線を実現します。
-                </p>
-            </div>
-            <!-- Optional: Add product preview image -->
-            <div class="mt-12 flex justify-center">
-                <a href="{{ '/cabintime-demo/' | relative_url }}" class="block">
-                    <img src="{{ '/assets/images/product2.png' | relative_url }}" alt="CabinTime App Preview" class="rounded-xl shadow-2xl max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] w-full h-auto transform hover:scale-105 transition-transform duration-300 cursor-pointer">
-                </a>
-            </div>
-        </div>
+<section class="relative isolate overflow-hidden bg-[#050607] px-6 pt-36 pb-20 text-white lg:px-8">
+  <img src="{{ '/assets/images/cabin.jpg' | relative_url }}" alt="" class="absolute inset-0 -z-30 h-full w-full object-cover opacity-28">
+  <div class="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(5,6,7,0.99)_0%,rgba(5,6,7,0.84)_48%,rgba(5,6,7,0.52)_100%)]"></div>
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgba(5,6,7,0.24)_0%,#050607_100%)]"></div>
+  <div class="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+    <div>
+      <p class="text-xs font-semibold uppercase text-cyan-100/80">CabinTime / Initial Journey AI Package</p>
+      <h1 class="mt-6 text-4xl font-semibold leading-[1.08] text-white">
+        移動空間に、<br>次の判断を支える知能を。
+      </h1>
+      <p class="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
+        CabinTimeは、通信制約や専用空間のある移動・滞在環境へJourney AIを入れる初期導入パッケージです。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくります。ここで得た文脈理解と推薦の型を、Journey AIへ広げます。
+      </p>
+      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+        <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
+        <a href="#journey-ai" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Journey AIとは</a>
+      </div>
+      <p class="mt-6 text-sm leading-6 text-gray-400">
+        現在は正式ローンチ前の開発・共同検証フェーズです。
+      </p>
     </div>
+
+    <div class="rounded-lg border border-white/10 bg-[#070b11]/95 p-4 shadow-2xl">
+      <div class="mb-4 flex flex-col gap-3 border-b border-white/10 pb-4 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <p class="text-xs uppercase text-cyan-100/70">Live journey context</p>
+          <h2 class="mt-1 text-xl font-semibold text-white">ITM 伊丹空港 -> HND 羽田空港</h2>
+        </div>
+        <div class="flex items-center gap-2 rounded-md border border-emerald-300/20 bg-emerald-300/10 px-3 py-2 text-sm text-emerald-100">
+          <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+          Arrival window active
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 xl:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-lg border border-white/10 bg-[#0b121b] p-4">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase text-gray-500">Route intelligence</p>
+              <h3 class="mt-1 text-lg font-semibold text-white">Osaka to Tokyo arrival plan</h3>
+            </div>
+            <p class="whitespace-nowrap rounded-md bg-white/5 px-3 py-1 text-xs text-gray-300">CT-218</p>
+          </div>
+          <div class="relative mt-5 h-64 overflow-hidden rounded-lg border border-white/10 bg-[#101a24]">
+            <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.045)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:44px_44px]"></div>
+            <svg class="absolute inset-0 h-full w-full" viewBox="0 0 640 280" role="img" aria-label="In-flight map from Itami Airport to Haneda Airport using Natural Earth geometry">
+              <defs>
+                <radialGradient id="hero-rain-soft" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="rgba(103,232,249,0.55)"/>
+                  <stop offset="55%" stop-color="rgba(34,197,94,0.32)"/>
+                  <stop offset="100%" stop-color="rgba(14,165,233,0)"/>
+                </radialGradient>
+                <radialGradient id="hero-rain-core" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="rgba(250,204,21,0.7)"/>
+                  <stop offset="52%" stop-color="rgba(34,197,94,0.45)"/>
+                  <stop offset="100%" stop-color="rgba(34,197,94,0)"/>
+                </radialGradient>
+                <filter id="hero-radar-blur">
+                  <feGaussianBlur stdDeviation="5"/>
+                </filter>
+              </defs>
+              <path d="{{ flight_map.hero.path }}" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.18)" stroke-width="1.25"/>
+              <g opacity="0.74" filter="url(#hero-radar-blur)">
+                <ellipse cx="433" cy="133" rx="104" ry="32" fill="url(#hero-rain-soft)" transform="rotate(-14 433 133)"/>
+                <ellipse cx="471" cy="119" rx="58" ry="20" fill="url(#hero-rain-core)" transform="rotate(-11 471 119)"/>
+                <ellipse cx="389" cy="154" rx="66" ry="19" fill="rgba(56,189,248,0.34)" transform="rotate(-18 389 154)"/>
+              </g>
+              <g opacity="0.34">
+                <path d="M330 180 C371 153 431 145 520 103" fill="none" stroke="rgba(103,232,249,0.9)" stroke-width="1.2" stroke-dasharray="4 7"/>
+                <path d="M342 195 C394 166 455 154 552 118" fill="none" stroke="rgba(34,197,94,0.75)" stroke-width="1.2" stroke-dasharray="4 7"/>
+              </g>
+              <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C318 148 371 142 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.22)" stroke-width="18" stroke-linecap="round"/>
+              <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C318 148 371 142 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 8"/>
+              <path d="M{{ flight_map.hero.itm_x }} {{ flight_map.hero.itm_y }} C305 154 346 148 {{ flight_map.hero.now_x }} {{ flight_map.hero.now_y }}" fill="none" stroke="rgba(103,232,249,0.96)" stroke-width="4" stroke-linecap="round"/>
+              <path d="M{{ flight_map.hero.now_x }} {{ flight_map.hero.now_y }} C410 145 431 135 {{ flight_map.hero.hnd_x }} {{ flight_map.hero.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.48)" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="{{ flight_map.hero.itm_x }}" cy="{{ flight_map.hero.itm_y }}" r="8" fill="white"/>
+              <circle cx="{{ flight_map.hero.hnd_x }}" cy="{{ flight_map.hero.hnd_y }}" r="8" fill="white"/>
+              <circle cx="{{ flight_map.hero.now_x }}" cy="{{ flight_map.hero.now_y }}" r="9" fill="rgba(103,232,249,0.95)"/>
+              <circle cx="{{ flight_map.hero.now_x }}" cy="{{ flight_map.hero.now_y }}" r="18" fill="none" stroke="rgba(103,232,249,0.28)" stroke-width="2"/>
+              <polygon points="375,142 405,150 378,162" fill="white"/>
+              <text x="247" y="185" fill="rgba(255,255,255,0.72)" font-size="12" font-weight="700">ITM</text>
+              <text x="442" y="112" fill="rgba(255,255,255,0.72)" font-size="12" font-weight="700">HND</text>
+              <text x="360" y="136" fill="rgba(103,232,249,0.9)" font-size="11" font-weight="700">CURRENT</text>
+            </svg>
+            <div class="absolute left-5 top-5 rounded-md border border-white/10 bg-black/45 px-3 py-2 backdrop-blur">
+              <p class="text-xs text-gray-400">Origin</p>
+              <p class="text-sm font-semibold text-white">ITM 伊丹空港</p>
+            </div>
+            <div class="absolute right-5 top-5 rounded-md border border-white/10 bg-black/45 px-3 py-2 backdrop-blur">
+              <p class="text-xs text-gray-400">Destination</p>
+              <p class="text-sm font-semibold text-white">HND 羽田空港</p>
+            </div>
+            <div class="absolute left-5 bottom-20 rounded-md border border-sky-200/20 bg-black/45 px-3 py-2 backdrop-blur">
+              <p class="text-xs text-sky-100/80">Weather radar</p>
+              <p class="text-sm font-semibold text-white">東京湾側に雨雲</p>
+            </div>
+            <div class="absolute bottom-5 left-5 grid grid-cols-3 gap-2 text-xs">
+              <div class="rounded-md border border-white/10 bg-black/45 px-3 py-2">
+                <p class="text-gray-400">ETA</p>
+                <p class="mt-1 font-semibold text-white">17:40</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-black/45 px-3 py-2">
+                <p class="text-gray-400">Progress</p>
+                <p class="mt-1 font-semibold text-cyan-100">63%</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-black/45 px-3 py-2">
+                <p class="text-gray-400">Altitude</p>
+                <p class="mt-1 font-semibold text-white">34,000 ft</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-4">
+            <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Reviews</p>
+              <p class="mt-1 text-sm font-semibold text-white">Noise risk flagged</p>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Transit</p>
+              <p class="mt-1 text-sm font-semibold text-white">Crowding rising</p>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Purpose</p>
+              <p class="mt-1 text-sm font-semibold text-white">Business dinner</p>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Profile</p>
+              <p class="mt-1 text-sm font-semibold text-white">Quiet / short walk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4">
+          <div class="rounded-lg border border-white/10 bg-[#0b121b] p-4">
+            <p class="text-xs uppercase text-gray-500">Avoid / Recommend / Explain</p>
+            <div class="mt-4 space-y-3">
+              <div class="rounded-md border border-cyan-200/20 bg-cyan-200/10 p-3">
+                <div class="flex items-center justify-between gap-3">
+                  <h3 class="font-semibold text-white">雨と混雑を避ける移動</h3>
+                  <span class="whitespace-nowrap text-xs text-cyan-100">Recommend</span>
+                </div>
+                <p class="mt-2 text-sm leading-6 text-gray-300">京急の混雑と降雨予測を見て、浜松町方面ならモノレール案を優先。</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+                <div class="flex items-center justify-between gap-3">
+                  <h3 class="font-semibold text-white">接待には不向きな候補を除外</h3>
+                  <span class="text-xs text-amber-100">Avoid</span>
+                </div>
+                <p class="mt-2 text-sm leading-6 text-gray-300">口コミの騒がしさ、席間、雨天時の徒歩距離から、商談後に合わない店を外す。</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+                <div class="flex items-center justify-between gap-3">
+                  <h3 class="font-semibold text-white">二次会候補の条件を確認</h3>
+                  <span class="text-xs text-emerald-100">Explain</span>
+                </div>
+                <p class="mt-2 text-sm leading-6 text-gray-300">店種、Google評価、雨天動線、料金帯、一次会からの距離で理由を整理。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3">
+            <div class="rounded-lg border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Fit score</p>
+              <p class="mt-2 text-xl font-semibold text-white">82%</p>
+            </div>
+            <div class="rounded-lg border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Risk checks</p>
+              <p class="mt-2 text-xl font-semibold text-white">4</p>
+            </div>
+            <div class="rounded-lg border border-white/10 bg-white/[0.035] p-3">
+              <p class="text-xs text-gray-500">Human choice</p>
+              <p class="mt-2 text-xl font-semibold text-white">Final</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Value Creation Section -->
-<section class="text-gray-400 bg-black body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col">
-                <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                    <h1 class="sm:w-2/5 text-white font-orbitron font-black title-font text-3xl lg:text-4xl mb-2 sm:mb-0">通信断絶の機内空間を価値創造の場へ</h1>
-                    <p class="sm:w-3/5 leading-relaxed text-lg sm:pl-10 pl-0 text-gray-300">年間5,000万人が体験する『通信が繋がらない2時間』を、目的地への期待を高める充実した時間に変革。LCC・インバウンド市場に特化した革新的ソリューション。</p>
-                </div>
-            </div>
-            <!-- Cards Container with Navigation -->
-            <div class="relative">
-                <!-- Left Arrow Button -->
-                <button id="scrollLeft" class="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
-                    </svg>
-                </button>
-                
-                <!-- Right Arrow Button -->
-                <button id="scrollRight" class="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-full p-3 transition-all duration-300 opacity-70 hover:opacity-100">
-                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                    </svg>
-                </button>
-
-                <!-- Scrollable Cards Container -->
-                <div id="cardsContainer" class="overflow-x-auto scrollbar-hide pb-6" style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <div class="flex space-x-6 min-w-max px-4">
-                        <div class="flex-shrink-0 w-80">
-                            <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="乗客の課題とメリット" class="object-cover object-center h-full w-full" src="{{ '/assets/images/merit1.jpg' | relative_url }}">
-                            </div>
-                            <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">乗客の課題とメリット</h2>
-                            <p class="text-lg leading-relaxed mt-2 text-gray-300">2時間完全オフライン状態から解放。到着地の隠れた名店・観光スポット情報を事前確認し、移動時間を価値創造時間に変換。商談エリアの下調べも可能で、到着後の初動スピードが格段に向上。</p>
-                        </div>
-                        <div class="flex-shrink-0 w-80">
-                            <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="機内エンターテイメントの革命" class="object-cover object-center h-full w-full" src="{{ '/assets/images/flightdemo1.png' | relative_url }}">
-                            </div>
-                            <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">機内エンターテイメントの革命</h2>
-                            <p class="text-lg leading-relaxed mt-2 text-gray-300">従来の画一的コンテンツから、到着地連動のパーソナライズ情報へ。高額なWiFi料金も不要で、通信環境に左右されない安定した高品質デジタル体験を全乗客に提供。移動目的に応じた最適化コンテンツ。</p>
-                        </div>
-                        <div class="flex-shrink-0 w-80">
-                            <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="収益性" class="object-cover object-center h-full w-full" src="{{ '/assets/images/merit3.jpg' | relative_url }}">
-                            </div>
-                            <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">収益性</h2>
-                            <p class="text-lg leading-relaxed mt-2 text-gray-300">従来の1/200という圧倒的低コストで高品質サービスを提供。広告収入・物販売上・予約手数料による新たな収益源を確保し、投資回収も迅速。機内WiFi導入困難なLCCでも競合他社との明確な差別化を実現。</p>
-                        </div>
-                        <div class="flex-shrink-0 w-80">
-                            <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="地域連携" class="object-cover object-center h-full w-full" src="{{ '/assets/images/merit4.jpg' | relative_url }}">
-                            </div>
-                            <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">地域連携</h2>
-                            <p class="text-lg leading-relaxed mt-2 text-gray-300">観光客の分散化により混雑緩和を実現。隠れた観光スポットや地元文化体験への誘導で地域経済活性化。訪問前の情報提供により滞在時間延長と地域全体の消費向上。持続可能な観光発展をサポート。</p>
-                        </div>
-                        <div class="flex-shrink-0 w-80">
-                            <div class="rounded-lg h-44 overflow-hidden">
-                                <img alt="広告メリット" class="object-cover object-center h-full w-full" src="{{ '/assets/images/merit5.jpg' | relative_url }}">
-                            </div>
-                            <h2 class="text-xl font-medium title-font text-white mt-5 font-orbitron">広告メリット</h2>
-                            <p class="text-lg leading-relaxed mt-2 text-gray-300">到着地連動の精密ターゲティングで旅行客に直接リーチ。移動中の集中した環境で高いエンゲージメントを獲得。従来アプローチ困難な訪日観光客への確実な情報届け。購買意欲の高い旅行直前タイミングでの効果的な広告配信。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<section class="bg-[#050607] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase text-amber-200">Product definition</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">CabinTimeは、Journey AIを移動空間に入れる初期パッケージです。</h2>
+      </div>
+      <div class="space-y-6 text-lg leading-8 text-gray-300">
+        <p>
+          CabinTimeは、単なる旅行アプリでも、機内の時間を埋めるためのものでもありません。Journey AIを、通信制約のある機内・船内・車内で実際に動かすための初期導入パッケージです。ソフトウェアとして設計しているため、iPhoneやAndroid、航空機のIFE、船内ポータル、事業者アプリなど、移動空間のあらゆる画面に載せられ、多言語対応で日本人にも、インバウンドや海外の旅行者にも届きます。
+        </p>
+        <p>
+          パッケージに含まれるのは、乗客が触れるスマートフォン画面、機内・船内ポータル、移動中の文脈を読むAI、接続できる時に最新情報を取り込む通信設計、通信が弱い時にも体験を保つローカル実行、そして事業者が情報を扱う運用の前提です。
+        </p>
+        <p>
+          移動中の人は、到着後の食事、移動手段、予定変更、天候、混雑、地域情報を同時に考えています。情報は十分にあります。足りないのは、その人の現在地、時間、目的、制約に合わせて、判断できる形に整理する層です。
+        </p>
+        <p>
+          CabinTimeは、移動中の時間を「検索する時間」ではなく「次の行動を決める時間」に変えます。AIが文脈を理解し、選択肢と理由を提示し、最終的な判断は人間に残します。
+        </p>
+        <p>
+          重要なのは、良い候補を出すことだけではありません。接待では避けるべき店、雨の日に歩かされるルート、混雑で時間を失う移動、Google評価は高くても雰囲気や動線が合わない二次会候補など、行かなければ起きなかった不満を事前に減らすこともCabinTimeの役割です。
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Service Features Section -->
-<section class="text-gray-300 bg-black body-font service-features-section" id="service">
-        <div class="container px-6 pt-0 pb-3 mx-auto lg:px-8">
-            <div class="text-center mb-6">
-                <h2 class="text-base/7 font-semibold text-cyan-400 uppercase tracking-wide">Main Features</h2>
-                <h1 class="font-orbitron text-4xl lg:text-5xl font-black text-white mb-4" style="text-shadow: 3px 3px 6px rgba(0,0,0,0.8);">
-                    移動中に体験できる3つの価値
-                </h1>
-                <p class="text-lg text-gray-300 max-w-3xl mx-auto">通信圏外でも安定して利用できるオフライン技術で、移動時間を充実した体験時間に変換</p>
+<section class="bg-[#0b1114] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase text-cyan-200">Operational dashboard</p>
+      <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">情報を集約し、避けるべき選択まで見つける。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        CabinTimeがつなぐのは、画面ではなく判断に必要な文脈です。天気、口コミ、公共交通の混雑、営業時間、運航・運行情報、地域データ、利用者の目的と好みを束ね、「行くべき場所」だけでなく「避けた方がいい選択」も整理します。
+      </p>
+    </div>
+
+    <div class="mt-14 rounded-lg border border-white/10 bg-[#070b11] p-4 shadow-2xl">
+      <div class="grid grid-cols-1 gap-4 lg:grid-cols-[0.72fr_1.48fr_0.92fr]">
+        <div class="rounded-lg border border-white/10 bg-[#0b121b] p-4">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-xs uppercase text-gray-500">Passenger App</p>
+              <h3 class="mt-1 text-lg font-semibold text-white">HND arrival assistant</h3>
             </div>
-            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-4">
-                <div class="p-4 md:w-1/3 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-white/10 text-cyan-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"></path>
-                            <polyline points="3.27,6.96 12,12.01 20.73,6.96"></polyline>
-                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg font-orbitron font-semibold mb-2">フライト情報</h2>
-                        <p class="leading-relaxed text-lg text-gray-300">現在地情報、フライトマップ、到着予定時刻、コックピットからの映像などをリアルタイムで配信。通信圏外でも最新の情報を確認でき、スムーズな到着準備が可能です。</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-white/10 text-cyan-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg font-orbitron font-semibold mb-2">グルメ・観光情報</h2>
-                        <p class="leading-relaxed text-lg text-gray-300">地元民だけが知る隠れた名店から話題のスポットまで、厳選された現地情報を事前チェック。到着前にレストラン予約・観光プランを完成させ、限られた旅行時間を最大限活用できます。</p>
-                    </div>
-                </div>
-                <div class="p-4 md:w-1/3 flex">
-                    <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-white/10 text-cyan-400 mb-4 flex-shrink-0">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                            <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                        </svg>
-                    </div>
-                    <div class="flex-grow pl-6">
-                        <h2 class="text-white text-lg font-orbitron font-semibold mb-2">オンラインショッピング</h2>
-                        <p class="leading-relaxed text-lg text-gray-300">地域特産品・伝統工芸品を移動中に購入し、空港受取・ホテル配送で手ぶら観光を実現。体験チケットの事前購入で人気施設もスムーズに楽しめ、旅行効率が劇的に向上します。</p>
-                    </div>
-                </div>
+            <span class="rounded-md bg-cyan-300/10 px-2 py-1 text-xs text-cyan-100">Personal</span>
+          </div>
+          <div class="mt-5 rounded-2xl border border-white/10 bg-black/35 p-4">
+            <p class="text-sm text-gray-400">まもなく羽田に到着します</p>
+            <h4 class="mt-2 text-2xl font-semibold text-white">避けて、選ぶ</h4>
+            <div class="mt-4 rounded-md border border-white/10 bg-white/[0.03] p-3">
+              <div class="flex items-center justify-between">
+                <p class="text-xs uppercase text-gray-500">到着後の動き ・ Arrival plan</p>
+                <span class="whitespace-nowrap text-[11px] font-semibold text-emerald-100">赤坂・会食 19:00</span>
+              </div>
+              <div class="mt-3 space-y-2.5 text-xs">
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">17:40</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-cyan-300"></span><span class="text-gray-300">羽田空港に着陸</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:00</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">手荷物を受け取り</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:05</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">東京モノレール（空港快速）に乗車</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:22</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">浜松町で乗り換え（千代田線方面）</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-cyan-100">18:48</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-white/40"></span><span class="text-gray-300">赤坂に到着</span></div>
+                <div class="flex items-center gap-3"><span class="w-11 shrink-0 font-semibold text-emerald-200">19:00</span><span class="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-300"></span><span class="text-gray-200">会食（一次会）スタート</span></div>
+              </div>
             </div>
+            <div class="mt-5 space-y-3">
+              <button class="w-full rounded-md border border-cyan-200/20 bg-cyan-200/10 px-4 py-3 text-left">
+                <span class="block font-semibold text-white">接待向け候補だけを残す</span>
+                <span class="mt-1 block text-sm text-gray-300">騒がしさ、席間、駅からの濡れにくさを評価</span>
+              </button>
+              <button class="w-full rounded-md border border-white/10 bg-white/[0.035] px-4 py-3 text-left">
+                <span class="block font-semibold text-white">混雑と雨を避ける移動</span>
+                <span class="mt-1 block text-sm text-gray-300">京急、モノレール、タクシー待ちを比較</span>
+              </button>
+              <button class="w-full rounded-md border border-white/10 bg-white/[0.035] px-4 py-3 text-left">
+                <span class="block font-semibold text-white">二次会候補の条件を確認</span>
+                <span class="mt-1 block text-sm text-gray-300">Google評価、雰囲気、料金帯、雨天動線から代替案を表示</span>
+              </button>
+            </div>
+          </div>
         </div>
+
+        <div class="rounded-lg border border-white/10 bg-[#0b121b] p-4">
+          <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <p class="text-xs uppercase text-gray-500">Embedded Portal</p>
+              <h3 class="mt-1 text-lg font-semibold text-white">Context layer for ITM -> HND</h3>
+            </div>
+            <div class="flex gap-2 text-xs">
+              <span class="rounded-md bg-white/5 px-2 py-1 text-gray-300">Cabin Wi-Fi</span>
+              <span class="rounded-md bg-white/5 px-2 py-1 text-gray-300">Offline-aware</span>
+            </div>
+          </div>
+          <div class="mt-5 space-y-4">
+            <div class="rounded-lg border border-white/10 bg-[#101a24] p-4">
+              <div class="relative h-80 overflow-hidden rounded-md bg-[#0d1822] sm:h-96">
+                  <div class="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:36px_36px]"></div>
+                  <div class="absolute inset-0 bg-[radial-gradient(circle_at_72%_38%,rgba(14,165,233,0.22),transparent_34%),radial-gradient(circle_at_46%_55%,rgba(99,102,241,0.14),transparent_30%)]"></div>
+                  <svg class="absolute inset-0 h-full w-full" viewBox="0 0 520 280" preserveAspectRatio="xMidYMid slice" aria-label="CabinTime position from Itami to Haneda using Natural Earth geometry">
+                    <defs>
+                      <radialGradient id="dashboard-rain-soft" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="rgba(103,232,249,0.5)"/>
+                        <stop offset="58%" stop-color="rgba(34,197,94,0.28)"/>
+                        <stop offset="100%" stop-color="rgba(14,165,233,0)"/>
+                      </radialGradient>
+                      <radialGradient id="dashboard-rain-core" cx="50%" cy="50%" r="50%">
+                        <stop offset="0%" stop-color="rgba(250,204,21,0.65)"/>
+                        <stop offset="56%" stop-color="rgba(34,197,94,0.38)"/>
+                        <stop offset="100%" stop-color="rgba(34,197,94,0)"/>
+                      </radialGradient>
+                      <filter id="dashboard-radar-blur">
+                        <feGaussianBlur stdDeviation="4"/>
+                      </filter>
+                    </defs>
+                    <path d="{{ flight_map.portal.path }}" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.18)" stroke-width="1.2"/>
+                    <g opacity="0.72" filter="url(#dashboard-radar-blur)">
+                      <ellipse cx="372" cy="133" rx="84" ry="27" fill="url(#dashboard-rain-soft)" transform="rotate(-14 372 133)"/>
+                      <ellipse cx="402" cy="120" rx="46" ry="17" fill="url(#dashboard-rain-core)" transform="rotate(-11 402 120)"/>
+                      <ellipse cx="329" cy="154" rx="54" ry="17" fill="rgba(56,189,248,0.32)" transform="rotate(-18 329 154)"/>
+                    </g>
+                    <g opacity="0.34">
+                      <path d="M278 181 C318 154 369 145 447 107" fill="none" stroke="rgba(103,232,249,0.9)" stroke-width="1.1" stroke-dasharray="4 7"/>
+                      <path d="M290 194 C338 166 394 154 470 120" fill="none" stroke="rgba(34,197,94,0.75)" stroke-width="1.1" stroke-dasharray="4 7"/>
+                    </g>
+                    <path d="M{{ flight_map.portal.itm_x }} {{ flight_map.portal.itm_y }} C258 148 311 142 {{ flight_map.portal.hnd_x }} {{ flight_map.portal.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.22)" stroke-width="16" stroke-linecap="round"/>
+                    <path d="M{{ flight_map.portal.itm_x }} {{ flight_map.portal.itm_y }} C258 148 311 142 {{ flight_map.portal.hnd_x }} {{ flight_map.portal.hnd_y }}" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="2" stroke-linecap="round" stroke-dasharray="7 8"/>
+                    <path d="M{{ flight_map.portal.itm_x }} {{ flight_map.portal.itm_y }} C245 154 286 148 {{ flight_map.portal.now_x }} {{ flight_map.portal.now_y }}" fill="none" stroke="rgba(103,232,249,0.95)" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M{{ flight_map.portal.now_x }} {{ flight_map.portal.now_y }} C350 145 371 135 {{ flight_map.portal.hnd_x }} {{ flight_map.portal.hnd_y }}" fill="none" stroke="rgba(103,232,249,0.42)" stroke-width="4" stroke-linecap="round"/>
+                    <circle cx="{{ flight_map.portal.itm_x }}" cy="{{ flight_map.portal.itm_y }}" r="8" fill="white"/>
+                    <circle cx="{{ flight_map.portal.hnd_x }}" cy="{{ flight_map.portal.hnd_y }}" r="8" fill="white"/>
+                    <circle cx="{{ flight_map.portal.now_x }}" cy="{{ flight_map.portal.now_y }}" r="9" fill="rgba(103,232,249,0.95)"/>
+                    <circle cx="{{ flight_map.portal.now_x }}" cy="{{ flight_map.portal.now_y }}" r="17" fill="none" stroke="rgba(103,232,249,0.3)" stroke-width="2"/>
+                    <polygon points="315,142 343,150 318,161" fill="white"/>
+                    <text x="187" y="185" fill="rgba(255,255,255,0.75)" font-size="12" font-weight="700">ITM</text>
+                    <text x="382" y="112" fill="rgba(255,255,255,0.75)" font-size="12" font-weight="700">HND</text>
+                    <text x="300" y="136" fill="rgba(103,232,249,0.9)" font-size="11" font-weight="700">NOW</text>
+                  </svg>
+                  <div class="absolute left-4 top-4 rounded-md border border-white/10 bg-black/45 px-3 py-2 backdrop-blur">
+                    <p class="text-[10px] uppercase tracking-wide text-gray-400">IFE map layer</p>
+                    <p class="text-xs font-semibold text-white">Route + weather</p>
+                  </div>
+                  <div class="absolute inset-x-4 bottom-4 grid grid-cols-2 overflow-hidden rounded-md border border-white/10 bg-black/55 text-[11px] backdrop-blur">
+                    <div class="border-r border-b border-white/10 px-3 py-2">
+                      <p class="text-gray-500">ALT</p>
+                      <p class="mt-1 font-semibold text-white">34,000 ft</p>
+                    </div>
+                    <div class="border-b border-white/10 px-3 py-2">
+                      <p class="text-gray-500">GS</p>
+                      <p class="mt-1 font-semibold text-white">830 km/h</p>
+                    </div>
+                    <div class="border-r border-white/10 px-3 py-2">
+                      <p class="text-gray-500">ETA</p>
+                      <p class="mt-1 font-semibold text-white">17:40</p>
+                    </div>
+                    <div class="px-3 py-2">
+                      <p class="text-sky-100/80">WX</p>
+                      <p class="mt-1 font-semibold text-white">Rain on arrival</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+              <div class="rounded-lg border border-white/10 bg-white/[0.035] p-4">
+                <p class="text-xs text-gray-500">Signal stack</p>
+                <p class="mt-1 text-2xl font-semibold text-amber-100">8 signals</p>
+                <p class="mt-2 text-sm leading-6 text-gray-300">雨雲、Google評価、口コミ、混雑、営業時間、運行情報、料金帯、利用者文脈を統合。</p>
+              </div>
+              <div class="rounded-lg border border-white/10 bg-white/[0.035] p-4">
+                <p class="text-xs text-gray-500">Experience risk</p>
+                <p class="mt-1 text-2xl font-semibold text-white">Medium</p>
+                <p class="mt-2 text-sm leading-6 text-gray-300">接待文脈では騒がしい候補の提案順位を下げる。</p>
+              </div>
+              <div class="rounded-lg border border-white/10 bg-white/[0.035] p-4">
+                <p class="text-xs text-gray-500">Next best action</p>
+                <p class="mt-1 text-2xl font-semibold text-emerald-100">Review</p>
+                <p class="mt-2 text-sm leading-6 text-gray-300">人が最終確認できる理由つきの提案に変換。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-lg border border-white/10 bg-[#0b121b] p-4">
+          <div>
+            <p class="text-xs uppercase text-gray-500">Operator Console</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">Experience risk monitor</h3>
+          </div>
+          <div class="mt-4 rounded-md border border-white/10 bg-black/25 p-3">
+            <p class="text-[11px] uppercase tracking-wide text-gray-500">二次会の条件 ・ After-party context</p>
+            <div class="mt-3 grid grid-cols-2 gap-2 text-xs">
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Purpose</p>
+                <p class="mt-1 font-semibold text-white">接待の二次会</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Avoid</p>
+                <p class="mt-1 font-semibold text-white">騒がしい店・長い移動</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">Preference</p>
+                <p class="mt-1 font-semibold text-white">静か・会話できる</p>
+              </div>
+              <div class="rounded-md border border-white/10 bg-white/[0.04] px-3 py-2">
+                <p class="text-gray-500">From</p>
+                <p class="mt-1 font-semibold text-white">一次会 赤坂 21:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3 space-y-3">
+            <div class="rounded-md border border-cyan-200/20 bg-cyan-200/10 p-3">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-xs text-gray-400">候補A</p>
+                  <p class="font-semibold text-white">静かなラウンジ</p>
+                </div>
+                <span class="text-xs text-cyan-100">Review</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-gray-300">Google評価4.3、騒音口コミ少、一次会から徒歩6分、雨でも地下動線あり。</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-cyan-50/80">
+                <span class="rounded bg-white/10 px-2 py-1">Google 4.3</span>
+                <span class="rounded bg-white/10 px-2 py-1">徒歩6分</span>
+                <span class="rounded bg-white/10 px-2 py-1">地下動線</span>
+              </div>
+            </div>
+            <div class="rounded-md border border-emerald-200/20 bg-emerald-200/10 p-3">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-xs text-gray-400">候補B</p>
+                  <p class="font-semibold text-white">ホテルバー</p>
+                </div>
+                <span class="text-xs text-emerald-100">Keep</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-gray-300">Google評価4.5、一次会からタクシー1メーター。静か・駅直結で天候影響が少なく、今夜22時から生演奏あり。</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-emerald-50/80">
+                <span class="rounded bg-white/10 px-2 py-1">Google 4.5</span>
+                <span class="rounded bg-white/10 px-2 py-1">タクシー1メーター</span>
+                <span class="rounded bg-white/10 px-2 py-1">22:00 生演奏</span>
+              </div>
+            </div>
+            <div class="rounded-md border border-white/10 bg-white/[0.035] p-3">
+              <div class="flex items-center justify-between gap-3">
+                <div>
+                  <p class="text-xs text-gray-400">候補C</p>
+                  <p class="font-semibold text-white">人気居酒屋</p>
+                </div>
+                <span class="text-xs text-amber-100">Avoid</span>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-gray-400">食事評価は高いが、席間が近く騒がしい口コミが多い。商談後の会話や機密性を重視する場には不向き。</p>
+              <div class="mt-3 flex flex-wrap gap-2 text-[11px] text-gray-300">
+                <span class="rounded bg-white/10 px-2 py-1">Google 4.4</span>
+                <span class="rounded bg-amber-200/10 px-2 py-1 text-amber-100">会話しづらい</span>
+                <span class="rounded bg-white/10 px-2 py-1">席間が近い</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Workflow Section -->
-<div class="workflow-section bg-black py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl text-center mb-16">
-                <h2 class="text-base/7 font-semibold text-cyan-400 uppercase tracking-wide">How It Works</h2>
-                <p class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-5xl">シンプル6ステップの体験フロー</p>
-                <p class="mt-6 text-xl leading-8 text-gray-300">QRコードをスキャンするだけで始まる、移動時間を価値ある体験に変える革新的なワークフロー</p>
-            </div>
-            
-            <!-- Two Column Layout -->
-            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center">
-                <!-- Left Side - Product Image -->
-                <div class="relative overflow-hidden flex items-center justify-center">
-                    <img src="{{ '/assets/images/product1.jpg' | relative_url }}" alt="CabinTime Mobile Interface" class="rounded-xl shadow-xl" style="object-fit: contain; mix-blend-mode: normal; filter: none; background: transparent;">
-                    <style>
-                        .workflow-section .relative img {
-                            max-height: 45vh;
-                        }
-                        @media (min-width: 1024px) {
-                            .workflow-section .relative img {
-                                max-height: 650px !important;
-                            }
-                        }
-                    </style>
-                </div>
-                
-                <!-- Right Side - Timeline Steps -->
-                <div class="lg:pl-8">
-                    <div class="flex flex-col">
-                        <!-- Step 1 -->
-                        <div class="flex relative pb-12">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-                            </div>
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 1</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">座席・カードに配置されたQRコードをスマートフォンでスキャン</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 2 -->
-                        <div class="flex relative pb-12">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-                            </div>
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 2</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">ブラウザでCabinTimeが自動的に起動、即座に利用開始</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 3 -->
-                        <div class="flex relative pb-12">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-                            </div>
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 3</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">現在のフライト状況と到着予定時刻を確認</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 4 -->
-                        <div class="flex relative pb-12">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-                            </div>
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                    <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 4</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">地元グルメ・隠れた観光スポット情報を事前にチェック</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 5 -->
-                        <div class="flex relative pb-12">
-                            <div class="h-full w-10 absolute inset-0 flex items-center justify-center">
-                                <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-                            </div>
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">STEP 5</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">気になる地元特産品や限定商品を事前購入</p>
-                            </div>
-                        </div>
-                        
-                        <!-- Step 6 -->
-                        <div class="flex relative">
-                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-cyan-500 inline-flex items-center justify-center text-white relative z-10">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                                </svg>
-                            </div>
-                            <div class="flex-grow pl-4">
-                                <h2 class="font-medium title-font text-sm text-white mb-1 tracking-wider">FINISH</h2>
-                                <p class="leading-relaxed text-gray-300 text-lg">着陸後、計画に基づいて充実した観光体験を開始</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section class="bg-[#10100d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.76fr_1.24fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase text-cyan-200">Deployment domains</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">通信が届きにくい空間と、滞在時間の長い空間へ。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeはAir専用でも、Sea専用でもありません。通信制約、専用ポータル、限られた移動時間、到着後の判断が重なる空間に、Journey AIを初期導入するためのパッケージです。
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {% for domain in site.data.marslink_terms.journey_domains %}
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <div class="flex items-center justify-between gap-3">
+            <h3 class="text-2xl font-semibold text-white">{{ domain.label }}</h3>
+            {% if domain.priority == "Primary" %}
+            <span class="whitespace-nowrap rounded-full border border-cyan-200/30 bg-cyan-200/10 px-3 py-1 text-xs text-cyan-100">{{ domain.priority }}</span>
+            {% else %}
+            <span class="whitespace-nowrap rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-gray-400">{{ domain.priority }}</span>
+            {% endif %}
+          </div>
+          <p class="mt-4 leading-7 text-gray-300">{{ domain.copy }}</p>
         </div>
-</div>
-
-<!-- Features Section -->
-<div id="features" class="bg-black py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
-                <h2 class="text-base/7 font-semibold text-cyan-400">Launch instantly</h2>
-                <p class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl lg:text-balance">移動時間を価値に変える観光DXプラットフォーム</p>
-                <p class="mt-6 text-xl/8 text-gray-300">年間5,000万人が利用する移動空間で、これまで「空白の時間」だった移動時間を「価値創造の時間」に変換。交通事業者は設備投資ゼロで新たな収益源を獲得し、乗客は目的地への期待を高める充実した体験を得られます。地方自治体や観光事業者にとっても、最適なタイミングでの情報発信が可能になります。</p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
-                <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
-                    <div class="flex flex-col">
-                        <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-                            <svg class="size-5 flex-none text-cyan-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                                <path fill-rule="evenodd" d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z" clip-rule="evenodd" />
-                            </svg>
-                            即座に導入可能
-                        </dt>
-                        <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-                            <p class="flex-auto text-lg">複雑な配線工事も専門技術者も不要。手のひらサイズの小型サーバーを既存の機内LANに接続するだけで、わずか1日で全システムが稼働開始。座席にQRコードを配置すれば、乗客は自分のスマートフォンから瞬時に観光情報とエンターテイメントにアクセスできます。</p>
-                        </dd>
-                    </div>
-                    <div class="flex flex-col">
-                        <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-                            <svg class="size-5 flex-none text-cyan-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                                <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z" clip-rule="evenodd" />
-                            </svg>
-                            革新的オフライン技術
-                        </dt>
-                        <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-                            <p class="flex-auto text-lg">従来の機内システムが抱える「通信依存」「高額投資」「複雑導入」の3大課題を革新的オフライン配信技術で解決。DO-326航空サイバーセキュリティ指針完全準拠で、上空・洋上の通信切断環境でも安定したデジタル体験を提供します。</p>
-                        </dd>
-                    </div>
-                    <div class="flex flex-col">
-                        <dt class="flex items-center gap-x-3 text-base/7 font-semibold text-white">
-                            <svg class="size-5 flex-none text-cyan-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                                <path fill-rule="evenodd" d="M15.312 11.424a5.5 5.5 0 0 1-9.201 2.466l-.312-.311h2.433a.75.75 0 0 0 0-1.5H3.989a.75.75 0 0 0-.75.75v4.242a.75.75 0 0 0 1.5 0v-2.43l.31.31a7 7 0 0 0 11.712-3.138.75.75 0 0 0-1.449-.39Zm1.23-3.723a.75.75 0 0 0 .219-.53V2.929a.75.75 0 0 0-1.5 0V5.36l-.31-.31A7 7 0 0 0 3.239 8.188a.75.75 0 1 0 1.448.389A5.5 5.5 0 0 1 13.89 6.11l.311.31h-2.432a.75.75 0 0 0 0 1.5h4.243a.75.75 0 0 0 .53-.219Z" clip-rule="evenodd" />
-                            </svg>
-                            巨大な未開拓市場
-                        </dt>
-                        <dd class="mt-4 flex flex-auto flex-col text-base/7 text-gray-300">
-                            <p class="flex-auto text-lg">LCC航空2,800万人、長距離フェリー利用者、地方路線バス。年間5,000万人が利用する移動空間で、これまでデジタル投資が困難だった市場に低コスト・高品質な観光DXを提供。交通事業者・観光業界・乗客すべてのWin-Win-Winを実現します。</p>
-                        </dd>
-                    </div>
-                </dl>
-            </div>
-        </div>
-</div>
-
-<!-- FAQ Section -->
-<div class="bg-gradient-to-b from-black via-gray-900 via-blue-900 via-blue-800 to-sky-600 py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 py-24 sm:pt-32 lg:px-8 lg:py-40">
-            <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-                <div class="lg:col-span-5">
-                    <h2 class="text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl font-orbitron">よくあるご質問</h2>
-                    <p class="mt-4 text-lg/7 text-pretty text-gray-300">
-                        他にご質問がございましたら、
-                        <a href="{{ '/contact/' | relative_url }}" class="font-semibold text-cyan-400 hover:text-cyan-300">お問い合わせフォーム</a>
-                        からお気軽にご連絡ください。
-                    </p>
-                </div>
-                <div class="mt-10 lg:col-span-7 lg:mt-0">
-                    <dl class="space-y-10">
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q1. CabinTimeとは何ですか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">航空機や船舶などの移動中に、通信環境に関係なく現地の観光・グルメ情報やオンラインショッピング、コンテンツ視聴を楽しめるサービスです。座席のQRコードをスキャンするだけで、ブラウザから簡単にアクセスできます。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q2. アプリのダウンロードは必要ですか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">いいえ、アプリのダウンロードは不要です。QRコードをスキャンすると、お使いのブラウザで自動的にサービスが起動します。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q3. 利用料金はかかりますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">基本的な情報閲覧は無料でご利用いただけます。オンラインショッピングや一部のプレミアム情報については、別途料金が発生する場合があります。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q4. どの航空会社で利用できますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">現在導入準備中の航空会社については、公式サイトで随時お知らせいたします。将来的には多くの航空会社・船舶会社での導入を予定しています。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q5. 船舶会社でも導入できますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">はい、CabinTimeは船舶での導入にも最適です。フェリー、クルーズ船、高速船など船舶の種類を問わず導入可能で、長時間の航行時間を活用した充実した旅行体験を提供できます。船舶特有の通信環境が不安定な海上でも、オフライン機能により安定したサービスをご利用いただけます。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q6. 個人の好みに合わせた情報提供はありますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">はい、将来的には初回利用時に簡単な設定（予算・食べ物の好み・旅行スタイル等）をしていただくことで、お客様に最適な情報を優先的に表示する機能を予定しています。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q7. 航空会社です。導入費用はどのくらいですか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">従来のWiFiレドームの取り付けや機内WiFiシステムの約1/200のコストで導入可能です。詳細な費用については、お問い合わせフォームからご相談ください。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q8. 収益分配の仕組みを教えてください</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">広告収入・物販売上・予約手数料の一定割合を航空・交通事業者様にお支払いします。詳細な条件については個別にご相談させていただきます。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q9. 自治体です。地域の観光PRに活用できますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">はい、地域の魅力的な情報発信や特産品販売により、観光誘致と地域経済活性化を支援します。費用は無料で、売上の一部が地域に還元されます。</dd>
-                        </div>
-
-                        <div>
-                            <dt class="text-base/7 font-semibold text-white">Q10. プライバシーは保護されますか？</dt>
-                            <dd class="mt-2 text-lg/7 text-gray-300">はい、個人情報は厳重に管理し、第三者への提供は行いません。閲覧履歴はサービス改善のみに使用し、お客様のプライバシーを最優先に保護します。</dd>
-                        </div>
-                    </dl>
-                </div>
-            </div>
-        </div>
-</div>
-
-<!-- CTA Section -->
-<section class="bg-black">
-        <div class="container flex flex-col items-center px-4 py-12 mx-auto text-center">
-            <h2 class="max-w-2xl mx-auto text-2xl font-semibold tracking-tight text-white xl:text-3xl font-orbitron">
-                飛行中も<span class="text-cyan-400">観光のナビゲーション</span>をオン
-            </h2>
-
-            <p class="max-w-4xl mt-6 text-center text-gray-300 text-lg">
-                CabinTimeで移動時間を価値ある体験に変換しませんか？導入のご相談から技術的な詳細まで、お気軽にお問い合わせください。専門チームが丁寧にサポートいたします。
-            </p>
-
-            <div class="inline-flex w-full mt-8 sm:w-auto">
-                <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center w-full px-8 py-3 text-white duration-300 bg-cyan-500 rounded-lg hover:bg-cyan-600 focus:ring focus:ring-cyan-300 focus:ring-opacity-80 font-orbitron font-semibold">
-                    お問い合わせ
-                </a>
-            </div>
-        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </section>
 
-<script>
-// 年号を自動的に更新
-document.addEventListener('DOMContentLoaded', function() {
-    // Cards scroll functionality
-    const cardsContainer = document.getElementById('cardsContainer');
-    const scrollLeftBtn = document.getElementById('scrollLeft');
-    const scrollRightBtn = document.getElementById('scrollRight');
-    
-    if (cardsContainer && scrollLeftBtn && scrollRightBtn) {
-        const scrollAmount = 320; // カード1枚分の幅
-        
-        scrollLeftBtn.addEventListener('click', function() {
-            cardsContainer.scrollBy({
-                left: -scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-        
-        scrollRightBtn.addEventListener('click', function() {
-            cardsContainer.scrollBy({
-                left: scrollAmount,
-                behavior: 'smooth'
-            });
-        });
-        
-        // 矢印ボタンの表示/非表示を制御
-        function updateArrowVisibility() {
-            const isAtStart = cardsContainer.scrollLeft <= 0;
-            const isAtEnd = cardsContainer.scrollLeft >= cardsContainer.scrollWidth - cardsContainer.clientWidth;
-            
-            scrollLeftBtn.style.opacity = isAtStart ? '0.3' : '0.7';
-            scrollRightBtn.style.opacity = isAtEnd ? '0.3' : '0.7';
-            scrollLeftBtn.style.pointerEvents = isAtStart ? 'none' : 'auto';
-            scrollRightBtn.style.pointerEvents = isAtEnd ? 'none' : 'auto';
-        }
-        
-        // スクロール時に矢印の状態を更新
-        cardsContainer.addEventListener('scroll', updateArrowVisibility);
-        
-        // 初期状態を設定
-        updateArrowVisibility();
-        
-        // ウィンドウリサイズ時に矢印の状態を更新
-        window.addEventListener('resize', updateArrowVisibility);
-    }
-});
-</script>
+<section class="bg-[#080c10] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:items-end">
+      <div>
+        <p class="text-sm font-semibold uppercase text-cyan-200">Decision support model</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">AIが見るのは、情報ではなく判断の条件です。</h2>
+      </div>
+      <p class="text-lg leading-8 text-gray-300">
+        CabinTimeは、検索結果を並べるだけのUIではありません。横断的な情報をひとつの判断ダッシュボードに集約し、その人の目的に合わせて、選ぶ理由と避ける理由を整理します。
+      </p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+        <p class="text-sm font-semibold uppercase text-cyan-200">01 / Cross-source dashboard</p>
+        <h3 class="mt-4 text-2xl font-semibold text-white">横断情報を一枚にする。</h3>
+        <p class="mt-4 leading-7 text-gray-300">天気、口コミ、混雑、営業時間、運行・運航情報、地域データを分断せず、到着前の判断に使える状態へまとめる。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+        <p class="text-sm font-semibold uppercase text-amber-200">02 / Personalization</p>
+        <h3 class="mt-4 text-2xl font-semibold text-white">人と目的に合わせる。</h3>
+        <p class="mt-4 leading-7 text-gray-300">接待、家族旅行、一人旅、短時間滞在などの目的と、静かさ、徒歩距離、混雑耐性、避けたい体験を提案に反映する。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+        <p class="text-sm font-semibold uppercase text-emerald-200">03 / Explainable choice</p>
+        <h3 class="mt-4 text-2xl font-semibold text-white">理由つきで判断できる。</h3>
+        <p class="mt-4 leading-7 text-gray-300">AIが勝手に決めるのではなく、推奨、注意、除外の理由を示し、人が納得して次の行動を選べる状態をつくる。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#07090d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-center">
+      <div>
+        <p class="text-sm font-semibold uppercase text-emerald-200">Passenger experience</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">移動中に、次の選択肢が見えてくる。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeは、利用者に情報を大量に渡すのではなく、今の移動文脈に合う選択肢へ絞り込みます。おすすめと同じくらい、避けるべき選択を見つけることを重視します。
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">体験事故の回避</h3>
+          <p class="mt-3 leading-7 text-gray-300">接待、家族旅行、一人旅などの文脈に合わない候補を、口コミ、混雑、動線、天候から事前に下げる。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">予定変更への対応</h3>
+          <p class="mt-3 leading-7 text-gray-300">遅延、雨、混雑、時間不足が起きたとき、無理のない代替案を整理する。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">パーソナライズされた提案</h3>
+          <p class="mt-3 leading-7 text-gray-300">到着予定時刻、目的地、滞在時間、交通状況に、本人の好み、同行者、目的、避けたい体験を重ねて提示する。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">地域との接続</h3>
+          <p class="mt-3 leading-7 text-gray-300">自治体、DMO、店舗、宿泊、体験事業者の情報を、旅の文脈とリスク条件に合わせて届ける。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#10100d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+      <div class="rounded-lg border border-white/10 bg-[#070b11] p-4 shadow-2xl">
+        <div class="flex items-center justify-between border-b border-white/10 pb-3">
+          <div>
+            <p class="text-xs uppercase text-gray-500">Operator Console</p>
+            <h3 class="mt-1 text-lg font-semibold text-white">移動空間に届ける判断材料</h3>
+          </div>
+          <span class="rounded-md bg-white/5 px-2 py-1 text-xs text-gray-300">ITM → HND</span>
+        </div>
+        <p class="mt-3 text-xs leading-5 text-gray-500">事業者・地域がつなぐ情報と、その連携状態。AIが利用者の文脈に合わせて取捨選択します。</p>
+        <div class="mt-4 space-y-2.5">
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">経路・所要時間</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">配車・交通手段</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">運行・遅延・規制</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">天気・雨雲レーダー</span>
+            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">5分前更新</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">口コミ・評価</span>
+            <span class="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-2.5 py-0.5 text-[11px] text-cyan-100">同期済み</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">店舗・施設の空き状況</span>
+            <span class="rounded-full border border-emerald-300/30 bg-emerald-300/10 px-2.5 py-0.5 text-[11px] text-emerald-100">リアルタイム</span>
+          </div>
+          <div class="flex items-center justify-between rounded-md border border-white/10 bg-white/[0.035] px-3 py-2.5">
+            <span class="text-sm text-gray-200">地域・飲食・イベント</span>
+            <span class="rounded-full border border-white/15 bg-white/5 px-2.5 py-0.5 text-[11px] text-gray-400">連携準備中</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase text-amber-200">For partners</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">事業者や地域にとって、移動空間は判断材料を届ける接点になる。</h2>
+        <div class="mt-8 space-y-6 text-lg leading-8 text-gray-300">
+          <p>
+            航空機、船舶、交通機関、ホテル、地域には、利用者の判断に役立つ情報があります。CabinTimeは、それを広告枠として押し出すのではなく、目的、天候、混雑、動線、避けたい体験に合わせた判断材料として届けます。
+          </p>
+          <p>
+            事業者や地域は、路線、便、航路、車両、施設、目的地ごとの情報を整えます。AIはそれを利用者文脈に合わせて整理し、人が選びやすい形で提示します。共同検証では、情報更新の負荷、提案理由、利用者の納得感を確認します。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="journey-ai" class="bg-[#080c10] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeの頭脳は、Journey AI。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeは、移動・滞在空間に導入するパッケージです。その中で実際に考えているのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を判断できる状態をつくる知能です。
+        </p>
+        <p class="mt-4 text-lg leading-8 text-gray-300">
+          Journey AIは、広告枠の順位ではありません。天気、交通、混雑、口コミ、目的、好み、避けたい体験を自律的に集め、薦める理由と避ける理由を添えて提示します。決めるのは、つねに人間です。
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {% for signal in site.data.marslink_terms.journey_ai_signals %}
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-lg font-semibold text-white">{{ signal.label }}</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">{{ signal.copy }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0b1114] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase text-emerald-200">Pilot design</p>
+        <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">共同検証で確認すること。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeは開発中の初期導入パッケージです。実証パートナーとともに、移動空間で本当に価値が出る体験、運用、事業モデルを検証します。
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">UX検証</h3>
+          <p class="mt-3 leading-7 text-gray-300">移動中の限られた時間で、どの情報量とUIが判断しやすいかを確認する。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">情報更新</h3>
+          <p class="mt-3 leading-7 text-gray-300">路線、便、航路、目的地、季節ごとの情報を、どの負荷で更新し、どの粒度でAIの判断材料にできるかを検証する。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">地域連携</h3>
+          <p class="mt-3 leading-7 text-gray-300">自治体、DMO、飲食、宿泊、体験事業者との接続が、到着後の行動につながるかを確認する。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-xl font-semibold text-white">信頼できる情報設計</h3>
+          <p class="mt-3 leading-7 text-gray-300">事業者や地域が持つ情報を、広告枠ではなく判断材料として扱えるかを共同検証で整理する。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#050607] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase text-cyan-200">What CabinTime is not</p>
+      <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">誇張せず、開発中のプロダクトとして進める。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        CabinTimeは、正式ローンチ済みの大規模導入プロダクトではありません。MarsLinkは、移動空間での意思決定支援という仮説を、初期導入パッケージとして現場の制約と実証から検証していきます。
+      </p>
+    </div>
+    <div class="mt-14 grid grid-cols-1 gap-5 md:grid-cols-3">
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">人間が決める</h3>
+        <p class="mt-4 text-gray-300">AIは判断を代行するのではなく、状況、選択肢、理由を整理する。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">現場から設計する</h3>
+        <p class="mt-4 text-gray-300">通信制約、限られた時間、地域情報の更新負荷、現場の制約を前提にする。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">基盤へ育てる</h3>
+        <p class="mt-4 text-gray-300">初期パッケージとして現場に入れ、Journey AIを支えるデータ、文脈理解、説明可能性の基盤へ接続する。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative overflow-hidden bg-[#0b1114] py-24 text-white">
+  <img src="{{ '/assets/images/hero-bg-6.jpg' | relative_url }}" alt="" class="absolute inset-0 -z-20 h-full w-full object-cover opacity-25">
+  <div class="absolute inset-0 -z-10 bg-[#0b1114]/85"></div>
+  <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
+    <p class="text-sm font-semibold uppercase text-cyan-200">Co-create CabinTime</p>
+    <h2 class="mt-4 text-3xl font-semibold sm:text-5xl">移動中の判断支援を、共に検証する。</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-300">
+      航空会社、船舶事業者、交通事業者、自治体、DMO、宿泊・飲食・体験事業者との共同検証を想定しています。
+    </p>
+    <div class="mt-10 flex flex-col justify-center gap-3 sm:flex-row">
+      <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
+      <a href="{{ '/platform/' | relative_url }}" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Platformを見る</a>
+    </div>
+  </div>
+</section>

@@ -1,9 +1,8 @@
 ---
-layout: platform  
-title: "MarsLink - AIで観光と地域創生を変革するAI/DXカンパニー"
-description: "MarsLinkはAI×データ基盤等を核に、観光・地域創生のプロダクトをフルスタックで共創・運用。モビリティ事業者・自治体/DMOと共に、移動から再訪までの体験価値を再設計します。"
-keywords: "MarsLink, AI, AI, LLM, マルチモーダルAI, 観光DX, 地域DX, データ基盤, CabinTime, 機内エンタメ, 観光テック, 観光SaaS, スマートツーリズム, スタートアップ"
-og_image: "/assets/images/hero1.jpg"
+layout: platform
+description: "MarsLinkは、移動空間の情報・状況認識・意思決定をAIでつなぐ、意思決定を支援するAIの会社です。Journey Intelligence Platformと初期導入パッケージCabinTimeから始めます。"
+keywords: "MarsLink, CabinTime, Journey AI, Journey Intelligence Platform, 移動体験, 移動空間AI, 航空, 船舶, 交通, 観光, AIコンパニオン"
+og_image: "/assets/images/cabintime-mobile-interface.png"
 canonical_url: "https://marslink.co.jp/"
 priority: 1.0
 changefreq: weekly
@@ -11,31 +10,346 @@ seo:
   type: WebSite
 ---
 
-<!-- Hero Section -->
-{% include platform/hero.html %}
+<section class="relative isolate min-h-screen overflow-hidden bg-[#050607] text-white">
+  <img src="{{ '/assets/images/hero-bg-6.jpg' | relative_url }}" alt="" class="absolute inset-0 -z-30 h-full w-full scale-105 object-cover opacity-75">
+  <div class="absolute inset-0 -z-20 bg-[linear-gradient(90deg,rgba(3,5,7,0.98)_0%,rgba(3,5,7,0.82)_42%,rgba(3,5,7,0.34)_100%)]"></div>
+  <div class="absolute inset-0 -z-20 bg-[linear-gradient(180deg,rgba(3,5,7,0.42)_0%,rgba(3,5,7,0.30)_46%,#050607_100%)]"></div>
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:72px_72px] opacity-20"></div>
+  <div class="absolute bottom-0 left-0 right-0 -z-10 h-40 bg-[linear-gradient(180deg,rgba(5,6,7,0)_0%,#050607_76%)]"></div>
 
-<!-- Updates Section -->
-{% include platform/updates.html %}
+  <div class="mx-auto flex min-h-screen max-w-7xl flex-col justify-between px-6 pb-10 pt-36 lg:px-8 lg:pt-44">
+    <div class="max-w-6xl">
+      <p class="text-xs font-semibold uppercase text-white/70">MarsLink / AI infrastructure for mobility</p>
+      <h1 class="mt-8 max-w-6xl text-4xl font-semibold leading-[1.06] tracking-normal text-white sm:text-5xl lg:text-6xl 2xl:text-7xl">
+        移動という、<br>最も判断が連続する時間に、<br>AIを。
+      </h1>
+      <p class="mt-8 max-w-2xl text-base leading-8 text-white/78 sm:text-lg">
+        MarsLinkは、AIによって移動空間を再設計する会社です。航空・船舶・鉄道・バス——人が最も多くの判断をする移動の時間に、状況を理解し、安心して選べる知能を届けます。<span class="whitespace-nowrap">CabinTime</span>は、その最初のプロダクトです。
+      </p>
+      <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+        <a href="{{ '/cabintime/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">CabinTimeを見る</a>
+        <a href="{{ '/cabintime/#journey-ai' | relative_url }}" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Journey AIを見る</a>
+      </div>
+    </div>
 
-<!-- Mission Section -->
-{% include platform/mission.html %}
+    <div class="mt-16 border-y border-white/15 bg-black/28 backdrop-blur-sm">
+      <div class="grid grid-cols-1 divide-y divide-white/10 lg:grid-cols-2 lg:divide-x lg:divide-y-0">
+        {% for step in site.data.marslink_terms.roadmap %}
+        <div class="p-5 sm:p-6">
+          <p class="text-[11px] font-semibold uppercase text-white/45">0{{ forloop.index }} / {{ step.type }}</p>
+          <h2 class="mt-4 text-xl font-semibold text-white">{{ step.label }}</h2>
+          <p class="mt-3 text-sm leading-6 text-white/65">{{ step.copy }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Vision Section -->
-{% include platform/vision.html %}
+<section class="relative overflow-hidden bg-[#07090d] py-24 text-white">
+  <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-25"></div>
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">The problem</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">情報は増えた。移動中の判断は、まだ分断されている。</h2>
+      </div>
+      <div class="space-y-6 text-lg leading-8 text-gray-300">
+        <p>
+          人は移動中に、目的地、食事、予定変更、天気、混雑、交通、口コミ、入国手続きを考えています。情報は十分にあります。足りないのは、それらを横断して読み、その人の状況に合わせて、判断できる形に変える層です。
+        </p>
+        <p>
+          情報が変われば、人の判断は変わります。MarsLinkは、分断された情報を横断的に統合し、一人ひとりに最適化し、避けるべき選択まで含めて提示します。良い候補を出すだけでなく、行かなければ起きなかった失敗を減らす——移動と滞在の、安全な意思決定をつくります。
+        </p>
+        <p>
+          AIは人の代わりに旅を決めるものではありません。人が、安心して、自分で選べる状態をつくるものです。
+        </p>
+      </div>
+    </div>
 
-<!-- Products Value Chain Section -->
-{% include platform/products-valuechain.html %}
+    <div class="mt-14 overflow-x-auto rounded-2xl border border-white/10 bg-black/30 p-4 backdrop-blur-sm sm:p-6">
+      <svg viewBox="0 0 1040 510" xmlns="http://www.w3.org/2000/svg" class="mx-auto w-full max-w-5xl" role="img" aria-labelledby="jxt jxd">
+        <title id="jxt">移動の意思決定支援：散らばった情報とサービス → Journey AIが横断・較正・個人最適化 → ひとつの判断 → 学習</title>
+        <desc id="jxd">経路・配車・運行・天気・口コミ・SNS報道・営業時間などの情報が別々のアプリに散らばっている状態を、あなたの文脈とともにJourney AIが統合・較正・個人最適化し、推奨・回避・安全からなる一つの判断支援に変え、結果は学習として基盤へ戻り、最終決定は人間が行う様子</desc>
+        <defs>
+          <radialGradient id="jxc" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(103,232,249,0.55)"/><stop offset="68%" stop-color="rgba(52,211,153,0.12)"/><stop offset="100%" stop-color="rgba(52,211,153,0)"/></radialGradient>
+          <filter id="jxsoft" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="8"/></filter>
+          <marker id="jxm" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#67e8f9"/></marker>
+          <marker id="jxm2" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="rgba(103,232,249,0.6)"/></marker>
+          <pattern id="jxgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="rgba(255,255,255,0.04)"/></pattern>
+          <style>
+            .jxfl{stroke-dasharray:4 7}
+            .jxpl{opacity:.7}
+            .jxcap{fill:rgba(255,255,255,.42);font:700 13px sans-serif;letter-spacing:.16em}
+            .jxh{fill:#fff;font:700 17px sans-serif}.jxs{fill:rgba(255,255,255,.56);font:400 12px sans-serif}
+            .jxv{fill:#fff;font:600 13px sans-serif}.jxsrc{fill:rgba(255,255,255,.45);font:400 10px sans-serif}
+            .jxchip{fill:rgba(255,255,255,.82);font:600 13px sans-serif}
+          </style>
+        </defs>
+        <rect width="1040" height="510" fill="#05070a"/><rect width="1040" height="510" fill="url(#jxgrid)"/>
 
+        <text x="44" y="26" class="jxcap">BEFORE</text>
+        <text x="44" y="48" class="jxs">情報もサービスもバラバラ — 同じ判断の材料が別々のアプリに散らばる</text>
 
+        <g class="jxfl" stroke="rgba(103,232,249,0.36)" stroke-width="1.5" fill="none">
+          <path d="M278,93 C430,120 490,210 540,232"/>
+          <path d="M278,142 C440,160 495,215 540,235"/>
+          <path d="M278,191 C450,200 500,222 540,238"/>
+          <path d="M278,240 C460,238 500,240 540,240"/>
+          <path d="M278,289 C460,282 500,258 540,243"/>
+          <path d="M278,338 C450,322 500,270 540,246"/>
+          <path d="M278,387 C440,352 500,288 540,249"/>
+          <path d="M278,436 C430,388 500,300 540,252"/>
+        </g>
 
-<!-- Challenges & Solutions Section -->
-{% include platform/challenges.html %}
+        <g>
+          <rect x="44" y="72" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="90" class="jxv">Route · ETA</text><text x="60" y="106" class="jxsrc">経路・所要時間</text>
+          <rect x="44" y="121" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="139" class="jxv">Ride-hailing</text><text x="60" y="155" class="jxsrc">配車・タクシー</text>
+          <rect x="44" y="170" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="188" class="jxv">Transit ops</text><text x="60" y="204" class="jxsrc">運行・遅延・規制</text>
+          <rect x="44" y="219" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="237" class="jxv">Weather</text><text x="60" y="253" class="jxsrc">天気・雨雲</text>
+          <rect x="44" y="268" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="286" class="jxv">Reviews</text><text x="60" y="302" class="jxsrc">口コミ・評価・接遇</text>
+          <rect x="44" y="317" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="335" class="jxv">Social · News</text><text x="60" y="351" class="jxsrc">SNS・報道</text>
+          <rect x="44" y="366" width="234" height="42" rx="9" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.16)"/><text x="60" y="384" class="jxv">Hours · Booking</text><text x="60" y="400" class="jxsrc">営業時間・予約</text>
+          <rect x="44" y="415" width="234" height="42" rx="9" fill="rgba(103,232,249,0.07)" stroke="rgba(103,232,249,0.3)"/><text x="60" y="433" class="jxv" style="fill:#a5f3fc">Your context</text><text x="60" y="449" class="jxsrc" style="fill:rgba(165,243,252,.7)">目的・好み・締切（moderator）</text>
+        </g>
 
-<!-- Academic Collaboration Section -->
-{% include platform/research.html %}
+        <text x="600" y="48" text-anchor="middle" class="jxcap">JOURNEY AI</text>
+        <ellipse class="jxpl" cx="600" cy="244" rx="120" ry="120" fill="url(#jxc)" filter="url(#jxsoft)"/>
+        <circle cx="600" cy="244" r="60" fill="rgba(8,16,22,0.92)" stroke="rgba(103,232,249,0.65)" stroke-width="1.5"/>
+        <text x="600" y="232" text-anchor="middle" class="jxh">Journey AI</text>
+        <text x="600" y="252" text-anchor="middle" class="jxs">横断・較正</text>
+        <text x="600" y="270" text-anchor="middle" class="jxs">個人最適化</text>
 
-<!-- Co-Creation Section -->
-{% include platform/co-creation.html %}
+        <path class="jxfl" d="M662,244 L730,244" stroke="#67e8f9" stroke-width="2.6" fill="none" marker-end="url(#jxm)"/>
 
-<!-- CTA Section -->
-{% include platform/cta.html %}
+        <text x="752" y="48" class="jxcap" style="fill:rgba(103,232,249,0.8)">DECISION</text>
+        <rect x="752" y="92" width="256" height="312" rx="16" fill="rgba(8,16,22,0.85)" stroke="rgba(52,211,153,0.32)"/>
+        <text x="772" y="130" class="jxh">次の判断</text>
+        <text x="772" y="152" class="jxs">理由つき・個人最適化・安全</text>
+        <rect x="770" y="170" width="220" height="56" rx="10" fill="rgba(52,211,153,0.08)" stroke="rgba(52,211,153,0.3)"/>
+        <text x="786" y="195" class="jxchip" style="fill:#6ee7b7">◎ Recommend ・ 推奨</text><text x="786" y="215" class="jxs">今のあなたに合う選択を理由つきで</text>
+        <rect x="770" y="234" width="220" height="56" rx="10" fill="rgba(255,255,255,0.035)" stroke="rgba(255,255,255,0.14)"/>
+        <text x="786" y="259" class="jxchip">✕ Avoid ・ 回避</text><text x="786" y="279" class="jxs">失敗・不向き・無理な選択を外す</text>
+        <rect x="770" y="298" width="220" height="56" rx="10" fill="rgba(103,232,249,0.06)" stroke="rgba(103,232,249,0.22)"/>
+        <text x="786" y="323" class="jxchip" style="fill:#67e8f9">⏱ Safe · On-time ・ 安全</text><text x="786" y="343" class="jxs">間に合う行程・実測で較正</text>
+        <text x="880" y="386" text-anchor="middle" class="jxs">最後に決めるのは、あなた。</text>
+
+        <path class="jxfl" d="M880,406 L880,478 Q880,488 870,488 L610,488 Q600,488 600,478 L600,306" stroke="rgba(103,232,249,0.5)" stroke-width="1.8" fill="none" marker-end="url(#jxm2)"/>
+        <text x="742" y="476" text-anchor="middle" class="jxs">学習 ・ Learn（判断を次の精度へ）</text>
+      </svg>
+    </div>
+    <p class="mt-6 text-center text-sm leading-6 text-gray-500">同じ判断の材料が複数のサービスに分散している状態を、Journey AIが横断・較正・個人最適化し、ひとつの判断支援に整え、結果を学習として戻します。最終決定は人間に残します。</p>
+    <p class="mt-3 text-center text-sm leading-6 text-gray-500">観測指標 → 潜在リスク・適合（目的適合／体験リスク／安全リスク／到達リスク）→ 判断 → 学習、という構造で意思決定を支えます。<a href="{{ '/technology/' | relative_url }}" class="font-semibold text-cyan-200 hover:text-cyan-100">構造（SEM）の詳細を見る →</a></p>
+  </div>
+</section>
+
+<section class="bg-[#050607] py-20 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Category definition</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">旅行アプリではなく、移動空間のAIインフラを。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          MarsLinkは、目的地検索や観光情報の掲載をする会社ではありません。AI・データ・状況認識・推薦・リスク分析を束ね、人が最も多くの判断をする「移動」を、より良い意思決定の時間へ変える会社です。移動は最初の領域であって、限界ではありません。会社の本体は一つのアプリではなく、それらを束ねる{{ site.data.marslink_terms.core_platform.name }}。CabinTimeはその上で動く最初のプロダクトです。ソフトウェアとして、スマートフォン、航空機のIFE、船内ポータル、事業者アプリなど、あらゆるハードに載り、日本人にもインバウンドにも多言語で届きます。
+        </p>
+      </div>
+      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {% for item in site.data.marslink_terms.decision_stack limit: 4 %}
+        <div class="rounded-lg border border-white/10 bg-white/[0.035] p-6">
+          <h3 class="text-lg font-semibold text-white">{{ item.label }}</h3>
+          <p class="mt-3 text-sm leading-6 text-gray-300">{{ item.copy }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0b1114] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Mission, Vision, Values</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">MarsLinkは、移動空間を再設計するインフラ企業です。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeは、その最初のプロダクトです。私たちがつくりたいのは、移動空間の情報・体験・意思決定をAIで束ね、人が安心して選べる状態をつくる基盤です。
+        </p>
+        <div class="mt-10">
+          <a href="{{ '/mission/' | relative_url }}" class="inline-flex rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">Mission documentを読む</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-7">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-cyan-200">Mission</p>
+          <h3 class="mt-4 text-2xl font-semibold">AIによって、あらゆる移動空間を価値創造の場へ変える。</h3>
+          <p class="mt-4 text-gray-300">移動の時間を、情報・体験・意思決定が整う、価値創造の時間に変える。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-7">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Vision</p>
+          <h3 class="mt-4 text-2xl font-semibold">世界の移動インフラを、AIで再設計する。</h3>
+          <p class="mt-4 text-gray-300">CabinTimeを最初のプロダクトに、移動空間のAIインフラを社会へ広げる。</p>
+        </div>
+        <div class="rounded-lg border border-white/10 bg-white/[0.04] p-7">
+          <p class="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Values</p>
+          <h3 class="mt-4 text-2xl font-semibold">Reality. Clarity. Trust. Velocity.</h3>
+          <p class="mt-4 text-gray-300">現場の制約から設計し、複雑さを削ぎ落とし、信頼できるAIを速く検証する。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#0b1114] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Product surfaces</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeとJourney AI。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        CabinTimeは、通信制約や専用空間にJourney AIを入れる初期導入パッケージです。Journey AIは、移動と滞在の文脈を理解し、個人に合わせて次の行動を判断できる状態をつくるAI体験です。
+      </p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
+        <p class="text-sm uppercase tracking-[0.2em] text-cyan-200">CabinTime</p>
+        <h3 class="mt-4 text-2xl font-semibold">閉ざされた移動・滞在空間へ入る初期パッケージ。</h3>
+        <p class="mt-4 text-gray-300">Air、Seaを起点に、Rail、Coach、Stay、Regionへ。スマートフォン、機内・船内ポータル、ローカル実行、最新情報連携をまとめて導入し、移動中の判断支援を現場で検証する。</p>
+        <div class="mt-6">
+          <a href="{{ '/cabintime/' | relative_url }}" class="inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">CabinTimeの詳細 →</a>
+        </div>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
+        <p class="text-sm uppercase tracking-[0.2em] text-emerald-200">Journey AI</p>
+        <h3 class="mt-4 text-2xl font-semibold">移動と滞在の判断を、個人の文脈に合わせるAI。</h3>
+        <p class="mt-4 text-gray-300">天気、口コミ、混雑、交通、営業時間、Google評価、目的、同行者、好み、避けたい体験を束ね、広告順位ではなく理由つきの判断支援として提示する。</p>
+        <div class="mt-6">
+          <a href="{{ '/cabintime/#journey-ai' | relative_url }}" class="inline-flex text-sm font-semibold text-emerald-200 hover:text-emerald-100">CabinTime内で見る →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#07090d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Core platform</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">{{ site.data.marslink_terms.core_platform.name }}</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          {{ site.data.marslink_terms.core_platform.role }}
+        </p>
+        <p class="mt-4 text-lg leading-8 text-gray-300">
+          {{ site.data.marslink_terms.core_platform.copy }}
+        </p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-5 sm:p-6">
+        <p class="text-sm font-semibold uppercase tracking-[0.22em] text-amber-200">Development sequence</p>
+        <div class="mt-6 grid grid-cols-1 gap-4">
+          {% for product in site.data.marslink_terms.platform_products %}
+          <div class="rounded-lg border border-white/10 bg-black/25 p-5">
+            <div class="flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
+              <h3 class="text-lg font-semibold text-white">{{ product.label }}</h3>
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-cyan-200">{{ product.audience }}</p>
+            </div>
+            <p class="mt-3 text-sm leading-6 text-gray-300">{{ product.copy }}</p>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="mt-6 border-t border-white/10 pt-6">
+          <p class="text-sm font-semibold uppercase tracking-[0.22em] text-emerald-200">Long-term expansion</p>
+          <div class="mt-4 grid grid-cols-1 gap-3">
+            {% for module in site.data.marslink_terms.future_modules %}
+            <div class="rounded-md border border-white/10 bg-white/[0.025] p-4">
+              <h3 class="text-sm font-semibold text-white">{{ module.label }}</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">{{ module.copy }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">CabinTime architecture</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeは、Journey AIを移動空間で動かす初期導入パッケージです。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          CabinTimeは、単体アプリ名ではなく、移動空間にAIを導入するためのまとまりです。機内Wi-Fi、船内ネットワーク、衛星通信などの接続環境とローカル実行を組み合わせ、移動中でも状況認識と判断支援を続けられる設計へ拡張します。
+        </p>
+        <div class="mt-10">
+          <a href="{{ '/cabintime/#journey-ai' | relative_url }}" class="inline-flex rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">Journey AIを見る</a>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        {% for layer in site.data.marslink_terms.cabin_layers %}
+        <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.04] p-6 sm:grid-cols-[0.24fr_0.76fr]">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">{{ layer.type }}</p>
+            <h3 class="mt-2 text-xl font-semibold">{{ layer.label }}</h3>
+          </div>
+          <p class="text-sm leading-6 text-gray-300">{{ layer.copy }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#10100d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Where it works</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動と滞在のある場所なら、どこでも。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">航空、船舶、鉄道、バス、ホテル、地域。順位はありません。ソフトウェアとして、移動と滞在の判断が生まれる空間に展開できます。</p>
+    </div>
+
+    <div class="mt-16 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+      {% for domain in site.data.marslink_terms.journey_domains %}
+      <div class="rounded-lg border border-white/10 bg-black/35 p-7">
+        <h3 class="text-2xl font-semibold">{{ domain.label }}</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-300">{{ domain.copy }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#07090d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Build order</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">まず初期パッケージで現場に入り、次にJourney AIを育てる。</h2>
+      </div>
+      <div class="grid grid-cols-1 gap-3">
+        {% for step in site.data.marslink_terms.roadmap %}
+        <div class="grid grid-cols-1 gap-3 rounded-lg border border-white/10 bg-white/[0.035] p-5 sm:grid-cols-[0.32fr_0.68fr]">
+          <p class="font-semibold text-cyan-100">{{ step.label }}</p>
+          <p class="text-gray-300">{{ step.copy }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="relative overflow-hidden bg-[#0b1114] py-24 text-white">
+  <img src="{{ '/assets/images/flight-demo.jpg' | relative_url }}" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover opacity-20">
+  <div class="absolute inset-0 -z-10 bg-[#0b1114]/85"></div>
+  <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
+    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Co-creation</p>
+    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動体験を、共につくる。</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-300">
+      航空会社、船舶事業者、交通事業者、自治体、DMO、宿泊・飲食・体験事業者、投資家の方と、最初の実証と事業開発を進めています。
+    </p>
+    <div class="mt-10 flex flex-wrap justify-center gap-4">
+      <a href="{{ '/contact/' | relative_url }}" class="rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
+      <a href="{{ '/investors/' | relative_url }}" class="rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">投資家向け情報</a>
+    </div>
+  </div>
+</section>

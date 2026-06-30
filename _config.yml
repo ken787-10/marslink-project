@@ -1,14 +1,17 @@
 # Site settings
-title: MarsLink-マーズリンク-
+title: MarsLink | AI infrastructure for mobility
 email: info@marslink.co.jp
 description: >-
-  MarsLink（マーズリンク）は、主力サービス「CabinTime」で移動空間をメディアに変革するスタートアップです。飛行機から宇宙船まで、すべての移動時間を価値ある体験空間に変えます。
-keywords: "MarsLink, CabinTime, 移動空間, 観光DX, 機内エンタメ, オフライン観光情報, 観光テック, 観光SaaS, 航空会社DX, テックスタートアップ"
+  MarsLinkは、AIによって移動空間を再設計するインフラ企業です。航空・船舶・鉄道・バスなど、あらゆる移動空間に状況認識と意思決定を支えるAIを届けます。CabinTimeはその最初のプロダクトです。
+keywords: "MarsLink, CabinTime, Journey AI, 移動体験, 移動空間AI, 航空, 船舶, 交通, 観光, AIコンパニオン, AIガイド, モビリティ"
 baseurl: "" # 独自ドメイン公開時は空
 url: "https://marslink.co.jp" # 独自ドメイン
 
 # Timezone
 timezone: Asia/Tokyo
+
+# Encoding
+encoding: utf-8
 
 # Social media handles
 twitter_username: marslink_japan
@@ -39,6 +42,10 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - public_html/
+  - public/
+  - api/
+  - vercel.json
+  - .vercelignore
   - PHPMailer/
   - vendor/bundle/
   - vendor/cache/
@@ -59,6 +66,15 @@ exclude:
   - .user.ini
   - send_mail.php
   - README.md
+  - _backup/
+  - docs/
+  - "*.bak"
+  - "*.backup"
+  - "*.old"
+  - .htaccess_old
+  # Exclude files with non-ASCII filenames causing encoding errors
+  - cabintime-demo/assets/img/touris３.jpg
+  - "assets/images/スクリーンショット 2025-11-08 10.14.46.png"
 
 # Collections
 collections:
@@ -94,7 +110,7 @@ show_drafts: false
 author: MarsLink
 logo: /assets/images/logo.png
 social:
-  name: 株式会社MarsLink
+  name: MarsLink Inc.
   links:
     - https://twitter.com/marslink_japan
 

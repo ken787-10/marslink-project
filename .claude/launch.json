@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "marslink-site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4011", "--directory", "_site"],
+      "port": 4011
+    }
+  ]
+}
