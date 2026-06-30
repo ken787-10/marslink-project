@@ -1,6 +1,6 @@
 {
-  "installCommand": "npm ci && gem install bundler -v 2.4.22 && bundle _2.4.22_ install --jobs 4 --retry 3",
-  "buildCommand": "bundle _2.4.22_ exec jekyll build -d public",
+  "installCommand": "npm ci && bundle install",
+  "buildCommand": "bundle exec jekyll build -d public",
   "outputDirectory": "public",
   "framework": null
 }
