@@ -327,11 +327,17 @@
         {% if page.additional_css %}{{ page.additional_css }}{% endif %}
     </style>
     
+    {% assign meta_description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | replace: '"', '&quot;' %}
+    {% assign meta_title = site.title %}
+    {% if page.layout != 'home' and page.title %}
+        {% assign meta_title = page.title | append: ' - ' | append: site.title %}
+    {% endif %}
+
     <!-- Page Title -->
-    <title>{% if page.layout == 'home' %}{{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ meta_title }}</title>
     
     <!-- Meta Tags -->
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="description" content="{{ meta_description }}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="author" content="{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}">
     
@@ -341,8 +347,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
-    <meta property="og:title" content="{% if page.layout == 'home' %}{{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="og:title" content="{{ meta_title }}">
+    <meta property="og:description" content="{{ meta_description }}">
     <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/assets/images/hero-bg-1.jpg' | absolute_url }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="ja_JP">
@@ -350,8 +356,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
-    <meta property="twitter:title" content="{% if page.layout == 'home' %}{{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <meta property="twitter:title" content="{{ meta_title }}">
+    <meta property="twitter:description" content="{{ meta_description }}">
     <meta property="twitter:image" content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/assets/images/hero-bg-1.jpg' | absolute_url }}{% endif %}">
     {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
     
