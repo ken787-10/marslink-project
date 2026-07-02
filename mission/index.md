@@ -34,6 +34,21 @@ permalink: /mission/
 </section>
 
 <section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-5xl px-6 lg:px-8">
+    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Market-in</p>
+    <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">つくりたい技術からではなく、解くべき課題から。</h2>
+    <div class="mt-10 space-y-6 text-lg leading-8 text-gray-300">
+      <p>
+        MarsLinkの事業設計は、プロダクトからではなく、国と地域の課題から始まります。人口減少、地域交通の維持、観光の偏在、防災、インバウンド消費の分散。これらは日本が抱える構造的な課題であると同時に、移動の現場で毎日繰り返されている、実在する市場の要請です。
+      </p>
+      <p>
+        私たちはこの課題を、マーケットインの思考で解きます。技術の可能性から発想するのではなく、現場が必要としている判断支援を特定し、通信、運用、責任、コストという現場の制約の中で実装する。国家課題の大きさと、市場の需要を、同じ一つの設計図の上で扱います。
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
@@ -96,6 +111,34 @@ permalink: /mission/
       <div class="rounded-lg border border-white/10 bg-black/30 p-7">
         <h3 class="text-xl font-semibold">Velocity</h3>
         <p class="mt-4 text-sm leading-6 text-gray-300">小さく実装し、現場で検証し、学習して改善する。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">What we don't do</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">MarsLinkが、しないこと。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">信頼されるAIインフラであるために、私たちは「しないこと」を先に決めています。</p>
+    </div>
+    <div class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">広告順位で、並べない。</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-300">提案の順序は、広告費ではなく、その人の状況への適合と根拠で決めます。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">最終判断を、奪わない。</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-300">AIは判断材料を整えるまで。最後に決めるのは、利用者と現場の人間です。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">根拠のない提案を、しない。</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-300">なぜ薦めるのか、なぜ避けるのかを、参照した情報とともに説明できる提案だけを出します。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.035] p-7">
+        <h3 class="text-xl font-semibold">実績を、誇張しない。</h3>
+        <p class="mt-4 text-sm leading-6 text-gray-300">開発中のものは開発中と明記し、公表できる事実だけを実績として語ります。</p>
       </div>
     </div>
   </div>
