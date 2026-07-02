@@ -1,8 +1,8 @@
 ---
 layout: page
 title: "お問い合わせ"
-description: "MarsLinkへのお問い合わせ。CabinTimeの共同検証・事業連携、投資・資金調達、採用についてご相談ください。"
-keywords: "MarsLink, お問い合わせ, CabinTime, Journey AI, 共同検証, PoC, 事業連携, 資金調達, 採用"
+description: "MarsLinkへのお問い合わせ。CabinTimeの共同検証・事業連携、自治体・地域・DMO連携、投資・資金調達、採用、取材についてご相談ください。"
+keywords: "MarsLink, お問い合わせ, CabinTime, Journey AI, 共同検証, PoC, 事業連携, 自治体連携, DMO, 資金調達, 採用, 取材"
 permalink: /contact/
 priority: 0.8
 changefreq: monthly
@@ -13,13 +13,27 @@ changefreq: monthly
     <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Contact</p>
     <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl">移動体験のAI化について相談する。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
-      CabinTimeの共同検証・事業連携、Journey Intelligence Platform、投資・資金調達、採用に関するご連絡はこちらからお願いします。
+      CabinTimeの共同検証・事業連携、自治体・地域・DMOとの連携、投資・資金調達、採用、取材・メディアに関するご連絡はこちらからお願いします。
     </p>
   </div>
 </section>
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-3xl px-6 lg:px-8">
+    <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">Partners</p>
+        <p class="mt-3 text-sm leading-6 text-gray-300">航空・船舶・交通・自治体・DMO・地域事業者の方。共同検証・連携のご相談はフォームからどうぞ。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200">Investors</p>
+        <p class="mt-3 text-sm leading-6 text-gray-300">投資家の方。<a href="{{ '/investors/' | relative_url }}" class="font-semibold text-cyan-200 hover:text-cyan-100">投資家向け情報</a>をご覧のうえ、フォームからご連絡ください。</p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-5">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-emerald-200">Careers</p>
+        <p class="mt-3 text-sm leading-6 text-gray-300">働くことに関心のある方。<a href="{{ '/careers/' | relative_url }}" class="font-semibold text-cyan-200 hover:text-cyan-100">採用ページ</a>を読んでからのご連絡を歓迎します。</p>
+      </div>
+    </div>
     <form id="contactForm" class="rounded-lg border border-white/10 bg-white/[0.04] p-6 sm:p-8" method="POST" action="/api/contact">
       <div class="grid grid-cols-1 gap-6">
         <label class="block">
@@ -43,8 +57,10 @@ changefreq: monthly
           <select name="topic" required class="mt-2 w-full rounded-md border border-white/10 bg-black/40 px-4 py-3 text-white outline-none focus:border-cyan-300">
             <option value="" disabled selected>選択してください</option>
             <option value="CabinTime共同検証・事業連携">CabinTime共同検証・事業連携</option>
+            <option value="自治体・地域・DMO連携">自治体・地域・DMO連携</option>
             <option value="投資・資金調達に関するご相談">投資・資金調達に関するご相談</option>
             <option value="採用">採用</option>
+            <option value="取材・メディア">取材・メディア</option>
             <option value="その他">その他</option>
           </select>
         </label>
