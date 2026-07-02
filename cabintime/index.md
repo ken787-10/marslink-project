@@ -191,6 +191,38 @@ changefreq: weekly
   </div>
 </section>
 
+<section class="bg-[#050607] py-20 text-white sm:py-24">
+  <div class="mx-auto max-w-6xl px-0 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-3xl px-6 text-center sm:px-0">
+      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">CabinTime Film</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動中の判断を、AIで支える。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">
+        CabinTimeが目指す体験を、短い映像で紹介します。移動時間を、ただ過ごす時間ではなく、到着後の行動を整える時間へ変えていきます。
+      </p>
+    </div>
+
+    <div class="mt-10 w-full overflow-hidden border-y border-white/10 bg-[#000] shadow-2xl sm:mt-12 sm:rounded-xl sm:border">
+      <video
+        class="block h-auto w-full bg-[#000]"
+        controls
+        playsinline
+        preload="metadata"
+        poster="{{ '/assets/videos/cabintime-pr-thumbnail.jpg' | relative_url }}"
+        width="1920"
+        height="1080"
+      >
+        <source src="{{ '/assets/videos/CT.mp4' | relative_url }}" type="video/mp4">
+        お使いのブラウザは動画再生に対応していません。
+      </video>
+    </div>
+
+    <div class="mt-4 flex flex-col gap-3 px-6 text-sm leading-6 text-gray-400 sm:flex-row sm:items-center sm:justify-between sm:px-0">
+      <p>この動画には音声が含まれます。再生前に音量をご確認ください。</p>
+      <p>本映像はCabinTimeの構想のコンセプトムービーです。</p>
+    </div>
+  </div>
+</section>
+
 <section class="bg-[#050607] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
