@@ -1,13 +1,14 @@
 ---
 layout: page
-title: "Mission"
+title: "Mission｜AIで移動空間を再設計する"
+keywords: "MarsLink, Mission, Vision, Values, AIインフラ, 移動空間AI, 意思決定AI, マーケットイン, 国家課題, AIスタートアップ"
 description: "移動空間を再設計するAIインフラ企業MarsLinkのMission・Vision・Values。AIによってあらゆる移動空間を価値創造の場へ変える思想を紹介します。"
 permalink: /mission/
 ---
 
 <section class="bg-[#05070a] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Mission document</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Mission document</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">情報は増えた。判断は、まだ分断されている。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、移動中の状況、目的地、時間、好み、リスク、地域の文脈をAIが理解し、人が安心して次の行動を選べる状態をつくる、移動空間のAIインフラ企業です。
@@ -20,7 +21,7 @@ permalink: /mission/
 
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why now</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Why now</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">社会には情報がある。しかし、状況認識と意思決定はつながっていない。</h2>
     <div class="mt-10 space-y-6 text-lg leading-8 text-gray-300">
       <p>
@@ -35,7 +36,7 @@ permalink: /mission/
 
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Market-in</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Market-in</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">つくりたい技術からではなく、解くべき課題から。</h2>
     <div class="mt-10 space-y-6 text-lg leading-8 text-gray-300">
       <p>
@@ -52,7 +53,7 @@ permalink: /mission/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Civilian entry, operational future</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Civilian entry, operational future</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初の現場は移動と交通。目指す先は、移動空間のAIインフラ。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
@@ -92,7 +93,7 @@ permalink: /mission/
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Values</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Values</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">事業の進め方にも、思想を持つ。</h2>
     </div>
     <div class="mt-16 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -119,7 +120,7 @@ permalink: /mission/
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">What we don't do</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">What we don't do</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">MarsLinkが、しないこと。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">信頼されるAIインフラであるために、私たちは「しないこと」を先に決めています。</p>
     </div>
@@ -146,7 +147,7 @@ permalink: /mission/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Join us</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Join us</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動中の判断を支えるAIを、現場からつくる。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">航空、船舶、交通、地域、観光、投資、開発の立場から、MarsLinkの初期実証に参加する方を探しています。</p>
     <div class="mt-10 flex flex-wrap justify-center gap-4">

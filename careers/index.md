@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Careers"
+title: "Careers｜採用情報"
 description: "移動空間のAIインフラをつくるMarsLinkの採用。国の課題から始まる本物の難問に、初期メンバーとして取り組む仲間を募集します。AI・エッジコンピューティング・プロダクト・事業開発。"
 keywords: "MarsLink, Careers, 採用, AIインフラ, 移動空間AI, AIエンジニア, エッジAI, プロダクト, デザイン, 事業開発, CabinTime, 大阪 スタートアップ 採用"
 permalink: /careers/
@@ -8,7 +8,7 @@ permalink: /careers/
 
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Careers</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Careers</p>
     <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl">国の課題を、事業として解く側に立つ。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、CabinTimeを起点に、航空・船舶・交通・地域をつなぐ移動空間のAIインフラを開発しています。私たちが探しているのは、職種の前に、この課題を自分の問題として引き受けられる人です。
@@ -19,7 +19,7 @@ permalink: /careers/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="max-w-3xl">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why work here</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Why work here</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">なぜ、ここで働くのか。</h2>
     </div>
     <div class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -46,7 +46,7 @@ permalink: /careers/
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="max-w-3xl">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Who we look for</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Who we look for</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">こういう人と、働きたい。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">MarsLinkのValues——Reality, Clarity, Trust, Velocity——は、そのまま一緒に働きたい人の姿です。</p>
     </div>
@@ -74,7 +74,7 @@ permalink: /careers/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="max-w-3xl">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Areas</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Areas</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">いま、力を借りたい領域。</h2>
     </div>
     <div class="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -96,7 +96,7 @@ permalink: /careers/
 
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">How to join</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">How to join</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">関わり方は、ひとつではありません。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">
       正社員だけでなく、副業・業務委託、技術顧問、共同研究など、関わり方の入口を広く開いています。正式な募集要項は順次公開予定です。MarsLinkのテーマに関心がある方は、現在は個別にお話していますので、お問い合わせフォームよりご連絡ください。

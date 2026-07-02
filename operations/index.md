@@ -8,7 +8,7 @@ permalink: /operations/
 
 <section class="bg-[#05070a] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Operational Decision Support / Future layer</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Operational Decision Support / Future layer</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">移動の意思決定を、重要な現場判断へ広げる。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       現在の主軸はCabinTimeとJourney AIです。まず旅行者が安心して次を選べる状態をつくり、その先に、交通事業者、地域、重要な現場が判断材料を扱えるレイヤーへ拡張します。
@@ -23,7 +23,7 @@ permalink: /operations/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">The bridge</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">The bridge</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初は旅行者の判断支援。次に重要な現場判断へ。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
@@ -41,7 +41,7 @@ permalink: /operations/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Operational scenarios</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Operational scenarios</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">将来レイヤーは、現場の判断を扱う。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">アプリ画面だけではなく、交通事業者、地域、運用担当者が何を見て、何を避け、何を承認するかまでを支援します。</p>
     </div>
@@ -73,7 +73,7 @@ permalink: /operations/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Surfaces</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Surfaces</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeは、複数の接点で動く。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">アプリを作るだけではなく、既存の移動空間に組み込まれることを前提にします。</p>
     </div>
@@ -101,7 +101,7 @@ permalink: /operations/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Operational decision model</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Operational decision model</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">決めるのは人間。AIは、判断できる状況をつくる。</h2>
       </div>
       <div class="grid grid-cols-1 gap-4">
@@ -119,7 +119,7 @@ permalink: /operations/
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Expansion path</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Expansion path</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">民生の入口から、重要なオペレーションへ。</h2>
     </div>
     <div class="mt-16 grid grid-cols-1 gap-4">
@@ -145,7 +145,7 @@ permalink: /operations/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Start with CabinTime</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Start with CabinTime</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初の実証は、移動中の体験から始める。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">まずは旅行と交通の現場で、AIが判断材料と代替案を整理する価値を検証します。</p>
     <div class="mt-10 flex flex-wrap justify-center gap-4">

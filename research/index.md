@@ -8,7 +8,7 @@ permalink: /research/
 
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Research</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Research</p>
     <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl">移動中の提案は、人の行動をどう変えるか。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、Journey AIを単なるプロダクト機能としてではなく、人の選択、地域回遊、移動体験、情報接触の研究テーマとして捉えています。
@@ -47,7 +47,7 @@ permalink: /research/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.85fr_1.15fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Academic collaboration</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Academic collaboration</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">研究と実装を往復する。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
@@ -65,7 +65,7 @@ permalink: /research/
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Research pipeline</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Research pipeline</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">検証したい問い</h2>
     </div>
     <div class="mt-16 space-y-4">
@@ -79,7 +79,7 @@ permalink: /research/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Collaborate</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Collaborate</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">研究連携・実証研究のご相談</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">大学、研究機関、交通事業者、自治体、DMOとの実証検証を歓迎します。</p>
     <div class="mt-10">

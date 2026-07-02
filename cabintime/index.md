@@ -195,7 +195,7 @@ changefreq: weekly
 <section id="concept-movie" class="bg-[#050607] py-20 text-white sm:py-24">
   <div class="mx-auto max-w-6xl px-0 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl px-6 text-center sm:px-0">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">CabinTime Film</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">CabinTime Film</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動中の判断を、AIで支える。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">
         CabinTimeが目指す体験を、短い映像で紹介します。移動時間を、ただ過ごす時間ではなく、到着後の行動を整える時間へ変えていきます。
@@ -651,7 +651,7 @@ changefreq: weekly
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Powered by Journey AI</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">CabinTimeの頭脳は、Journey AI。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           CabinTimeは、移動・滞在空間に導入するパッケージとして開発中です。その中で文脈理解と提案を担うのがJourney AI——移動と滞在の文脈を読み取り、利用者ごとに次の行動を選べる状態をつくる知能です。

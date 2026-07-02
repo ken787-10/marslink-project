@@ -9,7 +9,7 @@ permalink: /profile/
 <section class="bg-[#05070a] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
     <div>
-      <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Company</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Company</p>
       <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-7xl">MarsLink builds AI for better decisions.</h1>
       <p class="mt-6 max-w-2xl text-lg leading-8 text-cyan-100">移動という、人が最も多くの判断をする場所から、より良い意思決定を支えるAIをつくる。</p>
     </div>
@@ -23,7 +23,7 @@ permalink: /profile/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Company thesis</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Company thesis</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動は、人生の中で最も意思決定が連続する場所のひとつです。</h2>
       </div>
       <div class="space-y-6 text-lg leading-8 text-gray-300">
@@ -67,7 +67,7 @@ permalink: /profile/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">What we build</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">What we build</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">最初はサービスとして使えるAI。将来は社会の判断基盤。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">ソフトウェアとして設計しているため、スマートフォン、航空機のIFE、事業者アプリなど多様なハードに載り、多言語で日本・インバウンド・海外の移動に展開できます。</p>
       </div>
@@ -91,7 +91,7 @@ permalink: /profile/
 
 <section class="bg-[#10100d] py-24 text-white">
   <div class="mx-auto max-w-6xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">History</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">History</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">沿革</h2>
     <div class="mt-12 space-y-4">
       <div class="grid grid-cols-1 gap-4 rounded-lg border border-white/10 bg-white/[0.035] p-6 md:grid-cols-[0.22fr_0.78fr]">
@@ -128,7 +128,7 @@ permalink: /profile/
   <div class="mx-auto max-w-6xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Research partner</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Research partner</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動AIを、研究と現場の両側から検証する。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           MarsLinkは、移動・観光・地域・AIの領域で、大学研究者との共同研究を重視しています。プロダクトの見た目だけではなく、利用者行動、推薦、文脈理解、説明可能性を検証しながら、移動空間AIを育てます。
@@ -151,7 +151,7 @@ permalink: /profile/
 
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Company profile</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Company profile</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">会社情報</h2>
     <div class="mt-12 overflow-hidden rounded-lg border border-white/10">
       <table class="w-full text-left text-sm">
@@ -172,7 +172,7 @@ permalink: /profile/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Next</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Next</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動体験のAI化に関心のある方へ。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">共同検証、事業連携、投資家面談、採用に関するご相談を受け付けています。</p>
     <div class="mt-10 flex flex-wrap justify-center gap-4">

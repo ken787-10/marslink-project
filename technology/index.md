@@ -10,7 +10,7 @@ permalink: /technology/
 
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Technology</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Technology</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">移動空間の判断を、扱えるシステムにする。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkの技術は、検索結果を生成するためのものではありません。天気、口コミ、混雑、運行情報、利用者の目的、事業者の制約を統合し、人と組織が判断できる状態へ変換するための技術です。
@@ -21,7 +21,7 @@ permalink: /technology/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Decision stack</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Decision stack</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">MarsLinkの中核は、情報ではなく判断のループです。</h2>
     </div>
     <div class="mt-16 grid grid-cols-1 gap-4 lg:grid-cols-5">
@@ -40,7 +40,7 @@ permalink: /technology/
   <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-25"></div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Decision model (SEM)</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Decision model (SEM)</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">散らばった指標から潜在的なリスクと適合度を推定し、人が安全に決められる判断へ変え、結果を学習する。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">移動の意思決定支援を、観測指標から潜在変数を推定して判断へつなぐ構造方程式モデル（SEM）として設計しています。単なる入出力ではなく、測定モデル（指標→構成概念）と構造モデル（構成概念→判断）の二段で扱い、結果を学習として戻します。</p>
     </div>
@@ -124,7 +124,7 @@ permalink: /technology/
     </div>
 
     <div class="mx-auto mt-16 max-w-5xl">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The model · 定式</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">The model · 定式</p>
       <h3 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">Journey AIの意思決定モデルを、式で表す。</h3>
       <p class="mt-6 text-lg leading-8 text-gray-300">上の図の各段——観測指標 → 潜在変数 → 判断 → 学習——を、構造方程式（SEM）として記述すると、次のようになります。</p>
       <dl class="mt-10 divide-y divide-white/10 border-t border-white/10">
@@ -162,7 +162,7 @@ permalink: /technology/
 
     <div class="mx-auto mt-12 max-w-6xl">
       <div class="mx-auto max-w-3xl text-center">
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Theoretical foundations</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Theoretical foundations</p>
         <h3 class="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">モデル要素と、先行研究の対応。</h3>
         <p class="mt-6 text-lg leading-8 text-gray-300">本モデルの各要素は、確立した研究と一対一で対応します。知覚リスク理論・状況認識理論・文脈考慮型推薦・SEM方法論——4本の系譜を、移動の意思決定支援に統合しています。</p>
       </div>
@@ -225,7 +225,7 @@ permalink: /technology/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Architecture</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Architecture</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">Context Graphから、Action-readyな提案へ。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           旅行アプリのように候補を並べるのではなく、現実の移動文脈を構造化し、選ぶ理由、避ける理由、運用上の制約まで含めて提案します。
@@ -257,7 +257,7 @@ permalink: /technology/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.8fr_1.2fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Principles</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Principles</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">AIは、旅を決めるのではなく、判断できる状況をつくる。</h2>
       </div>
       <div class="space-y-4">
@@ -331,7 +331,7 @@ permalink: /technology/
         <div class="absolute right-4 bottom-4 rounded-full border border-emerald-300/30 bg-emerald-300/10 px-3 py-1 text-[10px] font-semibold text-emerald-100">Offline-aware</div>
       </div>
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Offline-aware</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Offline-aware</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">通信が不安定な移動空間を前提にする。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">
           航空機や船舶では、常に高速通信を前提にできません。CabinTimeは、事前配信、ローカル表示、軽量な更新、到着後の再接続を想定した体験設計を検証します。
@@ -345,7 +345,7 @@ permalink: /technology/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Hard problems</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Hard problems</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">優秀なAIエンジニアが解くべき難問。</h2>
       </div>
       <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -372,7 +372,7 @@ permalink: /technology/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Next</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Next</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">技術は、体験から鍛える。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">MarsLinkは、実際の移動空間で使われるCabinTimeを起点に、Journey AI、Mobility Intelligence、AIガバナンスの基盤を段階的に拡張します。</p>
   </div>

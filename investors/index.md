@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Investors"
+title: "Investors｜投資家向け情報"
 description: "MarsLinkは、AIによってあらゆる移動空間を価値創造の場へ変える、移動空間のAIインフラ企業です。日本の構造課題から逆算し、CabinTimeを最初のプロダクトに、移動インフラへ拡張します。"
 keywords: "MarsLink, Investors, 投資家, AI infrastructure for mobility, 移動空間, CabinTime, エッジAI, インバウンド, 外貨獲得, スタートアップ"
 permalink: /investors/
@@ -8,7 +8,7 @@ permalink: /investors/
 
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Investors</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Investors</p>
     <h1 class="mt-5 max-w-5xl text-5xl font-semibold tracking-tight sm:text-7xl">We are building the AI infrastructure for mobility.</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       MarsLinkは、AIによって、あらゆる移動空間を価値創造の場へ変えるインフラ企業です。航空・船舶・鉄道・バス——移動のあらゆる場面に、AIを届けることを目指しています。観光サービスを作る会社ではありません。移動空間そのものを再設計する会社です。
@@ -28,7 +28,7 @@ permalink: /investors/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why now ・ 日本の構造課題から逆算する</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Why now ・ 日本の構造課題から逆算する</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">プロダクトからではなく、国家課題から考える。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">人口減少で国内市場は縮小し、日本は資源・エネルギー・技術を買うための外貨を稼ぎ続けなければなりません。自動車・半導体に続く数少ない成長源が、移動とインバウンドです。しかし移動中の時間とデータは、いまだ死んだまま、分断されたままです。</p>
       </div>
@@ -53,7 +53,7 @@ permalink: /investors/
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">The thesis</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">The thesis</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">巨大な社会課題を、ソフトウェアの速度で解く。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">国家規模の課題を解く企業には、共通の構造があります。プロダクトからではなく社会課題から逆算し、古い産業をソフトウェアで再定義し、現場接点まで設計し、やがてインフラになる。MarsLinkは、この構造を「移動」に当てはめ、CabinTimeから一歩ずつ積み上げます。</p>
     </div>
@@ -86,7 +86,7 @@ permalink: /investors/
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <div class="text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">The stack</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">The stack</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">課題から、プロダクトまで。一本の線でつなぐ。</h2>
     </div>
     <div class="mt-12 space-y-3">
@@ -119,7 +119,7 @@ permalink: /investors/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Market</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Market</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">観光は外貨獲得産業。移動データは、まだ統合されていない。</h2>
         <p class="mt-6 text-sm leading-6 text-gray-500">市場規模は資金調達資料で推計として整理します。本ページでは導入数・売上・契約実績を作らず、検証前提を明示します。外貨獲得・国際競争力は、本プラットフォームが日本にもたらす"インパクト"として位置づけます。</p>
       </div>
@@ -149,7 +149,7 @@ permalink: /investors/
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.82fr_1.18fr]">
       <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Why MarsLink ・ なぜ私たちか</p>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Why MarsLink ・ なぜ私たちか</p>
         <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">この領域は、テックだけでも、交通・観光だけでも獲れない。</h2>
         <p class="mt-6 text-lg leading-8 text-gray-300">この領域は、純粋なテック企業にも、交通・観光の事業者にも、単独では攻めにくい場所です。MarsLinkは、地方創生マーケティングの<span class="text-white">FunMakeから生まれたスピンオフ</span>として、現場のネットワークと技術の両輪を初日から持っています。</p>
       </div>
@@ -177,7 +177,7 @@ permalink: /investors/
 
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-amber-200">Founder–market fit</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-amber-200">Founder–market fit</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動・地域・意思決定の交差点に、稀有な創業者適合。</h2>
     <div class="mt-8 space-y-6 text-lg leading-8 text-gray-300">
       <p>
@@ -205,7 +205,7 @@ permalink: /investors/
 <section class="bg-[#05070a] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-3xl text-center">
-      <p class="text-sm font-semibold uppercase tracking-[0.24em] text-emerald-200">Trajectory</p>
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-emerald-200">Trajectory</p>
       <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">成長の軌道と、現在地。</h2>
       <p class="mt-6 text-lg leading-8 text-gray-300">今はまだシード段階です。CabinTimeを起点に、扱う意思決定の広がりをここから伸ばします。これまでの達成、現在地、次の打ち手を示します。</p>
     </div>
@@ -287,7 +287,7 @@ permalink: /investors/
 
 <section class="bg-[#0b1114] py-24 text-white">
   <div class="mx-auto max-w-4xl px-6 text-center lg:px-8">
-    <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Current phase</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">Current phase</p>
     <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">現在は、開発中・共同検証フェーズです。</h2>
     <p class="mt-6 text-lg leading-8 text-gray-300">大きな構想を掲げていますが、CabinTimeを正式ローンチ済み・導入済み・多数実績ありとは表現しません。MarsLinkは、移動空間のAIインフラという仮説を、実証パートナーと一歩ずつ検証していきます。</p>
     <div class="mt-10">

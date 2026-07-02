@@ -1,6 +1,7 @@
 ---
 layout: page
-title: "代表紹介"
+title: "代表紹介｜市位謙太"
+keywords: "市位謙太, MarsLink, 代表, CEO, AIスタートアップ, 大阪, 移動空間AI, CabinTime"
 description: "MarsLink代表 市位謙太のプロフィール。移動空間のAIインフラ企業を立ち上げた思想と背景、行政・地域・AIを横断する経歴を紹介します。"
 permalink: /ceo/
 draft: false

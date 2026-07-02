@@ -10,7 +10,7 @@ changefreq: monthly
 
 <section class="bg-[#07090d] px-6 pt-36 pb-24 text-white lg:px-8">
   <div class="mx-auto max-w-7xl">
-    <p class="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">Contact</p>
+    <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">Contact</p>
     <h1 class="mt-5 max-w-4xl text-5xl font-semibold tracking-tight sm:text-6xl">移動体験のAI化について相談する。</h1>
     <p class="mt-8 max-w-3xl text-lg leading-8 text-gray-300">
       CabinTimeの共同検証・事業連携、自治体・地域・DMOとの連携、投資・資金調達、採用、取材・メディアに関するご連絡はこちらからお願いします。
