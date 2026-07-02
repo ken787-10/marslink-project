@@ -25,9 +25,10 @@ changefreq: weekly
       <p class="mt-8 max-w-2xl text-lg leading-8 text-gray-200">
         CabinTimeは、通信が不安定な移動空間や、事業者が設計する専用ポータルにJourney AIを導入するための初期パッケージとして開発中です。天気、口コミ、混雑、運行情報、目的、好み、避けたい体験をAIが読み取り、旅行者が安心して次を選べる状態をつくることを目指しています。ここで検証した文脈理解と推薦の型を、より広いJourney AIの基盤へ展開します。
       </p>
-      <div class="mt-10 flex flex-col gap-3 sm:flex-row">
-        <a href="{{ '/contact/' | relative_url }}" class="inline-flex items-center justify-center rounded-md bg-white px-6 py-3 text-sm font-semibold text-gray-950 transition hover:bg-cyan-100">共同検証を相談する</a>
-        <a href="#journey-ai" class="inline-flex items-center justify-center rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/5">Journey AIとは</a>
+      <div class="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
+        <a href="{{ '/contact/' | relative_url }}" class="inline-flex min-h-12 items-center justify-center rounded-md bg-white px-3 py-3 text-center text-xs font-semibold leading-5 text-gray-950 transition hover:bg-cyan-100 xl:text-sm">共同検証を相談する</a>
+        <a href="#concept-movie" class="inline-flex min-h-12 items-center justify-center rounded-md border border-cyan-200/40 px-3 py-3 text-center text-xs font-semibold leading-5 text-cyan-100 transition hover:border-cyan-100 hover:bg-cyan-100/10 xl:text-sm">コンセプトムービーを見る</a>
+        <a href="#journey-ai" class="inline-flex min-h-12 items-center justify-center rounded-md border border-white/25 px-3 py-3 text-center text-xs font-semibold leading-5 text-white transition hover:border-white/60 hover:bg-white/5 xl:text-sm">Journey AIとは</a>
       </div>
       <p class="mt-6 text-sm leading-6 text-gray-400">
         現在は正式ローンチ前の開発・共同検証フェーズです。
@@ -191,7 +192,7 @@ changefreq: weekly
   </div>
 </section>
 
-<section class="bg-[#050607] py-20 text-white sm:py-24">
+<section id="concept-movie" class="bg-[#050607] py-20 text-white sm:py-24">
   <div class="mx-auto max-w-6xl px-0 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl px-6 text-center sm:px-0">
       <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">CabinTime Film</p>
@@ -203,11 +204,12 @@ changefreq: weekly
 
     <div class="mt-10 w-full overflow-hidden border-y border-white/10 bg-[#000] shadow-2xl sm:mt-12 sm:rounded-xl sm:border">
       <video
+        data-reset-poster-on-ended
         class="block h-auto w-full bg-[#000]"
         controls
         playsinline
         preload="metadata"
-        poster="{{ '/assets/videos/cabintime-pr-thumbnail.jpg' | relative_url }}"
+        poster="{{ '/assets/images/cabin-time-movie.jpg' | relative_url }}"
         width="1920"
         height="1080"
       >
@@ -215,6 +217,16 @@ changefreq: weekly
         お使いのブラウザは動画再生に対応していません。
       </video>
     </div>
+
+    <script>
+      document.querySelectorAll('video[data-reset-poster-on-ended]').forEach((video) => {
+        video.addEventListener('ended', () => {
+          video.pause();
+          video.currentTime = 0;
+          video.load();
+        });
+      });
+    </script>
 
     <div class="mt-4 flex flex-col gap-3 px-6 text-sm leading-6 text-gray-400 sm:flex-row sm:items-center sm:justify-between sm:px-0">
       <p>この動画には音声が含まれます。再生前に音量をご確認ください。</p>

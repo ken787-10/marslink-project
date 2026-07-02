@@ -124,6 +124,31 @@ permalink: /profile/
   </div>
 </section>
 
+<section class="bg-[#05070a] py-24 text-white">
+  <div class="mx-auto max-w-6xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.78fr_1.22fr]">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Research partner</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動AIを、研究と現場の両側から検証する。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          MarsLinkは、移動・観光・地域・AIの領域で、大学研究者との共同研究を重視しています。プロダクトの見た目だけではなく、利用者行動、推薦、文脈理解、説明可能性を検証しながら、移動空間AIを育てます。
+        </p>
+      </div>
+      <div class="rounded-lg border border-white/10 bg-white/[0.04] p-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.2em] text-amber-200">Research Partner / Advisor</p>
+        <h3 class="mt-4 text-2xl font-semibold">増田 央</h3>
+        <p class="mt-2 text-cyan-100">京都外国語大学 国際貢献学部 グローバル観光学科 准教授</p>
+        <p class="mt-5 leading-7 text-gray-300">
+          観光ホスピタリティ経営・マーケティングを専門とする研究者。MarsLinkでは、生成AI、移動、観光などの領域で、マーケティングの助言、研究テーマの検討・助言、検証設計を進めます。
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="{{ '/post/university-ai-research.html' | relative_url }}" class="rounded-md border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">大学連携とAI研究</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-5xl px-6 lg:px-8">
     <p class="text-sm font-semibold uppercase tracking-[0.24em] text-cyan-200">Company profile</p>
@@ -136,6 +161,7 @@ permalink: /profile/
           <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">代表者</th><td class="px-5 py-4 text-gray-200">市位 謙太（Founder & CEO）</td></tr>
           <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">所在地</th><td class="px-5 py-4 text-gray-200">〒530-0011 大阪市北区大深町6番38号 グラングリーン大阪北館 JAM BASE 6階 JAM-DESK</td></tr>
           <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">事業内容</th><td class="px-5 py-4 text-gray-200">Journey AIプロダクトの企画・開発、移動空間向けAI体験基盤、CabinTimeの開発、交通・地域事業者との共同検証</td></tr>
+          <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">リサーチパートナー・顧問</th><td class="px-5 py-4 text-gray-200">増田 央（京都外国語大学 国際貢献学部 グローバル観光学科 准教授）</td></tr>
           <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">主要取引銀行</th><td class="px-5 py-4 text-gray-200">三菱UFJ銀行、三井住友銀行</td></tr>
           <tr><th class="bg-white/[0.04] px-5 py-4 font-semibold text-cyan-100">連絡先</th><td class="px-5 py-4 text-gray-200"><a href="{{ '/contact/' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">お問い合わせフォーム</a>よりご連絡ください。</td></tr>
         </tbody>
