@@ -431,73 +431,68 @@ seo:
 
 <section class="bg-[#07090d] py-24 text-white">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="max-w-3xl">
-      <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-cyan-200">08 / Proof &amp; Momentum</p>
-      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">構想ではなく、すでに動いている。</h2>
-      <p class="mt-6 text-lg leading-8 text-gray-300">
-        シード段階のスタートアップとして、採択、協定、発表、ブランドの基盤を一つずつ積み上げています。
-      </p>
-    </div>
-
-    <div class="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
-      <ol class="relative space-y-8 border-l border-white/15 pl-8">
-        <li>
-          <span class="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-white/40"></span>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">2025</p>
-          <h3 class="mt-1 text-lg font-semibold text-white">株式会社MarsLinkを設立</h3>
-          <p class="mt-1 text-sm leading-6 text-gray-400">大阪駅直結・グラングリーン大阪（うめきた）を拠点に創業。</p>
-        </li>
-        <li>
-          <span class="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-cyan-300/70"></span>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">2025.07</p>
-          <h3 class="mt-1 text-lg font-semibold text-white">大阪市のアクセラレーション「OSAP」第19期に採択</h3>
-          <p class="mt-1 text-sm leading-6 text-gray-400"><a href="{{ '/post/osap.html' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">採択の詳細を読む →</a></p>
-        </li>
-        <li>
-          <span class="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-cyan-300/70"></span>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">2025.10</p>
-          <h3 class="mt-1 text-lg font-semibold text-white">大阪府熊取町とAI活用の包括連携協定を締結</h3>
-          <p class="mt-1 text-sm leading-6 text-gray-400">自治体×AIスタートアップとして、地域と移動の課題解決へ。</p>
-        </li>
-        <li>
-          <span class="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-cyan-300/70"></span>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">2025.11</p>
-          <h3 class="mt-1 text-lg font-semibold text-white">OSAP第19期 DEMO DAYでCabinTimeをピッチ</h3>
-          <p class="mt-1 text-sm leading-6 text-gray-400">「移動時間を、判断できる体験に変える」を発表。</p>
-        </li>
-        <li>
-          <span class="absolute -left-[5px] mt-2 h-2.5 w-2.5 rounded-full bg-emerald-300/70"></span>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-white/45">2026.06</p>
-          <h3 class="mt-1 text-lg font-semibold text-white">商標「マーズリンク／Mars Link」を取得</h3>
-          <p class="mt-1 text-sm leading-6 text-gray-400">長期ブランドの基盤を整備。大学研究者との連携・共同研究も公表。</p>
-        </li>
-      </ol>
-
-      <div class="space-y-6">
-      <div class="grid grid-cols-2 gap-4">
-        <figure class="overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-          <img src="{{ '/assets/images/kumatori.JPG' | relative_url }}" alt="大阪府熊取町と株式会社MarsLinkの包括連携協定 締結式" class="h-40 w-full object-cover sm:h-48" loading="lazy">
-          <figcaption class="px-4 py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-white/50">2025.10 · 熊取町と包括連携協定</figcaption>
-        </figure>
-        <figure class="overflow-hidden rounded-lg border border-white/10 bg-white/[0.03]">
-          <img src="{{ '/assets/images/osap-demo06.jpg' | relative_url }}" alt="OSAP第19期 DEMO DAYでCabinTimeを発表する代表の市井賢多" class="h-40 w-full object-cover sm:h-48" loading="lazy">
-          <figcaption class="px-4 py-3 font-mono text-[10px] uppercase tracking-[0.14em] text-white/50">2025.11 · OSAP DEMO DAY登壇</figcaption>
-        </figure>
-      </div>
-      <div class="rounded-lg border border-white/10 bg-white/[0.03] p-6 sm:p-7">
-        <p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">Latest updates</p>
-        <div class="mt-5 space-y-5">
-          {% for post in site.posts limit: 3 %}
-          <a href="{{ post.url | relative_url }}" class="group block border-b border-white/10 pb-5 last:border-b-0 last:pb-0">
-            <p class="text-xs text-gray-500">{{ post.date | date: "%Y.%m.%d" }}{% if post.category %} ・ {{ post.category }}{% endif %}</p>
-            <h3 class="mt-2 text-sm font-semibold leading-6 text-gray-100 transition group-hover:text-cyan-100">{{ post.title }}</h3>
-          </a>
-          {% endfor %}
-        </div>
-        <div class="mt-6">
-          <a href="{{ '/updates/' | relative_url }}" class="inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">すべての更新情報を見る →</a>
+    <div class="grid grid-cols-1 gap-12 lg:grid-cols-[0.72fr_1.28fr]">
+      <div>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-emerald-200">08 / Proof &amp; Momentum</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">構想だけでなく、現場で積み上げる。</h2>
+        <p class="mt-6 text-lg leading-8 text-gray-300">
+          MarsLinkは、行政・自治体・大学という「現場」との接点を先に固めながら、プロダクトを検証しています。実績はすべて公開情報として更新し続けます。
+        </p>
+        <div class="mt-10">
+          <a href="{{ '/updates/' | relative_url }}" class="inline-flex rounded-md border border-white/25 px-6 py-3 text-sm font-semibold text-white transition hover:border-cyan-200 hover:text-cyan-100">更新情報をすべて見る</a>
         </div>
       </div>
+
+      <div>
+        <div class="divide-y divide-white/10 border-y border-white/10">
+          <div class="grid grid-cols-1 gap-2 py-6 sm:grid-cols-[0.2fr_0.8fr] sm:gap-6">
+            <p class="font-semibold text-white/85">2025.07</p>
+            <div>
+              <h3 class="text-lg font-semibold text-white">大阪市アクセラレーション「OSAP」第19期に採択</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">大阪イノベーションハブ（OIH）のStartup Acceleration ProgramにCabinTimeが採択。<a href="{{ '/post/osap.html' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">詳細 →</a></p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-2 py-6 sm:grid-cols-[0.2fr_0.8fr] sm:gap-6">
+            <p class="font-semibold text-white/85">2025.10</p>
+            <div>
+              <h3 class="text-lg font-semibold text-white">大阪府熊取町とAI活用の包括連携協定を締結</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">自治体×AIスタートアップとして、地域と移動のDXを継続的に進める協定。</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-2 py-6 sm:grid-cols-[0.2fr_0.8fr] sm:gap-6">
+            <p class="font-semibold text-white/85">2025.11</p>
+            <div>
+              <h3 class="text-lg font-semibold text-white">OSAP第19期 DEMO DAYでピッチを実施</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">「移動時間を、判断できる体験に変える」をテーマにCabinTimeを発表。</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-2 py-6 sm:grid-cols-[0.2fr_0.8fr] sm:gap-6">
+            <p class="font-semibold text-white/85">2026.06</p>
+            <div>
+              <h3 class="text-lg font-semibold text-white">「マーズリンク／Mars Link」商標を取得</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">長期のブランド基盤として、名称の商標登録を完了。</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 gap-2 py-6 sm:grid-cols-[0.2fr_0.8fr] sm:gap-6">
+            <p class="font-semibold text-white/85">2026.07</p>
+            <div>
+              <h3 class="text-lg font-semibold text-white">大学・AI研究者との共同研究を開始</h3>
+              <p class="mt-2 text-sm leading-6 text-gray-400">京都大学・京都外国語大学の研究者と、AIを活用した意思決定支援とサービス体験の共同研究をスタート。<a href="{{ '/post/joint-research-information-decision.html' | relative_url }}" class="text-cyan-200 hover:text-cyan-100">詳細を読む →</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-amber-200">Latest updates</p>
+          <div class="mt-4 space-y-3">
+            {% for post in site.posts limit: 3 %}
+            <a href="{{ post.url | relative_url }}" class="group flex items-baseline justify-between gap-6 rounded-md border border-white/10 bg-white/[0.02] px-5 py-4 transition hover:border-cyan-200/40">
+              <h3 class="truncate text-sm font-semibold leading-6 text-gray-100 transition group-hover:text-cyan-100">{{ post.title }}</h3>
+              <p class="shrink-0 text-xs text-gray-500">{{ post.date | date: "%Y.%m.%d" }}</p>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
   </div>
