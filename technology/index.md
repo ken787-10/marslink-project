@@ -36,6 +36,84 @@ permalink: /technology/
   </div>
 </section>
 
+<section class="bg-[#07090d] py-24 text-white">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">System</p>
+      <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">Journey AIは、どう判断を支えるか。</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-300">入力から状況認識、候補生成、リスク・制約評価を経て、根拠と選択肢を人に渡す。ガバナンスが全工程を支え、結果は学習として基盤へ戻ります。</p>
+    </div>
+
+    <div class="mt-14 overflow-x-auto rounded-2xl border border-white/10 bg-black/30 p-4 backdrop-blur-sm sm:p-6">
+      <p class="font-mono text-xs font-semibold uppercase tracking-[0.22em] text-cyan-200">System / How Journey AI Decides</p>
+      <svg viewBox="0 0 1040 440" xmlns="http://www.w3.org/2000/svg" class="mx-auto mt-4 w-full max-w-5xl" role="img" aria-labelledby="jdt jdd">
+        <title id="jdt">Journey AIの判断プロセス：入力 → 状況認識 → 候補生成 → リスク・制約評価 → 人の最終判断 → 学習</title>
+        <desc id="jdd">運航・気象・位置・地域情報・利用者の目的を入力に、状況認識、候補生成と個人最適化、安全・規制・接続断・誤情報のリスク評価を経て、根拠つきの選択肢を提示し、最終決定は人間が行う。結果は学習として基盤に戻り、全工程を説明可能性・データ最小化・オフライン動作のガバナンスが支える</desc>
+        <defs>
+          <marker id="jdm" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="#67e8f9"/></marker>
+          <marker id="jdm2" markerWidth="10" markerHeight="8" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 Z" fill="rgba(52,211,153,0.7)"/></marker>
+          <style>
+            .jdcap{fill:rgba(255,255,255,.45);font:700 11px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.18em}
+            .jdttl{fill:#fff;font:700 16px sans-serif}
+            .jdsub{fill:rgba(255,255,255,.55);font:400 12px sans-serif}
+            .jditem{fill:rgba(255,255,255,.65);font:400 13px sans-serif}
+            .jdflow{stroke:#67e8f9;stroke-width:1.6;fill:none;marker-end:url(#jdm)}
+          </style>
+        </defs>
+
+        <rect x="16" y="40" width="160" height="210" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.14)"/>
+        <text x="32" y="66" class="jdcap">INPUTS</text>
+        <text x="32" y="96" class="jditem">運航・経路</text>
+        <text x="32" y="124" class="jditem">気象・海況</text>
+        <text x="32" y="152" class="jditem">位置・接続状態</text>
+        <text x="32" y="180" class="jditem">地域・営業情報</text>
+        <text x="32" y="208" class="jditem">利用者の目的</text>
+
+        <rect x="216" y="70" width="150" height="120" rx="10" fill="rgba(103,232,249,0.05)" stroke="rgba(103,232,249,0.35)"/>
+        <text x="232" y="96" class="jdcap">PERCEIVE</text>
+        <text x="232" y="124" class="jdttl">状況認識</text>
+        <text x="232" y="150" class="jdsub">分断された情報を</text>
+        <text x="232" y="168" class="jdsub">横断して読む</text>
+
+        <rect x="406" y="70" width="150" height="120" rx="10" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.18)"/>
+        <text x="422" y="96" class="jdcap">COMPOSE</text>
+        <text x="422" y="124" class="jdttl">候補生成</text>
+        <text x="422" y="150" class="jdsub">その人の文脈に</text>
+        <text x="422" y="168" class="jdsub">合わせて最適化</text>
+
+        <rect x="596" y="70" width="150" height="120" rx="10" fill="rgba(251,191,36,0.04)" stroke="rgba(251,191,36,0.4)"/>
+        <text x="612" y="96" class="jdcap" fill="rgba(251,191,36,.7)">CONSTRAIN</text>
+        <text x="612" y="124" class="jdttl">リスク・制約評価</text>
+        <text x="612" y="150" class="jdsub">安全・規制・接続断</text>
+        <text x="612" y="168" class="jdsub">誤情報・誇張の抑制</text>
+
+        <rect x="786" y="55" width="238" height="150" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.5)" stroke-width="1.5"/>
+        <text x="806" y="84" class="jdcap" fill="rgba(52,211,153,.8)">HUMAN FINAL</text>
+        <text x="806" y="114" class="jdttl">人の最終判断</text>
+        <text x="806" y="140" class="jdsub">根拠と選択肢を提示し、</text>
+        <text x="806" y="158" class="jdsub">避けるべき選択も示す。</text>
+        <text x="806" y="176" class="jdsub">決めるのは、人。</text>
+
+        <line x1="176" y1="130" x2="208" y2="130" class="jdflow"/>
+        <line x1="366" y1="130" x2="398" y2="130" class="jdflow"/>
+        <line x1="556" y1="130" x2="588" y2="130" class="jdflow"/>
+        <line x1="746" y1="130" x2="778" y2="130" class="jdflow"/>
+
+        <rect x="216" y="250" width="530" height="66" rx="10" fill="none" stroke="rgba(251,191,36,0.35)" stroke-dasharray="5 6"/>
+        <text x="232" y="276" class="jdcap" fill="rgba(251,191,36,.7)">GOVERNANCE</text>
+        <text x="232" y="300" class="jditem">説明可能性 ・ データ最小化 ・ オフライン動作 ・ 越えない一線：最終決定は人</text>
+        <line x1="291" y1="250" x2="291" y2="190" stroke="rgba(251,191,36,0.3)" stroke-dasharray="3 5"/>
+        <line x1="481" y1="250" x2="481" y2="190" stroke="rgba(251,191,36,0.3)" stroke-dasharray="3 5"/>
+        <line x1="671" y1="250" x2="671" y2="190" stroke="rgba(251,191,36,0.3)" stroke-dasharray="3 5"/>
+
+        <path d="M 905 205 V 380 H 291 V 198" fill="none" stroke="rgba(52,211,153,0.5)" stroke-width="1.4" stroke-dasharray="4 7" marker-end="url(#jdm2)"/>
+        <text x="560" y="372" class="jdsub" text-anchor="middle" fill="rgba(52,211,153,.65)">学習・較正 — 利用の結果は基盤へ戻り、判断の質を上げる</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+
 <section class="relative overflow-hidden bg-[#05070a] py-24 text-white">
   <div class="absolute inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:48px_48px] opacity-25"></div>
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
