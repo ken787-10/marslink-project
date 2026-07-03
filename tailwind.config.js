@@ -1,14 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     content: [
-      "./*.html",
-      "./about/*.html", 
-      "./assets/**/*.html",
-      "./cabintime/**/*.html",
-      "./ceo/**/*.html",
-      "./css/**/*.js",
-      "./js/**/*.js",
-      "./**/*.html"
+      "./_layouts/**/*.html",
+      "./_includes/**/*.html",
+      "./_posts/**/*.md",
+      "./index.html",
+      "./*.md",
+      "./{mission,careers,investors,cabintime,technology,operations,research,updates,platform,about,ceo,assets}/**/*.{html,md}",
+      "./js/**/*.js"
     ],
     theme: {
       extend: {

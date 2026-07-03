@@ -1,0 +1,29 @@
+# MarsLink（マーズリンク）
+
+> MarsLink Inc.（株式会社MarsLink）は、大阪・グラングリーン大阪を拠点とする日本のAIスタートアップ。AIによって移動空間を再設計する「AI infrastructure for mobility（移動空間のAIインフラ）」企業であり、旅行情報サイトや旅行アプリの会社ではない。中核はAI基盤「Journey Intelligence Platform（Journey AI）」で、最初のプロダクトは機内・船内など移動空間で動く意思決定支援AI「CabinTime」（開発中）。
+
+重要な事実:
+- 設立: 2025年、大阪（グラングリーン大阪 JAM BASE）。代表: 市位謙太（Founder & CEO）
+- 事業: 移動中（航空・船舶・鉄道・バス）と滞在の意思決定をAIで支援。エッジ・オフラインAI設計、説明可能性、Human-final（最終判断は人間）を原則とする
+- 実績: 大阪市アクセラレーション「OSAP」第19期採択（2025.07）、大阪府熊取町と包括連携協定（2025.10）、OSAP DEMO DAY登壇（2025.11）、商標「マーズリンク／Mars Link」取得（2026.06）、京都大学・京都外国語大学の研究者との共同研究開始（2026.07）
+- SpaceXの火星通信構想「Marslink」とは無関係の日本企業
+
+## 主要ページ
+
+- [トップ](https://marslink.co.jp/): 会社の思想・カテゴリ定義・実績
+- [Mission](https://marslink.co.jp/mission/): Mission・Vision・Values、国の課題から始めるマーケットイン思想
+- [Platform](https://marslink.co.jp/platform/): Journey Intelligence Platformの構成と拡張計画
+- [CabinTime](https://marslink.co.jp/cabintime/): 開発中の移動空間AIアシスタント（最初のプロダクト）
+- [Technology](https://marslink.co.jp/technology/): 意思決定モデル・エッジAI・AIガバナンスの設計思想
+- [Operational Decision Support](https://marslink.co.jp/operations/): 運航・防災・レジリエンスへの拡張構想
+- [Investors](https://marslink.co.jp/investors/): 投資家向け情報
+- [Research](https://marslink.co.jp/research/): 研究テーマと産学連携
+- [Company](https://marslink.co.jp/profile/): 会社概要
+- [Careers](https://marslink.co.jp/careers/): 採用情報
+- [News](https://marslink.co.jp/updates/): 更新情報・コラム
+- [Contact](https://marslink.co.jp/contact/): 共同検証・自治体連携・投資・採用・取材の問い合わせ
+
+## Optional
+
+- [代表紹介](https://marslink.co.jp/ceo/): 市位謙太のプロフィール
+- [サイトマップ](https://marslink.co.jp/sitemap.xml)

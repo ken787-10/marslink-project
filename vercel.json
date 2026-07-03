@@ -1,6 +1,6 @@
 {
   "installCommand": "npm ci && bundle install",
-  "buildCommand": "bundle exec jekyll build -d public",
+  "buildCommand": "npm run build-css && bundle exec jekyll build -d public",
   "outputDirectory": "public",
   "framework": null
 }

@@ -3,6 +3,11 @@
 # Jekyll clean build + serve (よく使うコマンドをまとめたショートカット)
 set -e
 
+if [ -f node_modules/tailwindcss/lib/cli.js ]; then
+  echo "[0/3] Building Tailwind CSS..."
+  npm run build-css --silent || true
+fi
+
 echo "[1/3] Cleaning Jekyll caches..."
 bundle exec jekyll clean
 
