@@ -29,3 +29,6 @@ _backup/
 *.bak
 *.backup
 *.old
+
+# Design reference materials (not part of the site)
+awesome-design-md-main/
