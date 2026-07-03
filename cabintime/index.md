@@ -521,6 +521,29 @@ changefreq: weekly
         {% endfor %}
       </div>
     </div>
+
+    <div class="mt-14 overflow-hidden rounded-xl border border-white/10 bg-black shadow-2xl">
+      <div class="relative">
+        <img
+          src="{{ '/assets/images/ferry01.png' | relative_url }}"
+          alt="夕暮れの海を進むフェリー。CabinTimeが想定する通信制約と長時間滞在のある移動空間"
+          class="block aspect-[2.35/1] w-full object-cover"
+          width="1200"
+          height="509"
+          loading="lazy"
+        >
+        <div class="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,6,7,0.76)_0%,rgba(5,6,7,0.18)_48%,rgba(5,6,7,0.42)_100%)]"></div>
+        <div class="absolute bottom-0 left-0 max-w-2xl p-5 sm:p-8">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-100/85">CabinTime / Sea</p>
+          <p class="mt-3 text-xl font-semibold leading-snug text-white sm:text-3xl">
+            通信が揺らぐ海上でも、到着後の判断を整える。
+          </p>
+          <p class="mt-3 max-w-xl text-sm leading-6 text-white/72 sm:text-base">
+            フェリーのように滞在時間が長い移動空間では、天候、海況、到着港、地域情報、混雑、予定変更をあらかじめ束ねる価値が大きくなります。
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
