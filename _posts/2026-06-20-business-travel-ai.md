@@ -2,7 +2,7 @@
 title: 出張AIとは ── 移動時間を、商談前後の意思決定に変える技術
 published: true
 date: 2026-06-20 10:00 +0900
-image: /assets/images/cabin.jpg
+image: /assets/images/blog/ai-brand-tokyo-flight.jpg
 tags: [出張AI, 移動AI, 飛行機AI, 機内AI, CabinTime, Journey AI, ビジネス移動]
 category: コラム
 keywords: "出張 AI, 出張AI, ビジネス移動 AI, 飛行機AI, 機内AI, 移動AI, 旅行AI, エッジAI, CabinTime, Journey AI"

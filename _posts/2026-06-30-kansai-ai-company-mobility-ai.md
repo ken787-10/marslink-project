@@ -2,7 +2,7 @@
 title: 大阪・関西のAI企業が取り組む移動AIとは ── 飛行機AI・船舶AI・旅行AIの技術と実装領域
 published: true
 date: 2026-06-30 12:40 +0900
-image: /assets/images/cabin.jpg
+image: /assets/images/blog/ai-kansai-bay-network.jpg
 tags: [大阪AI企業, 関西AIスタートアップ, 移動AI, 飛行機AI, 船舶AI, フェリーAI, 旅行AI, エッジAI]
 category: コラム
 keywords: "大阪 AI企業, 関西 AIスタートアップ, 京都 AI, 移動AI, 飛行機AI, 航空AI, 船舶AI, フェリーAI, 旅行AI, エッジAI, 生成AI, AIスタートアップ, CabinTime, MarsLink"
@@ -124,5 +124,5 @@ CabinTimeは現在、開発・共同検証フェーズです。
 - プロダクト：[CabinTime ── 開発中の移動空間AIアシスタント](/cabintime/)
 - 基盤：[Journey Intelligence Platform](/platform/)
 - 技術：[Technology](/technology/)
-- 関連コラム：[大阪発のAIスタートアップが取り組む移動AIとは](/post/osaka-ai-startup-mobility.html)
+- 関連コラム：[関西の交通AIとは](/post/kansai-transport-ai.html)
 - 共同検証：[お問い合わせ](/contact/)

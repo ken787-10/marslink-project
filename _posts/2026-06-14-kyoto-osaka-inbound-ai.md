@@ -2,10 +2,10 @@
 title: インバウンドAIとは ── 京都・大阪・関西で、訪日客の移動と消費をどう支えるか
 published: true
 date: 2026-06-14 10:00 +0900
-image: /assets/images/osaka-castle.jpg
-tags: [インバウンドAI, 京都AI, 大阪AI企業, 関西AIスタートアップ, 旅行AI, 移動AI, 地域DX]
+image: /assets/images/blog/ai-inbound-terminal.jpg
+tags: [インバウンドAI, 京都AI, 大阪AI企業, 関西AIスタートアップ, 旅行AI, 移動AI, 地域AI]
 category: コラム
-keywords: "インバウンドAI, 京都 AI, 大阪 AI企業, 関西 AIスタートアップ, 旅行AI, 観光AI, 移動AI, 訪日観光 AI, 地域DX AI, CabinTime, Journey AI"
+keywords: "インバウンドAI, 京都 AI, 大阪 AI企業, 関西 AIスタートアップ, 旅行AI, 移動AI, 訪日客 移動 AI, 地域AI, CabinTime, Journey AI"
 excerpt: インバウンドAIは、翻訳や観光案内の先にある移動支援技術です。空港、鉄道、ホテル、地域情報、天気、混雑、口コミをAIが束ね、訪日客が移動中に次の行動を判断できる状態をつくります。京都・大阪・関西での実装領域を整理します。
 ---
 

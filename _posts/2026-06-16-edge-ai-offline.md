@@ -2,7 +2,7 @@
 title: エッジAIとは ── 通信が弱い環境でも使えるAIが、なぜ移動空間で重要なのか
 published: true
 date: 2026-06-16 10:00 +0900
-image: /assets/images/cabin.jpg
+image: /assets/images/blog/ai-edge-ferry-console.jpg
 tags: [エッジAI, オフラインAI, 移動空間AI, 飛行機AI, 船舶AI, CabinTime, 生成AI]
 category: コラム
 keywords: "エッジAIとは, エッジAI, オフラインAI, ローカルAI, Edge AI, 飛行機AI, 船舶AI, フェリーAI, 生成AI, CabinTime, 移動AI"

@@ -22,20 +22,63 @@ layout: default
   "publisher": { "@id": "https://marslink.co.jp/#organization" }
 }
 </script>
-<article class="bg-[#07090d] text-white min-h-screen">
+<article class="post-page min-h-screen">
     <style>
-        /* Post typography fallback (Tailwind Typography未使用時の最小スタイル) */
-        .prose { color: rgb(209 213 219); font-size: 1.06rem; line-height: 1.95; }
-        .prose h1 { color: #fff; font-size: 2rem; line-height: 2.5rem; font-weight: 800; margin: 1rem 0; }
+        .post-page {
+            background: #f8fafc;
+            color: #0f172a;
+        }
+        .post-container {
+            padding-top: 8rem;
+        }
+        .post-shell {
+            max-width: 50rem;
+        }
+        .post-kicker {
+            color: #0891b2;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+        }
+        .post-title {
+            color: #020617;
+            letter-spacing: 0;
+        }
+        .post-meta {
+            color: #64748b;
+        }
+        .post-category {
+            background: #e2e8f0;
+            color: #334155;
+        }
+        .post-tag {
+            background: #ecfeff;
+            color: #0e7490;
+            border: 1px solid #bae6fd;
+        }
+        .prose {
+            color: #1f2937;
+            font-size: 1.06rem;
+            line-height: 2;
+            letter-spacing: 0;
+        }
+        .prose h1 {
+            color: #020617;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            font-weight: 800;
+            margin: 1rem 0;
+        }
 		.prose h2 {
             position: relative;
-            color: #fff;
+            color: #020617;
             font-size: 1.62rem;
             line-height: 2.15rem;
             font-weight: 800;
             margin: 3rem 0 1.75rem;
             padding: 0 0 0.85rem;
-            border-bottom: 1px solid rgba(148, 163, 184, 0.28);
+            border-bottom: 1px solid #cbd5e1;
             letter-spacing: 0;
         }
         .prose h2::after {
@@ -45,43 +88,139 @@ layout: default
             bottom: -1px;
             width: 5.5rem;
             height: 2px;
-            background: linear-gradient(90deg, #67e8f9, rgba(103, 232, 249, 0));
+            background: linear-gradient(90deg, #0891b2, rgba(8, 145, 178, 0));
         }
 		.prose h3 {
-            color: #f8fafc;
+            color: #0f172a;
             font-size: 1.22rem;
             line-height: 1.75rem;
             font-weight: 800;
             margin: 2rem 0 0.85rem;
             padding: 0.18rem 0 0.18rem 0.9rem;
-            border-left: 3px solid rgba(103, 232, 249, 0.85);
+            border-left: 3px solid #0891b2;
             letter-spacing: 0;
         }
         .prose p { margin: 0.95rem 0; }
         .prose ul { list-style: disc; padding-left: 1.35rem; margin: 0.65rem 0 1.2rem; }
         .prose li { margin: 0.35rem 0; }
-        .prose strong { color: #fff; font-weight: 800; }
-		.prose img { width: 650px; max-width: 100%; height: auto; display: block; margin: 1.25rem auto; border-radius: 0.5rem; }
-        .prose a { color: #67e8f9; text-decoration: underline; text-decoration-color: rgba(103, 232, 249, 0.45); text-underline-offset: 0.18em; }
-        .prose a:hover { color: #cffafe; text-decoration-color: rgba(207, 250, 254, 0.9); }
+        .prose strong { color: #020617; font-weight: 800; }
+		.prose img {
+            width: 650px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 0.5rem;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+        }
+        .prose a {
+            color: #0369a1;
+            text-decoration: underline;
+            text-decoration-color: rgba(3, 105, 161, 0.35);
+            text-underline-offset: 0.18em;
+        }
+        .prose a:hover {
+            color: #0e7490;
+            text-decoration-color: rgba(14, 116, 144, 0.8);
+        }
+        .post-related-title {
+            color: #0f172a;
+        }
+        .post-related-eyebrow {
+            color: #dc2626;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+        }
+        .post-related-wrap {
+            width: min(80rem, calc(100vw - 3rem));
+            margin: 5rem 0 0 50%;
+            padding-top: 4rem;
+            border-top: 1px solid #e2e8f0;
+            transform: translateX(-50%);
+        }
+        .post-related-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 2.5rem;
+        }
+        .post-related-card {
+            display: block;
+            color: #111827;
+        }
+        .post-related-card:hover {
+            color: #b91c1c;
+        }
+        .post-related-card h3 {
+            color: currentColor;
+        }
+        .post-related-card p,
+        .post-related-card time {
+            color: #64748b;
+        }
+        .post-related-thumb {
+            position: relative;
+            aspect-ratio: 16 / 10;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            background: #e2e8f0;
+        }
+        .post-related-thumb img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .post-related-card:hover .post-related-thumb img {
+            transform: scale(1.03);
+        }
+        .post-related-meta {
+            color: #94a3b8;
+        }
+        .post-related-pill {
+            background: #fff1f2;
+            color: #dc2626;
+        }
+        .post-back {
+            color: #0369a1;
+        }
+        .post-back:hover {
+            color: #0e7490;
+        }
+        @media (max-width: 900px) {
+            .post-related-wrap {
+                width: 100%;
+                margin-left: 0;
+                transform: none;
+            }
+            .post-related-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
     </style>
-    <div class="container mx-auto px-6 pt-36 pb-20">
-        <div class="max-w-4xl mx-auto">
+    <div class="post-container container mx-auto px-6 pb-20">
+        <div class="post-shell mx-auto">
             <!-- Body内にメタ情報（タイトル・日付・タグ・カテゴリ） -->
-            <div class="mb-10">
-                <h1 class="text-3xl sm:text-4xl font-bold font-orbitron mb-3">{{ page.title }}</h1>
-                <div class="flex flex-wrap items-center gap-x-3 gap-y-2 text-gray-400 text-sm">
+            <div class="mb-10 border-b border-gray-200 pb-10">
+                <p class="post-kicker mb-4">MarsLink Updates</p>
+                <h1 class="post-title text-3xl sm:text-4xl font-bold mb-4">{{ page.title }}</h1>
+                <div class="post-meta flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
                     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y年%m月%d日" }}</time>
-                    <span class="inline-flex items-center gap-1 text-gray-300">著者: MarsLink広報</span>
+                    <span class="inline-flex items-center gap-1">著者: MarsLink広報</span>
                     {% if page.category %}
-                    <span class="inline-flex items-center gap-2 bg-gray-800 text-gray-200 px-2.5 py-1 rounded">カテゴリ: {{ page.category }}</span>
+                    <span class="post-category inline-flex items-center gap-2 px-2.5 py-1 rounded">カテゴリ: {{ page.category }}</span>
                     {% endif %}
                     {% if page.tags and page.tags.size > 0 %}
                     <span class="inline-flex items-center gap-2">
-                        <span class="text-gray-500">タグ:</span>
+                        <span>タグ:</span>
                         <span class="flex flex-wrap gap-2">
                             {% for tag in page.tags %}
-                            <span class="bg-gray-800 text-cyan-400 px-2 py-0.5 rounded-full">#{{ tag }}</span>
+                            <span class="post-tag px-2 py-0.5 rounded-full">#{{ tag }}</span>
                             {% endfor %}
                         </span>
                     </span>
@@ -89,7 +228,7 @@ layout: default
                 </div>
             </div>
 
-            <div class="prose prose-lg prose-invert max-w-none">
+            <div class="prose prose-lg max-w-none">
                 {{ content }}
             </div>
 
@@ -97,11 +236,12 @@ layout: default
             {% endif %}
 
             <!-- 関連記事（最新から3件、当該記事を除く） -->
-            <section class="mt-14">
-                <h2 class="text-xl font-semibold mb-6">関連記事</h2>
+            <section class="post-related-wrap">
+                <p class="post-related-eyebrow mb-5">Related</p>
+                <h2 class="post-related-title text-3xl sm:text-4xl font-bold mb-12">関連記事</h2>
                 {% assign related = site.posts | where_exp: 'p', 'p.url != page.url' %}
                 {% if related and related.size > 0 %}
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="post-related-grid">
                     {% for post in related limit:3 %}
                     {% assign thumb = post.image | default: post.thumbnail | default: '/assets/images/hero1.jpg' %}
                     {% assign img_src = thumb %}
@@ -110,31 +250,30 @@ layout: default
                     {% else %}
                         {% assign img_src = thumb | relative_url %}
                     {% endif %}
-                    <a href="{{ post.url | relative_url }}" class="group relative bg-white/[0.04] rounded-lg overflow-hidden border border-white/10 hover:border-cyan-200/50 transition-all duration-300 flex flex-col" style="min-height: 360px;">
-                        <div class="relative overflow-hidden" style="height: 0; padding-top: 75%;">
-                            <img src="{{ img_src }}" alt="{{ post.title }}" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
-                            <div class="absolute inset-0 bg-gradient-to-t from-[#07090d] via-[#07090d]/45 to-transparent"></div>
+                    <a href="{{ post.url | relative_url }}" class="post-related-card">
+                        <div class="post-related-thumb">
+                            <img src="{{ img_src }}" alt="{{ post.title }}">
+                            <div class="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-cyan-950/10"></div>
                         </div>
-                        <div class="relative p-5 flex-1 flex flex-col">
-                            <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                            <div class="relative flex flex-col h-full">
-                                <time datetime="{{ post.date | date_to_xmlschema }}" class="text-xs text-gray-400 mb-2">{{ post.date | date: "%Y.%m.%d" }}</time>
-                                <h3 class="text-base font-bold text-white mb-2 whitespace-normal break-words">{{ post.title }}</h3>
-                                {% if post.excerpt %}
-                                <p class="text-gray-400 leading-relaxed text-sm flex-1 whitespace-normal break-words">{{ post.excerpt | strip_html | truncate: 60 }}</p>
+                        <div class="mt-5">
+                            <div class="post-related-meta flex flex-wrap items-center gap-3 text-sm font-semibold">
+                                {% if post.category %}
+                                <span class="post-related-pill rounded-full px-3 py-1 text-xs">{{ post.category }}</span>
                                 {% endif %}
+                                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y年%-m月%-d日" }}</time>
                             </div>
+                            <h3 class="mt-4 text-lg font-bold leading-8 whitespace-normal break-words">{{ post.title }}</h3>
                         </div>
                     </a>
                     {% endfor %}
                 </div>
                 {% else %}
-                <p class="text-gray-400">関連記事はありません。</p>
+                <p class="post-meta">関連記事はありません。</p>
                 {% endif %}
             </section>
 
-            <nav class="mt-12 pt-8 border-t border-gray-700">
-                <a href="{{ '/updates/' | relative_url }}" class="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors">
+            <nav class="mt-12 pt-8 border-t border-gray-200">
+                <a href="{{ '/updates/' | relative_url }}" class="post-back inline-flex items-center transition-colors">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
                     </svg>

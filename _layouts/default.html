@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
+    {% assign meta_robots = page.robots | default: 'index, follow' %}
+    <meta name="robots" content="{{ meta_robots }}">
+    <meta name="googlebot" content="{{ meta_robots }}">
     <meta name="google-site-verification" content="A7Ao6K_9KyyD2MJWgymaOyTS-hsEZyYXIKGvJO1L0nw" />
     
     <!-- DNS prefetch for external resources -->
@@ -105,7 +106,7 @@
             "@type": "ImageObject",
             "url": "https://marslink.co.jp/assets/images/logo.png"
           },
-          "description": "MarsLinkは、AIによって移動空間を再設計するインフラ企業です。エッジAIで動く機内AIアシスタントCabinTimeを最初のプロダクトに、航空・船舶・鉄道・バスへ展開します。",
+          "description": "MarsLinkは、移動空間の意思決定を支援するAIスタートアップです。飛行機・船舶・鉄道・バス・ホテルなどの移動空間で、天気・交通・混雑・口コミ・目的情報をAIで整理し、移動中の判断と到着後の行動を支援します。",
           "foundingDate": "2025",
           "founder": {
             "@type": "Person",
@@ -121,7 +122,7 @@
             "addressCountry": "JP"
           },
           "areaServed": ["大阪", "京都", "関西", "日本"],
-          "knowsAbout": ["AI", "エッジAI", "機内AI", "移動空間AI", "移動データ", "AIインフラ", "生成AI"],
+          "knowsAbout": ["AI", "生成AI", "エッジAI", "機内AI", "船内AI", "航空AI", "船舶AI", "鉄道AI", "移動空間AI", "移動データ", "意思決定支援", "Journey AI", "CabinTime"],
           "email": "{{ site.email }}",
           "contactPoint": {
             "@type": "ContactPoint",
@@ -292,10 +293,11 @@
     </style>
     
     {% assign meta_description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | replace: '"', '&quot;' %}
-    {% assign meta_title = site.title %}
-    {% if page.layout != 'home' and page.title %}
+    {% assign meta_title = page.seo_title | default: site.title %}
+    {% if page.layout != 'home' and page.title and page.seo_title == nil %}
         {% assign meta_title = page.title | append: ' - ' | append: site.title %}
     {% endif %}
+    {% assign meta_image = page.og_image | default: page.image | default: '/assets/images/hero-bg-1.jpg' %}
 
     <!-- Page Title -->
     <title>{{ meta_title }}</title>
@@ -313,7 +315,7 @@
     <meta property="og:url" content="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
     <meta property="og:title" content="{{ meta_title }}">
     <meta property="og:description" content="{{ meta_description }}">
-    <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/assets/images/hero-bg-1.jpg' | absolute_url }}{% endif %}">
+    <meta property="og:image" content="{{ meta_image | absolute_url }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="ja_JP">
 
@@ -322,7 +324,7 @@
     <meta property="twitter:url" content="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
     <meta property="twitter:title" content="{{ meta_title }}">
     <meta property="twitter:description" content="{{ meta_description }}">
-    <meta property="twitter:image" content="{% if page.og_image %}{{ page.og_image | absolute_url }}{% else %}{{ '/assets/images/hero-bg-1.jpg' | absolute_url }}{% endif %}">
+    <meta property="twitter:image" content="{{ meta_image | absolute_url }}">
     {% if site.twitter_username %}<meta name="twitter:site" content="@{{ site.twitter_username }}">{% endif %}
     
     {% if site.google_site_verification %}
@@ -367,7 +369,7 @@
                                 <a href="{{ '/mission/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Mission</a>
                                 <a href="{{ '/investors/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Investors</a>
                                 <a href="{{ '/careers/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Careers</a>
-                                <a href="{{ '/updates/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Updates</a>
+                                <a href="{{ '/updates/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Blog</a>
                                 <a href="{{ '/research/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Research</a>
                             </div>
                             <div class="py-6">
