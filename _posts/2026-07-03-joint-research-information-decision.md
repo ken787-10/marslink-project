@@ -2,7 +2,7 @@
 title: 大学AI研究者との共同研究を開始 ── 移動中の情報提示は、人の意思決定をどう変えるのか
 published: true
 date: 2026-07-03 07:00 +0900
-image: /assets/images/blog/ai-research-decision-room.jpg
+image: /assets/images/blog/ai-research-weather-ops.jpg
 tags: [共同研究, 産学連携AI, 意思決定AI, 移動AI, リスク情報, Journey AI, CabinTime, MarsLink]
 category: お知らせ
 keywords: "意思決定 AI, 共同研究 AI, 産学連携 AI, 情報 意思決定, 台風 移動 判断, 運休 リスク, 京都大学 AI, 京都外国語大学 AI, 移動AI, CabinTime, MarsLink"
