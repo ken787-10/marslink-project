@@ -2,7 +2,7 @@
 title: 大学連携とAI研究 ── 移動空間AIに必要な文脈理解・推薦・エッジAIの考え方
 published: true
 date: 2026-06-26 10:00 +0900
-image: /assets/images/blog/ai-university-research-room.jpg
+image: /assets/images/blog/ai-university-air-context.jpg
 tags: [大学連携, AI研究, 産学連携AI, 移動AI, エッジAI, Journey AI, MarsLink]
 category: コラム
 keywords: "大学 AI 共同研究, 産学連携 AI, 京都大学 AI, 京都外国語大学 AI, AI研究, 移動AI, エッジAI, 推薦AI, LLM, 構造方程式モデル, CabinTime, MarsLink"

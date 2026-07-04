@@ -2,7 +2,7 @@
 title: インバウンドAIとは ── 京都・大阪・関西で、訪日客の移動と消費をどう支えるか
 published: true
 date: 2026-06-14 10:00 +0900
-image: /assets/images/blog/ai-inbound-terminal.jpg
+image: /assets/images/blog/ai-inbound-ferry-region.jpg
 tags: [インバウンドAI, 京都AI, 大阪AI企業, 関西AIスタートアップ, 旅行AI, 移動AI, 地域AI]
 category: コラム
 keywords: "インバウンドAI, 京都 AI, 大阪 AI企業, 関西 AIスタートアップ, 旅行AI, 移動AI, 訪日客 移動 AI, 地域AI, CabinTime, Journey AI"
