@@ -2,7 +2,7 @@
 title: 関西の交通AIとは ── 空港・鉄道・フェリー・観光列車に眠る移動AIの実装領域
 published: true
 date: 2026-06-22 10:00 +0900
-image: /assets/images/osaka-castle.jpg
+image: /assets/images/blog/ai-kansai-transport-terminal.jpg
 tags: [移動AI, 関西, 飛行機AI, 航空AI, 鉄道AI, 観光列車AI, フェリーAI, 船舶AI, CabinTime]
 category: コラム
 keywords: "関西 交通 AI, 大阪 交通 AI, 飛行機AI, 航空AI, 列車AI, 鉄道AI, 観光列車 AI, フェリーAI, 船舶AI, 空港 AI, 関西国際空港, 伊丹空港, 移動AI"
@@ -120,5 +120,5 @@ MarsLinkの[Technology](/technology/)ページでは、移動の意思決定支�
 - プロダクト：[CabinTime ── 開発中の移動空間AIアシスタント](/cabintime/)
 - 基盤：[Journey Intelligence Platform](/platform/)
 - 技術：[Technology](/technology/)
-- 関連コラム：[エッジAIとは](/post/edge-ai-offline.html) ／ [大阪発のAIスタートアップが取り組む移動AIとは](/post/osaka-ai-startup-mobility.html)
+- 関連コラム：[エッジAIとは](/post/edge-ai-offline.html) ／ [大阪・関西のAI企業が取り組む移動AIとは](/post/kansai-ai-company-mobility-ai.html)
 - 共同検証：[お問い合わせ](/contact/)

@@ -2,7 +2,7 @@
 title: 移動データとAI ── 検索・SNSの次に「移動」を束ねるインテリジェンス基盤
 published: true
 date: 2026-06-18 10:00 +0900
-image: /assets/images/hero-bg-6.jpg
+image: /assets/images/blog/ai-mobility-data-ferry.jpg
 tags: [移動データ, 移動空間AI, AIインフラ, Journey Graph, CabinTime, MarsLink]
 category: コラム
 keywords: "モビリティデータ, 移動データ, 人流データ, データ統合 AI, 移動空間AI, Journey Graph, AIインフラ, 観光データ, 交通データ, CabinTime"
