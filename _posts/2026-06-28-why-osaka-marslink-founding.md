@@ -2,7 +2,7 @@
 title: なぜ大阪で、移動空間のAIインフラをつくるのか ── MarsLink創業の背景
 published: true
 date: 2026-06-28 10:00 +0900
-image: /assets/images/blog/ai-osaka-founding-japan-day.jpg
+image: /assets/images/blog/ai-osaka-offshore-airport-night.jpg
 tags: [大阪AIスタートアップ, 関西AIスタートアップ, 移動AI, AIインフラ, CabinTime, MarsLink]
 category: コラム
 keywords: "大阪AIスタートアップ, 関西AIスタートアップ, AI企業 大阪, MarsLink 創業, グラングリーン大阪, うめきた スタートアップ, 移動AI, 飛行機AI, 船舶AI, CabinTime"
