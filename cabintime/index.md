@@ -192,6 +192,36 @@ changefreq: weekly
   </div>
 </section>
 
+<section id="functional-demo" class="bg-[#080c10] py-20 text-white sm:py-24">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+      <div>
+        <p class="font-mono text-xs font-semibold uppercase tracking-[0.24em] text-cyan-200">CabinTime IFE / Functional Demo</p>
+        <h2 class="mt-4 text-3xl font-semibold tracking-tight sm:text-5xl">移動中の状況を、到着後の判断につなげる。</h2>
+      </div>
+      <p class="text-lg leading-8 text-gray-300">
+        開発中のIFEデモでは、飛行経路、現在地、到着時刻、気象情報をひとつの画面に統合しています。現在地を表示するだけでなく、到着後の予定や移動条件を踏まえ、次に確認すべき判断へつなげます。
+      </p>
+    </div>
+
+    <figure class="mt-12 overflow-hidden rounded-xl border border-white/10 bg-[#050607] shadow-2xl">
+      <img
+        src="{{ '/assets/images/cabintime/cabintime-ife-functional-demo.webp' | relative_url }}"
+        alt="伊丹空港から羽田空港へ向かう飛行経路、現在地、到着時刻、気象情報を表示した開発中のCabinTime IFEデモ画面"
+        class="block h-auto w-full"
+        width="2200"
+        height="1544"
+        loading="lazy"
+        decoding="async"
+      >
+      <figcaption class="flex flex-col gap-2 border-t border-white/10 px-5 py-4 text-sm leading-6 text-gray-400 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <span>ITM 伊丹空港 → HND 羽田空港 / Scenario replay</span>
+        <span>開発中のFunctional Demo</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
 <section id="concept-movie" class="bg-[#050607] py-20 text-white sm:py-24">
   <div class="mx-auto max-w-6xl px-0 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-3xl px-6 text-center sm:px-0">
