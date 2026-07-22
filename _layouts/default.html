@@ -344,7 +344,7 @@
             {% include header.html %}
 
             <!-- Mobile menu - independent from header -->
-            <div class="lg:hidden mobile-menu hidden" role="dialog" aria-modal="true" style="position: fixed; inset: 0; z-index: 9999;">
+            <div class="xl:hidden mobile-menu hidden" role="dialog" aria-modal="true" style="position: fixed; inset: 0; z-index: 9999;">
                 <!-- Background backdrop -->
                 <div class="fixed inset-0 bg-black/50" aria-hidden="true"></div>
                 <div class="fixed inset-y-0 right-0 w-full overflow-y-auto bg-gray-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-white/10" style="z-index: 10000;">
@@ -365,6 +365,7 @@
                         <div class="-my-6 divide-y divide-gray-500/25">
                             <div class="space-y-2 py-6">
                                 <a href="{{ '/cabintime/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">CabinTime</a>
+                                <a href="{{ '/cabintime/integration-readiness/ja/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">IFE Integration</a>
                                 <a href="{{ '/platform/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Platform</a>
                                 <a href="{{ '/technology/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Technology</a>
                                 <a href="{{ '/operations/' | relative_url }}" class="mobile-menu-link -mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-800">Operational Decision Support</a>
