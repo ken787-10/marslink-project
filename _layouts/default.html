@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="{{ page.lang | default: 'ja' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -309,6 +309,9 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+    {% if page.alternate_en %}<link rel="alternate" hreflang="en" href="{{ page.alternate_en | absolute_url }}">{% endif %}
+    {% if page.alternate_ja %}<link rel="alternate" hreflang="ja" href="{{ page.alternate_ja | absolute_url }}">{% endif %}
+    {% if page.alternate_en %}<link rel="alternate" hreflang="x-default" href="{{ page.alternate_en | absolute_url }}">{% endif %}
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -317,7 +320,7 @@
     <meta property="og:description" content="{{ meta_description }}">
     <meta property="og:image" content="{{ meta_image | absolute_url }}">
     <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale" content="{{ page.og_locale | default: 'ja_JP' }}">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
