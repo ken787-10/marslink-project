@@ -20,6 +20,9 @@ vendor/ruby/
 node_modules/
 public/
 
+# Private product demos live in their own private repositories
+/apps/cabintime-demo/
+
 # Environment files
 .env
 .env.*
